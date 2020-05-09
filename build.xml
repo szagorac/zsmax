@@ -1,0 +1,47 @@
+<project name="ZsMax" default="main" basedir=".">
+    <description>
+        ZScore MAX MSP Library
+    </description>
+
+    <!--  PROPERTIES  -->
+    <property name="srcDir" location="src/main/java"/>
+    <property name="buildDir" location="build"/>
+    <property name="distDir" location="dist"/>
+    <property name="libDir" location="lib"/>
+    <property name="deployDir" location="/Users/slavko/MyHome/Music/max"/>
+
+    <fileset id="deployFileSet" dir="${distDir}" casesensitive="yes">
+        <include name="*.jar"/>
+    </fileset>
+
+    <path id="classpath">
+        <fileset dir="${libDir}" includes="**/*.jar"/>
+    </path>
+
+    <!--  TARGETS -->
+    <target name="init">
+        <mkdir dir="${distDir}"/>
+        <mkdir dir="${buildDir}"/>
+    </target>
+
+    <target name="compile" depends="init" description="compile the source">
+        <javac srcdir="${srcDir}" destdir="${buildDir}" classpathref="classpath" includeantruntime="false"/>
+    </target>
+
+    <target name="dist" depends="compile" description="generate the distribution">
+        <jar jarfile="${distDir}/ZsMax.jar" basedir="${buildDir}" includes="**/*.class"/>
+    </target>
+
+    <target name="deploy" depends="dist" description="deploy the distribution">
+        <copy todir="${deployDir}" overwrite="true">
+            <fileset refid="deployFileSet"/>
+        </copy>
+    </target>
+
+    <target name="clean" description="clean up">
+        <delete dir="${distDir}"/>
+        <delete dir="${buildDir}"/>
+    </target>
+
+    <target name="main" depends="clean, deploy"/>
+</project>
