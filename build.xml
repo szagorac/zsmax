@@ -8,9 +8,14 @@
     <property name="buildDir" location="build"/>
     <property name="distDir" location="dist"/>
     <property name="libDir" location="lib"/>
+    <property name="libDistDir" location="lib/dist"/>
     <property name="deployDir" location="/Users/slavko/MyHome/Music/max"/>
 
     <fileset id="deployFileSet" dir="${distDir}" casesensitive="yes">
+        <include name="*.jar"/>
+    </fileset>
+
+    <fileset id="dependencyLibSet" dir="${libDistDir}" casesensitive="yes">
         <include name="*.jar"/>
     </fileset>
 
@@ -30,6 +35,9 @@
 
     <target name="dist" depends="compile" description="generate the distribution">
         <jar jarfile="${distDir}/ZsMax.jar" basedir="${buildDir}" includes="**/*.class"/>
+        <copy todir="${distDir}">
+            <fileset refid="dependencyLibSet"/>
+        </copy>
     </target>
 
     <target name="deploy" depends="dist" description="deploy the distribution">
