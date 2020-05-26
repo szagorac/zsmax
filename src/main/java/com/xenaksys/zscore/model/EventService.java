@@ -1,7 +1,7 @@
 package com.xenaksys.zscore.model;
 
+import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.event.EventFactory;
-import com.xenaksys.zscore.receive.ZscoreIncomingEventListener;
 
 public interface EventService {
 
@@ -12,6 +12,8 @@ public interface EventService {
     void receive(ZscoreEvent event);
 
     void stop();
+
+    void start();
 
     EventFactory getEventFactory();
 

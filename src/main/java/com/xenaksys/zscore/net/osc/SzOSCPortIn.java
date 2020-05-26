@@ -8,13 +8,13 @@
 
 package com.xenaksys.zscore.net.osc;
 
+import com.xenaksys.zscore.client.receive.ZscoreDistributorListener;
+import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.max.LoggerFactory;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.Logger;
 import com.xenaksys.zscore.net.osc.utility.OSCByteArrayToJavaConverter;
 import com.xenaksys.zscore.net.osc.utility.SzOSCPacketDispatcher;
-import com.xenaksys.zscore.receive.ZscoreDistributorListener;
-import com.xenaksys.zscore.receive.ZscoreIncomingEventListener;
 
 import java.io.IOException;
 import java.net.DatagramPacket;

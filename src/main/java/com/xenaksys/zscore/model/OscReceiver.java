@@ -1,6 +1,6 @@
 package com.xenaksys.zscore.model;
 
-import com.xenaksys.zscore.receive.ZscoreIncomingEventListener;
+import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 
 public interface OscReceiver extends Processor {
 

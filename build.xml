@@ -1,14 +1,17 @@
 <project name="ZsMax" default="main" basedir=".">
     <description>
-        ZScore MAX MSP Library
+        ZScore MAX MSP External
     </description>
 
     <!--  PROPERTIES  -->
+    <property name="version" value="0.0.1"/>
+
     <property name="srcDir" location="src/main/java"/>
     <property name="buildDir" location="build"/>
     <property name="distDir" location="dist"/>
     <property name="libDir" location="lib"/>
     <property name="libDistDir" location="lib/dist"/>
+    <property name="resourcesDir" location="src/main/resources"/>
     <property name="deployDir" location="/Users/slavko/MyHome/Music/max"/>
 
     <fileset id="deployFileSet" dir="${distDir}" casesensitive="yes">
@@ -17,6 +20,9 @@
 
     <fileset id="dependencyLibSet" dir="${libDistDir}" casesensitive="yes">
         <include name="*.jar"/>
+    </fileset>
+    <fileset id="resourcesSet" dir="${resourcesDir}" casesensitive="yes">
+        <include name="*.*"/>
     </fileset>
 
     <path id="classpath">
@@ -34,9 +40,10 @@
     </target>
 
     <target name="dist" depends="compile" description="generate the distribution">
-        <jar jarfile="${distDir}/ZsMax.jar" basedir="${buildDir}" includes="**/*.class"/>
+        <jar jarfile="${distDir}/zsmax-${version}.jar" basedir="${buildDir}" includes="**/*.class"/>
         <copy todir="${distDir}">
             <fileset refid="dependencyLibSet"/>
+            <fileset refid="resourcesSet"/>
         </copy>
     </target>
 

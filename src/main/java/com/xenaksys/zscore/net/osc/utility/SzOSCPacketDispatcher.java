@@ -8,6 +8,7 @@
 
 package com.xenaksys.zscore.net.osc.utility;
 
+import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.event.IncomingOscEvent;
 import com.xenaksys.zscore.max.LoggerFactory;
 import com.xenaksys.zscore.model.Clock;
@@ -17,7 +18,6 @@ import com.xenaksys.zscore.net.osc.OSCBundle;
 import com.xenaksys.zscore.net.osc.OSCListener;
 import com.xenaksys.zscore.net.osc.OSCMessage;
 import com.xenaksys.zscore.net.osc.OSCPacket;
-import com.xenaksys.zscore.receive.ZscoreIncomingEventListener;
 
 import java.util.Date;
 import java.util.List;
