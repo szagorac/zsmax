@@ -7,6 +7,8 @@ public interface Consts {
     String COMMA = ",";
     String SLASH = "/";
     String COLUMN = ":";
+    String OPEN_BRACKET = "(";
+    String CLOSE_BRACKET = ")";
     String SINGLE_QUOTE = "'";
     String INSCORE_ADDR = "INScore";
     String ZSCORE_ADDR = "/SZCORE";
@@ -37,13 +39,13 @@ public interface Consts {
     int DEFAULT_OSC_SERVER_PORT = 7777;
     int DEFAULT_ALL_PORTS = Integer.MIN_VALUE;
 
-    String OPEN_BRACKET = "(";
-    String CLOSE_BRACKET = ")";
+    String DEFAULT_INSTRUMENT = "AV";
 
     String JS_INSCORE_CMD_RUN = "run";
     String JS_CMD_SET_SERVER_ID = "setServerIp";
     String JS_CMD_PING = "ping";
     String JS_CMD_SERVER_HELLO = "serverHello";
+    String JS_CMD_SET_INSTRUMENTS = "setInstruments";
 
     String ADDR_TOKEN = "$ADDR";
     String OSC_JS_ACTIVATE = "activate(" + ADDR_TOKEN + ")";
@@ -91,6 +93,7 @@ public interface Consts {
 
     String RUN = "run";
     String HELLO = "HELLO";
+    String SET_INSTRUMENT = "SET_INSTRUMENT";
 
     String NAME_NA = "N/A";
 

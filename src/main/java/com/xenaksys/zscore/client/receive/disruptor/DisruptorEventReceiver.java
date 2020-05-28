@@ -24,6 +24,7 @@ import static com.xenaksys.zscore.Consts.COMMA;
 import static com.xenaksys.zscore.Consts.EMPTY;
 import static com.xenaksys.zscore.Consts.JS_CMD_PING;
 import static com.xenaksys.zscore.Consts.JS_CMD_SERVER_HELLO;
+import static com.xenaksys.zscore.Consts.JS_CMD_SET_INSTRUMENTS;
 import static com.xenaksys.zscore.Consts.JS_CMD_SET_SERVER_ID;
 import static com.xenaksys.zscore.Consts.JS_INSCORE_CMD_RUN;
 import static com.xenaksys.zscore.Consts.OPEN_BRACKET;
@@ -139,6 +140,10 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
                 break;
             case JS_CMD_SERVER_HELLO:
                 processServerHello(cmd, cmdArgs);
+                break;
+            case JS_CMD_SET_INSTRUMENTS:
+                processSetInstruments(cmd, cmdArgs);
+                break;
             default:
                 LOG.error("Unexpected JS command: " + cmdName);
         }
@@ -180,6 +185,21 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
 
         String sarg = args[index];
         return sarg.replaceAll(SINGLE_QUOTE, EMPTY);
+    }
+
+    private void processSetInstruments(String cmd, List<Object> cmdArgs) {
+        String[] jsArgs = parseJsArgs(cmd);
+        if (jsArgs.length == 0) {
+            LOG.warn("processSetInstruments: Unexpected number of js arguments: " + Arrays.toString(jsArgs));
+            return;
+        }
+
+        List<String> instruments = new ArrayList<>();
+        for (int i = 0; i < jsArgs.length; i++) {
+            instruments.add(getStringArg(i, jsArgs));
+        }
+
+        zsClient.onSetInstruments(instruments);
     }
 
     private void processInscoreHello(IncomingOscEvent event) {

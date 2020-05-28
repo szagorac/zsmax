@@ -31,6 +31,10 @@ public class EventFactory {
         return new PingEvent(ZSCORE_ADDR, createPingArgs(serverTime, port), destination, creationTime);
     }
 
+    public SendInstrumentEvent createSendInstrumentEvent(String destination, String instrument, int port, long creationTime) {
+        return new SendInstrumentEvent(ZSCORE_ADDR, createSendInstrumentArgs(instrument, port), destination, creationTime);
+    }
+
     public List<Object> createJavaScriptArgs() {
         List<Object> jsArgs = new ArrayList<>();
         jsArgs.add(Consts.RUN);
@@ -38,27 +42,35 @@ public class EventFactory {
     }
 
     public List<Object> createInscoreHelloArgs(String ip, int inPort, int outPort, int errPort) {
-        List<Object> jsArgs = new ArrayList<>();
-        jsArgs.add(ip);
-        jsArgs.add(inPort);
-        jsArgs.add(outPort);
-        jsArgs.add(errPort);
-        return jsArgs;
+        List<Object> args = new ArrayList<>();
+        args.add(ip);
+        args.add(inPort);
+        args.add(outPort);
+        args.add(errPort);
+        return args;
     }
 
     public List<Object> createHelloArgs(int inPort, int outPort) {
-        List<Object> jsArgs = new ArrayList<>();
-        jsArgs.add(Consts.HELLO);
-        jsArgs.add(inPort);
-        jsArgs.add(outPort);
-        return jsArgs;
+        List<Object> args = new ArrayList<>();
+        args.add(Consts.HELLO);
+        args.add(inPort);
+        args.add(outPort);
+        return args;
+    }
+
+    public List<Object> createSendInstrumentArgs(String instrument, int port) {
+        List<Object> args = new ArrayList<>();
+        args.add(Consts.SET_INSTRUMENT);
+        args.add(instrument);
+        args.add(port);
+        return args;
     }
 
     public List<Object> createPingArgs(long serverTime, int port) {
-        List<Object> jsArgs = new ArrayList<>();
-        jsArgs.add(Consts.ARG_PING);
-        jsArgs.add(serverTime);
-        jsArgs.add(port);
-        return jsArgs;
+        List<Object> args = new ArrayList<>();
+        args.add(Consts.ARG_PING);
+        args.add(serverTime);
+        args.add(port);
+        return args;
     }
 }

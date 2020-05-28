@@ -13,6 +13,7 @@ import com.xenaksys.zscore.event.HelloEvent;
 import com.xenaksys.zscore.event.IncomingOscEvent;
 import com.xenaksys.zscore.event.OscEvent;
 import com.xenaksys.zscore.event.PingEvent;
+import com.xenaksys.zscore.event.SendInstrumentEvent;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.EventService;
 import com.xenaksys.zscore.model.ZscoreEvent;
@@ -22,7 +23,10 @@ import com.xenaksys.zscore.net.osc.OscPortFactory;
 import com.xenaksys.zscore.util.SimpleClock;
 
 import java.net.InetAddress;
+import java.util.Arrays;
+import java.util.List;
 
+import static com.xenaksys.zscore.Consts.DEFAULT_INSTRUMENT;
 import static com.xenaksys.zscore.Consts.DEFAULT_OSC_CLIENT_OUT_PORT;
 import static com.xenaksys.zscore.Consts.DEFAULT_OSC_CLIENT_PORT;
 import static com.xenaksys.zscore.Consts.DEFAULT_OSC_SERVER_PORT;
@@ -43,6 +47,7 @@ public class ZscoreClient extends Client implements EventService {
     private int serverPort = DEFAULT_OSC_SERVER_PORT;
     private int inPort = DEFAULT_OSC_CLIENT_PORT;
     private int outPort = DEFAULT_OSC_CLIENT_OUT_PORT;
+    private String instrument = DEFAULT_INSTRUMENT;
 
     private InetAddress serverAddr = null;
     private String serverHost = null;
@@ -154,6 +159,11 @@ public class ZscoreClient extends Client implements EventService {
         publisher.process(pingEvent);
     }
 
+    private void sendInstrument(String serverInstrument) {
+        SendInstrumentEvent sendInstrumentEvent = eventFactory.createSendInstrumentEvent(serverHost, serverInstrument, inPort, clock.getSystemTimeMillis());
+        publisher.process(sendInstrumentEvent);
+    }
+
     public void addOutPort(InetAddress addr, int port) {
         String remoteAddr = addr.getHostAddress();
         if (!publisher.isDestination(remoteAddr, port)) {
@@ -203,6 +213,17 @@ public class ZscoreClient extends Client implements EventService {
         this.outPort = outPort;
     }
 
+    public String getInstrument() {
+        return instrument;
+    }
+
+    public void setInstrument(String instrument) {
+        if (instrument == null) {
+            return;
+        }
+        this.instrument = instrument.toUpperCase();
+    }
+
     public void onSetServerAddr(InetAddress serverAddr) {
         setServerAddr(serverAddr);
         addOutPort(serverAddr, serverPort);
@@ -236,5 +257,22 @@ public class ZscoreClient extends Client implements EventService {
             LOG.warn("Received server hello from address: " + serverAddr + ", existing server address is: " + serverHost);
             serverHost = serverAddr;
         }
+    }
+
+    public void onSetInstruments(List<String> instruments) {
+        String serverInstrument = null;
+        for (String inst : instruments) {
+            if (this.instrument.equals(inst.toUpperCase())) {
+                serverInstrument = inst;
+                break;
+            }
+        }
+        if (serverInstrument == null) {
+            LOG.warn("onSetInstruments: required instrument: " + this.instrument + " is not available on the server instrument list: " + Arrays.toString(instruments.toArray()));
+            return;
+        }
+
+        sendInstrument(serverInstrument);
+
     }
 }
