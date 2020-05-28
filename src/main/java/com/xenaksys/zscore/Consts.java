@@ -14,6 +14,7 @@ public interface Consts {
     String OSC_INSCORE_ADDRESS_SCENE = OSC_INSCORE_ADDRESS_ROOT + "/scene";
     String OSC_INSCORE_JS = OSC_INSCORE_ADDRESS_SCENE + "/javascript";
     String ERR_ADDR = "error:";
+
     String ARG_HELLO = "HELLO";
     String ARG_INSCORE_HELLO = "hello";
     String ARG_PING = "PING";
@@ -42,6 +43,7 @@ public interface Consts {
     String JS_INSCORE_CMD_RUN = "run";
     String JS_CMD_SET_SERVER_ID = "setServerIp";
     String JS_CMD_PING = "ping";
+    String JS_CMD_SERVER_HELLO = "serverHello";
 
     String ADDR_TOKEN = "$ADDR";
     String OSC_JS_ACTIVATE = "activate(" + ADDR_TOKEN + ")";

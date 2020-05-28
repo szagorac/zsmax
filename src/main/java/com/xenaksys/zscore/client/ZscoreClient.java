@@ -12,6 +12,7 @@ import com.xenaksys.zscore.event.EventFactory;
 import com.xenaksys.zscore.event.HelloEvent;
 import com.xenaksys.zscore.event.IncomingOscEvent;
 import com.xenaksys.zscore.event.OscEvent;
+import com.xenaksys.zscore.event.PingEvent;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.EventService;
 import com.xenaksys.zscore.model.ZscoreEvent;
@@ -26,7 +27,6 @@ import static com.xenaksys.zscore.Consts.DEFAULT_OSC_CLIENT_OUT_PORT;
 import static com.xenaksys.zscore.Consts.DEFAULT_OSC_CLIENT_PORT;
 import static com.xenaksys.zscore.Consts.DEFAULT_OSC_SERVER_PORT;
 import static com.xenaksys.zscore.Consts.EMPTY;
-import static com.xenaksys.zscore.Consts.OSC_INSCORE_ADDRESS_ROOT;
 import static com.xenaksys.zscore.Consts.ZSCORE_ADDR;
 
 public class ZscoreClient extends Client implements EventService {
@@ -140,13 +140,18 @@ public class ZscoreClient extends Client implements EventService {
     }
 
     public void sendHello() {
-        HelloEvent helloEvent = eventFactory.createHelloEvent(serverOscAddr, serverHost, inPort, outPort, clock.getSystemTimeMillis());
+        HelloEvent helloEvent = eventFactory.createHelloEvent(serverHost, inPort, outPort, clock.getSystemTimeMillis());
         publisher.process(helloEvent);
     }
 
     public void sendInscoreHelloReponse() {
-        HelloEvent helloEvent = eventFactory.createInscoreHelloEvent(OSC_INSCORE_ADDRESS_ROOT, serverHost, clientHost, inPort, outPort, 0, clock.getSystemTimeMillis());
+        HelloEvent helloEvent = eventFactory.createInscoreHelloEvent(serverHost, clientHost, inPort, outPort, 0, clock.getSystemTimeMillis());
         publisher.process(helloEvent);
+    }
+
+    private void sendPingResponseReponse(long serverTime) {
+        PingEvent pingEvent = eventFactory.createPingEvent(serverHost, serverTime, inPort, clock.getSystemTimeMillis());
+        publisher.process(pingEvent);
     }
 
     public void addOutPort(InetAddress addr, int port) {
@@ -214,5 +219,22 @@ public class ZscoreClient extends Client implements EventService {
 
     public void onInscoreHello() {
         sendInscoreHelloReponse();
+    }
+
+    public void onServerPing(long serverTime) {
+        sendPingResponseReponse(serverTime);
+    }
+
+    public void onServerHello(String serverAddr) {
+        if (serverAddr == null || serverAddr.isEmpty()) {
+            return;
+        }
+        if (serverHost == null) {
+            serverHost = serverAddr;
+        }
+        if (!serverHost.equals(serverAddr)) {
+            LOG.warn("Received server hello from address: " + serverAddr + ", existing server address is: " + serverHost);
+            serverHost = serverAddr;
+        }
     }
 }

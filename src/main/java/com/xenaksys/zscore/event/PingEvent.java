@@ -1,24 +1,11 @@
 package com.xenaksys.zscore.event;
 
-import com.xenaksys.zscore.Consts;
-
 import java.util.List;
 
-public class PingEvent extends OscJavascriptEvent {
+public class PingEvent extends OscEvent {
 
-    public PingEvent(List<Object> arguments, String destination, long time) {
-        super(arguments, null, destination, time);
-    }
-
-    public void addCommandArg(long sendTime) {
-        setTime(sendTime);
-        String jsCommand = Consts.OSC_JS_PING.replace(Consts.SEND_TIME, String.valueOf(sendTime));
-        List<Object> args = getArguments();
-        if (args.size() == 2) {
-            args.remove(1);
-        }
-        args.add(1, jsCommand);
-
+    public PingEvent(String address, List<Object> arguments, String destination, long time) {
+        super(address, arguments, null, destination, time);
     }
 
     public OscEventType getOscEventType() {

@@ -23,6 +23,7 @@ import static com.xenaksys.zscore.Consts.CLOSE_BRACKET;
 import static com.xenaksys.zscore.Consts.COMMA;
 import static com.xenaksys.zscore.Consts.EMPTY;
 import static com.xenaksys.zscore.Consts.JS_CMD_PING;
+import static com.xenaksys.zscore.Consts.JS_CMD_SERVER_HELLO;
 import static com.xenaksys.zscore.Consts.JS_CMD_SET_SERVER_ID;
 import static com.xenaksys.zscore.Consts.JS_INSCORE_CMD_RUN;
 import static com.xenaksys.zscore.Consts.OPEN_BRACKET;
@@ -129,9 +130,6 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
             return;
         }
         String cmdName = getCmdName(cmd);
-        if (JS_CMD_SET_SERVER_ID.equals(cmdName)) {
-            LOG.info("the same");
-        }
         switch (cmdName) {
             case JS_CMD_SET_SERVER_ID:
                 processSetServerId(cmd, cmdArgs);
@@ -139,6 +137,8 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
             case JS_CMD_PING:
                 processPing(cmd, cmdArgs);
                 break;
+            case JS_CMD_SERVER_HELLO:
+                processServerHello(cmd, cmdArgs);
             default:
                 LOG.error("Unexpected JS command: " + cmdName);
         }
@@ -160,10 +160,7 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
             LOG.warn("processSetServerId: Unexpected number of js arguments: " + Arrays.toString(jsArgs));
         }
 
-        String serverIp = jsArgs[0];
-        if (serverIp.contains(SINGLE_QUOTE)) {
-            serverIp = serverIp.replaceAll(SINGLE_QUOTE, EMPTY);
-        }
+        String serverIp = getStringArg(0, jsArgs);
         InetAddress serverAddr = InetAddress.getByName(serverIp);
         zsClient.onSetServerAddr(serverAddr);
     }
@@ -175,13 +172,49 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
         return ars.split(COMMA);
     }
 
+    private String getStringArg(int index, String[] args) {
+        if (args.length <= index) {
+            LOG.warn("getStringArg: invalid index: ");
+            return null;
+        }
+
+        String sarg = args[index];
+        return sarg.replaceAll(SINGLE_QUOTE, EMPTY);
+    }
+
     private void processInscoreHello(IncomingOscEvent event) {
         zsClient.onInscoreHello();
     }
 
+    private void processServerHello(String cmd, List<Object> cmdArgs) {
+        String[] jsArgs = parseJsArgs(cmd);
+        if (jsArgs.length > 1) {
+            LOG.warn("processServerHello: Unexpected number of js arguments: " + Arrays.toString(jsArgs));
+        }
+
+        String serverHost = getStringArg(0, jsArgs);
+        zsClient.onServerHello(serverHost);
+    }
+
     private void processPing(String cmd, List<Object> cmdArgs) {
         LOG.debug("Received ping message");
+        if (!cmdArgs.isEmpty()) {
+            LOG.warn("processPing: Unexpected arguments: " + Arrays.toString(cmdArgs.toArray()));
+        }
 
+        String[] jsArgs = parseJsArgs(cmd);
+        if (jsArgs.length > 1) {
+            LOG.warn("processPing: Unexpected number of js arguments: " + Arrays.toString(jsArgs));
+        }
+
+        String sarg = getStringArg(0, jsArgs);
+        if (sarg == null) {
+            LOG.error("processPing: invalid serverTime argument");
+            return;
+        }
+        long serverTime = Long.parseLong(sarg);
+
+        zsClient.onServerPing(serverTime);
     }
 
     public void addListener(ZscoreIncomingEventListener listener) {
