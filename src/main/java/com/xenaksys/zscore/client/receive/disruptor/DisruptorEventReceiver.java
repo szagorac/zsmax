@@ -3,13 +3,13 @@ package com.xenaksys.zscore.client.receive.disruptor;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.xenaksys.zscore.Consts;
 import com.xenaksys.zscore.client.ZscoreClient;
-import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.event.EventFactory;
 import com.xenaksys.zscore.event.IncomingOscEvent;
 import com.xenaksys.zscore.max.LoggerFactory;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.Logger;
 import com.xenaksys.zscore.model.ZscoreEvent;
+import com.xenaksys.zscore.model.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.util.IpAddressValidator;
 
 import java.net.InetAddress;

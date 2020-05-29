@@ -8,11 +8,10 @@
 
 package com.xenaksys.zscore.net.osc;
 
-import com.xenaksys.zscore.client.receive.ZscoreDistributorListener;
-import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.max.LoggerFactory;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.Logger;
+import com.xenaksys.zscore.model.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.net.osc.utility.OSCByteArrayToJavaConverter;
 import com.xenaksys.zscore.net.osc.utility.SzOSCPacketDispatcher;
 
@@ -21,8 +20,6 @@ import java.net.DatagramPacket;
 import java.net.DatagramSocket;
 import java.net.SocketException;
 import java.nio.charset.Charset;
-import java.util.HashMap;
-import java.util.Map;
 
 public class SzOSCPortIn extends OSCPortIn {
     static final Logger LOG = LoggerFactory.getLogger(SzOSCPortIn.class);
@@ -37,7 +34,6 @@ public class SzOSCPortIn extends OSCPortIn {
      * state for listening
      */
     private boolean listening;
-    private final Map<String, ZscoreDistributorListener> addressListeners = new HashMap<>();
 
     /**
      * Create an OSCPort that listens using a specified socket.

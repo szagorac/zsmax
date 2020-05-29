@@ -1,6 +1,5 @@
 package com.xenaksys.zscore.model;
 
-import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.event.EventFactory;
 
 public interface EventService {

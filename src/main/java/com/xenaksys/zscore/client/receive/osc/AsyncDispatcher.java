@@ -1,10 +1,10 @@
 package com.xenaksys.zscore.client.receive.osc;
 
-import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.event.IncomingOscEvent;
 import com.xenaksys.zscore.max.LoggerFactory;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.Logger;
+import com.xenaksys.zscore.model.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.net.osc.OSCMessage;
 import com.xenaksys.zscore.net.osc.utility.SzOSCPacketDispatcher;
 

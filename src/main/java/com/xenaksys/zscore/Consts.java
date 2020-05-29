@@ -4,6 +4,7 @@ package com.xenaksys.zscore;
 public interface Consts {
 
     String EMPTY = "";
+    String SPACE = " ";
     String COMMA = ",";
     String SLASH = "/";
     String COLUMN = ":";
@@ -46,6 +47,13 @@ public interface Consts {
     String JS_CMD_PING = "ping";
     String JS_CMD_SERVER_HELLO = "serverHello";
     String JS_CMD_SET_INSTRUMENTS = "setInstruments";
+
+    String MAX_MSG_SERVER_HOST = "serverHost";
+    String MAX_MSG_SERVER_IP = "serverIp";
+    String MAX_MSG_IS_CONNECTED = "connected";
+
+    String MAX_MSG_VAL_TRUE = " true";
+    String MAX_MSG_VAL_FALSE = " false";
 
     String ADDR_TOKEN = "$ADDR";
     String OSC_JS_ACTIVATE = "activate(" + ADDR_TOKEN + ")";

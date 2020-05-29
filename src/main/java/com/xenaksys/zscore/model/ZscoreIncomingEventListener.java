@@ -1,6 +1,5 @@
-package com.xenaksys.zscore.client.receive;
+package com.xenaksys.zscore.model;
 
-import com.xenaksys.zscore.model.ZscoreEvent;
 import com.xenaksys.zscore.model.id.OscListenerId;
 
 public interface ZscoreIncomingEventListener {

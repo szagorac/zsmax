@@ -8,11 +8,11 @@
 
 package com.xenaksys.zscore.net.osc.utility;
 
-import com.xenaksys.zscore.client.receive.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.event.IncomingOscEvent;
 import com.xenaksys.zscore.max.LoggerFactory;
 import com.xenaksys.zscore.model.Clock;
 import com.xenaksys.zscore.model.Logger;
+import com.xenaksys.zscore.model.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.net.osc.AddressSelector;
 import com.xenaksys.zscore.net.osc.OSCBundle;
 import com.xenaksys.zscore.net.osc.OSCListener;
