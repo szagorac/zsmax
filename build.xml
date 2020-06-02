@@ -7,6 +7,7 @@
     <property name="version" value="0.0.1"/>
 
     <property name="srcDir" location="src/main/java"/>
+    <property name="maxDir" location="src/max"/>
     <property name="buildDir" location="build"/>
     <property name="distDir" location="dist"/>
     <property name="libDir" location="lib"/>
@@ -16,12 +17,17 @@
 
     <fileset id="deployFileSet" dir="${distDir}" casesensitive="yes">
         <include name="*.jar"/>
+        <include name="*.js"/>
+        <include name="*.maxpat"/>
     </fileset>
 
     <fileset id="dependencyLibSet" dir="${libDistDir}" casesensitive="yes">
         <include name="*.jar"/>
     </fileset>
     <fileset id="resourcesSet" dir="${resourcesDir}" casesensitive="yes">
+        <include name="*.*"/>
+    </fileset>
+    <fileset id="maxSet" dir="${maxDir}" casesensitive="yes">
         <include name="*.*"/>
     </fileset>
 
@@ -44,6 +50,7 @@
         <copy todir="${distDir}">
             <fileset refid="dependencyLibSet"/>
             <fileset refid="resourcesSet"/>
+            <fileset refid="maxSet"/>
         </copy>
     </target>
 
