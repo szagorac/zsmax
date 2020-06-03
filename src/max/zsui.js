@@ -1,8 +1,5 @@
-// XY coordinate for relative_coords = 1
-// (-1.0 * aspect,  1.0)  the top-left
-// (1.0 * aspect,   1.0)   the top-right
-// (-1.0 * aspect, -1.0) the bottom-left
-// (1.0 * aspect,  -1.0)  the bottom-right
+// XY coordinate for relative_coords = 0
+// (0, 0) the top-left
 
 
 autowatch = 1;
@@ -11,23 +8,31 @@ inlets = 1;
 outlets = 1;
 
 mgraphics.init();
-mgraphics.relative_coords = 1;
+mgraphics.relative_coords = 0;
 mgraphics.autofill = 0;
 
+var ZSCORE_LABEL = "ZScore";
 var SERVER_LABEL = "Server:";
-var FONT = "Helvetica";
+var FONT_VERDANA = "Verdana";
+var FONT_HELVETICA = "Helvetica";
 var FONT_SIZE_SERVER_NAME = 14;
-var MARGIN = 0.1;
-var COL_WHITE_TRANSPARENT = [1.0,1.0,1.0,0.0];
-var COL_RED = [1.0,0.0,0.0,1.0];
-var COL_GREEN = [0.0,1.0,0.0,1.0];
-var COL_BLACK = [0.0,0.0,0.0,1.0];
+var FONT_SIZE_ZSCORE_NAME = 20;
+var MARGIN = 10;
+var COL_WHITE_TRANSPARENT = [1.0, 1.0, 1.0, 0.0];
+var COL_RED = [1.0, 0.0, 0.0, 1.0];
+var COL_GREEN = [0.0, 1.0, 0.0, 1.0];
+var COL_BLACK = [0.0, 0.0, 0.0, 1.0];
+var COL_WHITE = [1.0, 1.0, 1.0, 1.0];
+var COL_PURPLE = [0.4, 0.0, 0.8, 1.0];
 
 var aspect = 0;
-var trX = 0;
-var trY = 0;
-var blX = 0;
-var blY = 0;
+var leftX = 0;
+var topY = 0;
+var rightX = 0;
+var bottomY = 0;
+var width = 0;
+var height = 0;
+
 var circleNo = 4;
 var semaphoreState = [];
 var stateCol = [];
@@ -38,35 +43,57 @@ var serverHost = "";
 init();
 
 function init() {
-	aspect = calcAspect();
-	for (i=0; i<circleNo; i++) {
+	calcSize();
+	for (i = 0; i < circleNo; i++) {
 		semaphoreState[i] = 0;
 		stateCol[i] = COL_WHITE_TRANSPARENT;
 	}
+	mgraphics.redraw();
 }
 
 function paint() {
-	drawServerLabel(); 
+	calcSize();
+	setBackground();
+	drawZscoreLabel();
+	drawServerLabel();
+}
+
+function setBackground() {
+	setColour(COL_WHITE);
+	with (mgraphics) {
+		rectangle(0, 0, width, height);
+		fill();
+	}
+}
+
+function drawZscoreLabel() {
+	var x = MARGIN;
+	var y = MARGIN + 15;
+	return drawTextTopLeft(ZSCORE_LABEL, x, y, FONT_VERDANA, FONT_SIZE_ZSCORE_NAME, COL_PURPLE);
 }
 
 function drawServerLabel() {
-	setColour(COL_BLACK);
-	mgraphics.select_font_face(FONT);
-	mgraphics.set_font_size(FONT_SIZE_SERVER_NAME);
+	var x = 2 * MARGIN + 100;
+	var y = MARGIN + 15;
+	return drawTextTopLeft(SERVER_LABEL, x, y, FONT_HELVETICA, FONT_SIZE_SERVER_NAME, COL_BLACK);
+}
 
-	var ts = mgraphics.text_measure(SERVER_LABEL);
-	var txtWidth = ts[0];
-	var txtHeigth = ts[1];
-	
-	var convertedTxtHeight = convertPixelsHeight(txtHeigth);
-	
-	var x = -1.0*aspect + MARGIN;
-	var y = 1.0 - MARGIN - convertedTxtHeight;
-	log("x: " + x + " y: " + y);
+function drawTextTopLeft(txt, x, y, font, size, colour) {
+	setColour(colour);
+	with (mgraphics) {
+		select_font_face(font);
+		set_font_size(size);
 
-	mgraphics.move_to(x, y);
-	mgraphics.text_path(SERVER_LABEL);
-	mgraphics.fill();
+		// var ts = mgraphics.text_measure(txt);
+		// var txtWidth = ts[0];
+		// var txtHeigth = ts[1];
+
+		// y += txtHeigth;
+
+		move_to(x, y);
+		text_path(txt);
+		fill();
+	}
 }
 
 function setColour(colour) {
@@ -74,7 +101,7 @@ function setColour(colour) {
 }
 
 function recalc() {
-	aspect = calcAspect();
+	calcSize();
 }
 
 // bang -- draw and refresh display
@@ -87,22 +114,15 @@ function clear() {
 	bang(); // draw and refresh display
 }
 
-function calcAspect() {
-	var width = box.rect[2] - box.rect[0];
-	var height = box.rect[3] - box.rect[1];
-	return width / height;
-}
+function calcSize() {
+	leftX = box.rect[0];
+	topY = box.rect[1];
+	rightX = box.rect[2];
+	bottomY = box.rect[3];
 
-function convertPixelsWidth(pixelVal) {
-	var width = box.rect[2] - box.rect[0];
-	var out = pixelVal/width;
-	return out;
-}
-
-function convertPixelsHeight(pixelVal) {
-	var height = box.rect[3] - box.rect[1];
-	var out = pixelVal/height;
-	return out;
+	width = rightX - leftX;
+	height = bottomY - topY;
+	aspect = width / height;
 }
 
 function log(val) {

@@ -1,5 +1,8 @@
-// XY coordinate for relative_coords = 0
-// (0, 0) the top-left
+// XY coordinate for relative_coords = 1
+// (-1.0 * aspect,  1.0)  the top-left
+// (1.0 * aspect,   1.0)   the top-right
+// (-1.0 * aspect, -1.0) the bottom-left
+// (1.0 * aspect,  -1.0)  the bottom-right
 
 
 autowatch = 1;
@@ -8,26 +11,23 @@ inlets = 1;
 outlets = 1;
 
 mgraphics.init();
-mgraphics.relative_coords = 0;
+mgraphics.relative_coords = 1;
 mgraphics.autofill = 0;
 
 var SERVER_LABEL = "Server:";
 var FONT = "Helvetica";
 var FONT_SIZE_SERVER_NAME = 14;
-var MARGIN = 20;
+var MARGIN = 0.1;
 var COL_WHITE_TRANSPARENT = [1.0,1.0,1.0,0.0];
 var COL_RED = [1.0,0.0,0.0,1.0];
 var COL_GREEN = [0.0,1.0,0.0,1.0];
 var COL_BLACK = [0.0,0.0,0.0,1.0];
 
 var aspect = 0;
-var leftX = 0;
-var topY = 0;
-var rightX = 0;
-var bottomY = 0;
-var width = 0;
-var height = 0;
-
+var trX = 0;
+var trY = 0;
+var blX = 0;
+var blY = 0;
 var circleNo = 4;
 var semaphoreState = [];
 var stateCol = [];
@@ -43,7 +43,6 @@ function init() {
 		semaphoreState[i] = 0;
 		stateCol[i] = COL_WHITE_TRANSPARENT;
 	}
-	mgraphics.redraw();
 }
 
 function paint() {
@@ -51,7 +50,6 @@ function paint() {
 }
 
 function drawServerLabel() {
-	calcAspect();
 	setColour(COL_BLACK);
 	mgraphics.select_font_face(FONT);
 	mgraphics.set_font_size(FONT_SIZE_SERVER_NAME);
@@ -60,10 +58,11 @@ function drawServerLabel() {
 	var txtWidth = ts[0];
 	var txtHeigth = ts[1];
 	
+	var convertedTxtHeight = convertPixelsHeight(txtHeigth);
 	
-	var x = MARGIN;
-	var y = MARGIN + txtHeigth;
-	log("x: " + x + " y: " + y + " leftX: " + leftX + " topY: " + topY);
+	var x = -1.0*aspect + MARGIN;
+	var y = 1.0 - MARGIN - convertedTxtHeight;
+	log("x: " + x + " y: " + y);
 
 	mgraphics.move_to(x, y);
 	mgraphics.text_path(SERVER_LABEL);
@@ -89,14 +88,21 @@ function clear() {
 }
 
 function calcAspect() {
-	leftX = box.rect[0];
-	topY = box.rect[1];
-	rightX = box.rect[2];
-	bottomY = box.rect[3];
-
-	width = rightX - leftX;
-	height = bottomY - topY;
+	var width = box.rect[2] - box.rect[0];
+	var height = box.rect[3] - box.rect[1];
 	return width / height;
+}
+
+function convertPixelsWidth(pixelVal) {
+	var width = box.rect[2] - box.rect[0];
+	var out = pixelVal/width;
+	return out;
+}
+
+function convertPixelsHeight(pixelVal) {
+	var height = box.rect[3] - box.rect[1];
+	var out = pixelVal/height;
+	return out;
 }
 
 function log(val) {
