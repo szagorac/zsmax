@@ -63,4 +63,9 @@ public class zscore extends MaxObject implements ZscoreMessageListener {
     public void onMessage(String msg) {
         outletHigh(0, msg);
     }
+
+    @Override
+    public void onMessage(String msg, Atom[] args) {
+        outletHigh(0, msg, args);
+    }
 }

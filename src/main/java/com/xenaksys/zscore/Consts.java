@@ -52,6 +52,8 @@ public interface Consts {
     String MAX_MSG_SERVER_IP = "serverIp";
     String MAX_MSG_IS_CONNECTED = "connected";
 
+    Boolean MAX_VAL_TRUE = true;
+
     String MAX_MSG_VAL_TRUE = " true";
     String MAX_MSG_VAL_FALSE = " false";
 

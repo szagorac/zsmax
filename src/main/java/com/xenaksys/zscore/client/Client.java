@@ -10,11 +10,12 @@ import java.net.InetAddress;
 import java.util.Properties;
 
 public abstract class Client {
+    static final Logger LOG = LoggerFactory.getLogger(Client.class);
+
     private static final String PROP_LOCATION = "location";
     private static final String PROP_INSTANCE = "instance";
 
     protected static volatile Properties properties = loadProperties();
-    static final Logger LOG = LoggerFactory.getLogger(Client.class);
 
     protected static volatile String location = loadLocation();
     protected static volatile int instanceId = loadInstanceId();

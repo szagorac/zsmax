@@ -13,12 +13,16 @@
     <property name="libDir" location="lib"/>
     <property name="libDistDir" location="lib/dist"/>
     <property name="resourcesDir" location="src/main/resources"/>
-    <property name="deployDir" location="/Users/slavko/MyHome/Music/max"/>
+    <property name="deployDir" location="/Users/slavko/MyHome/Music/max/my/zscore"/>
 
     <fileset id="deployFileSet" dir="${distDir}" casesensitive="yes">
         <include name="*.jar"/>
         <include name="*.js"/>
         <include name="*.maxpat"/>
+    </fileset>
+
+    <fileset id="deployJsSet" dir="${maxDir}" casesensitive="yes">
+        <include name="*.js"/>
     </fileset>
 
     <fileset id="dependencyLibSet" dir="${libDistDir}" casesensitive="yes">
@@ -60,9 +64,16 @@
         </copy>
     </target>
 
+    <target name="deployjs" description="deploy the distribution">
+        <copy todir="${deployDir}" overwrite="true">
+            <fileset refid="deployJsSet"/>
+        </copy>
+    </target>
+
     <target name="clean" description="clean up">
         <delete dir="${distDir}"/>
         <delete dir="${buildDir}"/>
+        <delete dir="${deployDir}"/>
     </target>
 
     <target name="main" depends="clean, deploy"/>

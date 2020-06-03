@@ -1,5 +1,6 @@
 package com.xenaksys.zscore.client;
 
+import com.cycling74.max.Atom;
 import com.lmax.disruptor.dsl.Disruptor;
 import com.xenaksys.zscore.Consts;
 import com.xenaksys.zscore.client.factory.DisruptorFactory;
@@ -21,6 +22,7 @@ import com.xenaksys.zscore.model.ZscoreMessageListener;
 import com.xenaksys.zscore.model.id.OscListenerId;
 import com.xenaksys.zscore.net.osc.OSCPortOut;
 import com.xenaksys.zscore.net.osc.OscPortFactory;
+import com.xenaksys.zscore.util.MaxUtil;
 import com.xenaksys.zscore.util.SimpleClock;
 
 import java.net.InetAddress;
@@ -35,8 +37,7 @@ import static com.xenaksys.zscore.Consts.DEFAULT_OSC_SERVER_PORT;
 import static com.xenaksys.zscore.Consts.EMPTY;
 import static com.xenaksys.zscore.Consts.MAX_MSG_IS_CONNECTED;
 import static com.xenaksys.zscore.Consts.MAX_MSG_SERVER_HOST;
-import static com.xenaksys.zscore.Consts.MAX_MSG_VAL_TRUE;
-import static com.xenaksys.zscore.Consts.SPACE;
+import static com.xenaksys.zscore.Consts.MAX_VAL_TRUE;
 import static com.xenaksys.zscore.Consts.ZSCORE_ADDR;
 
 public class ZscoreClient extends Client implements EventService {
@@ -149,6 +150,12 @@ public class ZscoreClient extends Client implements EventService {
         }
     }
 
+    public void onMessage(String msg, Atom[] args) {
+        for (ZscoreMessageListener listener : msgListeners) {
+            listener.onMessage(msg, args);
+        }
+    }
+
     public EventFactory getEventFactory() {
         return eventFactory;
     }
@@ -251,11 +258,11 @@ public class ZscoreClient extends Client implements EventService {
     }
 
     private void sendConnected(InetAddress serverAddr) {
-        String out = MAX_MSG_IS_CONNECTED + MAX_MSG_VAL_TRUE;
-        onMessage(out);
+        Atom[] args = MaxUtil.createAtomArgs(MAX_VAL_TRUE);
+        onMessage(MAX_MSG_IS_CONNECTED, args);
 
-        out = MAX_MSG_SERVER_HOST + SPACE + serverAddr.getHostName();
-        onMessage(out);
+        args = MaxUtil.createAtomArgs(serverAddr.getHostName());
+        onMessage(MAX_MSG_SERVER_HOST, args);
     }
 
     private void setServerOscAddress() {
