@@ -1,7 +1,6 @@
 // XY coordinate for relative_coords = 0
 // (0, 0) the top-left
 
-
 autowatch = 1;
 
 inlets = 1;
@@ -11,141 +10,221 @@ mgraphics.init();
 mgraphics.relative_coords = 0;
 mgraphics.autofill = 0;
 
-var ZSCORE_LABEL = "ZScore";
-var SERVER_LABEL = "Server:";
-var FONT_VERDANA = "Verdana";
-var FONT_HELVETICA = "Helvetica";
-var FONT_SIZE_SERVER_NAME = 14;
-var FONT_SIZE_ZSCORE_NAME = 20;
-var MARGIN = 10;
-var COL_WHITE_TRANSPARENT = [1.0, 1.0, 1.0, 0.0];
-var COL_RED = [1.0, 0.0, 0.0, 1.0];
-var COL_GREEN = [0.0, 1.0, 0.0, 1.0];
-var COL_BLACK = [0.0, 0.0, 0.0, 1.0];
-var COL_BLACK_DIM = [0.0, 0.0, 0.0, 0.5];
-var COL_WHITE = [1.0, 1.0, 1.0, 1.0];
-var COL_PURPLE = [0.4, 0.0, 0.8, 1.0];
-var STATE_INACTIVE = "Inactive";
-var STATE_INACTIVE = "Active";
-var STATE_DISCONNECTED = "Disconnected";
+var zs = (function (g, m) {
 
-var aspect = 0;
-var leftX = 0;
-var topY = 0;
-var rightX = 0;
-var bottomY = 0;
-var width = 0;
-var height = 0;
-
-var circleNo = 4;
-var semaphoreState = [];
-var stateCol = [];
-var stateValue = STATE_INACTIVE;
-var serverHost = STATE_DISCONNECTED;
-
-
-init();
-
-function init() {
-	calcSize();
-	for (i = 0; i < circleNo; i++) {
-		semaphoreState[i] = 0;
-		stateCol[i] = COL_WHITE_TRANSPARENT;
+	var conf = {
+		ZSCORE_LABEL: "ZScore",
+		SERVER_LABEL: "Server:",
+		FONT_VERDANA: "Verdana",
+		FONT_HELVETICA: "Helvetica",
+		FONT_SIZE_SERVER_NAME: 14,
+		FONT_SIZE_ZSCORE_NAME: 20,
+		MARGIN: 10,
+		RECT_RADIUS: 10,
+		COL_WHITE_TRANSPARENT: [1.0, 1.0, 1.0, 0.0],
+		COL_RED: [1.0, 0.0, 0.0, 1.0],
+		COL_GREEN: [0.0, 1.0, 0.0, 1.0],
+		COL_BLACK: [0.0, 0.0, 0.0, 1.0],
+		COL_BLACK_DIM: [0.0, 0.0, 0.0, 0.5],
+		COL_WHITE: [1.0, 1.0, 1.0, 1.0],
+		COL_PURPLE: [0.4, 0.0, 0.8, 1.0],
+		COL_RED_PALE: [1.0, 0.9, 0.9, 1.0],
+		STATE_INACTIVE: "Inactive",
+		STATE_ACTIVE: "Active",
+		STATE_UNKNOWN: "Unknown",
+		STATE_CONNECTED: "Connected",
 	}
-	mgraphics.redraw();
-}
+
+	var state = {
+		patchInfo: {
+			aspect: 0,
+			leftX: 0,
+			topY: 0,
+			rightX: 0,
+			bottomY: 0,
+			width: 0,
+			height: 0,
+		},
+		circleNo: 4,
+		semaphoreState: [],
+		stateCol: [],
+		connState: conf.STATE_INACTIVE,
+		serverHost: conf.STATE_UNKNOWN,
+	}
+
+	function _draw() {
+		_calcSize();
+		_setBackground();
+		_drawZscoreLabel();
+		_drawServerState();
+	}
+
+	function _connected(isConnected) {
+		if (isConnected === 0) {
+			state.connState = conf.STATE_INACTIVE;
+		} else {
+			state.connState = conf.STATE_ACTIVE;
+		}
+
+		g.redraw();
+	}
+
+	function _setServerHost(host) {
+		state.serverHost = host;
+		g.redraw();
+	}
+
+	function _init() {
+		_calcSize();
+		for (i = 0; i < state.circleNo; i++) {
+			state.semaphoreState[i] = 0;
+			state.stateCol[i] = conf.COL_WHITE_TRANSPARENT;
+		}
+		g.redraw();
+	}
+
+	function _setBackground() {
+		_drawRect(0, 0, state.patchInfo.width, state.patchInfo.height, conf.COL_WHITE);
+	}
+
+	function _drawZscoreLabel() {
+		var x = conf.MARGIN;
+		var y = conf.MARGIN + 15;
+		return _drawText(conf.ZSCORE_LABEL, x, y, conf.FONT_VERDANA, conf.FONT_SIZE_ZSCORE_NAME, conf.COL_PURPLE);
+	}
+
+	function _drawServerState() {
+		_drawServerLabel();
+		_drawServerName();
+	}
+
+	function _drawServerLabel() {
+		var x = 2 * conf.MARGIN + 80;
+		var y = conf.MARGIN + 15;
+		return _drawText(conf.SERVER_LABEL, x, y, conf.FONT_HELVETICA, conf.FONT_SIZE_SERVER_NAME, conf.COL_BLACK);
+	}
+
+	function _drawServerName() {
+		var x = 2 * conf.MARGIN + 135;
+		var y = conf.MARGIN + 15;
+
+		var txt = state.serverHost;
+
+		var colRect = conf.COL_GREEN;
+		if (state.connState === conf.STATE_INACTIVE) {
+			colRect = conf.COL_RED_PALE;
+		}
+
+		var col = conf.COL_BLACK;
+		if (state.serverHost === conf.STATE_UNKNOWN) {
+			col = conf.COL_BLACK_DIM;
+		}
+
+		var txtDim = _getTxtDim(txt, conf.FONT_HELVETICA, conf.FONT_SIZE_SERVER_NAME);
+		var txtLen = txtDim[0];
+
+		_drawRect(x - 5, conf.MARGIN, txtLen + 12, 20, colRect, conf.RECT_RADIUS, conf.RECT_RADIUS);
+		_drawText(txt, x, y, conf.FONT_HELVETICA, conf.FONT_SIZE_SERVER_NAME, col);
+	}
+
+	function _drawRect(x, y, width, height, colour, ovalwidth, ovalheight) {
+		_setColour(colour);
+		if (!_isNull(ovalheight) && !_isNull(ovalwidth)) {
+			g.rectangle_rounded(x, y, width, height, ovalwidth, ovalheight);
+		} else {
+			g.rectangle(x, y, width, height);
+		}
+		g.fill();
+	}
+
+	function _drawText(txt, x, y, font, size, colour) {
+		_setColour(colour);
+		g.select_font_face(font);
+		g.set_font_size(size);
+		g.move_to(x, y);
+		g.text_path(txt);
+		g.fill();
+	}
+
+	function _getTxtDim(txt, font, size) {
+		g.select_font_face(font);
+		g.set_font_size(size);
+		return g.text_measure(txt);
+	}
+
+	function _setColour(colour) {
+		g.set_source_rgba(colour[0], colour[1], colour[2], colour[3]);
+	}
+
+	function _calcSize() {
+		var pi = state.patchInfo;
+		pi.leftX = m.box.rect[0];
+		pi.topY = m.box.rect[1];
+		pi.rightX = m.box.rect[2];
+		pi.bottomY = m.box.rect[3];
+
+		pi.width = pi.rightX - pi.leftX;
+		pi.height = pi.bottomY - pi.topY;
+		pi.aspect = pi.width / pi.height;
+	}
+
+	function _log(val) {
+		m.post(val);
+		m.post();
+	}
+	function _isUndefined(val) {
+		return typeof val == "undefined";
+	}
+	function _isNull(val) {
+		return _isUndefined(val) || val === null;
+	}
+
+	// Public members if any??
+	return {
+		init: _init,
+		draw: _draw,
+		connected: function (isConnected) {
+			_connected(isConnected);
+		},
+		setServerHost: function (host) {
+			_setServerHost(host);
+		},
+	}
+
+}(mgraphics, this));
+
+zs.init();
 
 function paint() {
-	calcSize();
-	setBackground();
-	drawZscoreLabel();
-	drawServer();
+	zs.draw();
 }
 
 function connected(val) {
-	if(!arguments.length) {
+	if (!arguments.length) {
 		post("jsui received connected no args ");
 		return;
-	}  
-	  
-	post("jsui received connected val: " + val + " args[0]: " + arguments[0]);
-	post();
+	}
+
+	var isConnected = arguments[0];
+	var type = toType(isConnected);
+	log("jsui received connected val: " + val + " isConnected: " + isConnected + " type: " + type);
+	zs.connected(isConnected);
 }
 
-function anything(val) {
-	if(!arguments.length) {
-		post("jsui received anything no args ");
+function serverHost(val) {
+	if (!arguments.length) {
+		post("jsui received serverHost no args ");
 		return;
-	}  
-
-	post("jsui received anything msg: " + messagename + " arg0: " + arguments[0]);
-	post();
-}
-
-function setBackground() {
-	setColour(COL_WHITE);
-	with (mgraphics) {
-		rectangle(0, 0, width, height);
-		fill();
-	}
-}
-
-function drawZscoreLabel() {
-	var x = MARGIN;
-	var y = MARGIN + 15;
-	return drawTextTopLeft(ZSCORE_LABEL, x, y, FONT_VERDANA, FONT_SIZE_ZSCORE_NAME, COL_PURPLE);
-}
-
-function drawServer() {
-	drawServerLabel();
-	drawServerName();
-}
-
-function drawServerLabel() {
-	var x = 2 * MARGIN + 80;
-	var y = MARGIN + 15;
-	return drawTextTopLeft(SERVER_LABEL, x, y, FONT_HELVETICA, FONT_SIZE_SERVER_NAME, COL_BLACK);
-}
-
-function drawServerName() {
-	var x = 2 * MARGIN + 130;
-	var y = MARGIN + 15;
-
-	var col = COL_BLACK;
-	if (serverHost === STATE_DISCONNECTED) {
-		col = COL_BLACK_DIM;
 	}
 
-	return drawTextTopLeft(serverHost, x, y, FONT_HELVETICA, FONT_SIZE_SERVER_NAME, col);
-}
-
-function drawTextTopLeft(txt, x, y, font, size, colour) {
-	setColour(colour);
-	mgraphics.select_font_face(font);
-	mgraphics.set_font_size(size);
-
-	// var ts = mgraphics.text_measure(txt);
-	// var txtWidth = ts[0];
-	// var txtHeigth = ts[1];
-
-	// y += txtHeigth;
-
-	mgraphics.move_to(x, y);
-	mgraphics.text_path(txt);
-	mgraphics.fill();
-}
-
-function setColour(colour) {
-	mgraphics.set_source_rgba(colour[0], colour[1], colour[2], colour[3]);
-}
-
-function recalc() {
-	calcSize();
+	var host = arguments[0];
+	var type = toType(host);
+	log("jsui received serverHost val: " + val + " host: " + host + " type: " + type);
+	zs.setServerHost(host);
 }
 
 // bang -- draw and refresh display
 function bang() {
-	recalc();
 	mgraphics.redraw();
 }
 
@@ -153,20 +232,19 @@ function clear() {
 	bang(); // draw and refresh display
 }
 
-function calcSize() {
-	leftX = box.rect[0];
-	topY = box.rect[1];
-	rightX = box.rect[2];
-	bottomY = box.rect[3];
+function anything(val) {
+	if (!arguments.length) {
+		post("jsui received anything no args ");
+		return;
+	}
 
-	width = rightX - leftX;
-	height = bottomY - topY;
-	aspect = width / height;
-}
-
-function log(val) {
-	post(val);
-	post();
+	var len = arguments.length;
+	log("jsui received anything msg: " + messagename + " arg len: " + len);
+	for (var i = 0; i < len; i++) {
+		var arg = arguments[i];
+		var type = toType(arg);
+		log("anything msg: " + messagename + " arg " + i + ": " + arg + " type: " + type);
+	}
 }
 
 function onresize(w, h) {
@@ -185,3 +263,16 @@ function ondblclick(x, y) {
 	onclick(x, y);
 }
 ondblclick.local = 1; // make function private to prevent triggering from Max
+
+function toType(obj) {
+	return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
+}
+toType.local = 1;
+
+
+function log(val) {
+	post(val);
+	post();
+}
+log.local = 1;
+
