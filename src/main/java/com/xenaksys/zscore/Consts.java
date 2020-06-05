@@ -5,6 +5,7 @@ public interface Consts {
 
     String EMPTY = "";
     String SPACE = " ";
+    String DOT = ".";
     String COMMA = ",";
     String SLASH = "/";
     String COLUMN = ":";
@@ -17,6 +18,9 @@ public interface Consts {
     String OSC_INSCORE_ADDRESS_SCENE = OSC_INSCORE_ADDRESS_ROOT + "/scene";
     String OSC_INSCORE_JS = OSC_INSCORE_ADDRESS_SCENE + "/javascript";
     String ERR_ADDR = "error:";
+
+    char MINUS_CHAR = '-';
+    char DOT_CHAR = '.';
 
     String ARG_HELLO = "HELLO";
     String ARG_INSCORE_HELLO = "hello";
@@ -54,8 +58,11 @@ public interface Consts {
 
     Boolean MAX_VAL_TRUE = true;
 
-    String MAX_MSG_VAL_TRUE = " true";
-    String MAX_MSG_VAL_FALSE = " false";
+    String TRUE = "true";
+    String FALSE = "false";
+
+    String MAX_MSG_VAL_TRUE = SPACE + TRUE;
+    String MAX_MSG_VAL_FALSE = SPACE + FALSE;
 
     String ADDR_TOKEN = "$ADDR";
     String OSC_JS_ACTIVATE = "activate(" + ADDR_TOKEN + ")";

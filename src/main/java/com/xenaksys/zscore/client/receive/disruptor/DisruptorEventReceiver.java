@@ -11,6 +11,7 @@ import com.xenaksys.zscore.model.Logger;
 import com.xenaksys.zscore.model.ZscoreEvent;
 import com.xenaksys.zscore.model.ZscoreIncomingEventListener;
 import com.xenaksys.zscore.util.IpAddressValidator;
+import com.xenaksys.zscore.util.ParseUtil;
 
 import java.net.InetAddress;
 import java.util.ArrayList;
@@ -145,8 +146,25 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
                 processSetInstruments(cmd, cmdArgs);
                 break;
             default:
-                LOG.error("Unexpected JS command: " + cmdName);
+                processAnyCmd(cmd, cmdName, cmdArgs);
         }
+    }
+
+    private void processAnyCmd(String cmd, String cmdName, List<Object> cmdArgs) {
+        String[] jsArgs = parseJsArgs(cmd);
+        List<Object> allArgs = new ArrayList<>();
+        for (String arg : jsArgs) {
+            String v = arg.replaceAll(SINGLE_QUOTE, EMPTY);
+            if (v.isEmpty()) {
+                continue;
+            }
+            allArgs.add(ParseUtil.convertToType(v));
+        }
+
+        allArgs.addAll(cmdArgs);
+        Object[] out = allArgs.toArray(new Object[0]);
+
+        zsClient.onAnyCommand(cmdName, out);
     }
 
     private String getCmdName(String cmd) {

@@ -257,6 +257,12 @@ public class ZscoreClient extends Client implements EventService {
         sendConnected(serverAddr);
     }
 
+
+    private void sendAnyCommand(String cmd, Object[] cmdArgs) {
+        Atom[] args = MaxUtil.createAtomArgs(cmdArgs);
+        onMessage(cmd, args);
+    }
+
     private void sendConnected(InetAddress serverAddr) {
         Atom[] args = MaxUtil.createAtomArgs(MAX_VAL_TRUE);
         onMessage(MAX_MSG_IS_CONNECTED, args);
@@ -309,4 +315,7 @@ public class ZscoreClient extends Client implements EventService {
         sendInstrument(serverInstrument);
     }
 
+    public void onAnyCommand(String cmd, Object[] cmdArgs) {
+        sendAnyCommand(cmd, cmdArgs);
+    }
 }

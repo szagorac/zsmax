@@ -64,7 +64,7 @@ public abstract class Client {
 
     public static Properties getProperties() {
         if (properties == null) {
-            loadProperties();
+            properties = loadProperties();
         }
         return properties;
     }
