@@ -30,3 +30,4 @@ dist/
 build/
 /src/max/.history/
 *-workspace
+.DS_Store/

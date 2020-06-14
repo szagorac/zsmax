@@ -28,6 +28,7 @@ public interface Consts {
     String ARG_SET_INSTRUMENT = "SET_INSTRUMENT";
 
     String OSC_ADDRESS_SCORE_JAVASCRIPT = "/ITL/scene/javascript";
+    String OSC_ADDRESS_ZSCORE = "/zs/";
 
     String PROP_LOG_USE_LOG4J = "zscore.log.isUseLog4j";
     String PROP_LOG_USE_MAX_CONSOLE = "zscore.log.isUseMaxConsole";

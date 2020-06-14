@@ -13,7 +13,7 @@
     <property name="libDir" location="lib"/>
     <property name="libDistDir" location="lib/dist"/>
     <property name="resourcesDir" location="src/main/resources"/>
-    <property name="deployDir" location="/Users/slavko/MyHome/Music/max/my/zscore"/>
+    <property name="deployDir" location="/Users/slavko/MyHome/Music/max/1_my/zscore"/>
 
     <fileset id="deployFileSet" dir="${distDir}" casesensitive="yes">
         <include name="*.jar"/>

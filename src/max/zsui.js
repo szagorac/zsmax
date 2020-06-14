@@ -14,6 +14,7 @@ var zs = (function (g, m) {
 
 	var conf = {
 		EMPTY: "",
+		STRING: "string",
 		ZSCORE_LABEL: "ZScore",
 		SERVER_LABEL: "Server:",
 		SCORE_LABEL: "Score:",
@@ -49,6 +50,7 @@ var zs = (function (g, m) {
 		CMD_BEATERS_OFF: "beatersOff",
 		CMD_SET_TEMPO: "setTempo",
 		CMD_STOP: "stop",
+		CMD_PLAY: "play",
 	}
 
 	var state = {
@@ -129,6 +131,23 @@ var zs = (function (g, m) {
 	function _stop() {
 		state.semaphoreState[0] = 4;
 	}
+	function _play(objName) {
+		if(_isNull(objName)) {
+			_log("play: invalid argument");
+			return;
+		}
+		if(!_isString(objName)){
+			_log("play: invalid argument type for: " + objName);
+			return;
+		}
+		var obj = m.patcher.getnamed(objName);
+		if(_isNull(obj)){
+			_log("play: invalid obj for name: " + objName);
+			return;
+		}
+		obj.message("bang");
+	}
+	
 	function _processAny(messagename, args) {
 		if(_isNull(messagename)) {
 			return;
@@ -158,6 +177,9 @@ var zs = (function (g, m) {
 				break;
 			case conf.CMD_STOP:
 				_stop();
+				break;
+			case conf.CMD_PLAY:
+				_play(args[0]);
 				break;
 			default:
 				var len = args.length;
@@ -212,9 +234,7 @@ var zs = (function (g, m) {
 			}
 
 			_drawCircle(x, conf.MARGIN, conf.SEMAPHORE_RADIUS, conf.SEMAPHORE_RADIUS, col, true, true, conf.COL_BLACK, 0.5);
-		}
-		
-		
+		}		
 	}
 
 	function _drawServerState() {
@@ -354,6 +374,15 @@ var zs = (function (g, m) {
 	function _toType(obj) {
 		return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase();
 	}
+	function _isNumeric(num) {
+        if (_isNull(num)) {
+            return false;
+        }
+        return !isNaN(num);
+    }
+    function _isString(val) {
+        return typeof val === conf.STRING;
+    }
 
 	// Public members if any??
 	return {

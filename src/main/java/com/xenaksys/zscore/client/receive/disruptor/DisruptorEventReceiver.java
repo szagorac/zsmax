@@ -1,7 +1,6 @@
 package com.xenaksys.zscore.client.receive.disruptor;
 
 import com.lmax.disruptor.dsl.Disruptor;
-import com.xenaksys.zscore.Consts;
 import com.xenaksys.zscore.client.ZscoreClient;
 import com.xenaksys.zscore.event.EventFactory;
 import com.xenaksys.zscore.event.IncomingOscEvent;
@@ -29,6 +28,7 @@ import static com.xenaksys.zscore.Consts.JS_CMD_SET_INSTRUMENTS;
 import static com.xenaksys.zscore.Consts.JS_CMD_SET_SERVER_ID;
 import static com.xenaksys.zscore.Consts.JS_INSCORE_CMD_RUN;
 import static com.xenaksys.zscore.Consts.OPEN_BRACKET;
+import static com.xenaksys.zscore.Consts.OSC_ADDRESS_ZSCORE;
 import static com.xenaksys.zscore.Consts.OSC_INSCORE_ADDRESS_ROOT;
 import static com.xenaksys.zscore.Consts.OSC_INSCORE_JS;
 import static com.xenaksys.zscore.Consts.SINGLE_QUOTE;
@@ -82,7 +82,7 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
                 processJsEvent(event);
                 break;
             default:
-                LOG.error("Unknown OSC address: " + oscAddress);
+                processOscEvent(oscAddress, event);
         }
     }
 
@@ -124,6 +124,31 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
             }
         }
         processJsCmd(inscoreCmd, jsCmd, cmdArgs);
+    }
+
+    private void processOscEvent(String oscAddress, IncomingOscEvent event) throws Exception {
+        List<Object> args = event.getArguments();
+        String cmd = null;
+        List<Object> cmdArgs = new ArrayList<>();
+
+        if (oscAddress.startsWith(OSC_ADDRESS_ZSCORE)) {
+            oscAddress = oscAddress.replace(OSC_ADDRESS_ZSCORE, EMPTY);
+        }
+
+        // target is out arg0
+        cmdArgs.add(oscAddress);
+
+        //command is in arg0
+        if (args.size() > 0) {
+            cmd = (String) args.get(0);
+        }
+        if (args.size() > 1) {
+            for (int i = 1; i < args.size(); i++) {
+                cmdArgs.add(args.get(i));
+            }
+        }
+        Object[] out = cmdArgs.toArray(new Object[0]);
+        zsClient.onAnyCommand(cmd, out);
     }
 
     private void processJsCmd(String inscoreCmd, String cmd, List<Object> cmdArgs) throws Exception {
@@ -263,92 +288,6 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
         for (ZscoreIncomingEventListener listener : listeners) {
             listener.onEvent(event);
         }
-    }
-
-    private boolean isZscoreHello(IncomingOscEvent event) {
-
-        List<Object> args = event.getArguments();
-        if (args == null || args.size() < 1) {
-            return false;
-        }
-
-        Object arg = args.get(0);
-        if (arg == null || !(arg instanceof String)) {
-            return false;
-        }
-
-        String sarg = (String) arg;
-        return Consts.ARG_HELLO.equals(sarg);
-    }
-
-    private boolean isZscorePing(IncomingOscEvent event) {
-
-        List<Object> args = event.getArguments();
-        if (args == null || args.size() < 1) {
-            return false;
-        }
-
-        Object arg = args.get(0);
-        if (arg == null || !(arg instanceof String)) {
-            return false;
-        }
-
-        String sarg = (String) arg;
-        return Consts.ARG_PING.equals(sarg);
-    }
-
-    private boolean isZscoreSetInstrument(IncomingOscEvent event) {
-
-        List<Object> args = event.getArguments();
-        if (args == null || args.size() < 1) {
-            return false;
-        }
-
-        Object arg = args.get(0);
-        if (arg == null || !(arg instanceof String)) {
-            return false;
-        }
-
-        String sarg = (String) arg;
-        return Consts.ARG_SET_INSTRUMENT.equals(sarg);
-    }
-
-    private boolean isInscoreHello(IncomingOscEvent event) {
-
-        List<Object> args = event.getArguments();
-        if (args == null || args.size() != 4) {
-            return false;
-        }
-
-        Object arg = args.get(0);
-        if (arg == null || !(arg instanceof String)) {
-            return false;
-        }
-
-        for (int i = 1; i <= 3; i++) {
-            arg = args.get(i);
-            if (arg == null || !(arg instanceof Integer)) {
-                return false;
-            }
-        }
-
-        return true;
-    }
-
-    private boolean isIpAddress(String ip) {
-        return ipValidator.validate(ip);
-    }
-
-    private boolean checkAddress(InetAddress address) {
-        return true;
-    }
-
-    private void addOutPort(InetAddress address, int port) {
-        zsClient.addOutPort(address, port);
-    }
-
-    private void addInPort(int port) {
-        zsClient.addInPort(port);
     }
 
 }
