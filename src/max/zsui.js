@@ -12,8 +12,12 @@ mgraphics.autofill = 0;
 
 var zs = (function (g, m) {
 
-	var conf = {
+	var pattrStore = null;
+
+	var cfg = {
+		PATTR_STORE: "zsPattrStore",
 		EMPTY: "",
+		NEW_LINE: "\n",
 		STRING: "string",
 		ZSCORE_LABEL: "ZScore",
 		SERVER_LABEL: "Server:",
@@ -41,7 +45,7 @@ var zs = (function (g, m) {
 		STATE_INACTIVE: "Inactive",
 		STATE_ACTIVE: "Active",
 		STATE_UNKNOWN: "Unknown",
-		STATE_CONNECTED: "Connected",
+		STATE_CONNECTED: "Connected",	
 		CMD_SET_TITLE: "setTitle",
 		CMD_SET_PART: "setPart",
 		CMD_RESET_STAVES: "resetStaves",
@@ -49,8 +53,11 @@ var zs = (function (g, m) {
 		CMD_BEATERS_ON: "beatersOn",
 		CMD_BEATERS_OFF: "beatersOff",
 		CMD_SET_TEMPO: "setTempo",
+		CMD_INT: "int",
 		CMD_STOP: "stop",
 		CMD_PLAY: "play",
+		CMD_BANG: "bang",
+		CMD_PRESET: "preset",		
 	}
 
 	var state = {
@@ -66,11 +73,11 @@ var zs = (function (g, m) {
 		circleNo: 4,
 		semaphoreState: [],
 		semaphoreCol: [],
-		connState: conf.STATE_INACTIVE,
-		serverHost: conf.STATE_UNKNOWN,
-		scoreName: conf.EMPTY,
-		partName: conf.EMPTY,
-		tempo: conf.EMPTY, 
+		connState: cfg.STATE_INACTIVE,
+		serverHost: cfg.STATE_UNKNOWN,
+		scoreName: cfg.EMPTY,
+		partName: cfg.EMPTY,
+		tempo: cfg.EMPTY, 
 	}
 	function _init() {
 		_resetSemaphore();
@@ -84,6 +91,17 @@ var zs = (function (g, m) {
 		_drawScoreDetails(); 
 		_drawSemaphore(); 
 	}
+	function _getPattrStore() {
+		if(!_isNull(pattrStore)) {
+			return pattrStore;
+		}
+		pattrStore = _getObj(cfg.PATTR_STORE);
+		if(_isNull(pattrStore)) {
+			_logError("Could not find pattr store: " + cfg.PATTR_STORE);
+			return null;
+		}
+		return pattrStore;
+	}
 	function _resetSemaphore() {
 		for (i = 0; i < state.circleNo; i++) {
 			state.semaphoreState[i] = 0;
@@ -92,11 +110,12 @@ var zs = (function (g, m) {
 	}
 	function _connected(isConnected) {
 		if (isConnected === 0) {
-			state.connState = conf.STATE_INACTIVE;
+			state.connState = cfg.STATE_INACTIVE;
 		} else {
-			state.connState = conf.STATE_ACTIVE;
+			state.connState = cfg.STATE_ACTIVE;
 		}
 
+		_getPattrStore();
 		g.redraw();
 	}
 	function _setServerHost(host) {
@@ -131,55 +150,81 @@ var zs = (function (g, m) {
 	function _stop() {
 		state.semaphoreState[0] = 4;
 	}
-	function _play(objName) {
-		if(_isNull(objName)) {
-			_log("play: invalid argument");
+	function _play(objName) {	
+		var obj = _getObj(objName);
+		if(_isNull(obj)){
+			_logError("play: Could not find object for name: " + objName);
 			return;
+		}
+		_sendTo(obj, [cfg.CMD_BANG]);
+	}
+	function _preset(preset) {
+		var ptst = _getPattrStore();
+		if(_isNull(ptst)){
+			_logError("preset: Could not find patter store, ignoring preset: " + preset);
+			return;
+		}
+		var presetNo = parseInt(preset, 10);	
+		_sendTo(ptst, [cfg.CMD_INT, presetNo]);
+	}	
+	function _getObj(objName) {
+		if(_isNull(objName)) {
+			_logError("getObj: invalid object name argument");
+			return null;
 		}
 		if(!_isString(objName)){
-			_log("play: invalid argument type for: " + objName);
-			return;
+			_logError("getObj: invalid obj name argument type for: " + objName);
+			return null;
 		}
-		var obj = m.patcher.getnamed(objName);
-		if(_isNull(obj)){
-			_log("play: invalid obj for name: " + objName);
-			return;
-		}
-		obj.message("bang");
+		return m.patcher.getnamed(objName);
 	}
-	
+	function _sendTo(obj, args) {
+		if(_isNull(obj)){
+			_logError("sendToObj: invalid object");
+			return;
+		}
+		if(!_isArray(args)){
+			_logError("sendToObj: invalid argument array");
+			return;
+		}
+		_log("_sendTo: " + obj.varname + " args: " + args);
+		obj.message.apply(obj, args);
+	}
 	function _processAny(messagename, args) {
 		if(_isNull(messagename)) {
 			return;
 		}
 
 		switch(messagename) {
-			case conf.CMD_SET_TITLE:
+			case cfg.CMD_SET_TITLE:
 				_setTitle(args[0]);
 				break;
-			case conf.CMD_SET_PART:
+			case cfg.CMD_SET_PART:
 				_setPart(args[0]);
 				break;
-			case conf.CMD_RESET_STAVES:
+			case cfg.CMD_RESET_STAVES:
 				_resetStaves();
 				break;
-			case conf.CMD_RESET_INST:
+			case cfg.CMD_RESET_INST:
 				_resetInstrument();
 				break;
-			case conf.CMD_BEATERS_ON:
+			case cfg.CMD_BEATERS_ON:
 				_beatersOn(args[0], args[1]);
 				break;
-			case conf.CMD_BEATERS_OFF:
+			case cfg.CMD_BEATERS_OFF:
 				_beatersOff(args[0]);
 				break;
-			case conf.CMD_SET_TEMPO:
+			case cfg.CMD_SET_TEMPO:
 				_setTempo(args[0]);
 				break;
-			case conf.CMD_STOP:
+			case cfg.CMD_STOP:
 				_stop();
 				break;
-			case conf.CMD_PLAY:
+			case cfg.CMD_PLAY:
 				_play(args[0]);
+				break;
+			case cfg.CMD_PRESET:
+				_preset(args[0]);
 				break;
 			default:
 				var len = args.length;
@@ -194,14 +239,14 @@ var zs = (function (g, m) {
 	}
 
 	function _setBackground() {
-		_drawRect(0, 0, state.patchInfo.width, state.patchInfo.height, conf.COL_WHITE);
+		_drawRect(0, 0, state.patchInfo.width, state.patchInfo.height, cfg.COL_WHITE);
 	}
 
 	function _drawZscoreLabel() {
 		// var width = state.patchInfo.width;
 		// var tm = _getTxtDim(conf.ZSCORE_LABEL, conf.FONT_VERDANA, conf.FONT_SIZE_ZSCORE_NAME);
 		// var tw = tm[0];
-		_drawText(conf.ZSCORE_LABEL, 2 * conf.MARGIN + 80, conf.MARGIN + conf.ROW1_Y, conf.FONT_VERDANA, conf.FONT_SIZE_ZSCORE_NAME, conf.COL_PURPLE);
+		_drawText(cfg.ZSCORE_LABEL, 2 * cfg.MARGIN + 80, cfg.MARGIN + cfg.ROW1_Y, cfg.FONT_VERDANA, cfg.FONT_SIZE_ZSCORE_NAME, cfg.COL_PURPLE);
 	}
 
 	function _drawScoreDetails() {
@@ -215,83 +260,75 @@ var zs = (function (g, m) {
 	function _drawSemaphore() {
 		for (i = 0; i < state.semaphoreState.length; i++) {
 			var st = state.semaphoreState[i];
-			var x = conf.MARGIN + (state.circleNo - 1 - i) * (conf.SEMAPHORE_RADIUS + 5);
-			var col = conf.COL_WHITE_TRANSPARENT;
+			var x = cfg.MARGIN + (state.circleNo - 1 - i) * (cfg.SEMAPHORE_RADIUS + 5);
+			var col = cfg.COL_WHITE_TRANSPARENT;
 
 			switch(st) {
 				case 1:
-					col = conf.COL_GREEN;
+					col = cfg.COL_GREEN;
 					break;
 				case 2:
-					col = conf.COL_GREEN;
+					col = cfg.COL_GREEN;
 					break;
 				case 3: 
-					col = conf.COL_ORANGE;
+					col = cfg.COL_ORANGE;
 					break;
 				case 4:
-					col = conf.COL_RED;	
+					col = cfg.COL_RED;	
 					break;
 			}
 
-			_drawCircle(x, conf.MARGIN, conf.SEMAPHORE_RADIUS, conf.SEMAPHORE_RADIUS, col, true, true, conf.COL_BLACK, 0.5);
+			_drawCircle(x, cfg.MARGIN, cfg.SEMAPHORE_RADIUS, cfg.SEMAPHORE_RADIUS, col, true, true, cfg.COL_BLACK, 0.5);
 		}		
 	}
-
 	function _drawServerState() {
 		// _drawServerLabel();
 		_drawServerName();
 	}
-
 	function _drawPartLabel() {
-		_drawLabel(conf.PART_LABEL, conf.MARGIN, conf.MARGIN + conf.ROW2_Y);
+		_drawLabel(cfg.PART_LABEL, cfg.MARGIN, cfg.MARGIN + cfg.ROW2_Y);
 	}
-
 	function _drawPartName() {
-		var col = conf.COL_BLACK;
-		if (state.serverHost === conf.STATE_UNKNOWN) {
-			col = conf.COL_BLACK_DIM;
+		var col = cfg.COL_BLACK;
+		if (state.serverHost === cfg.STATE_UNKNOWN) {
+			col = cfg.COL_BLACK_DIM;
 		}
 
-		_drawName(state.partName, conf.MARGIN, conf.MARGIN + conf.ROW2_Y, col);
+		_drawName(state.partName, cfg.MARGIN, cfg.MARGIN + cfg.ROW2_Y, col);
 	}
-
 	function _drawScoreLabel() {
-		_drawLabel(conf.SCORE_LABEL, 2 * conf.MARGIN + 80, conf.MARGIN + conf.ROW2_Y);
+		_drawLabel(cfg.SCORE_LABEL, 2 * cfg.MARGIN + 80, cfg.MARGIN + cfg.ROW2_Y);
 	}
-
 	function _drawScoreName() {
-		var col = conf.COL_BLACK;
-		if (state.serverHost === conf.STATE_UNKNOWN) {
-			col = conf.COL_BLACK_DIM;
+		var col = cfg.COL_BLACK;
+		if (state.serverHost === cfg.STATE_UNKNOWN) {
+			col = cfg.COL_BLACK_DIM;
 		}
 
-		_drawName(state.scoreName, 2 * conf.MARGIN + 80, conf.MARGIN + conf.ROW2_Y, col);
+		_drawName(state.scoreName, 2 * cfg.MARGIN + 80, cfg.MARGIN + cfg.ROW2_Y, col);
 	}
-
 	function _drawServerLabel() {
-		_drawLabel(conf.SERVER_LABEL, 2 * conf.MARGIN + 150, conf.MARGIN + conf.ROW1_Y);
+		_drawLabel(cfg.SERVER_LABEL, 2 * cfg.MARGIN + 150, cfg.MARGIN + cfg.ROW1_Y);
 	}
-
 	function _drawServerName() {
 		var txt = state.serverHost;
 
-		var colRect = conf.COL_GREEN;
-		if (state.connState === conf.STATE_INACTIVE) {
-			colRect = conf.COL_RED_PALE;
+		var colRect = cfg.COL_GREEN;
+		if (state.connState === cfg.STATE_INACTIVE) {
+			colRect = cfg.COL_RED_PALE;
 		}
 
-		var col = conf.COL_BLACK;
-		if (state.serverHost === conf.STATE_UNKNOWN) {
-			col = conf.COL_BLACK_DIM;
+		var col = cfg.COL_BLACK;
+		if (state.serverHost === cfg.STATE_UNKNOWN) {
+			col = cfg.COL_BLACK_DIM;
 		}
 
-		var txtDim = _getTxtDim(txt, conf.FONT_HELVETICA, conf.FONT_SIZE_NAME);
+		var txtDim = _getTxtDim(txt, cfg.FONT_HELVETICA, cfg.FONT_SIZE_NAME);
 		var txtLen = txtDim[0];
 
-		_drawRect(2 * conf.MARGIN + 150, conf.MARGIN, txtLen + 12, 20, colRect, conf.RECT_RADIUS, conf.RECT_RADIUS);
-		_drawName(txt, 2 * conf.MARGIN + 155, conf.MARGIN + conf.ROW1_Y, col);
+		_drawRect(2 * cfg.MARGIN + 150, cfg.MARGIN, txtLen + 12, 20, colRect, cfg.RECT_RADIUS, cfg.RECT_RADIUS);
+		_drawName(txt, 2 * cfg.MARGIN + 155, cfg.MARGIN + cfg.ROW1_Y, col);
 	}
-
 	function _drawRect(x, y, width, height, colour, ovalwidth, ovalheight) {
 		_setColour(colour);
 		if (!_isNull(ovalheight) && !_isNull(ovalwidth)) {
@@ -301,7 +338,6 @@ var zs = (function (g, m) {
 		}
 		g.fill();
 	}
-
 	function _drawCircle(x, y, width, height, colour, isStroke, isFill, strokeCol, lineWidth) {
 		if(isStroke && isFill) {
 			_setColour(strokeCol);
@@ -321,15 +357,12 @@ var zs = (function (g, m) {
 			g.fill();
 		}
 	}
-
 	function _drawLabel(lbl, x, y) {
-		return _drawText(lbl, x, y, conf.FONT_HELVETICA, conf.FONT_SIZE_NAME, conf.COL_BLACK);
+		return _drawText(lbl, x, y, cfg.FONT_HELVETICA, cfg.FONT_SIZE_NAME, cfg.COL_BLACK);
 	}
-
 	function _drawName(txt, x, y, col) {
-		_drawText(txt, x, y, conf.FONT_HELVETICA, conf.FONT_SIZE_NAME, col);
+		_drawText(txt, x, y, cfg.FONT_HELVETICA, cfg.FONT_SIZE_NAME, col);
 	}
-
 	function _drawText(txt, x, y, font, size, colour) {
 		_setColour(colour);
 		g.select_font_face(font);
@@ -338,17 +371,14 @@ var zs = (function (g, m) {
 		g.text_path(txt);
 		g.fill();
 	}
-
 	function _getTxtDim(txt, font, size) {
 		g.select_font_face(font);
 		g.set_font_size(size);
 		return g.text_measure(txt);
 	}
-
 	function _setColour(colour) {
 		g.set_source_rgba(colour[0], colour[1], colour[2], colour[3]);
 	}
-
 	function _calcSize() {
 		var pi = state.patchInfo;
 		pi.leftX = m.box.rect[0];
@@ -360,11 +390,13 @@ var zs = (function (g, m) {
 		pi.height = pi.bottomY - pi.topY;
 		pi.aspect = pi.width / pi.height;
 	}
-
 	function _log(val) {
 		m.post(val);
 		m.post();
 	}
+	function _logError(val) {
+		m.error(val + cfg.NEW_LINE);
+	}	
 	function _isUndefined(val) {
 		return typeof val == "undefined";
 	}
@@ -381,7 +413,10 @@ var zs = (function (g, m) {
         return !isNaN(num);
     }
     function _isString(val) {
-        return typeof val === conf.STRING;
+        return typeof val === cfg.STRING;
+	}
+	function _isArray(val) {
+        return Array.isArray(val);
     }
 
 	// Public members if any??

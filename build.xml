@@ -19,10 +19,15 @@
         <include name="*.jar"/>
         <include name="*.js"/>
         <include name="*.maxpat"/>
+        <include name="*.json"/>
     </fileset>
 
     <fileset id="deployJsSet" dir="${maxDir}" casesensitive="yes">
         <include name="*.js"/>
+    </fileset>
+
+    <fileset id="deployJsonSet" dir="${maxDir}" casesensitive="yes">
+        <include name="*.json"/>
     </fileset>
 
     <fileset id="dependencyLibSet" dir="${libDistDir}" casesensitive="yes">
@@ -64,9 +69,15 @@
         </copy>
     </target>
 
-    <target name="deployjs" description="deploy the distribution">
+    <target name="deployjs" description="deploy javascript files">
         <copy todir="${deployDir}" overwrite="true">
             <fileset refid="deployJsSet"/>
+        </copy>
+    </target>
+
+    <target name="deployjson" description="deploy json files">
+        <copy todir="${deployDir}" overwrite="true">
+            <fileset refid="deployJsonSet"/>
         </copy>
     </target>
 
