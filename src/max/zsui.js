@@ -158,14 +158,31 @@ var zs = (function (g, m) {
 		}
 		_sendTo(obj, [cfg.CMD_BANG]);
 	}
-	function _preset(preset) {
+	function _preset(args) {
+		if(_isNull(args)) {
+			_logError("preset: invalid args: " + args);
+			return;
+		}
+		var preset  = 1;
+		var target = cfg.PATTR_STORE;
+		if(args.length === 2) {
+			target = args[0];
+			preset = args[1];
+		} else if(args.length === 1) {
+			preset = args[0];
+		}
+		if(_isString(preset)) {
+			preset = parseInt(args[0], 10);
+		}
+		_log("preset: received preset: " + preset + " target: " + target);
+
 		var ptst = _getPattrStore();
 		if(_isNull(ptst)){
 			_logError("preset: Could not find patter store, ignoring preset: " + preset);
 			return;
 		}
-		var presetNo = parseInt(preset, 10);	
-		_sendTo(ptst, [cfg.CMD_INT, presetNo]);
+		// var presetNo = parseInt(preset, 10);	
+		_sendTo(ptst, [cfg.CMD_INT, preset]);
 	}	
 	function _getObj(objName) {
 		if(_isNull(objName)) {
@@ -224,7 +241,7 @@ var zs = (function (g, m) {
 				_play(args[0]);
 				break;
 			case cfg.CMD_PRESET:
-				_preset(args[0]);
+				_preset(args);
 				break;
 			default:
 				var len = args.length;

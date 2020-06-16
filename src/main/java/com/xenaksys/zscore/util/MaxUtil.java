@@ -14,14 +14,19 @@ public class MaxUtil {
         for (int i = 0; i < len; ++i) {
             Object arg = args[i];
             if (arg instanceof Integer) {
+                LOG.debug("received Integer arg: " + arg);
                 atoms[i] = Atom.newAtom((Integer) arg);
             } else if (arg instanceof Long) {
+                LOG.debug("received Long arg: " + arg);
                 atoms[i] = Atom.newAtom((Long) arg);
             } else if (arg instanceof Double) {
+                LOG.debug("received Double arg: " + arg);
                 atoms[i] = Atom.newAtom((Double) arg);
             } else if (arg instanceof String) {
+                LOG.debug("received String arg: " + arg);
                 atoms[i] = Atom.newAtom((String) arg);
             } else if (arg instanceof Boolean) {
+                LOG.debug("received Boolean arg: " + arg);
                 atoms[i] = Atom.newAtom((Boolean) arg);
             } else {
                 LOG.error("Invalid MAX argument type: " + arg);

@@ -148,6 +148,7 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
             }
         }
         Object[] out = cmdArgs.toArray(new Object[0]);
+        LOG.debug(" received cmdName: " + cmd + " oscAddress: " + oscAddress);
         zsClient.onAnyCommand(cmd, out);
     }
 
@@ -157,6 +158,7 @@ public class DisruptorEventReceiver extends AbstractReceiveDisruptorEventsProces
             return;
         }
         String cmdName = getCmdName(cmd);
+        LOG.debug(" received cmdName: " + cmd);
         switch (cmdName) {
             case JS_CMD_SET_SERVER_ID:
                 processSetServerId(cmd, cmdArgs);
