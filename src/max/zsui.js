@@ -316,7 +316,7 @@ var zs = (function (g, m) {
 		_drawText(cfg.ZSCORE_LABEL, 2 * cfg.MARGIN + 80, cfg.MARGIN + cfg.ROW1_Y, cfg.FONT_VERDANA, cfg.FONT_SIZE_ZSCORE_NAME, cfg.COL_PURPLE);
 	}
 	function _drawBeatInfo() {
-		_drawRect(cfg.MARGIN - 5, cfg.ROW4_Y - 5, 210, 20, cfg.COL_GRAY_DIM, 0, 0, true, false, cfg.COL_BLACK, 0.5);
+		_drawRect(cfg.MARGIN - 5, cfg.ROW4_Y - 5, 232, 20, cfg.COL_GRAY_DIM, 0, 0, true, false, cfg.COL_BLACK, 0.5);
 		_drawPageLabel();
 		_drawPageValue();
 		_drawBarLabel();
@@ -336,16 +336,16 @@ var zs = (function (g, m) {
 		_drawPlayInfoValue(state.pageNo, cfg.MARGIN + 40, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
 	}
 	function _drawBarLabel() {
-		_drawLabel(cfg.BAR_LABEL, cfg.MARGIN + 70, cfg.MARGIN + cfg.ROW4_Y);
+		_drawLabel(cfg.BAR_LABEL, cfg.MARGIN + 75, cfg.MARGIN + cfg.ROW4_Y);
 	}
 	function _drawBarValue() {
-		_drawPlayInfoValue(state.barNo, cfg.MARGIN + 100, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
+		_drawPlayInfoValue(state.barNo, cfg.MARGIN + 105, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
 	}
 	function _drawBeatLabel() {
-		_drawLabel(cfg.BEAT_LABEL, cfg.MARGIN + 130, cfg.MARGIN + cfg.ROW4_Y);
+		_drawLabel(cfg.BEAT_LABEL, cfg.MARGIN + 140, cfg.MARGIN + cfg.ROW4_Y);
 	}
 	function _drawBeatValue() {
-		_drawPlayInfoValue(state.beatNo, cfg.MARGIN + 170, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
+		_drawPlayInfoValue(state.beatNo, cfg.MARGIN + 180, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
 	}
 	function _drawScoreDetails() {
 		_drawTempoLabel();
