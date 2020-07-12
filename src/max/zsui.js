@@ -27,6 +27,8 @@ var zs = (function (g, m) {
 		PAGE_LABEL: "Page:",
 		BAR_LABEL: "Bar:",
 		BEAT_LABEL: "Beat:",
+		TEMPO_LABEL: "Tempo:",
+		BPM_LABEL: "bpm",
 		FONT_VERDANA: "Verdana",
 		FONT_HELVETICA: "Helvetica",
 		FONT_HELVETICA_BOLD: "Helvetica Bold",
@@ -37,6 +39,7 @@ var zs = (function (g, m) {
 		ROW1_Y: 15,
 		ROW2_Y: 35,
 		ROW3_Y: 55,
+		ROW4_Y: 75,
 		RECT_RADIUS: 15,
 		SEMAPHORE_RADIUS: 15,
 		COL_WHITE_TRANSPARENT: [1.0, 1.0, 1.0, 0.0],
@@ -157,8 +160,21 @@ var zs = (function (g, m) {
 			state.semaphoreState[i] = 0;
 		}
 	}
-	function _setTempo(tempo) {
-		state.tempo = tempo;
+	function _setTempo(args) {
+		var tempo = 0;
+		var target = "";
+		var len = args.length;
+		if (len > 1) {
+			// osc event cmd
+			target = args[0];
+			tempo = args[1];
+		} else if( len === 1) {
+			//js cmd
+			tempo = args[0];
+		}
+
+		_log("_setTempo: received tempo: " + tempo + " target: " + target);
+		state.tempo = _toString(tempo);
 	}
 	function _stop() {
 		state.semaphoreState[0] = 4;
@@ -262,7 +278,7 @@ var zs = (function (g, m) {
 				_beatersOff(args[0]);
 				break;
 			case cfg.CMD_SET_TEMPO:
-				_setTempo(args[0]);
+				_setTempo(args);
 				break;
 			case cfg.CMD_STOP:
 				_stop();
@@ -300,7 +316,7 @@ var zs = (function (g, m) {
 		_drawText(cfg.ZSCORE_LABEL, 2 * cfg.MARGIN + 80, cfg.MARGIN + cfg.ROW1_Y, cfg.FONT_VERDANA, cfg.FONT_SIZE_ZSCORE_NAME, cfg.COL_PURPLE);
 	}
 	function _drawBeatInfo() {
-		_drawRect(cfg.MARGIN - 5, cfg.ROW3_Y - 5, 210, 20, cfg.COL_GRAY_DIM, 0, 0, true, false, cfg.COL_BLACK, 0.5);
+		_drawRect(cfg.MARGIN - 5, cfg.ROW4_Y - 5, 210, 20, cfg.COL_GRAY_DIM, 0, 0, true, false, cfg.COL_BLACK, 0.5);
 		_drawPageLabel();
 		_drawPageValue();
 		_drawBarLabel();
@@ -314,24 +330,26 @@ var zs = (function (g, m) {
 		_drawBeatValue();
 	}
 	function _drawPageLabel() {
-		_drawLabel(cfg.PAGE_LABEL, cfg.MARGIN, cfg.MARGIN + cfg.ROW3_Y);
+		_drawLabel(cfg.PAGE_LABEL, cfg.MARGIN, cfg.MARGIN + cfg.ROW4_Y);
 	}
 	function _drawPageValue() {
-		_drawBeatInfoValue(state.pageNo, cfg.MARGIN + 40, cfg.MARGIN + cfg.ROW3_Y, cfg.COL_BLACK);
+		_drawPlayInfoValue(state.pageNo, cfg.MARGIN + 40, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
 	}
 	function _drawBarLabel() {
-		_drawLabel(cfg.BAR_LABEL, cfg.MARGIN + 70, cfg.MARGIN + cfg.ROW3_Y);
+		_drawLabel(cfg.BAR_LABEL, cfg.MARGIN + 70, cfg.MARGIN + cfg.ROW4_Y);
 	}
 	function _drawBarValue() {
-		_drawBeatInfoValue(state.barNo, cfg.MARGIN + 100, cfg.MARGIN + cfg.ROW3_Y, cfg.COL_BLACK);
+		_drawPlayInfoValue(state.barNo, cfg.MARGIN + 100, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
 	}
 	function _drawBeatLabel() {
-		_drawLabel(cfg.BEAT_LABEL, cfg.MARGIN + 130, cfg.MARGIN + cfg.ROW3_Y);
+		_drawLabel(cfg.BEAT_LABEL, cfg.MARGIN + 130, cfg.MARGIN + cfg.ROW4_Y);
 	}
 	function _drawBeatValue() {
-		_drawBeatInfoValue(state.beatNo, cfg.MARGIN + 170, cfg.MARGIN + cfg.ROW3_Y, cfg.COL_BLACK);
+		_drawPlayInfoValue(state.beatNo, cfg.MARGIN + 170, cfg.MARGIN + cfg.ROW4_Y, cfg.COL_BLACK);
 	}
 	function _drawScoreDetails() {
+		_drawTempoLabel();
+		_drawTempoValue();
 		_drawPartLabel();
 		_drawPartName();
 		_drawScoreLabel();
@@ -364,6 +382,13 @@ var zs = (function (g, m) {
 	function _drawServerState() {
 		// _drawServerLabel();
 		_drawServerName();
+	}
+	function _drawTempoLabel() {
+		_drawLabel(cfg.TEMPO_LABEL, cfg.MARGIN, cfg.MARGIN + cfg.ROW3_Y);
+		_drawLabel(cfg.BPM_LABEL, 2 * cfg.MARGIN + 80, cfg.MARGIN + cfg.ROW3_Y);
+	}
+	function _drawTempoValue() {
+		_drawPlayInfoValue(state.tempo, cfg.MARGIN + 55, cfg.MARGIN + cfg.ROW3_Y, cfg.COL_BLACK);
 	}
 	function _drawPartLabel() {
 		_drawLabel(cfg.PART_LABEL, cfg.MARGIN, cfg.MARGIN + cfg.ROW2_Y);
@@ -465,7 +490,7 @@ var zs = (function (g, m) {
 	function _drawName(txt, x, y, col) {
 		_drawText(txt, x, y, cfg.FONT_HELVETICA, cfg.FONT_SIZE_NAME, col);
 	}
-	function _drawBeatInfoValue(txt, x, y, col) {
+	function _drawPlayInfoValue(txt, x, y, col) {
 		_drawText(txt, x, y, cfg.FONT_HELVETICA_BOLD, cfg.FONT_SIZE_BEAT_INFO, col);
 	}
 	function _drawText(txt, x, y, font, size, colour) {
