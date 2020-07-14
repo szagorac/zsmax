@@ -29,9 +29,6 @@
 					"b1env": [
 						"0., 1. 500 0. 500"
 					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
 					"mcGroove::mcgDeviation": [
 						0.05
 					],
@@ -42,16 +39,19 @@
 						3.0
 					],
 					"mcGroove::mcgMute": [
-						0.0
+						1.0
 					],
 					"mcGroove::mcgRange": [
 						1.0
 					],
 					"mcGroove::mcgSpeed": [
-						0.001
+						0.0
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
+					],
+					"mcGroove::mcgFile": [
+						"anton.aif"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.040352935811582
@@ -66,13 +66,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						144
+						285
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						572
+						10
 					],
 					"grooveControl::gcRangeEnd": [
 						600
@@ -136,9 +136,6 @@
 					"b1env": [
 						"0., 1. 1000 0. 1000"
 					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
 					"mcGroove::mcgDeviation": [
 						3.0
 					],
@@ -146,7 +143,7 @@
 						0.0
 					],
 					"mcGroove::mcgHarmonics": [
-						3.0
+						8.0
 					],
 					"mcGroove::mcgMute": [
 						0.0
@@ -159,6 +156,9 @@
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
+					],
+					"mcGroove::mcgFile": [
+						"anton.aif"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.040352935811582
@@ -173,13 +173,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						276
+						788
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						2113
+						1061
 					],
 					"grooveControl::gcRangeEnd": [
 						2179
@@ -207,6 +207,327 @@
 					],
 					"grooveControl::gcMLFO::Mod": [
 						5.0
+					],
+					"grooveControl::gcMLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Shape": [
+						1.0
+					]
+				}
+			},
+			"3": {
+				"id": 3,
+				"data": {
+					"b1": [
+						0.0
+					],
+					"b2": [
+						0.0
+					],
+					"masterGain": [
+						-36.342923480718781
+					],
+					"mc.live.gain~": [
+						-26.687024142643345
+					],
+					"b2ply": [
+						"0, 1000 1000 0 1000"
+					],
+					"b2env": [
+						"0., 1. 1000 0. 1000"
+					],
+					"b1ply": [
+						"0, 1000 1000 0 1000"
+					],
+					"b1env": [
+						"0., 1. 1000 0. 1000"
+					],
+					"mcGroove::mcgDeviation": [
+						0.2
+					],
+					"mcGroove::mcgGain": [
+						0.0
+					],
+					"mcGroove::mcgHarmonics": [
+						4.0
+					],
+					"mcGroove::mcgMute": [
+						0.0
+					],
+					"mcGroove::mcgRange": [
+						2.0
+					],
+					"mcGroove::mcgSpeed": [
+						0.1
+					],
+					"mcGroove::mcgWfMode": [
+						0.0
+					],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"grooveControl::gcLFOFreq": [
+						1.721140970956996
+					],
+					"grooveControl::gcMLFOFreq": [
+						0.1
+					],
+					"grooveControl::gcMLFOMod": [
+						0
+					],
+					"grooveControl::gcMaxLen": [
+						2311
+					],
+					"grooveControl::gcPosLen": [
+						120
+					],
+					"grooveControl::gcPosMute": [
+						0.0
+					],
+					"grooveControl::gcPosStart": [
+						153
+					],
+					"grooveControl::gcRangeEnd": [
+						1500
+					],
+					"grooveControl::gcRangeStart": [
+						0
+					],
+					"grooveControl::gcSizeMax": [
+						300
+					],
+					"grooveControl::gcSizeMin": [
+						100
+					],
+					"grooveControl::gcSizeMute": [
+						0.0
+					],
+					"grooveControl::gcLFO::Frequency": [
+						1.721140970956996
+					],
+					"grooveControl::gcLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Frequency": [
+						3.412331974477336
+					],
+					"grooveControl::gcMLFO::Mod": [
+						52.0
+					],
+					"grooveControl::gcMLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Shape": [
+						4.0
+					]
+				}
+			},
+			"4": {
+				"id": 4,
+				"data": {
+					"b1": [
+						0.0
+					],
+					"b2": [
+						0.0
+					],
+					"masterGain": [
+						-36.342923480718781
+					],
+					"mc.live.gain~": [
+						-26.687024142643345
+					],
+					"b2ply": [
+						"0, 1000 1000 0 1000"
+					],
+					"b2env": [
+						"0., 1. 1000 0. 1000"
+					],
+					"b1ply": [
+						"0, 1000 1000 0 1000"
+					],
+					"b1env": [
+						"0., 1. 1000 0. 1000"
+					],
+					"mcGroove::mcgDeviation": [
+						0.2
+					],
+					"mcGroove::mcgGain": [
+						0.0
+					],
+					"mcGroove::mcgHarmonics": [
+						4.0
+					],
+					"mcGroove::mcgMute": [
+						0.0
+					],
+					"mcGroove::mcgRange": [
+						2.0
+					],
+					"mcGroove::mcgSpeed": [
+						0.1
+					],
+					"mcGroove::mcgWfMode": [
+						0.0
+					],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"grooveControl::gcLFOFreq": [
+						1.721140970956996
+					],
+					"grooveControl::gcMLFOFreq": [
+						0.1
+					],
+					"grooveControl::gcMLFOMod": [
+						0
+					],
+					"grooveControl::gcMaxLen": [
+						2311
+					],
+					"grooveControl::gcPosLen": [
+						235
+					],
+					"grooveControl::gcPosMute": [
+						0.0
+					],
+					"grooveControl::gcPosStart": [
+						0
+					],
+					"grooveControl::gcRangeEnd": [
+						1500
+					],
+					"grooveControl::gcRangeStart": [
+						0
+					],
+					"grooveControl::gcSizeMax": [
+						300
+					],
+					"grooveControl::gcSizeMin": [
+						100
+					],
+					"grooveControl::gcSizeMute": [
+						0.0
+					],
+					"grooveControl::gcLFO::Frequency": [
+						1.721140970956996
+					],
+					"grooveControl::gcLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Frequency": [
+						3.412331974477336
+					],
+					"grooveControl::gcMLFO::Mod": [
+						52.0
+					],
+					"grooveControl::gcMLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Shape": [
+						5.0
+					]
+				}
+			},
+			"5": {
+				"id": 5,
+				"data": {
+					"b1": [
+						0.0
+					],
+					"b2": [
+						0.0
+					],
+					"masterGain": [
+						-36.342923480718781
+					],
+					"mc.live.gain~": [
+						-43.084499251643138
+					],
+					"b2ply": [
+						"500, 0 1000"
+					],
+					"b2env": [
+						"0., 1. 500 0. 500"
+					],
+					"b1ply": [
+						"500, 0 1000"
+					],
+					"b1env": [
+						"0., 1. 500 0. 500"
+					],
+					"mcGroove::mcgDeviation": [
+						0.05
+					],
+					"mcGroove::mcgGain": [
+						0.0
+					],
+					"mcGroove::mcgHarmonics": [
+						3.0
+					],
+					"mcGroove::mcgMute": [
+						0.0
+					],
+					"mcGroove::mcgRange": [
+						1.0
+					],
+					"mcGroove::mcgSpeed": [
+						0.001
+					],
+					"mcGroove::mcgWfMode": [
+						0.0
+					],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"grooveControl::gcLFOFreq": [
+						0.040352935811582
+					],
+					"grooveControl::gcMLFOFreq": [
+						0.1
+					],
+					"grooveControl::gcMLFOMod": [
+						0
+					],
+					"grooveControl::gcMaxLen": [
+						2311
+					],
+					"grooveControl::gcPosLen": [
+						224
+					],
+					"grooveControl::gcPosMute": [
+						0.0
+					],
+					"grooveControl::gcPosStart": [
+						0
+					],
+					"grooveControl::gcRangeEnd": [
+						600
+					],
+					"grooveControl::gcRangeStart": [
+						0
+					],
+					"grooveControl::gcSizeMax": [
+						300
+					],
+					"grooveControl::gcSizeMin": [
+						100
+					],
+					"grooveControl::gcSizeMute": [
+						0.0
+					],
+					"grooveControl::gcLFO::Frequency": [
+						0.040352935811582
+					],
+					"grooveControl::gcLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Frequency": [
+						0.1
+					],
+					"grooveControl::gcMLFO::Mod": [
+						0.0
 					],
 					"grooveControl::gcMLFO::Mute": [
 						0.0
