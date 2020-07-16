@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1094.0, 79.0, 1805.0, 1032.0 ],
+		"rect" : [ 675.0, 233.0, 1240.0, 922.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -62,7 +62,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u532008700"
+					"varname" : "u383002298"
 				}
 
 			}
@@ -88,8 +88,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.5, 555.999999999999886, 51.0, 28.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 353.0, 101.25, 68.0, 17.0 ],
 					"text" : "Selection  Size",
 					"textcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
 				}
@@ -631,8 +629,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 479.5, 561.15411400000005, 51.0, 28.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 180.5, 101.25, 68.0, 17.0 ],
 					"text" : "Selection  End ",
 					"textcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
 				}
@@ -648,8 +644,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 381.22927900000002, 561.15411400000005, 49.0, 28.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.25, 101.25, 73.0, 17.0 ],
 					"text" : "Selection Start",
 					"textcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
 				}
@@ -2322,7 +2316,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 715.750000000000114, 531.0, 127.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.86447099999998, 0.0, 421.86447099999998, 118.25 ],
+					"presentation_rect" : [ -0.86447099999998, 0.0, 426.86447099999998, 105.5 ],
 					"proportion" : 0.5
 				}
 

@@ -1,542 +1,1063 @@
 {
-	"pattrstorage": {
-		"name": "zsPattrStore",
-		"slots": {
-			"1": {
-				"id": 1,
-				"data": {
-					"b1": [
-						0.0
-					],
-					"b2": [
-						0.0
-					],
-					"masterGain": [
-						-36.342923480718781
-					],
-					"mc.live.gain~": [
-						-43.084499251643138
-					],
-					"b2ply": [
-						"500, 0 1000"
-					],
-					"b2env": [
-						"0., 1. 500 0. 500"
-					],
-					"b1ply": [
-						"500, 0 1000"
-					],
-					"b1env": [
-						"0., 1. 500 0. 500"
-					],
-					"mcGroove::mcgDeviation": [
-						0.05
-					],
-					"mcGroove::mcgGain": [
-						0.0
-					],
-					"mcGroove::mcgHarmonics": [
-						3.0
-					],
-					"mcGroove::mcgMute": [
-						1.0
-					],
-					"mcGroove::mcgRange": [
-						1.0
-					],
-					"mcGroove::mcgSpeed": [
-						0.0
-					],
-					"mcGroove::mcgWfMode": [
-						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"grooveControl::gcLFOFreq": [
-						0.040352935811582
-					],
-					"grooveControl::gcMLFOFreq": [
-						0.1
-					],
-					"grooveControl::gcMLFOMod": [
-						0
-					],
-					"grooveControl::gcMaxLen": [
-						2311
-					],
-					"grooveControl::gcPosLen": [
-						285
-					],
-					"grooveControl::gcPosMute": [
-						0.0
-					],
-					"grooveControl::gcPosStart": [
-						10
-					],
-					"grooveControl::gcRangeEnd": [
-						600
-					],
-					"grooveControl::gcRangeStart": [
-						0
-					],
-					"grooveControl::gcSizeMax": [
-						300
-					],
-					"grooveControl::gcSizeMin": [
-						100
-					],
-					"grooveControl::gcSizeMute": [
-						0.0
-					],
-					"grooveControl::gcLFO::Frequency": [
-						0.040352935811582
-					],
-					"grooveControl::gcLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Frequency": [
-						0.1
-					],
-					"grooveControl::gcMLFO::Mod": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Shape": [
-						1.0
-					]
-				}
-			},
-			"2": {
-				"id": 2,
-				"data": {
-					"b1": [
-						0.0
-					],
-					"b2": [
-						0.0
-					],
-					"masterGain": [
-						-36.342923480718781
-					],
-					"mc.live.gain~": [
-						-26.687024142643345
-					],
-					"b2ply": [
-						"0, 1000 1000 0 1000"
-					],
-					"b2env": [
-						"0., 1. 1000 0. 1000"
-					],
-					"b1ply": [
-						"0, 1000 1000 0 1000"
-					],
-					"b1env": [
-						"0., 1. 1000 0. 1000"
-					],
-					"mcGroove::mcgDeviation": [
-						3.0
-					],
-					"mcGroove::mcgGain": [
-						0.0
-					],
-					"mcGroove::mcgHarmonics": [
-						8.0
-					],
-					"mcGroove::mcgMute": [
-						0.0
-					],
-					"mcGroove::mcgRange": [
-						6.0
-					],
-					"mcGroove::mcgSpeed": [
-						7.0
-					],
-					"mcGroove::mcgWfMode": [
-						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"grooveControl::gcLFOFreq": [
-						0.040352935811582
-					],
-					"grooveControl::gcMLFOFreq": [
-						0.1
-					],
-					"grooveControl::gcMLFOMod": [
-						0
-					],
-					"grooveControl::gcMaxLen": [
-						2311
-					],
-					"grooveControl::gcPosLen": [
-						788
-					],
-					"grooveControl::gcPosMute": [
-						0.0
-					],
-					"grooveControl::gcPosStart": [
-						1061
-					],
-					"grooveControl::gcRangeEnd": [
-						2179
-					],
-					"grooveControl::gcRangeStart": [
-						1000
-					],
-					"grooveControl::gcSizeMax": [
-						800
-					],
-					"grooveControl::gcSizeMin": [
-						100
-					],
-					"grooveControl::gcSizeMute": [
-						0.0
-					],
-					"grooveControl::gcLFO::Frequency": [
-						0.040352935811582
-					],
-					"grooveControl::gcLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Frequency": [
-						0.022673440659716
-					],
-					"grooveControl::gcMLFO::Mod": [
-						5.0
-					],
-					"grooveControl::gcMLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Shape": [
-						1.0
-					]
-				}
-			},
-			"3": {
-				"id": 3,
-				"data": {
-					"b1": [
-						0.0
-					],
-					"b2": [
-						0.0
-					],
-					"masterGain": [
-						-36.342923480718781
-					],
-					"mc.live.gain~": [
-						-26.687024142643345
-					],
-					"b2ply": [
-						"0, 1000 1000 0 1000"
-					],
-					"b2env": [
-						"0., 1. 1000 0. 1000"
-					],
-					"b1ply": [
-						"0, 1000 1000 0 1000"
-					],
-					"b1env": [
-						"0., 1. 1000 0. 1000"
-					],
-					"mcGroove::mcgDeviation": [
-						0.2
-					],
-					"mcGroove::mcgGain": [
-						0.0
-					],
-					"mcGroove::mcgHarmonics": [
-						4.0
-					],
-					"mcGroove::mcgMute": [
-						0.0
-					],
-					"mcGroove::mcgRange": [
-						2.0
-					],
-					"mcGroove::mcgSpeed": [
-						0.1
-					],
-					"mcGroove::mcgWfMode": [
-						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"grooveControl::gcLFOFreq": [
-						1.721140970956996
-					],
-					"grooveControl::gcMLFOFreq": [
-						0.1
-					],
-					"grooveControl::gcMLFOMod": [
-						0
-					],
-					"grooveControl::gcMaxLen": [
-						2311
-					],
-					"grooveControl::gcPosLen": [
-						120
-					],
-					"grooveControl::gcPosMute": [
-						0.0
-					],
-					"grooveControl::gcPosStart": [
-						153
-					],
-					"grooveControl::gcRangeEnd": [
-						1500
-					],
-					"grooveControl::gcRangeStart": [
-						0
-					],
-					"grooveControl::gcSizeMax": [
-						300
-					],
-					"grooveControl::gcSizeMin": [
-						100
-					],
-					"grooveControl::gcSizeMute": [
-						0.0
-					],
-					"grooveControl::gcLFO::Frequency": [
-						1.721140970956996
-					],
-					"grooveControl::gcLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Frequency": [
-						3.412331974477336
-					],
-					"grooveControl::gcMLFO::Mod": [
-						52.0
-					],
-					"grooveControl::gcMLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Shape": [
-						4.0
-					]
-				}
-			},
-			"4": {
-				"id": 4,
-				"data": {
-					"b1": [
-						0.0
-					],
-					"b2": [
-						0.0
-					],
-					"masterGain": [
-						-36.342923480718781
-					],
-					"mc.live.gain~": [
-						-26.687024142643345
-					],
-					"b2ply": [
-						"0, 1000 1000 0 1000"
-					],
-					"b2env": [
-						"0., 1. 1000 0. 1000"
-					],
-					"b1ply": [
-						"0, 1000 1000 0 1000"
-					],
-					"b1env": [
-						"0., 1. 1000 0. 1000"
-					],
-					"mcGroove::mcgDeviation": [
-						0.2
-					],
-					"mcGroove::mcgGain": [
-						0.0
-					],
-					"mcGroove::mcgHarmonics": [
-						4.0
-					],
-					"mcGroove::mcgMute": [
-						0.0
-					],
-					"mcGroove::mcgRange": [
-						2.0
-					],
-					"mcGroove::mcgSpeed": [
-						0.1
-					],
-					"mcGroove::mcgWfMode": [
-						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"grooveControl::gcLFOFreq": [
-						1.721140970956996
-					],
-					"grooveControl::gcMLFOFreq": [
-						0.1
-					],
-					"grooveControl::gcMLFOMod": [
-						0
-					],
-					"grooveControl::gcMaxLen": [
-						2311
-					],
-					"grooveControl::gcPosLen": [
-						235
-					],
-					"grooveControl::gcPosMute": [
-						0.0
-					],
-					"grooveControl::gcPosStart": [
-						0
-					],
-					"grooveControl::gcRangeEnd": [
-						1500
-					],
-					"grooveControl::gcRangeStart": [
-						0
-					],
-					"grooveControl::gcSizeMax": [
-						300
-					],
-					"grooveControl::gcSizeMin": [
-						100
-					],
-					"grooveControl::gcSizeMute": [
-						0.0
-					],
-					"grooveControl::gcLFO::Frequency": [
-						1.721140970956996
-					],
-					"grooveControl::gcLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Frequency": [
-						3.412331974477336
-					],
-					"grooveControl::gcMLFO::Mod": [
-						52.0
-					],
-					"grooveControl::gcMLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Shape": [
-						5.0
-					]
-				}
-			},
-			"5": {
-				"id": 5,
-				"data": {
-					"b1": [
-						0.0
-					],
-					"b2": [
-						0.0
-					],
-					"masterGain": [
-						-36.342923480718781
-					],
-					"mc.live.gain~": [
-						-43.084499251643138
-					],
-					"b2ply": [
-						"500, 0 1000"
-					],
-					"b2env": [
-						"0., 1. 500 0. 500"
-					],
-					"b1ply": [
-						"500, 0 1000"
-					],
-					"b1env": [
-						"0., 1. 500 0. 500"
-					],
-					"mcGroove::mcgDeviation": [
-						0.05
-					],
-					"mcGroove::mcgGain": [
-						0.0
-					],
-					"mcGroove::mcgHarmonics": [
-						3.0
-					],
-					"mcGroove::mcgMute": [
-						0.0
-					],
-					"mcGroove::mcgRange": [
-						1.0
-					],
-					"mcGroove::mcgSpeed": [
-						0.001
-					],
-					"mcGroove::mcgWfMode": [
-						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"grooveControl::gcLFOFreq": [
-						0.040352935811582
-					],
-					"grooveControl::gcMLFOFreq": [
-						0.1
-					],
-					"grooveControl::gcMLFOMod": [
-						0
-					],
-					"grooveControl::gcMaxLen": [
-						2311
-					],
-					"grooveControl::gcPosLen": [
-						224
-					],
-					"grooveControl::gcPosMute": [
-						0.0
-					],
-					"grooveControl::gcPosStart": [
-						0
-					],
-					"grooveControl::gcRangeEnd": [
-						600
-					],
-					"grooveControl::gcRangeStart": [
-						0
-					],
-					"grooveControl::gcSizeMax": [
-						300
-					],
-					"grooveControl::gcSizeMin": [
-						100
-					],
-					"grooveControl::gcSizeMute": [
-						0.0
-					],
-					"grooveControl::gcLFO::Frequency": [
-						0.040352935811582
-					],
-					"grooveControl::gcLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Frequency": [
-						0.1
-					],
-					"grooveControl::gcMLFO::Mod": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Shape": [
-						1.0
-					]
-				}
-			}
-		}
-	}
+  "pattrstorage": {
+    "name": "zsPattrStore",
+    "slots": {
+      "1": {
+        "id": 1,
+        "data": {
+          "gain": [],
+          "mcGain": [],
+          "panic": [],
+          "preset": [],
+          "preset0": [],
+          "mcGroove::mcgDeviation": [
+            0.05
+          ],
+          "mcGroove::mcgGain": [
+            0.0
+          ],
+          "mcGroove::mcgHarmonics": [
+            3.0
+          ],
+          "mcGroove::mcgMute": [
+            1.0
+          ],
+          "mcGroove::mcgRange": [
+            1.0
+          ],
+          "mcGroove::mcgSpeed": [
+            0.0
+          ],
+          "mcGroove::mcgWfMode": [
+            0.0
+          ],
+          "mcGroove::mcgFile": [
+            "anton.aif"
+          ],
+          "grooveControl::gcLFOFreq": [
+            0.040352935811582
+          ],
+          "grooveControl::gcMLFOFreq": [
+            0.1
+          ],
+          "grooveControl::gcMLFOMod": [
+            0
+          ],
+          "grooveControl::gcMaxLen": [
+            2311
+          ],
+          "grooveControl::gcPosLen": [
+            134
+          ],
+          "grooveControl::gcPosMute": [
+            1.0
+          ],
+          "grooveControl::gcPosStart": [
+            311
+          ],
+          "grooveControl::gcRangeEnd": [
+            600
+          ],
+          "grooveControl::gcRangeStart": [
+            0
+          ],
+          "grooveControl::gcSizeMax": [
+            300
+          ],
+          "grooveControl::gcSizeMin": [
+            100
+          ],
+          "grooveControl::gcSizeMute": [
+            1.0
+          ],
+          "grooveControl::gcLFO::Frequency": [
+            0.040352935811582
+          ],
+          "grooveControl::gcLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Frequency": [
+            0.1
+          ],
+          "grooveControl::gcMLFO::Mod": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Mute": [
+            1.0
+          ],
+          "grooveControl::gcMLFO::Shape": [
+            1.0
+          ],
+          "zsBufPlayer1::playLine": [
+            "0, 1000 1000 0 1000"
+          ],
+          "zsBufPlayer1::envLine": [
+            "0., 1. 1000 0. 1000"
+          ],
+          "zsBufPlayer1::fileName": [
+            "jongly.aif"
+          ],
+          "zsBufPlayer1::bufferGain": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferMute": [
+            1.0
+          ],
+          "zsBufPlayer1::bufferPlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferPlayLine": [
+            0.0
+          ],
+          "zsBufPlayer1::linePlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer2::playLine": [
+            "0, 1000 1000 0 1000"
+          ],
+          "zsBufPlayer2::envLine": [
+            "0., 1. 1000 0. 1000"
+          ],
+          "zsBufPlayer2::fileName": [
+            "jongly.aif"
+          ],
+          "zsBufPlayer2::bufferGain": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferMute": [
+            1.0
+          ],
+          "zsBufPlayer2::bufferPlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferPlayLine": [
+            0.0
+          ],
+          "zsBufPlayer2::linePlayBtn": [
+            0.0
+          ],
+          "zsGranulator-bp::grGain": [
+            -37.0
+          ],
+          "zsGranulator-bp::grGrainGain": [
+            1.0
+          ],
+          "zsGranulator-bp::grGrainNo": [
+            5
+          ],
+          "zsGranulator-bp::grGrainSize": [
+            100
+          ],
+          "zsGranulator-bp::grMute": [
+            1.0
+          ],
+          "zsGranulator-bp::grPanSpread": [
+            0.0
+          ],
+          "zsGranulator-bp::grPitchRate": [
+            1.0
+          ],
+          "zsGranulator-bp::grPitchRnd": [
+            0.0
+          ],
+          "zsGranulator-bp::grPlaySpeedPerc": [
+            0
+          ],
+          "zsGranulator-bp::grPositionMode": [
+            1
+          ],
+          "zsGranulator-bp::grPositionRnd": [
+            0.0
+          ],
+          "zsGranulator-bp::grPositionSource": [
+            0.0
+          ],
+          "zsGranulator-bp::grSelectionEnd": [
+            2821
+          ],
+          "zsGranulator-bp::grSelectionStart": [
+            0
+          ],
+          "zsGranulator-bp::grFileName": [
+            "jongly.aif"
+          ],
+          "zsPlayCtrl-bp::pcLFOFreq": [
+            0.01
+          ],
+          "zsPlayCtrl-bp::pcLFOSelEnd": [
+            0.107571310684812
+          ],
+          "zsPlayCtrl-bp::pcMLFOFreq": [
+            0.1
+          ],
+          "zsPlayCtrl-bp::pcMLFOMod": [
+            0
+          ],
+          "zsPlayCtrl-bp::pcSelEndMax": [
+            2821
+          ],
+          "zsPlayCtrl-bp::pcSelEndMin": [
+            0
+          ],
+          "zsPlayCtrl-bp::pcSelEndMute": [
+            1.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartMax": [
+            1400
+          ],
+          "zsPlayCtrl-bp::pcSelStartMin": [
+            0
+          ],
+          "zsPlayCtrl-bp::pcSelStartMute": [
+            1.0
+          ],
+          "zsPlayCtrl-bp::pcSizeMax": [
+            110
+          ],
+          "zsPlayCtrl-bp::pcSizeMin": [
+            100
+          ],
+          "zsPlayCtrl-bp::pcSizeMute": [
+            1.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartFreq": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
+            0.06
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mod": [
+            4.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mute": [
+            1.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Shape": [
+            4.0
+          ],
+          "zsPlayCtrl-bp::pcSizeLFO::Frequency": [
+            0.01
+          ],
+          "zsPlayCtrl-bp::pcSizeLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
+            0.107571310684812
+          ],
+          "zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+            0.0
+          ]
+        }
+      },
+      "2": {
+        "id": 2,
+        "data": {
+          "gain": [],
+          "mcGain": [],
+          "panic": [],
+          "preset": [],
+          "preset0": [],
+          "mcGroove::mcgDeviation": [
+            0.1
+          ],
+          "mcGroove::mcgGain": [
+            0.0
+          ],
+          "mcGroove::mcgHarmonics": [
+            8.0
+          ],
+          "mcGroove::mcgMute": [
+            0.0
+          ],
+          "mcGroove::mcgRange": [
+            3.0
+          ],
+          "mcGroove::mcgSpeed": [
+            5.0
+          ],
+          "mcGroove::mcgWfMode": [
+            0.0
+          ],
+          "mcGroove::mcgFile": [
+            "anton.aif"
+          ],
+          "grooveControl::gcLFOFreq": [
+            0.061504246016738
+          ],
+          "grooveControl::gcMLFOFreq": [
+            0.1
+          ],
+          "grooveControl::gcMLFOMod": [
+            0
+          ],
+          "grooveControl::gcMaxLen": [
+            2311
+          ],
+          "grooveControl::gcPosLen": [
+            548
+          ],
+          "grooveControl::gcPosMute": [
+            0.0
+          ],
+          "grooveControl::gcPosStart": [
+            1562
+          ],
+          "grooveControl::gcRangeEnd": [
+            2000
+          ],
+          "grooveControl::gcRangeStart": [
+            1200
+          ],
+          "grooveControl::gcSizeMax": [
+            600
+          ],
+          "grooveControl::gcSizeMin": [
+            200
+          ],
+          "grooveControl::gcSizeMute": [
+            0.0
+          ],
+          "grooveControl::gcLFO::Frequency": [
+            0.061504246016738
+          ],
+          "grooveControl::gcLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Frequency": [
+            0.059766770411063
+          ],
+          "grooveControl::gcMLFO::Mod": [
+            4.0
+          ],
+          "grooveControl::gcMLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Shape": [
+            1.0
+          ],
+          "zsBufPlayer1::playLine": [
+            "0, 1000 1000 0 1000"
+          ],
+          "zsBufPlayer1::envLine": [
+            "0., 1. 1000 0. 1000"
+          ],
+          "zsBufPlayer1::fileName": [
+            "jongly.aif"
+          ],
+          "zsBufPlayer1::bufferGain": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferMute": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferPlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferPlayLine": [
+            0.0
+          ],
+          "zsBufPlayer1::linePlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer2::playLine": [
+            "0, 1000 1000 0 1000"
+          ],
+          "zsBufPlayer2::envLine": [
+            "0., 1. 1000 0. 1000"
+          ],
+          "zsBufPlayer2::fileName": [
+            "anton.aif"
+          ],
+          "zsBufPlayer2::bufferGain": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferMute": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferPlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferPlayLine": [
+            0.0
+          ],
+          "zsBufPlayer2::linePlayBtn": [
+            0.0
+          ],
+          "zsGranulator-bp::grGain": [
+            -0.55488652153781
+          ],
+          "zsGranulator-bp::grGrainGain": [
+            1.0
+          ],
+          "zsGranulator-bp::grGrainNo": [
+            5
+          ],
+          "zsGranulator-bp::grGrainSize": [
+            100
+          ],
+          "zsGranulator-bp::grMute": [
+            0.0
+          ],
+          "zsGranulator-bp::grPanSpread": [
+            1.0
+          ],
+          "zsGranulator-bp::grPitchRate": [
+            1.0
+          ],
+          "zsGranulator-bp::grPitchRnd": [
+            0.0
+          ],
+          "zsGranulator-bp::grPlaySpeedPerc": [
+            100
+          ],
+          "zsGranulator-bp::grPositionMode": [
+            0
+          ],
+          "zsGranulator-bp::grPositionRnd": [
+            20.0
+          ],
+          "zsGranulator-bp::grPositionSource": [
+            2.0
+          ],
+          "zsGranulator-bp::grSelectionEnd": [
+            1400
+          ],
+          "zsGranulator-bp::grSelectionStart": [
+            1399
+          ],
+          "zsGranulator-bp::grFileName": [
+            "jongly.aif"
+          ],
+          "zsPlayCtrl-bp::pcLFOFreq": [
+            0.01
+          ],
+          "zsPlayCtrl-bp::pcLFOSelEnd": [
+            0.271879903918527
+          ],
+          "zsPlayCtrl-bp::pcMLFOFreq": [
+            0.1
+          ],
+          "zsPlayCtrl-bp::pcMLFOMod": [
+            0
+          ],
+          "zsPlayCtrl-bp::pcSelEndMax": [
+            1600
+          ],
+          "zsPlayCtrl-bp::pcSelEndMin": [
+            1400
+          ],
+          "zsPlayCtrl-bp::pcSelEndMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartMax": [
+            1400
+          ],
+          "zsPlayCtrl-bp::pcSelStartMin": [
+            1200
+          ],
+          "zsPlayCtrl-bp::pcSelStartMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSizeMax": [
+            100
+          ],
+          "zsPlayCtrl-bp::pcSizeMin": [
+            100
+          ],
+          "zsPlayCtrl-bp::pcSizeMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartFreq": [
+            0.025192139168456
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
+            0.06
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mod": [
+            4.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Shape": [
+            4.0
+          ],
+          "zsPlayCtrl-bp::pcSizeLFO::Frequency": [
+            0.01
+          ],
+          "zsPlayCtrl-bp::pcSizeLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
+            0.025192139168456
+          ],
+          "zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
+            0.271879903918527
+          ],
+          "zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+            0.0
+          ]
+        }
+      },
+      "3": {
+        "id": 3,
+        "data": {
+          "gain": [],
+          "mcGain": [],
+          "panic": [],
+          "preset": [],
+          "preset0": [],
+          "mcGroove::mcgDeviation": [
+            0.2
+          ],
+          "mcGroove::mcgGain": [
+            0.0
+          ],
+          "mcGroove::mcgHarmonics": [
+            4.0
+          ],
+          "mcGroove::mcgMute": [
+            0.0
+          ],
+          "mcGroove::mcgRange": [
+            2.0
+          ],
+          "mcGroove::mcgSpeed": [
+            0.1
+          ],
+          "mcGroove::mcgWfMode": [
+            0.0
+          ],
+          "mcGroove::mcgFile": [
+            "anton.aif"
+          ],
+          "grooveControl::gcLFOFreq": [
+            1.721140970956996
+          ],
+          "grooveControl::gcMLFOFreq": [
+            0.1
+          ],
+          "grooveControl::gcMLFOMod": [
+            0
+          ],
+          "grooveControl::gcMaxLen": [
+            2311
+          ],
+          "grooveControl::gcPosLen": [
+            288
+          ],
+          "grooveControl::gcPosMute": [
+            0.0
+          ],
+          "grooveControl::gcPosStart": [
+            1039
+          ],
+          "grooveControl::gcRangeEnd": [
+            1500
+          ],
+          "grooveControl::gcRangeStart": [
+            0
+          ],
+          "grooveControl::gcSizeMax": [
+            300
+          ],
+          "grooveControl::gcSizeMin": [
+            100
+          ],
+          "grooveControl::gcSizeMute": [
+            0.0
+          ],
+          "grooveControl::gcLFO::Frequency": [
+            1.721140970956996
+          ],
+          "grooveControl::gcLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Frequency": [
+            3.412331974477336
+          ],
+          "grooveControl::gcMLFO::Mod": [
+            52.0
+          ],
+          "grooveControl::gcMLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Shape": [
+            4.0
+          ],
+          "zsBufPlayer1::playLine": [
+            "0, 1000 1000 0 1000"
+          ],
+          "zsBufPlayer1::envLine": [
+            "0., 1. 1000 0. 1000"
+          ],
+          "zsBufPlayer1::fileName": [
+            "jongly.aif"
+          ],
+          "zsBufPlayer1::bufferGain": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferMute": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferPlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer1::bufferPlayLine": [
+            0.0
+          ],
+          "zsBufPlayer1::linePlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer2::playLine": [
+            "500, 0 1000"
+          ],
+          "zsBufPlayer2::envLine": [
+            "0., 1. 500 0. 500"
+          ],
+          "zsBufPlayer2::fileName": [
+            "anton.aif"
+          ],
+          "zsBufPlayer2::bufferGain": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferMute": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferPlayBtn": [
+            0.0
+          ],
+          "zsBufPlayer2::bufferPlayLine": [
+            0.0
+          ],
+          "zsBufPlayer2::linePlayBtn": [
+            0.0
+          ],
+          "zsGranulator-bp::grGain": [
+            -0.55488652153781
+          ],
+          "zsGranulator-bp::grGrainGain": [
+            1.0
+          ],
+          "zsGranulator-bp::grGrainNo": [
+            5
+          ],
+          "zsGranulator-bp::grGrainSize": [
+            55
+          ],
+          "zsGranulator-bp::grMute": [
+            0.0
+          ],
+          "zsGranulator-bp::grPanSpread": [
+            1.0
+          ],
+          "zsGranulator-bp::grPitchRate": [
+            1.0
+          ],
+          "zsGranulator-bp::grPitchRnd": [
+            0.0
+          ],
+          "zsGranulator-bp::grPlaySpeedPerc": [
+            100
+          ],
+          "zsGranulator-bp::grPositionMode": [
+            0
+          ],
+          "zsGranulator-bp::grPositionRnd": [
+            100.0
+          ],
+          "zsGranulator-bp::grPositionSource": [
+            2.0
+          ],
+          "zsGranulator-bp::grSelectionEnd": [
+            1506
+          ],
+          "zsGranulator-bp::grSelectionStart": [
+            1488
+          ],
+          "zsGranulator-bp::grFileName": [
+            "jongly.aif"
+          ],
+          "zsPlayCtrl-bp::pcLFOFreq": [
+            0.047005810163892
+          ],
+          "zsPlayCtrl-bp::pcLFOSelEnd": [
+            0.061504246016738
+          ],
+          "zsPlayCtrl-bp::pcMLFOFreq": [
+            0.1
+          ],
+          "zsPlayCtrl-bp::pcMLFOMod": [
+            0
+          ],
+          "zsPlayCtrl-bp::pcSelEndMax": [
+            2000
+          ],
+          "zsPlayCtrl-bp::pcSelEndMin": [
+            1500
+          ],
+          "zsPlayCtrl-bp::pcSelEndMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartMax": [
+            1500
+          ],
+          "zsPlayCtrl-bp::pcSelStartMin": [
+            0
+          ],
+          "zsPlayCtrl-bp::pcSelStartMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSizeMax": [
+            100
+          ],
+          "zsPlayCtrl-bp::pcSizeMin": [
+            50
+          ],
+          "zsPlayCtrl-bp::pcSizeMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartFreq": [
+            0.127535204540308
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
+            0.349382822759872
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mod": [
+            47.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcRangeMLFO::Shape": [
+            1.0
+          ],
+          "zsPlayCtrl-bp::pcSizeLFO::Frequency": [
+            0.047005810163892
+          ],
+          "zsPlayCtrl-bp::pcSizeLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
+            0.127535204540308
+          ],
+          "zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+            0.0
+          ],
+          "zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
+            0.061504246016738
+          ],
+          "zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+            0.0
+          ]
+        }
+      },
+      "4": {
+        "id": 4,
+        "data": {
+          "gain": [],
+          "mcGain": [],
+          "panic": [],
+          "preset": [],
+          "preset0": [],
+          "mcGroove::mcgDeviation": [
+            0.2
+          ],
+          "mcGroove::mcgGain": [
+            0.0
+          ],
+          "mcGroove::mcgHarmonics": [
+            4.0
+          ],
+          "mcGroove::mcgMute": [
+            0.0
+          ],
+          "mcGroove::mcgRange": [
+            2.0
+          ],
+          "mcGroove::mcgSpeed": [
+            0.1
+          ],
+          "mcGroove::mcgWfMode": [
+            0.0
+          ],
+          "mcGroove::mcgFile": [
+            "anton.aif"
+          ],
+          "grooveControl::gcLFOFreq": [
+            1.721140970956996
+          ],
+          "grooveControl::gcMLFOFreq": [
+            0.1
+          ],
+          "grooveControl::gcMLFOMod": [
+            0
+          ],
+          "grooveControl::gcMaxLen": [
+            2311
+          ],
+          "grooveControl::gcPosLen": [
+            290
+          ],
+          "grooveControl::gcPosMute": [
+            0.0
+          ],
+          "grooveControl::gcPosStart": [
+            0
+          ],
+          "grooveControl::gcRangeEnd": [
+            1500
+          ],
+          "grooveControl::gcRangeStart": [
+            0
+          ],
+          "grooveControl::gcSizeMax": [
+            300
+          ],
+          "grooveControl::gcSizeMin": [
+            100
+          ],
+          "grooveControl::gcSizeMute": [
+            0.0
+          ],
+          "grooveControl::gcLFO::Frequency": [
+            1.721140970956996
+          ],
+          "grooveControl::gcLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Frequency": [
+            3.412331974477336
+          ],
+          "grooveControl::gcMLFO::Mod": [
+            52.0
+          ],
+          "grooveControl::gcMLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Shape": [
+            5.0
+          ],
+          "zsBufPlayer1::playLine": [],
+          "zsBufPlayer1::envLine": [],
+          "zsBufPlayer1::fileName": [],
+          "zsBufPlayer1::bufferGain": [],
+          "zsBufPlayer1::bufferMute": [],
+          "zsBufPlayer1::bufferPlayBtn": [],
+          "zsBufPlayer1::bufferPlayLine": [],
+          "zsBufPlayer1::linePlayBtn": [],
+          "zsBufPlayer2::playLine": [],
+          "zsBufPlayer2::envLine": [],
+          "zsBufPlayer2::fileName": [],
+          "zsBufPlayer2::bufferGain": [],
+          "zsBufPlayer2::bufferMute": [],
+          "zsBufPlayer2::bufferPlayBtn": [],
+          "zsBufPlayer2::bufferPlayLine": [],
+          "zsBufPlayer2::linePlayBtn": [],
+          "zsGranulator-bp::grGain": [],
+          "zsGranulator-bp::grGrainGain": [],
+          "zsGranulator-bp::grGrainNo": [],
+          "zsGranulator-bp::grGrainSize": [],
+          "zsGranulator-bp::grMute": [],
+          "zsGranulator-bp::grPanSpread": [],
+          "zsGranulator-bp::grPitchRate": [],
+          "zsGranulator-bp::grPitchRnd": [],
+          "zsGranulator-bp::grPlaySpeedPerc": [],
+          "zsGranulator-bp::grPositionMode": [],
+          "zsGranulator-bp::grPositionRnd": [],
+          "zsGranulator-bp::grPositionSource": [],
+          "zsGranulator-bp::grSelectionEnd": [],
+          "zsGranulator-bp::grSelectionStart": [],
+          "zsGranulator-bp::grFileName": [],
+          "zsPlayCtrl-bp::pcLFOFreq": [],
+          "zsPlayCtrl-bp::pcLFOSelEnd": [],
+          "zsPlayCtrl-bp::pcMLFOFreq": [],
+          "zsPlayCtrl-bp::pcMLFOMod": [],
+          "zsPlayCtrl-bp::pcSelEndMax": [],
+          "zsPlayCtrl-bp::pcSelEndMin": [],
+          "zsPlayCtrl-bp::pcSelEndMute": [],
+          "zsPlayCtrl-bp::pcSelStartMax": [],
+          "zsPlayCtrl-bp::pcSelStartMin": [],
+          "zsPlayCtrl-bp::pcSelStartMute": [],
+          "zsPlayCtrl-bp::pcSizeMax": [],
+          "zsPlayCtrl-bp::pcSizeMin": [],
+          "zsPlayCtrl-bp::pcSizeMute": [],
+          "zsPlayCtrl-bp::pcRangeMute": [],
+          "zsPlayCtrl-bp::pcSelStartFreq": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mod": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mute": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Shape": [],
+          "zsPlayCtrl-bp::pcSizeLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcSizeLFO::Mute": [],
+          "zsPlayCtrl-bp::pcSelStartLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcSelStartLFO::Mute": [],
+          "zsPlayCtrl-bp::pcSelEndLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcSelEndLFO::Mute": []
+        }
+      },
+      "5": {
+        "id": 5,
+        "data": {
+          "gain": [],
+          "mcGain": [],
+          "panic": [],
+          "preset": [],
+          "preset0": [],
+          "mcGroove::mcgDeviation": [
+            0.05
+          ],
+          "mcGroove::mcgGain": [
+            0.0
+          ],
+          "mcGroove::mcgHarmonics": [
+            3.0
+          ],
+          "mcGroove::mcgMute": [
+            0.0
+          ],
+          "mcGroove::mcgRange": [
+            1.0
+          ],
+          "mcGroove::mcgSpeed": [
+            0.001
+          ],
+          "mcGroove::mcgWfMode": [
+            0.0
+          ],
+          "mcGroove::mcgFile": [
+            "anton.aif"
+          ],
+          "grooveControl::gcLFOFreq": [
+            0.040352935811582
+          ],
+          "grooveControl::gcMLFOFreq": [
+            0.1
+          ],
+          "grooveControl::gcMLFOMod": [
+            0
+          ],
+          "grooveControl::gcMaxLen": [
+            2311
+          ],
+          "grooveControl::gcPosLen": [
+            224
+          ],
+          "grooveControl::gcPosMute": [
+            0.0
+          ],
+          "grooveControl::gcPosStart": [
+            0
+          ],
+          "grooveControl::gcRangeEnd": [
+            600
+          ],
+          "grooveControl::gcRangeStart": [
+            0
+          ],
+          "grooveControl::gcSizeMax": [
+            300
+          ],
+          "grooveControl::gcSizeMin": [
+            100
+          ],
+          "grooveControl::gcSizeMute": [
+            0.0
+          ],
+          "grooveControl::gcLFO::Frequency": [
+            0.040352935811582
+          ],
+          "grooveControl::gcLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Frequency": [
+            0.1
+          ],
+          "grooveControl::gcMLFO::Mod": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Mute": [
+            0.0
+          ],
+          "grooveControl::gcMLFO::Shape": [
+            1.0
+          ],
+          "zsBufPlayer1::playLine": [],
+          "zsBufPlayer1::envLine": [],
+          "zsBufPlayer1::fileName": [],
+          "zsBufPlayer1::bufferGain": [],
+          "zsBufPlayer1::bufferMute": [],
+          "zsBufPlayer1::bufferPlayBtn": [],
+          "zsBufPlayer1::bufferPlayLine": [],
+          "zsBufPlayer1::linePlayBtn": [],
+          "zsBufPlayer2::playLine": [],
+          "zsBufPlayer2::envLine": [],
+          "zsBufPlayer2::fileName": [],
+          "zsBufPlayer2::bufferGain": [],
+          "zsBufPlayer2::bufferMute": [],
+          "zsBufPlayer2::bufferPlayBtn": [],
+          "zsBufPlayer2::bufferPlayLine": [],
+          "zsBufPlayer2::linePlayBtn": [],
+          "zsGranulator-bp::grGain": [],
+          "zsGranulator-bp::grGrainGain": [],
+          "zsGranulator-bp::grGrainNo": [],
+          "zsGranulator-bp::grGrainSize": [],
+          "zsGranulator-bp::grMute": [],
+          "zsGranulator-bp::grPanSpread": [],
+          "zsGranulator-bp::grPitchRate": [],
+          "zsGranulator-bp::grPitchRnd": [],
+          "zsGranulator-bp::grPlaySpeedPerc": [],
+          "zsGranulator-bp::grPositionMode": [],
+          "zsGranulator-bp::grPositionRnd": [],
+          "zsGranulator-bp::grPositionSource": [],
+          "zsGranulator-bp::grSelectionEnd": [],
+          "zsGranulator-bp::grSelectionStart": [],
+          "zsGranulator-bp::grFileName": [],
+          "zsPlayCtrl-bp::pcLFOFreq": [],
+          "zsPlayCtrl-bp::pcLFOSelEnd": [],
+          "zsPlayCtrl-bp::pcMLFOFreq": [],
+          "zsPlayCtrl-bp::pcMLFOMod": [],
+          "zsPlayCtrl-bp::pcSelEndMax": [],
+          "zsPlayCtrl-bp::pcSelEndMin": [],
+          "zsPlayCtrl-bp::pcSelEndMute": [],
+          "zsPlayCtrl-bp::pcSelStartMax": [],
+          "zsPlayCtrl-bp::pcSelStartMin": [],
+          "zsPlayCtrl-bp::pcSelStartMute": [],
+          "zsPlayCtrl-bp::pcSizeMax": [],
+          "zsPlayCtrl-bp::pcSizeMin": [],
+          "zsPlayCtrl-bp::pcSizeMute": [],
+          "zsPlayCtrl-bp::pcRangeMute": [],
+          "zsPlayCtrl-bp::pcSelStartFreq": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mod": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Mute": [],
+          "zsPlayCtrl-bp::pcRangeMLFO::Shape": [],
+          "zsPlayCtrl-bp::pcSizeLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcSizeLFO::Mute": [],
+          "zsPlayCtrl-bp::pcSelStartLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcSelStartLFO::Mute": [],
+          "zsPlayCtrl-bp::pcSelEndLFO::Frequency": [],
+          "zsPlayCtrl-bp::pcSelEndLFO::Mute": []
+        }
+      }
+    }
+  }
 }
