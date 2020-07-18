@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 849.0, 288.0, 1524.0, 959.0 ],
+		"rect" : [ 887.0, 422.0, 1524.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -160,7 +160,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 871.0, 449.0, 606.0, 105.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 146.8544921875, 258.5, 598.1455078125, 105.0 ],
+					"presentation_rect" : [ 136.8544921875, 251.5, 608.1455078125, 108.0 ],
 					"varname" : "zsPlayCtrl-bp",
 					"viewvisibility" : 1
 				}
@@ -1007,7 +1007,7 @@
 					"outlettype" : [ "", "", "int" ],
 					"patching_rect" : [ 893.833333333333371, 51.5, 422.000000000000114, 107.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 319.67724609375, 8.0, 422.000000000000114, 117.0 ],
+					"presentation_rect" : [ 316.999999999999886, 8.0, 428.000000000000114, 106.0 ],
 					"varname" : "grooveControl",
 					"viewvisibility" : 1
 				}
@@ -1024,13 +1024,13 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "zsMcGroove-bp.maxpat",
-					"numinlets" : 4,
+					"numinlets" : 5,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal", "float" ],
 					"patching_rect" : [ 890.0, 202.0, 426.0, 123.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 319.67724609375, 117.0, 422.0, 123.0 ],
+					"presentation_rect" : [ 314.838623046875, 116.0, 430.161376953125, 123.0 ],
 					"varname" : "mcGroove",
 					"viewvisibility" : 1
 				}
@@ -1153,7 +1153,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 152, 79, 1038, 850 ]
+						"storage_rect" : [ 24, 79, 813, 980 ]
 					}
 ,
 					"text" : "pattrstorage zsPattrStore",
@@ -1170,15 +1170,15 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 273.5, 65.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"gain" : [ -37.573938928365656 ],
-						"mcGain" : [ -49.183727034120757 ],
+						"gain" : [ -30.137603226425959 ],
+						"mcGain" : [ -37.41076115485567 ],
 						"panic" : [ 0.0 ],
-						"preset" : [ 1.0 ],
+						"preset" : [ 0.0 ],
 						"preset0" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u266001137"
+					"varname" : "u326001468"
 				}
 
 			}
@@ -1199,8 +1199,8 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 2,
-					"outlettype" : [ "", "" ],
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 14.0, 53.0, 66.0, 22.0 ],
 					"text" : "mxj zscore"
 				}
@@ -1235,7 +1235,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 1134.0, 807.0, 71.0, 13.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 0.0, 811.0, 622.0 ],
+					"presentation_rect" : [ 0.0, 0.0, 809.0, 603.0 ],
 					"proportion" : 0.5,
 					"rounded" : 43
 				}
@@ -1287,7 +1287,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-53", 1 ],
-					"midpoints" : [ 800.5, 143.0, 878.0, 143.0, 878.0, 188.0, 1035.166666666666742, 188.0 ],
+					"midpoints" : [ 800.5, 143.0, 878.0, 143.0, 878.0, 188.0, 1001.25, 188.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -1816,6 +1816,8 @@
 			"obj-36" : [ "panicBtn", "panic", 0 ],
 			"obj-44" : [ "preset0", "preset0", 0 ],
 			"obj-45" : [ "mc.gain", "mc.gain", 0 ],
+			"obj-53::obj-171" : [ "mcgPlayCont", "playCont", 0 ],
+			"obj-53::obj-182" : [ "mcgPlayLine", "playLine", 0 ],
 			"obj-53::obj-35" : [ "mcgGain", "gain", 0 ],
 			"obj-53::obj-38" : [ "mcgHarmonics", "harmonics", 0 ],
 			"obj-53::obj-48" : [ "mcgMute", "mute", 0 ],
@@ -1846,7 +1848,11 @@
 				}
 ,
 				"obj-31::obj-155" : 				{
-					"parameter_longname" : "SpectraLFOShape[4]"
+					"parameter_invisible" : 0,
+					"parameter_longname" : "SpectraLFOShape[4]",
+					"parameter_modmode" : 0,
+					"parameter_range" : [ "all", "selection", "external" ],
+					"parameter_type" : 2
 				}
 ,
 				"obj-31::obj-171" : 				{
@@ -1932,69 +1938,69 @@
 		"dependency_cache" : [ 			{
 				"name" : "zsPattrStore.json",
 				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
-				"patcherrelativepath" : ".",
+				"patcherrelativepath" : "../../../../../../Music/max/1_my/zscore",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMcGroove-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGrvCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsui.js",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsBufferPlayer-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGranulator-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsgran~.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsPlayCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1

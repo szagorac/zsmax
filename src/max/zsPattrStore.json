@@ -7,9 +7,7 @@
 				"data": {
 					"gain": [],
 					"mcGain": [],
-					"panic": [
-						0.0
-					],
+					"panic": [],
 					"preset": [],
 					"preset0": [],
 					"mcGroove::mcgDeviation": [
@@ -24,6 +22,12 @@
 					"mcGroove::mcgMute": [
 						1.0
 					],
+					"mcGroove::mcgPlayCont": [
+						0.0
+					],
+					"mcGroove::mcgPlayLine": [
+						0.0
+					],
 					"mcGroove::mcgRange": [
 						1.0
 					],
@@ -35,6 +39,9 @@
 					],
 					"mcGroove::mcgFile": [
 						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.040352935811582
@@ -138,14 +145,8 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
-					"zsGranulator-bp::grFileName": [
-						"jongly.aif"
-					],
-					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 200 1. 4000 0. 200"
-					],
 					"zsGranulator-bp::grGain": [
-						-37.0
+						0.0
 					],
 					"zsGranulator-bp::grGrainGain": [
 						1.0
@@ -191,6 +192,12 @@
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
+					],
+					"zsGranulator-bp::grFileName": [
+						"jongly.aif"
+					],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 200 1. 4000 0. 200"
 					],
 					"zsPlayCtrl-bp::pcLFOFreq": [
 						0.01
@@ -272,12 +279,8 @@
 			"2": {
 				"id": 2,
 				"data": {
-					"gain": [
-						-30.137603226425959
-					],
-					"mcGain": [
-						-37.41076115485567
-					],
+					"gain": [],
+					"mcGain": [],
 					"panic": [],
 					"preset": [],
 					"preset0": [],
@@ -293,6 +296,12 @@
 					"mcGroove::mcgMute": [
 						0.0
 					],
+					"mcGroove::mcgPlayCont": [
+						1.0
+					],
+					"mcGroove::mcgPlayLine": [
+						0.0
+					],
 					"mcGroove::mcgRange": [
 						3.0
 					],
@@ -304,6 +313,9 @@
 					],
 					"mcGroove::mcgFile": [
 						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.061504246016738
@@ -318,13 +330,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						246
+						311
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						1314
+						1834
 					],
 					"grooveControl::gcRangeEnd": [
 						2000
@@ -407,14 +419,8 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
-					"zsGranulator-bp::grFileName": [
-						"jongly.aif"
-					],
-					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
-					],
 					"zsGranulator-bp::grGain": [
-						-0.55488652153781
+						0.0
 					],
 					"zsGranulator-bp::grGrainGain": [
 						1.0
@@ -456,10 +462,16 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1534
+						1565
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1236
+						1351
+					],
+					"zsGranulator-bp::grFileName": [
+						"jongly.aif"
+					],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"zsPlayCtrl-bp::pcLFOFreq": [
 						0.01
@@ -558,6 +570,12 @@
 					"mcGroove::mcgMute": [
 						0.0
 					],
+					"mcGroove::mcgPlayCont": [
+						1.0
+					],
+					"mcGroove::mcgPlayLine": [
+						0.0
+					],
 					"mcGroove::mcgRange": [
 						2.0
 					],
@@ -569,6 +587,9 @@
 					],
 					"mcGroove::mcgFile": [
 						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						1.721140970956996
@@ -583,13 +604,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						137
+						104
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						920
+						1499
 					],
 					"grooveControl::gcRangeEnd": [
 						1500
@@ -672,14 +693,8 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
-					"zsGranulator-bp::grFileName": [
-						"jongly.aif"
-					],
-					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
-					],
 					"zsGranulator-bp::grGain": [
-						-0.55488652153781
+						0
 					],
 					"zsGranulator-bp::grGrainGain": [
 						1.0
@@ -688,7 +703,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						90
+						60
 					],
 					"zsGranulator-bp::grMute": [
 						0.0
@@ -721,10 +736,16 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1995
+						1556
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						10
+						983
+					],
+					"zsGranulator-bp::grFileName": [
+						"jongly.aif"
+					],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"zsPlayCtrl-bp::pcLFOFreq": [
 						0.047005810163892
@@ -823,6 +844,12 @@
 					"mcGroove::mcgMute": [
 						0.0
 					],
+					"mcGroove::mcgPlayCont": [
+						1.0
+					],
+					"mcGroove::mcgPlayLine": [
+						0.0
+					],
 					"mcGroove::mcgRange": [
 						2.0
 					],
@@ -834,6 +861,9 @@
 					],
 					"mcGroove::mcgFile": [
 						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						1.721140970956996
@@ -848,13 +878,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						299
+						115
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						1500
+						0
 					],
 					"grooveControl::gcRangeEnd": [
 						1500
@@ -915,11 +945,9 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
-					"zsGranulator-bp::grFileName": [],
-					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
+					"zsGranulator-bp::grGain": [
+						0.0
 					],
-					"zsGranulator-bp::grGain": [],
 					"zsGranulator-bp::grGrainGain": [],
 					"zsGranulator-bp::grGrainNo": [],
 					"zsGranulator-bp::grGrainSize": [
@@ -954,6 +982,10 @@
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						2254
+					],
+					"zsGranulator-bp::grFileName": [],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
 					],
 					"zsPlayCtrl-bp::pcLFOFreq": [
 						0.013541519042862
@@ -1038,6 +1070,12 @@
 					"mcGroove::mcgMute": [
 						0.0
 					],
+					"mcGroove::mcgPlayCont": [
+						1.0
+					],
+					"mcGroove::mcgPlayLine": [
+						0.0
+					],
 					"mcGroove::mcgRange": [
 						1.0
 					],
@@ -1049,6 +1087,9 @@
 					],
 					"mcGroove::mcgFile": [
 						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 4000 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.040352935811582
@@ -1063,13 +1104,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						297
+						232
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						573
+						591
 					],
 					"grooveControl::gcRangeEnd": [
 						600
@@ -1128,15 +1169,13 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
-					"zsGranulator-bp::grFileName": [],
-					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 200 1. 4000 0. 200"
+					"zsGranulator-bp::grGain": [
+						0.0
 					],
-					"zsGranulator-bp::grGain": [],
 					"zsGranulator-bp::grGrainGain": [],
 					"zsGranulator-bp::grGrainNo": [],
 					"zsGranulator-bp::grGrainSize": [
-						233
+						296
 					],
 					"zsGranulator-bp::grMute": [],
 					"zsGranulator-bp::grPanSpread": [],
@@ -1159,12 +1198,18 @@
 						0
 					],
 					"zsGranulator-bp::grPositionRnd": [],
-					"zsGranulator-bp::grPositionSource": [],
+					"zsGranulator-bp::grPositionSource": [
+						0.0
+					],
 					"zsGranulator-bp::grSelectionEnd": [
-						2497
+						2339
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1303
+						1354
+					],
+					"zsGranulator-bp::grFileName": [],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 200 1. 4000 0. 200"
 					],
 					"zsPlayCtrl-bp::pcLFOFreq": [],
 					"zsPlayCtrl-bp::pcLFOSelEnd": [],
