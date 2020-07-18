@@ -121,6 +121,9 @@
 					"zsBufPlayer1::linePlayBtn": [
 						0.0
 					],
+					"zsBufPlayer1::pan": [
+						0.0
+					],
 					"zsBufPlayer2::playLine": [
 						"0, 1000 1000 0 1000"
 					],
@@ -143,6 +146,9 @@
 						0.0
 					],
 					"zsBufPlayer2::linePlayBtn": [
+						0.0
+					],
+					"zsBufPlayer2::pan": [
 						0.0
 					],
 					"zsGranulator-bp::grGain": [
@@ -330,13 +336,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						311
+						233
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						1834
+						1304
 					],
 					"grooveControl::gcRangeEnd": [
 						2000
@@ -395,6 +401,9 @@
 					"zsBufPlayer1::linePlayBtn": [
 						0.0
 					],
+					"zsBufPlayer1::pan": [
+						0.0
+					],
 					"zsBufPlayer2::playLine": [
 						"0, 1000 1000 0 1000"
 					],
@@ -417,6 +426,9 @@
 						0.0
 					],
 					"zsBufPlayer2::linePlayBtn": [
+						0.0
+					],
+					"zsBufPlayer2::pan": [
 						0.0
 					],
 					"zsGranulator-bp::grGain": [
@@ -462,10 +474,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1565
+						1586
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1351
+						1202
 					],
 					"zsGranulator-bp::grFileName": [
 						"jongly.aif"
@@ -604,13 +616,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						104
+						237
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						1499
+						1236
 					],
 					"grooveControl::gcRangeEnd": [
 						1500
@@ -669,6 +681,9 @@
 					"zsBufPlayer1::linePlayBtn": [
 						0.0
 					],
+					"zsBufPlayer1::pan": [
+						0.0
+					],
 					"zsBufPlayer2::playLine": [
 						"500, 0 1000"
 					],
@@ -693,6 +708,9 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
+					"zsBufPlayer2::pan": [
+						0.0
+					],
 					"zsGranulator-bp::grGain": [
 						0
 					],
@@ -703,7 +721,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						60
+						51
 					],
 					"zsGranulator-bp::grMute": [
 						0.0
@@ -736,10 +754,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1556
+						1532
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						983
+						393
 					],
 					"zsGranulator-bp::grFileName": [
 						"jongly.aif"
@@ -878,13 +896,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						115
+						154
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						0
+						1500
 					],
 					"grooveControl::gcRangeEnd": [
 						1500
@@ -919,17 +937,42 @@
 					"grooveControl::gcMLFO::Shape": [
 						5.0
 					],
-					"zsBufPlayer1::playLine": [],
-					"zsBufPlayer1::envLine": [],
-					"zsBufPlayer1::fileName": [],
-					"zsBufPlayer1::bufferGain": [],
-					"zsBufPlayer1::bufferMute": [],
-					"zsBufPlayer1::bufferPlayBtn": [],
-					"zsBufPlayer1::bufferPlayLine": [],
-					"zsBufPlayer1::linePlayBtn": [],
-					"zsBufPlayer2::playLine": [],
-					"zsBufPlayer2::envLine": [],
-					"zsBufPlayer2::fileName": [],
+					"zsBufPlayer1::playLine": [
+						"0, 1000 1000 0 1000"
+					],
+					"zsBufPlayer1::envLine": [
+						"0., 1. 1000 0. 1000"
+					],
+					"zsBufPlayer1::fileName": [
+						"jongly.aif"
+					],
+					"zsBufPlayer1::bufferGain": [
+						0.0
+					],
+					"zsBufPlayer1::bufferMute": [
+						0.0
+					],
+					"zsBufPlayer1::bufferPlayBtn": [
+						0.0
+					],
+					"zsBufPlayer1::bufferPlayLine": [
+						0.0
+					],
+					"zsBufPlayer1::linePlayBtn": [
+						0.0
+					],
+					"zsBufPlayer1::pan": [
+						0.0
+					],
+					"zsBufPlayer2::playLine": [
+						"500, 0 1000"
+					],
+					"zsBufPlayer2::envLine": [
+						"0., 1. 500 0. 500"
+					],
+					"zsBufPlayer2::fileName": [
+						"anton.aif"
+					],
 					"zsBufPlayer2::bufferGain": [
 						0.0
 					],
@@ -945,16 +988,27 @@
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
 					],
+					"zsBufPlayer2::pan": [
+						0.0
+					],
 					"zsGranulator-bp::grGain": [
 						0.0
 					],
-					"zsGranulator-bp::grGrainGain": [],
-					"zsGranulator-bp::grGrainNo": [],
+					"zsGranulator-bp::grGrainGain": [
+						1.0
+					],
+					"zsGranulator-bp::grGrainNo": [
+						5
+					],
 					"zsGranulator-bp::grGrainSize": [
 						193
 					],
-					"zsGranulator-bp::grMute": [],
-					"zsGranulator-bp::grPanSpread": [],
+					"zsGranulator-bp::grMute": [
+						0.0
+					],
+					"zsGranulator-bp::grPanSpread": [
+						1.0
+					],
 					"zsGranulator-bp::grPitchRate": [
 						2.0
 					],
@@ -973,7 +1027,9 @@
 					"zsGranulator-bp::grPositionMode": [
 						0
 					],
-					"zsGranulator-bp::grPositionRnd": [],
+					"zsGranulator-bp::grPositionRnd": [
+						100.0
+					],
 					"zsGranulator-bp::grPositionSource": [
 						1.0
 					],
@@ -983,7 +1039,9 @@
 					"zsGranulator-bp::grSelectionStart": [
 						2254
 					],
-					"zsGranulator-bp::grFileName": [],
+					"zsGranulator-bp::grFileName": [
+						"jongly.aif"
+					],
 					"zsGranulator-bp::grEnvLine": [
 						"0., 1. 200 1. 600 0. 200"
 					],
@@ -993,8 +1051,12 @@
 					"zsPlayCtrl-bp::pcLFOSelEnd": [
 						0.019460327841234
 					],
-					"zsPlayCtrl-bp::pcMLFOFreq": [],
-					"zsPlayCtrl-bp::pcMLFOMod": [],
+					"zsPlayCtrl-bp::pcMLFOFreq": [
+						0.1
+					],
+					"zsPlayCtrl-bp::pcMLFOMod": [
+						0
+					],
 					"zsPlayCtrl-bp::pcRangeMute": [
 						1.0
 					],
@@ -1007,7 +1069,9 @@
 					"zsPlayCtrl-bp::pcSelEndMute": [
 						1.0
 					],
-					"zsPlayCtrl-bp::pcSelStartFreq": [],
+					"zsPlayCtrl-bp::pcSelStartFreq": [
+						0.127535
+					],
 					"zsPlayCtrl-bp::pcSelStartMax": [
 						1000
 					],
@@ -1041,13 +1105,21 @@
 					"zsPlayCtrl-bp::pcSizeLFO::Frequency": [
 						0.013541519042862
 					],
-					"zsPlayCtrl-bp::pcSizeLFO::Mute": [],
-					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [],
-					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [],
+					"zsPlayCtrl-bp::pcSizeLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
+						0.127535
+					],
+					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+						0.0
+					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
 						0.019460327841234
 					],
-					"zsPlayCtrl-bp::pcSelEndLFO::Mute": []
+					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+						0.0
+					]
 				}
 			},
 			"5": {
@@ -1104,13 +1176,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						232
+						104
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						591
+						551
 					],
 					"grooveControl::gcRangeEnd": [
 						600
@@ -1145,40 +1217,78 @@
 					"grooveControl::gcMLFO::Shape": [
 						1.0
 					],
-					"zsBufPlayer1::playLine": [],
-					"zsBufPlayer1::envLine": [],
-					"zsBufPlayer1::fileName": [],
-					"zsBufPlayer1::bufferGain": [],
-					"zsBufPlayer1::bufferMute": [],
+					"zsBufPlayer1::playLine": [
+						"0, 1000 1000 0 1000"
+					],
+					"zsBufPlayer1::envLine": [
+						"0., 1. 1000 0. 1000"
+					],
+					"zsBufPlayer1::fileName": [
+						"jongly.aif"
+					],
+					"zsBufPlayer1::bufferGain": [
+						0.0
+					],
+					"zsBufPlayer1::bufferMute": [
+						0.0
+					],
 					"zsBufPlayer1::bufferPlayBtn": [
 						0.0
 					],
-					"zsBufPlayer1::bufferPlayLine": [],
+					"zsBufPlayer1::bufferPlayLine": [
+						1.0
+					],
 					"zsBufPlayer1::linePlayBtn": [
 						0.0
 					],
-					"zsBufPlayer2::playLine": [],
-					"zsBufPlayer2::envLine": [],
-					"zsBufPlayer2::fileName": [],
-					"zsBufPlayer2::bufferGain": [],
-					"zsBufPlayer2::bufferMute": [],
+					"zsBufPlayer1::pan": [
+						-1.0
+					],
+					"zsBufPlayer2::playLine": [
+						"500, 0 1000"
+					],
+					"zsBufPlayer2::envLine": [
+						"0., 1. 500 0. 500"
+					],
+					"zsBufPlayer2::fileName": [
+						"anton.aif"
+					],
+					"zsBufPlayer2::bufferGain": [
+						0.0
+					],
+					"zsBufPlayer2::bufferMute": [
+						0.0
+					],
 					"zsBufPlayer2::bufferPlayBtn": [
 						0.0
 					],
-					"zsBufPlayer2::bufferPlayLine": [],
+					"zsBufPlayer2::bufferPlayLine": [
+						1.0
+					],
 					"zsBufPlayer2::linePlayBtn": [
 						0.0
+					],
+					"zsBufPlayer2::pan": [
+						1.0
 					],
 					"zsGranulator-bp::grGain": [
 						0.0
 					],
-					"zsGranulator-bp::grGrainGain": [],
-					"zsGranulator-bp::grGrainNo": [],
-					"zsGranulator-bp::grGrainSize": [
-						296
+					"zsGranulator-bp::grGrainGain": [
+						1.0
 					],
-					"zsGranulator-bp::grMute": [],
-					"zsGranulator-bp::grPanSpread": [],
+					"zsGranulator-bp::grGrainNo": [
+						5
+					],
+					"zsGranulator-bp::grGrainSize": [
+						245
+					],
+					"zsGranulator-bp::grMute": [
+						0.0
+					],
+					"zsGranulator-bp::grPanSpread": [
+						1.0
+					],
 					"zsGranulator-bp::grPitchRate": [
 						0.1
 					],
@@ -1197,28 +1307,42 @@
 					"zsGranulator-bp::grPositionMode": [
 						0
 					],
-					"zsGranulator-bp::grPositionRnd": [],
+					"zsGranulator-bp::grPositionRnd": [
+						100.0
+					],
 					"zsGranulator-bp::grPositionSource": [
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						2339
+						2222
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1354
+						1499
 					],
-					"zsGranulator-bp::grFileName": [],
+					"zsGranulator-bp::grFileName": [
+						"jongly.aif"
+					],
 					"zsGranulator-bp::grEnvLine": [
 						"0., 1. 200 1. 4000 0. 200"
 					],
-					"zsPlayCtrl-bp::pcLFOFreq": [],
-					"zsPlayCtrl-bp::pcLFOSelEnd": [],
-					"zsPlayCtrl-bp::pcMLFOFreq": [],
-					"zsPlayCtrl-bp::pcMLFOMod": [],
+					"zsPlayCtrl-bp::pcLFOFreq": [
+						0.013542
+					],
+					"zsPlayCtrl-bp::pcLFOSelEnd": [
+						0.01946
+					],
+					"zsPlayCtrl-bp::pcMLFOFreq": [
+						0.1
+					],
+					"zsPlayCtrl-bp::pcMLFOMod": [
+						0
+					],
 					"zsPlayCtrl-bp::pcRangeMute": [
 						0.0
 					],
-					"zsPlayCtrl-bp::pcSelEndMax": [],
+					"zsPlayCtrl-bp::pcSelEndMax": [
+						2500
+					],
 					"zsPlayCtrl-bp::pcSelEndMin": [
 						2200
 					],
@@ -1237,25 +1361,45 @@
 					"zsPlayCtrl-bp::pcSelStartMute": [
 						0.0
 					],
-					"zsPlayCtrl-bp::pcSizeMax": [],
-					"zsPlayCtrl-bp::pcSizeMin": [],
+					"zsPlayCtrl-bp::pcSizeMax": [
+						300
+					],
+					"zsPlayCtrl-bp::pcSizeMin": [
+						20
+					],
 					"zsPlayCtrl-bp::pcSizeMute": [
 						0.0
 					],
-					"zsPlayCtrl-bp::pcRangeMLFO::Frequency": [],
-					"zsPlayCtrl-bp::pcRangeMLFO::Mod": [],
+					"zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
+						0.00538
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Mod": [
+						0.0
+					],
 					"zsPlayCtrl-bp::pcRangeMLFO::Mute": [
 						0.0
 					],
-					"zsPlayCtrl-bp::pcRangeMLFO::Shape": [],
-					"zsPlayCtrl-bp::pcSizeLFO::Frequency": [],
-					"zsPlayCtrl-bp::pcSizeLFO::Mute": [],
+					"zsPlayCtrl-bp::pcRangeMLFO::Shape": [
+						2.0
+					],
+					"zsPlayCtrl-bp::pcSizeLFO::Frequency": [
+						0.013542
+					],
+					"zsPlayCtrl-bp::pcSizeLFO::Mute": [
+						0.0
+					],
 					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
 						0.010978892315525
 					],
-					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [],
-					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [],
-					"zsPlayCtrl-bp::pcSelEndLFO::Mute": []
+					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
+						0.01946
+					],
+					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+						0.0
+					]
 				}
 			}
 		}

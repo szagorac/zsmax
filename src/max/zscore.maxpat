@@ -276,7 +276,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 232.333333333333485, 718.0, 321.666666666666742, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 419.0, 499.5, 326.0, 92.0 ],
+					"presentation_rect" : [ 408.0, 493.5, 337.0, 92.0 ],
 					"varname" : "zsBufPlayer2",
 					"viewvisibility" : 1
 				}
@@ -462,7 +462,7 @@
 					"outlettype" : [ "signal", "signal" ],
 					"patching_rect" : [ 235.67724609375, 449.0, 321.666666666666629, 91.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 22.0, 499.5, 328.0, 92.0 ],
+					"presentation_rect" : [ 22.0, 493.5, 339.0, 92.0 ],
 					"varname" : "zsBufPlayer1",
 					"viewvisibility" : 1
 				}
@@ -1070,7 +1070,7 @@
 					"parameter_enable" : 1,
 					"patching_rect" : [ 62.25, 333.5, 47.0, 132.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ 753.0, 419.5, 47.0, 121.0 ],
+					"presentation_rect" : [ 757.0, 360.5, 47.0, 121.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_longname" : "zsGain",
@@ -1178,7 +1178,7 @@
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u326001468"
+					"varname" : "u522009583"
 				}
 
 			}
@@ -1199,8 +1199,8 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
 					"patching_rect" : [ 14.0, 53.0, 66.0, 22.0 ],
 					"text" : "mxj zscore"
 				}
@@ -1775,6 +1775,7 @@
  ],
 		"parameters" : 		{
 			"obj-10::obj-1" : [ "bufferMute[4]", "linePlay", 0 ],
+			"obj-10::obj-13" : [ "FrequencyMLFO[1]", "Pan", 0 ],
 			"obj-10::obj-20" : [ "bufferMute[6]", "mute", 0 ],
 			"obj-10::obj-23" : [ "zsGain[3]", "gain", 0 ],
 			"obj-10::obj-3" : [ "bufferMute[5]", "playBtn", 0 ],
@@ -1800,7 +1801,7 @@
 			"obj-32::obj-79" : [ "LFOSelEnd", "EndMod", 0 ],
 			"obj-32::obj-80::obj-12" : [ "MuteMLFO", "Mute", 0 ],
 			"obj-32::obj-80::obj-13" : [ "ModMLFO", "Mod", 0 ],
-			"obj-32::obj-80::obj-20" : [ "FrequencyMLFO", "Freq", 0 ],
+			"obj-32::obj-80::obj-20" : [ "FrequencyMLFO[2]", "Freq", 0 ],
 			"obj-32::obj-80::obj-75" : [ "MLFOShape", "Shape", 0 ],
 			"obj-32::obj-88::obj-12" : [ "Mute[6]", "Mute", 0 ],
 			"obj-32::obj-88::obj-20" : [ "Frequency[6]", "Freq", 0 ],
@@ -1823,6 +1824,7 @@
 			"obj-53::obj-48" : [ "mcgMute", "mute", 0 ],
 			"obj-53::obj-75" : [ "mcgWfMode", "mode", 0 ],
 			"obj-92::obj-1" : [ "bufferMute[7]", "linePlay", 0 ],
+			"obj-92::obj-13" : [ "FrequencyMLFO", "Pan", 0 ],
 			"obj-92::obj-20" : [ "bufferMute[2]", "mute", 0 ],
 			"obj-92::obj-23" : [ "zsGain[2]", "gain", 0 ],
 			"obj-92::obj-3" : [ "bufferMute[3]", "playBtn", 0 ],
@@ -1833,6 +1835,10 @@
 			"parameter_overrides" : 			{
 				"obj-10::obj-1" : 				{
 					"parameter_longname" : "bufferMute[4]"
+				}
+,
+				"obj-10::obj-13" : 				{
+					"parameter_longname" : "FrequencyMLFO[1]"
 				}
 ,
 				"obj-10::obj-20" : 				{
@@ -1902,6 +1908,10 @@
 					"parameter_longname" : "Frequency[5]"
 				}
 ,
+				"obj-32::obj-80::obj-20" : 				{
+					"parameter_longname" : "FrequencyMLFO[2]"
+				}
+,
 				"obj-32::obj-88::obj-12" : 				{
 					"parameter_longname" : "Mute[6]"
 				}
@@ -1938,69 +1948,69 @@
 		"dependency_cache" : [ 			{
 				"name" : "zsPattrStore.json",
 				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
-				"patcherrelativepath" : "../../../../../../Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMcGroove-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGrvCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsui.js",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsBufferPlayer-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGranulator-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsgran~.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsPlayCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
