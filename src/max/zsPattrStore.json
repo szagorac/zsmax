@@ -6,10 +6,15 @@
 				"id": 1,
 				"data": {
 					"gain": [],
-					"mcGain": [],
 					"panic": [],
 					"preset": [],
 					"preset0": [],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
+					],
 					"mcGroove::mcgDeviation": [
 						0.05
 					],
@@ -31,17 +36,14 @@
 					"mcGroove::mcgRange": [
 						1.0
 					],
+					"mcGroove::mcgSend": [
+						-70.0
+					],
 					"mcGroove::mcgSpeed": [
 						0.0
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"mcGroove::mcgEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.040352935811582
@@ -279,6 +281,24 @@
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
 						0.0
+					],
+					"zsReverb-bp::rvBypass": [
+						1.0
+					],
+					"zsReverb-bp::rvDamping": [
+						1800.000000000000227
+					],
+					"zsReverb-bp::rvDecay": [
+						45.0
+					],
+					"zsReverb-bp::rvDiffusion": [
+						0.2
+					],
+					"zsReverb-bp::rvMix": [
+						50.0
+					],
+					"zsReverb-bp::rvSize": [
+						25.0
 					]
 				}
 			},
@@ -286,15 +306,20 @@
 				"id": 2,
 				"data": {
 					"gain": [],
-					"mcGain": [],
 					"panic": [],
 					"preset": [],
 					"preset0": [],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
+					],
 					"mcGroove::mcgDeviation": [
 						0.1
 					],
 					"mcGroove::mcgGain": [
-						0.0
+						-13.611111111111114
 					],
 					"mcGroove::mcgHarmonics": [
 						8.0
@@ -311,17 +336,14 @@
 					"mcGroove::mcgRange": [
 						3.0
 					],
+					"mcGroove::mcgSend": [
+						-0.447506561679802
+					],
 					"mcGroove::mcgSpeed": [
 						5.0
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"mcGroove::mcgEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.061504246016738
@@ -336,13 +358,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						233
+						397
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						1304
+						1910
 					],
 					"grooveControl::gcRangeEnd": [
 						2000
@@ -474,10 +496,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1586
+						1558
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1202
+						1224
 					],
 					"zsGranulator-bp::grFileName": [
 						"jongly.aif"
@@ -559,6 +581,24 @@
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
 						0.0
+					],
+					"zsReverb-bp::rvBypass": [
+						0.0
+					],
+					"zsReverb-bp::rvDamping": [
+						12000.0
+					],
+					"zsReverb-bp::rvDecay": [
+						60.0
+					],
+					"zsReverb-bp::rvDiffusion": [
+						0.2
+					],
+					"zsReverb-bp::rvMix": [
+						100.0
+					],
+					"zsReverb-bp::rvSize": [
+						55.0
 					]
 				}
 			},
@@ -566,15 +606,20 @@
 				"id": 3,
 				"data": {
 					"gain": [],
-					"mcGain": [],
 					"panic": [],
 					"preset": [],
 					"preset0": [],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
+					],
 					"mcGroove::mcgDeviation": [
 						0.2
 					],
 					"mcGroove::mcgGain": [
-						0.0
+						-3.696850393700785
 					],
 					"mcGroove::mcgHarmonics": [
 						4.0
@@ -591,17 +636,14 @@
 					"mcGroove::mcgRange": [
 						2.0
 					],
+					"mcGroove::mcgSend": [
+						-70.0
+					],
 					"mcGroove::mcgSpeed": [
 						0.1
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"mcGroove::mcgEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						1.721140970956996
@@ -616,13 +658,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						237
+						165
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						1236
+						253
 					],
 					"grooveControl::gcRangeEnd": [
 						1500
@@ -721,7 +763,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						51
+						68
 					],
 					"zsGranulator-bp::grMute": [
 						0.0
@@ -754,10 +796,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1532
+						1970
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						393
+						859
 					],
 					"zsGranulator-bp::grFileName": [
 						"jongly.aif"
@@ -839,6 +881,24 @@
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
 						0.0
+					],
+					"zsReverb-bp::rvBypass": [
+						0.0
+					],
+					"zsReverb-bp::rvDamping": [
+						12000.0
+					],
+					"zsReverb-bp::rvDecay": [
+						60.0
+					],
+					"zsReverb-bp::rvDiffusion": [
+						0.2
+					],
+					"zsReverb-bp::rvMix": [
+						100.0
+					],
+					"zsReverb-bp::rvSize": [
+						55.0
 					]
 				}
 			},
@@ -846,15 +906,20 @@
 				"id": 4,
 				"data": {
 					"gain": [],
-					"mcGain": [],
 					"panic": [],
 					"preset": [],
 					"preset0": [],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
+					],
 					"mcGroove::mcgDeviation": [
 						0.2
 					],
 					"mcGroove::mcgGain": [
-						0.0
+						-10.022309711286084
 					],
 					"mcGroove::mcgHarmonics": [
 						4.0
@@ -871,17 +936,14 @@
 					"mcGroove::mcgRange": [
 						2.0
 					],
+					"mcGroove::mcgSend": [
+						0.406386701662285
+					],
 					"mcGroove::mcgSpeed": [
 						0.1
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"mcGroove::mcgEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						1.721140970956996
@@ -896,7 +958,7 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						154
+						293
 					],
 					"grooveControl::gcPosMute": [
 						0.0
@@ -1037,7 +1099,7 @@
 						2821
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						2254
+						0
 					],
 					"zsGranulator-bp::grFileName": [
 						"jongly.aif"
@@ -1119,6 +1181,24 @@
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
 						0.0
+					],
+					"zsReverb-bp::rvBypass": [
+						0.0
+					],
+					"zsReverb-bp::rvDamping": [
+						12000.0
+					],
+					"zsReverb-bp::rvDecay": [
+						65.354330708661465
+					],
+					"zsReverb-bp::rvDiffusion": [
+						1.0
+					],
+					"zsReverb-bp::rvMix": [
+						100.0
+					],
+					"zsReverb-bp::rvSize": [
+						100.0
 					]
 				}
 			},
@@ -1126,15 +1206,20 @@
 				"id": 5,
 				"data": {
 					"gain": [],
-					"mcGain": [],
 					"panic": [],
 					"preset": [],
 					"preset0": [],
+					"mcGroove::mcgFile": [
+						"anton.aif"
+					],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 4000 0. 200"
+					],
 					"mcGroove::mcgDeviation": [
 						0.05
 					],
 					"mcGroove::mcgGain": [
-						0.0
+						-19.338145231846028
 					],
 					"mcGroove::mcgHarmonics": [
 						3.0
@@ -1151,17 +1236,14 @@
 					"mcGroove::mcgRange": [
 						1.0
 					],
+					"mcGroove::mcgSend": [
+						-3.352143482064747
+					],
 					"mcGroove::mcgSpeed": [
 						0.001
 					],
 					"mcGroove::mcgWfMode": [
 						0.0
-					],
-					"mcGroove::mcgFile": [
-						"anton.aif"
-					],
-					"mcGroove::mcgEnvLine": [
-						"0., 1. 200 1. 4000 0. 200"
 					],
 					"grooveControl::gcLFOFreq": [
 						0.040352935811582
@@ -1176,13 +1258,13 @@
 						2311
 					],
 					"grooveControl::gcPosLen": [
-						104
+						294
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						551
+						106
 					],
 					"grooveControl::gcRangeEnd": [
 						600
@@ -1281,7 +1363,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						245
+						59
 					],
 					"zsGranulator-bp::grMute": [
 						0.0
@@ -1314,10 +1396,10 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						2222
+						2485
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1499
+						1337
 					],
 					"zsGranulator-bp::grFileName": [
 						"jongly.aif"
@@ -1399,6 +1481,24 @@
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
 						0.0
+					],
+					"zsReverb-bp::rvBypass": [
+						0.0
+					],
+					"zsReverb-bp::rvDamping": [
+						12000.0
+					],
+					"zsReverb-bp::rvDecay": [
+						100.0
+					],
+					"zsReverb-bp::rvDiffusion": [
+						1.0
+					],
+					"zsReverb-bp::rvMix": [
+						100.0
+					],
+					"zsReverb-bp::rvSize": [
+						100.0
 					]
 				}
 			}
