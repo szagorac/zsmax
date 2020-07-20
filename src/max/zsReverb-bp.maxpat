@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 621.0, 220.0, 1167.0, 709.0 ],
+		"rect" : [ 1729.0, 188.0, 1539.0, 817.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,112 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-26",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 562.5, 618.75, 59.0, 22.0 ],
+					"text" : "gate~ 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-8",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 21.0, 462.5, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-12",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 21.0, 503.5, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-15",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "signal" ],
+					"patching_rect" : [ 155.0, 618.75, 59.0, 22.0 ],
+					"text" : "gate~ 1 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"fontname" : "Arial",
+					"fontsize" : 12.0,
+					"id" : "obj-19",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"patching_rect" : [ 21.0, 575.5, 32.5, 22.0 ],
+					"text" : "!= 1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"activebgcolor" : [ 0.435294117647059, 0.568627450980392, 0.698039215686274, 1.0 ],
+					"activebgoncolor" : [ 0.278431, 0.839216, 1.0, 1.0 ],
+					"activetextcolor" : [ 0.996078431372549, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"activetextoncolor" : [ 0.0, 0.019608, 0.078431, 1.0 ],
+					"bgcolor" : [ 0.101961, 0.101961, 0.101961, 0.78 ],
+					"bgoncolor" : [ 0.737254901960784, 0.737254901960784, 0.737254901960784, 1.0 ],
+					"bordercolor" : [ 0.0, 0.019608, 0.078431, 0.37 ],
+					"fontsize" : 11.0,
+					"id" : "obj-25",
+					"maxclass" : "live.text",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 21.0, 541.5, 49.999999999999986, 23.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -0.375, -2.5, 39.86447099999998, 14.764644622802734 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_defer" : 1,
+							"parameter_enum" : [ "val1", "val2" ],
+							"parameter_initial" : [ 0.0 ],
+							"parameter_initial_enable" : 1,
+							"parameter_longname" : "rvMute",
+							"parameter_mmax" : 1,
+							"parameter_shortname" : "mute",
+							"parameter_type" : 2
+						}
+
+					}
+,
+					"text" : "mute",
+					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
+					"texton" : "mute",
+					"varname" : "rvMute"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"bgcolor" : [ 0.745098039215686, 0.745098039215686, 0.745098039215686, 1.0 ],
 					"fontsize" : 9.0,
@@ -438,16 +544,17 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 944.0, 640.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"rvBypass" : [ 0.0 ],
-						"rvDamping" : [ 12000.0 ],
+						"rvBypass" : [ 1.0 ],
+						"rvDamping" : [ 1800.000000000000227 ],
 						"rvDecay" : [ 45.0 ],
 						"rvDiffusion" : [ 0.2 ],
-						"rvMix" : [ 10.700000000000003 ],
-						"rvSize" : [ 0.0 ]
+						"rvMix" : [ 50.0 ],
+						"rvMute" : [ 0.0 ],
+						"rvSize" : [ 25.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u583009907"
+					"varname" : "u881010020"
 				}
 
 			}
@@ -487,7 +594,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 563.109985000000052, 549.0, 30.0, 22.0 ],
+					"patching_rect" : [ 563.109985000000052, 557.0, 30.0, 22.0 ],
 					"text" : "*~ 5"
 				}
 
@@ -499,7 +606,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "signal" ],
-					"patching_rect" : [ 155.0, 544.0, 30.0, 22.0 ],
+					"patching_rect" : [ 155.0, 557.0, 30.0, 22.0 ],
 					"text" : "*~ 5"
 				}
 
@@ -535,7 +642,7 @@
 					"parameter_mappable" : 0,
 					"patching_rect" : [ 94.0, 399.5, 49.999999999999986, 23.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.375, -2.5, 50.5, 14.764644622802734 ],
+					"presentation_rect" : [ 43.625, -2.5, 50.5, 14.764644622802734 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_defer" : 1,
@@ -561,11 +668,11 @@
 				"box" : 				{
 					"comment" : "Audio out 2",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 562.5, 598.0, 30.0, 30.0 ]
+					"patching_rect" : [ 562.5, 651.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -573,11 +680,11 @@
 				"box" : 				{
 					"comment" : "Audio out 1",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 155.0, 598.0, 30.0, 30.0 ]
+					"patching_rect" : [ 155.0, 651.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -621,11 +728,11 @@
 				"box" : 				{
 					"comment" : "Input signal",
 					"id" : "obj-4",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 102.0, 72.0, 30.0, 30.0 ]
 				}
 
@@ -705,8 +812,15 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
+					"destination" : [ "obj-26", 1 ],
 					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-25", 0 ],
+					"source" : [ "obj-12", 0 ]
 				}
 
 			}
@@ -714,6 +828,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-20", 0 ],
 					"source" : [ "obj-13", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-5", 0 ],
+					"source" : [ "obj-15", 0 ]
 				}
 
 			}
@@ -742,6 +863,22 @@
 				"patchline" : 				{
 					"destination" : [ "obj-35", 0 ],
 					"source" : [ "obj-18", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"order" : 1,
+					"source" : [ "obj-19", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-26", 0 ],
+					"order" : 0,
+					"source" : [ "obj-19", 0 ]
 				}
 
 			}
@@ -800,6 +937,20 @@
 					"destination" : [ "obj-23", 0 ],
 					"order" : 0,
 					"source" : [ "obj-24", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-19", 0 ],
+					"source" : [ "obj-25", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-26", 0 ]
 				}
 
 			}
@@ -979,42 +1130,19 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-5", 0 ],
+					"destination" : [ "obj-12", 0 ],
+					"source" : [ "obj-8", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 1 ],
 					"source" : [ "obj-9", 0 ]
 				}
 
 			}
  ],
-		"parameters" : 		{
-			"obj-17" : [ "rvBypass", "bypass", 0 ],
-			"obj-18" : [ "rvDecay", "decay", 0 ],
-			"obj-20" : [ "rvSize", "size", 0 ],
-			"obj-24" : [ "rvDamping", "damping", 0 ],
-			"obj-30" : [ "rvDiffusion", "diffusion", 0 ],
-			"obj-31" : [ "rvMix", "mix", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [ 			{
-				"name" : "zscross~.maxpat",
-				"bootpath" : "~/MyHome/Dev/projects/github/zsmax/src/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "yafr2.maxpat",
-				"bootpath" : "~/Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
-				"patcherrelativepath" : "../../../../../../../Library/Application Support/Cycling '74/Max 8/Examples/effects/reverb/lib",
-				"type" : "JSON",
-				"implicit" : 1
-			}
- ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "maxscore.default.buttons",
 				"default" : 				{
