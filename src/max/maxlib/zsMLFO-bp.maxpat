@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 341.0, 389.0, 1248.0, 894.0 ],
+		"rect" : [ 1406.0, 348.0, 1248.0, 894.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -495,7 +495,7 @@
 							"parameter_enum" : [ "cosine", "sine", "up", "down", "triangle", "rect", "random" ],
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "SpectraLFOShape[3]",
+							"parameter_longname" : "MLFOShape",
 							"parameter_mmax" : 6,
 							"parameter_shortname" : "Shape",
 							"parameter_type" : 2
@@ -504,7 +504,7 @@
 					}
 ,
 					"textcolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"varname" : "MLFOShape"
+					"varname" : "Shape"
 				}
 
 			}
@@ -540,7 +540,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Mod[1]",
+							"parameter_longname" : "ModMLFO",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Mod",
 							"parameter_type" : 0,
@@ -550,7 +550,7 @@
 					}
 ,
 					"textcolor" : [ 0.129411764705882, 0.168627450980392, 0.509803921568627, 1.0 ],
-					"varname" : "ModMLFO"
+					"varname" : "Mod"
 				}
 
 			}
@@ -916,7 +916,7 @@
 							"parameter_exponent" : 4.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Frequency[3]",
+							"parameter_longname" : "FrequencyMLFO",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Freq",
 							"parameter_type" : 0,
@@ -957,14 +957,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 48.0, 126.154099000000002, 59.5, 22.0 ],
 					"restore" : 					{
-						"Frequency" : [ 0.1 ],
-						"MLFOShape" : [ 1.0 ],
-						"ModMLFO" : [ 0.0 ],
-						"MuteMLFO" : [ 0.0 ]
+						"Frequency" : [ 0.0 ],
+						"Mod" : [ 0.0 ],
+						"Mute" : [ 0.0 ],
+						"Shape" : [ 1.0 ]
 					}
 ,
 					"text" : "autopattr",
-					"varname" : "u383010026"
+					"varname" : "u763007127"
 				}
 
 			}
@@ -1005,7 +1005,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Mute[3]",
+							"parameter_longname" : "MuteMLFO",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Mute",
 							"parameter_type" : 2
@@ -1016,7 +1016,7 @@
 					"text" : "mute",
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "mute",
-					"varname" : "MuteMLFO"
+					"varname" : "Mute"
 				}
 
 			}
@@ -1428,10 +1428,10 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-12" : [ "Mute[3]", "Mute", 0 ],
-			"obj-13" : [ "Mod[1]", "Mod", 0 ],
-			"obj-20" : [ "Frequency[3]", "Freq", 0 ],
-			"obj-75" : [ "SpectraLFOShape[3]", "Shape", 0 ],
+			"obj-12" : [ "MuteMLFO", "Mute", 0 ],
+			"obj-13" : [ "ModMLFO", "Mod", 0 ],
+			"obj-20" : [ "FrequencyMLFO", "Freq", 0 ],
+			"obj-75" : [ "MLFOShape", "Shape", 0 ],
 			"parameterbanks" : 			{
 
 			}

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 85.0, 101.0, 1447.0, 779.0 ],
+		"rect" : [ 675.0, 233.0, 1240.0, 922.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -40,6 +40,34 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-60",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 4,
+					"outlettype" : [ "", "", "", "" ],
+					"patching_rect" : [ 719.0, 586.0, 56.0, 22.0 ],
+					"restore" : 					{
+						"gcLFOFreq" : [ 0.0 ],
+						"gcMLFOFreq" : [ 0.1 ],
+						"gcMLFOMod" : [ 0 ],
+						"gcMaxLen" : [ 0 ],
+						"gcPosLen" : [ 1000 ],
+						"gcPosMute" : [ 1.0 ],
+						"gcPosStart" : [ 0 ],
+						"gcRangeEnd" : [ 0 ],
+						"gcRangeStart" : [ 0 ],
+						"gcSizeMax" : [ 0 ],
+						"gcSizeMin" : [ 50 ],
+						"gcSizeMute" : [ 1.0 ]
+					}
+,
+					"text" : "autopattr",
+					"varname" : "u383002298"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-58",
 					"maxclass" : "newobj",
 					"numinlets" : 2,
@@ -60,8 +88,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 590.5, 555.999999999999886, 51.0, 28.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 353.0, 101.25, 68.0, 17.0 ],
 					"text" : "Selection  Size",
 					"textcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
 				}
@@ -259,11 +285,13 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 101.25, 98.75, 47.0, 19.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 6.117677688598633, 47.0, 19.0 ],
 					"textcolor" : [ 0.972549019607843, 0.972549019607843, 0.949019607843137, 1.0 ],
-					"tricolor" : [ 0.435294117647059, 0.568627450980392, 0.698039215686274, 1.0 ]
+					"tricolor" : [ 0.435294117647059, 0.568627450980392, 0.698039215686274, 1.0 ],
+					"varname" : "gcMaxLen"
 				}
 
 			}
@@ -601,8 +629,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 479.5, 561.15411400000005, 51.0, 28.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 180.5, 101.25, 68.0, 17.0 ],
 					"text" : "Selection  End ",
 					"textcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
 				}
@@ -618,8 +644,6 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 381.22927900000002, 561.15411400000005, 49.0, 28.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 1.25, 101.25, 73.0, 17.0 ],
 					"text" : "Selection Start",
 					"textcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
 				}
@@ -1691,7 +1715,7 @@
 					"fontsize" : 9.0,
 					"id" : "obj-109",
 					"maxclass" : "number",
-					"maximum" : 2821,
+					"maximum" : 0,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -2048,7 +2072,7 @@
 					"fontsize" : 9.0,
 					"id" : "obj-90",
 					"maxclass" : "number",
-					"maximum" : 2821,
+					"maximum" : 0,
 					"minimum" : 0,
 					"numinlets" : 1,
 					"numoutlets" : 2,
@@ -2240,7 +2264,7 @@
 					"patching_rect" : [ 1080.0, 424.0, 213.0, 75.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 210.0, 24.0, 212.0, 75.5 ],
-					"varname" : "zsLFO-bp[1]",
+					"varname" : "gcMLFO",
 					"viewvisibility" : 1
 				}
 
@@ -2275,7 +2299,7 @@
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "signal", "signal", "signal" ],
 					"patching_rect" : [ 1094.0, 133.0, 158.0, 78.0 ],
-					"varname" : "zsLFO-bp",
+					"varname" : "gcLFO",
 					"viewvisibility" : 1
 				}
 
@@ -2292,7 +2316,7 @@
 					"numoutlets" : 0,
 					"patching_rect" : [ 715.750000000000114, 531.0, 127.0, 41.0 ],
 					"presentation" : 1,
-					"presentation_rect" : [ -0.86447099999998, 0.0, 421.86447099999998, 118.25 ],
+					"presentation_rect" : [ -0.86447099999998, 0.0, 426.86447099999998, 105.5 ],
 					"proportion" : 0.5
 				}
 
@@ -2957,19 +2981,38 @@
 
 			}
 ,
+			"parameter_overrides" : 			{
+				"obj-13::obj-12" : 				{
+					"parameter_longname" : "Mute[3]"
+				}
+,
+				"obj-13::obj-13" : 				{
+					"parameter_longname" : "Mod[1]"
+				}
+,
+				"obj-13::obj-20" : 				{
+					"parameter_longname" : "Frequency[3]"
+				}
+,
+				"obj-13::obj-75" : 				{
+					"parameter_longname" : "SpectraLFOShape[3]"
+				}
+
+			}
+,
 			"inherited_shortname" : 1
 		}
 ,
 		"dependency_cache" : [ 			{
 				"name" : "zsLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/my",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/my",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
