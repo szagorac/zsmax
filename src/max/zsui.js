@@ -67,6 +67,8 @@ var zs = (function (g, m) {
 		CMD_INT: "int",
 		CMD_STOP: "stop",
 		CMD_PLAY: "play",
+		CMD_SET_FILE: "setFile",
+		CMD_SET: "set",
 		CMD_BANG: "bang",
 		CMD_PRESET: "preset",
 		CMD_BEAT_INFO: "beatInfo",
@@ -187,6 +189,18 @@ var zs = (function (g, m) {
 		}
 		_sendTo(obj, [cfg.CMD_BANG]);
 	}
+	function _setFile(objName, fileName) {
+		var obj = _getObj(objName);
+		if (_isNull(obj)) {
+			_logError("play: Could not find object for name: " + objName);
+			return;
+		}
+		var file = _toString(fileName);
+		_log("_setFile: file: " + file + " for object: " + fileName);
+		_sendTo(obj, [cfg.CMD_SET, file]);
+		_log("_setFile: bang for object: " + fileName);
+		_sendTo(obj, [cfg.CMD_BANG]);
+	}
 	function _beatInfo(args) {
 		var len = args.length;
 		if (len !== 4) {
@@ -286,6 +300,9 @@ var zs = (function (g, m) {
 			case cfg.CMD_PLAY:
 				_play(args[0]);
 				break;
+			case cfg.CMD_SET_FILE:
+				_setFile(args[0], args[1]);
+				break;				
 			case cfg.CMD_PRESET:
 				_preset(args);
 				break;

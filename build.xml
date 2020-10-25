@@ -20,6 +20,7 @@
         <include name="*.js"/>
         <include name="*.maxpat"/>
         <include name="*.json"/>
+        <include name="*.wav"/>
     </fileset>
 
     <fileset id="deployJsSet" dir="${maxDir}" casesensitive="yes">
