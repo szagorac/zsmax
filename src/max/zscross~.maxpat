@@ -47,7 +47,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 268.0, 152.0, 182.0, 19.0 ],
-					"text" : "< Limit value within [0.. 1.] range"
+					"text" : "< Limit value within [-50. 50.] range"
 				}
 
 			}
@@ -60,8 +60,8 @@
 					"numinlets" : 3,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.0, 152.0, 56.0, 22.0 ],
-					"text" : "clip 0. 1."
+					"patching_rect" : [ 156.0, 152.0, 60.0, 22.0 ],
+					"text" : "clip -1. 1."
 				}
 
 			}
@@ -115,7 +115,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 283.0, 169.5, 130.0, 31.0 ],
-					"text" : "Convert [0.. 1.] range to phase [0. 0.25] range"
+					"text" : "Convert [-1. 1.] range to phase [0. 0.25] range"
 				}
 
 			}
@@ -128,8 +128,8 @@
 					"numinlets" : 6,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 156.0, 176.0, 105.0, 22.0 ],
-					"text" : "scale 0. 1. 0. 0.25"
+					"patching_rect" : [ 156.0, 176.0, 109.0, 22.0 ],
+					"text" : "scale -1. 1. 0. 0.25"
 				}
 
 			}
@@ -165,7 +165,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-40",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -206,7 +206,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-10",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -368,11 +368,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-12",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 100.0, 72.0, 18.0, 18.0 ]
 				}
 
@@ -479,11 +479,11 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-38",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "signal" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 32.0, 72.0, 18.0, 18.0 ]
 				}
 
@@ -492,7 +492,7 @@
 				"box" : 				{
 					"comment" : "",
 					"id" : "obj-41",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -509,7 +509,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 156.0, 48.0, 248.0, 20.0 ],
-					"text" : "Crossfade control [0. 1.] (float, int, list)"
+					"text" : "Crossfade control [-1. 1.] (float, int, list)"
 				}
 
 			}
@@ -621,7 +621,9 @@
 				}
 
 			}
- ]
+ ],
+		"dependency_cache" : [  ],
+		"autosave" : 0
 	}
 
 }
