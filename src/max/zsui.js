@@ -20,6 +20,8 @@ var zs = (function (g, m) {
 		UNDERSCORES: "__",
 		NEW_LINE: "\n",
 		STRING: "string",
+		STOP_SUFFIX: "Stop",
+		FILE_SUFFIX: "File",
 		ZSCORE_LABEL: "ZScore",
 		SERVER_LABEL: "Server:",
 		SCORE_LABEL: "Score:",
@@ -72,6 +74,7 @@ var zs = (function (g, m) {
 		CMD_BANG: "bang",
 		CMD_PRESET: "preset",
 		CMD_BEAT_INFO: "beatInfo",
+		OBJ_NAME_STOP_BTN: "stopBtn",
 	}
 
 	var state = {
@@ -92,6 +95,7 @@ var zs = (function (g, m) {
 		scoreName: cfg.UNDERSCORES,
 		partName: cfg.UNDERSCORES,
 		tempo: cfg.UNDERSCORES,
+		tempoMultiplier: cfg.UNDERSCORES,
 		pageNo: cfg.UNDERSCORES,
 		barNo: cfg.UNDERSCORES,
 		beatNo: cfg.UNDERSCORES,
@@ -164,8 +168,14 @@ var zs = (function (g, m) {
 	}
 	function _setTempo(args) {
 		var tempo = 0;
+		var tempoMultiplier = 1.0;
 		var target = "";
 		var len = args.length;
+	
+		if (len > 2) {
+			tempoMultiplier = args[2];
+		} 
+	
 		if (len > 1) {
 			// osc event cmd
 			target = args[0];
@@ -175,11 +185,42 @@ var zs = (function (g, m) {
 			tempo = args[0];
 		}
 
-		_log("_setTempo: received tempo: " + tempo + " target: " + target);
+		_log("_setTempo: received tempo: " + tempo + " target: " + target + " tempoMultiplier: " + tempoMultiplier);
 		state.tempo = _toString(tempo);
+		state.tempoMultiplier = parseFloat(tempoMultiplier);
 	}
-	function _stop() {
+	function _stop(args) {
+		var len = args.length;
+		if (len > 0) {
+			_stopTarget(args);
+			return;
+		}
+
+		// STOP ALL
 		state.semaphoreState[0] = 4;
+
+		var obj = _getObj(cfg.OBJ_NAME_STOP_BTN);
+		if (_isNull(obj)) {
+			_logError("_stop: Could not find object for name: " + cfg.OBJ_NAME_STOP_BTN);
+			return;
+		}
+		_log("_stop: bang for object: " + cfg.OBJ_NAME_STOP_BTN);
+		_sendTo(obj, [cfg.CMD_BANG]);		
+	}
+	function _stopTarget(args) {
+		var objName = args[0];
+
+		if(!_endsWith(objName, cfg.STOP_SUFFIX)) {
+			objName += cfg.STOP_SUFFIX;
+		}
+
+		var obj = _getObj(objName);
+		if (_isNull(obj)) {
+			_logError("_stopTarget: Could not find object for name: " + objName);
+			return;
+		}
+		_log("_stopTarget: bang for object: " + objName);
+		_sendTo(obj, [cfg.CMD_BANG]);
 	}
 	function _play(objName) {
 		var obj = _getObj(objName);
@@ -190,6 +231,10 @@ var zs = (function (g, m) {
 		_sendTo(obj, [cfg.CMD_BANG]);
 	}
 	function _setFile(objName, fileName) {
+		if(!_endsWith(objName, cfg.FILE_SUFFIX)) {
+			objName += cfg.FILE_SUFFIX;
+		}
+
 		var obj = _getObj(objName);
 		if (_isNull(obj)) {
 			_logError("play: Could not find object for name: " + objName);
@@ -295,7 +340,7 @@ var zs = (function (g, m) {
 				_setTempo(args);
 				break;
 			case cfg.CMD_STOP:
-				_stop();
+				_stop(args);
 				break;
 			case cfg.CMD_PLAY:
 				_play(args[0]);
@@ -570,6 +615,9 @@ var zs = (function (g, m) {
 			return val;
 		}
 		return '' + val;;
+	}
+	function _endsWith(str, suffix) {
+		return str.indexOf(suffix, str.length - suffix.length) !== -1;
 	}
 
 	// Public members if any??
