@@ -267,7 +267,7 @@ var zs = (function (g, m) {
 			return;
 		}
 		var preset = 1;
-		var target = cfg.PATTR_STORE;
+		var target = cfg.CMD_PRESET;
 		if (args.length === 2) {
 			target = args[0];
 			preset = args[1];
@@ -279,13 +279,14 @@ var zs = (function (g, m) {
 		}
 		_log("preset: received preset: " + preset + " target: " + target);
 
-		var ptst = _getPattrStore();
-		if (_isNull(ptst)) {
+		var obj = _getObj(target);
+		if (_isNull(obj)) {
 			_logError("preset: Could not find patter store, ignoring preset: " + preset);
 			return;
 		}
-		// var presetNo = parseInt(preset, 10);	
-		_sendTo(ptst, [cfg.CMD_INT, preset]);
+		// zero based count
+		var presetNo = preset - 1;	
+		_sendTo(obj, [cfg.CMD_INT, presetNo]);
 	}
 	function _getObj(objName) {
 		if (_isNull(objName)) {

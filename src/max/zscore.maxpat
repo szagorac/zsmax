@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 508.0, 285.0, 1896.0, 959.0 ],
+		"rect" : [ 1214.0, 93.0, 1896.0, 959.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -74,7 +74,7 @@
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 348.333333333333485, 626.0, 24.0, 24.0 ],
-					"varname" : "b2stop"
+					"varname" : "b2Stop"
 				}
 
 			}
@@ -144,8 +144,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 574.333333333333485, 374.5, 113.0, 22.0 ],
-					"text" : "UnionRose_b1.wav",
+					"patching_rect" : [ 574.333333333333485, 374.5, 135.0, 22.0 ],
+					"text" : "UnionRose_b12.wav",
 					"varname" : "b1File"
 				}
 
@@ -173,7 +173,7 @@
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
 					"patching_rect" : [ 360.333333333333485, 378.0, 24.0, 24.0 ],
-					"varname" : "b1stop"
+					"varname" : "b1Stop"
 				}
 
 			}
@@ -413,7 +413,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"parameter_mappable" : 0,
 					"patching_rect" : [ 762.67724609375, 51.5, 61.0, 32.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 752.0, 10.0, 47.0, 32.0 ],
@@ -429,7 +428,7 @@
 					}
 ,
 					"text" : "Stop",
-					"varname" : "panic"
+					"varname" : "stopBtn"
 				}
 
 			}
@@ -1050,17 +1049,17 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 273.5, 65.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"b1" : [ 0.0 ],
+						"b1" : [ 1.0 ],
 						"b1Speed" : [ 0.0 ],
-						"b1stop" : [ 0.0 ],
-						"b2" : [ 0.0 ],
+						"b1Stop" : [ 1.0 ],
+						"b2" : [ 1.0 ],
 						"b2Speed" : [ 0.0 ],
-						"b2stop" : [ 0.0 ],
+						"b2Stop" : [ 0.0 ],
 						"gain" : [ -3.110574887816483 ],
 						"mcGain" : [ -3.59055118110237 ],
-						"panic" : [ 0.0 ],
 						"preset" : [ 0.0 ],
-						"preset0" : [ 0.0 ]
+						"preset0" : [ 0.0 ],
+						"stopBtn" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
