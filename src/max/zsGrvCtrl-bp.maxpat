@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 675.0, 233.0, 1240.0, 922.0 ],
+		"rect" : [ 41.0, 248.0, 601.0, 922.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -58,7 +58,7 @@
 						"gcRangeStart" : [ 0 ],
 						"gcSizeMax" : [ 0 ],
 						"gcSizeMin" : [ 50 ],
-						"gcSizeMute" : [ 1.0 ]
+						"gcSizeMute" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
@@ -307,7 +307,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -797,7 +797,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"parameter_mappable" : 0,
 					"patching_rect" : [ 745.5, 284.5, 49.999999999999986, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 91.25, 31.117677688598633, 47.0, 14.764644622802734 ],
@@ -807,9 +806,9 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "modifySize",
+							"parameter_longname" : "muteSize",
 							"parameter_mmax" : 1,
-							"parameter_shortname" : "modsize",
+							"parameter_shortname" : "mutesize",
 							"parameter_type" : 2
 						}
 
@@ -1008,7 +1007,6 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
-					"parameter_mappable" : 0,
 					"patching_rect" : [ 49.500000000000014, 470.0, 49.999999999999986, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 6.25, 31.117677688598633, 46.5, 14.764644622802734 ],
@@ -1045,7 +1043,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1244,7 +1242,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1443,7 +1441,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1833,7 +1831,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2968,13 +2966,13 @@
 			}
  ],
 		"parameters" : 		{
-			"obj-13::obj-12" : [ "Mute[3]", "Mute", 0 ],
-			"obj-13::obj-13" : [ "Mod[1]", "Mod", 0 ],
-			"obj-13::obj-20" : [ "Frequency[3]", "Freq", 0 ],
+			"obj-13::obj-12" : [ "MLFOMute", "Mute", 0 ],
+			"obj-13::obj-13" : [ "MLFOMod", "Mod", 0 ],
+			"obj-13::obj-20" : [ "MLFOFrequency", "Freq", 0 ],
 			"obj-13::obj-75" : [ "SpectraLFOShape[3]", "Shape", 0 ],
 			"obj-17" : [ "mutePosition", "mutepos", 0 ],
 			"obj-20" : [ "LFOMod", "LFOMod", 0 ],
-			"obj-44" : [ "modifySize", "modsize", 0 ],
+			"obj-44" : [ "muteSize", "mutesize", 0 ],
 			"obj-6::obj-12" : [ "Mute", "Mute", 0 ],
 			"obj-6::obj-20" : [ "Frequency", "Freq", 0 ],
 			"parameterbanks" : 			{
@@ -2983,15 +2981,15 @@
 ,
 			"parameter_overrides" : 			{
 				"obj-13::obj-12" : 				{
-					"parameter_longname" : "Mute[3]"
+					"parameter_longname" : "MLFOMute"
 				}
 ,
 				"obj-13::obj-13" : 				{
-					"parameter_longname" : "Mod[1]"
+					"parameter_longname" : "MLFOMod"
 				}
 ,
 				"obj-13::obj-20" : 				{
-					"parameter_longname" : "Frequency[3]"
+					"parameter_longname" : "MLFOFrequency"
 				}
 ,
 				"obj-13::obj-75" : 				{

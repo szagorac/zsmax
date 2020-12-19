@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 8,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1406.0, 348.0, 1248.0, 894.0 ],
+		"rect" : [ 434.0, 383.0, 396.0, 894.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -145,7 +145,7 @@
 				"box" : 				{
 					"comment" : "Reset LFO Phase",
 					"id" : "obj-1",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -170,7 +170,7 @@
 				"box" : 				{
 					"comment" : "Modulation percent",
 					"id" : "obj-48",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -310,7 +310,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 5,
+							"revision" : 8,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -495,7 +495,7 @@
 							"parameter_enum" : [ "cosine", "sine", "up", "down", "triangle", "rect", "random" ],
 							"parameter_initial" : [ 1 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "MLFOShape",
+							"parameter_longname" : "SpectraLFOShape[3]",
 							"parameter_mmax" : 6,
 							"parameter_shortname" : "Shape",
 							"parameter_type" : 2
@@ -540,7 +540,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "ModMLFO",
+							"parameter_longname" : "MLFOMod",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Mod",
 							"parameter_type" : 0,
@@ -642,11 +642,11 @@
 				"box" : 				{
 					"comment" : "Control signal {0,1}",
 					"id" : "obj-11",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "signal" ],
 					"patching_rect" : [ 534.0, 64.0, 30.0, 30.0 ]
 				}
 
@@ -655,7 +655,7 @@
 				"box" : 				{
 					"comment" : "Frequency Hz [0, 100]",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -916,7 +916,7 @@
 							"parameter_exponent" : 4.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "FrequencyMLFO",
+							"parameter_longname" : "MLFOFrequency",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Freq",
 							"parameter_type" : 0,
@@ -972,7 +972,7 @@
 				"box" : 				{
 					"comment" : "Sine",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1005,7 +1005,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "MuteMLFO",
+							"parameter_longname" : "MLFOMute",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Mute",
 							"parameter_type" : 2
@@ -1426,21 +1426,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-12" : [ "MuteMLFO", "Mute", 0 ],
-			"obj-13" : [ "ModMLFO", "Mod", 0 ],
-			"obj-20" : [ "FrequencyMLFO", "Freq", 0 ],
-			"obj-75" : [ "MLFOShape", "Shape", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }
