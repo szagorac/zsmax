@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 985.0, 79.0, 1733.0, 1036.0 ],
+		"rect" : [ 168.0, 154.0, 1988.0, 1097.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,45 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-65",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 916.0, 441.5, 24.0, 24.0 ],
+					"varname" : "granulatorContStop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-76",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 983.571428571428555, 441.5, 24.0, 24.0 ],
+					"varname" : "granulatorLine"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-69",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 883.0, 441.5, 24.0, 24.0 ],
+					"varname" : "granulatorCont"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
@@ -1922,7 +1961,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 530.0, 771.5, 135.0, 22.0 ],
-					"text" : "UnionRose_b4.wav",
+					"text" : "UnionRose_b1.wav",
 					"varname" : "b3File"
 				}
 
@@ -2017,7 +2056,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 2612.0, 344.0, 1266.0, 805.0 ],
+						"rect" : [ 1525.0, 359.0, 1266.0, 805.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 1,
 						"default_fontsize" : 12.0,
@@ -2131,7 +2170,7 @@
 											"parameter_enum" : [ "val1", "val2" ],
 											"parameter_initial" : [ 0.0 ],
 											"parameter_initial_enable" : 1,
-											"parameter_longname" : "startPlayBtn[1]",
+											"parameter_longname" : "startPlayBtn[3]",
 											"parameter_mmax" : 1,
 											"parameter_shortname" : "startPlay",
 											"parameter_type" : 2
@@ -2672,7 +2711,7 @@
 									"numinlets" : 0,
 									"numoutlets" : 1,
 									"outlettype" : [ "bang" ],
-									"patching_rect" : [ 15.0, 29.0, 30.0, 30.0 ]
+									"patching_rect" : [ 11.0, 29.0, 30.0, 30.0 ]
 								}
 
 							}
@@ -3665,7 +3704,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.630444216247952, 554.5, 149.0, 22.0 ],
-					"text" : "UnionRose_b8.wav",
+					"text" : "UnionRose_b24.wav",
 					"varname" : "b2File"
 				}
 
@@ -3764,7 +3803,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 541.630444216247952, 371.5, 135.0, 22.0 ],
-					"text" : "UnionRose_b1.wav",
+					"text" : "UnionRose_b17.wav",
 					"varname" : "b1File"
 				}
 
@@ -3916,14 +3955,15 @@
 			}
 , 			{
 				"box" : 				{
+					"dontreplace" : 1,
 					"id" : "obj-40",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 883.0, 435.5, 55.0, 22.0 ],
-					"text" : "anton.aif",
-					"varname" : "granulatorFile"
+					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 22.0 ],
+					"text" : "UnionRose_m1.wav",
+					"varname" : "grFile"
 				}
 
 			}
@@ -3964,7 +4004,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1000.0, 378.0, 606.0, 105.0 ],
+					"patching_rect" : [ 1074.0, 388.5, 606.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 136.8544921875, 251.5, 608.1455078125, 108.0 ],
 					"varname" : "zsPlayCtrl-bp",
@@ -3983,7 +4023,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "zsGranulator-bp.maxpat",
-					"numinlets" : 6,
+					"numinlets" : 8,
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "" ],
@@ -4650,7 +4690,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 154, 107, 878, 796 ]
+						"storage_rect" : [ 154, 107, 755, 949 ]
 					}
 ,
 					"text" : "pattrstorage zsPattrStore",
@@ -4682,6 +4722,9 @@
 						"b4Speed" : [ 0.0 ],
 						"b4Stop" : [ 1.0 ],
 						"gain" : [ 0.015748031496059 ],
+						"granulatorCont" : [ 0.0 ],
+						"granulatorContStop" : [ 0.0 ],
+						"granulatorLine" : [ 0.0 ],
 						"mcGain" : [ -1.181102362204726 ],
 						"preset" : [ 0.0 ],
 						"preset0" : [ 0.0 ],
@@ -4936,28 +4979,28 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 4 ],
+					"destination" : [ "obj-31", 6 ],
 					"source" : [ "obj-32", 3 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 3 ],
+					"destination" : [ "obj-31", 5 ],
 					"source" : [ "obj-32", 2 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 2 ],
+					"destination" : [ "obj-31", 4 ],
 					"source" : [ "obj-32", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 1 ],
+					"destination" : [ "obj-31", 3 ],
 					"source" : [ "obj-32", 0 ]
 				}
 
@@ -5022,7 +5065,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-31", 0 ],
+					"destination" : [ "obj-31", 2 ],
+					"midpoints" : [ 1047.130444216247952, 483.0, 1071.0, 483.0, 1071.0, 492.0, 1093.64285714285711, 492.0 ],
 					"source" : [ "obj-40", 0 ]
 				}
 
@@ -5193,6 +5237,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-92", 0 ],
 					"source" : [ "obj-66", 0 ]
 				}
@@ -5202,6 +5253,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-68", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 0 ],
+					"source" : [ "obj-69", 0 ]
 				}
 
 			}
@@ -5230,6 +5288,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-34", 0 ],
 					"source" : [ "obj-75", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-31", 1 ],
+					"source" : [ "obj-76", 0 ]
 				}
 
 			}
@@ -5402,7 +5467,7 @@
 			"obj-63::obj-72" : [ "bufGrooveGain[2]", "gain", 0 ],
 			"obj-63::obj-75" : [ "bufgrWfMode[3]", "mode", 0 ],
 			"obj-63::obj-76" : [ "bufferMute[10]", "mute", 0 ],
-			"obj-63::obj-8" : [ "startPlayBtn[1]", "startPlay", 0 ],
+			"obj-63::obj-8" : [ "startPlayBtn[3]", "startPlay", 0 ],
 			"obj-66" : [ "PresetIncrement", "presetinc", 0 ],
 			"obj-80" : [ "PresetDecrement", "presetdec", 0 ],
 			"obj-96::obj-10" : [ "linePlayBtn[3]", "stopPlay", 0 ],
@@ -5631,7 +5696,8 @@
 				}
 ,
 				"obj-63::obj-8" : 				{
-					"parameter_longname" : "startPlayBtn[1]"
+					"parameter_linknames" : 0,
+					"parameter_longname" : "startPlayBtn[3]"
 				}
 ,
 				"obj-96::obj-10" : 				{
