@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 168.0, 154.0, 1988.0, 1097.0 ],
+		"rect" : [ 1002.0, 123.0, 1726.0, 1097.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,32 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-97",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 883.0, 168.0, 24.0, 24.0 ],
+					"varname" : "grooveContStop"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-88",
+					"maxclass" : "button",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 847.0, 168.0, 24.0, 24.0 ],
+					"varname" : "grooveCont"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-65",
 					"maxclass" : "button",
@@ -319,7 +345,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -2050,7 +2076,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -3962,7 +3988,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 22.0 ],
-					"text" : "UnionRose_m1.wav",
 					"varname" : "grFile"
 				}
 
@@ -4424,7 +4449,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 793.0, 157.5, 55.0, 22.0 ],
+					"patching_rect" : [ 1323.0, 160.5, 55.0, 22.0 ],
 					"text" : "jongly.aif",
 					"varname" : "mcGrooveFile"
 				}
@@ -4560,7 +4585,7 @@
 					"lockeddragscroll" : 0,
 					"maxclass" : "bpatcher",
 					"name" : "zsMcGroove-bp.maxpat",
-					"numinlets" : 5,
+					"numinlets" : 7,
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "multichannelsignal", "float" ],
@@ -4690,7 +4715,7 @@
 						"client_rect" : [ 4, 44, 358, 172 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 154, 107, 755, 949 ]
+						"storage_rect" : [ 154, 107, 920, 927 ]
 					}
 ,
 					"text" : "pattrstorage zsPattrStore",
@@ -4725,6 +4750,8 @@
 						"granulatorCont" : [ 0.0 ],
 						"granulatorContStop" : [ 0.0 ],
 						"granulatorLine" : [ 0.0 ],
+						"grooveCont" : [ 0.0 ],
+						"grooveContStop" : [ 0.0 ],
 						"mcGain" : [ -1.181102362204726 ],
 						"preset" : [ 0.0 ],
 						"preset0" : [ 0.0 ],
@@ -4833,8 +4860,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 1 ],
-					"midpoints" : [ 802.5, 189.0, 996.0, 189.0 ],
+					"destination" : [ "obj-53", 3 ],
+					"midpoints" : [ 1332.5, 189.0, 1099.5, 189.0 ],
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -5014,14 +5041,14 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 3 ],
+					"destination" : [ "obj-53", 5 ],
 					"source" : [ "obj-34", 1 ]
 				}
 
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-53", 2 ],
+					"destination" : [ "obj-53", 4 ],
 					"source" : [ "obj-34", 0 ]
 				}
 
@@ -5342,6 +5369,13 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-88", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-96", 2 ],
 					"source" : [ "obj-89", 0 ]
 				}
@@ -5394,6 +5428,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-95", 0 ],
 					"source" : [ "obj-96", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-53", 0 ],
+					"source" : [ "obj-97", 0 ]
 				}
 
 			}
