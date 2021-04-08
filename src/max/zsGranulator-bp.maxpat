@@ -4,13 +4,13 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 8,
+			"revision" : 10,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 704.0, 152.0, 1707.0, 1124.0 ],
+		"rect" : [ 1460.0, 219.0, 1707.0, 1124.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -41,12 +41,24 @@
 		"boxes" : [ 			{
 				"box" : 				{
 					"id" : "obj-176",
-					"maxclass" : "button",
-					"numinlets" : 1,
+					"maxclass" : "message",
+					"numinlets" : 2,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 0,
-					"patching_rect" : [ 134.5, 609.0, 24.0, 24.0 ]
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 109.0, 615.0, 29.5, 22.0 ],
+					"text" : "1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-174",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 2,
+					"outlettype" : [ "bang", "" ],
+					"patching_rect" : [ 180.5, 562.0, 34.0, 22.0 ],
+					"text" : "sel 0"
 				}
 
 			}
@@ -58,20 +70,20 @@
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "bang" ],
 					"patching_rect" : [ 677.0, 12.0, 30.0, 30.0 ]
 				}
 
 			}
 , 			{
 				"box" : 				{
-					"comment" : "Toggle continous play",
+					"comment" : "Continous play 1 stop 0",
 					"id" : "obj-172",
 					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "int" ],
 					"patching_rect" : [ 624.0, 12.0, 30.0, 30.0 ]
 				}
 
@@ -195,8 +207,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 64.0, 615.0, 35.0, 22.0 ],
-					"text" : "set 0"
+					"patching_rect" : [ 64.0, 615.0, 29.5, 22.0 ],
+					"text" : "0"
 				}
 
 			}
@@ -224,7 +236,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 8,
+							"revision" : 10,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -770,14 +782,14 @@
 						"grGain" : [ 0.0 ],
 						"grGrainGain" : [ 1.0 ],
 						"grGrainNo" : [ 5 ],
-						"grGrainSize" : [ 112 ],
+						"grGrainSize" : [ 100 ],
 						"grModeDecrement" : [ 0.0 ],
 						"grModeIncrement" : [ 0.0 ],
 						"grMute" : [ 1.0 ],
 						"grPanSpread" : [ 0.0 ],
 						"grPitchRate" : [ 1.0 ],
 						"grPitchRnd" : [ 0.0 ],
-						"grPlayCont" : [ 0.0 ],
+						"grPlayCont" : [ 1.0 ],
 						"grPlayLine" : [ 0.0 ],
 						"grPlaySpeedPerc" : [ 0 ],
 						"grPositionMode" : [ 1 ],
@@ -3742,8 +3754,8 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-176", 0 ],
-					"midpoints" : [ 633.5, 105.0, 576.0, 105.0, 576.0, 327.0, 321.0, 327.0, 321.0, 486.0, 240.0, 486.0, 240.0, 603.0, 144.0, 603.0 ],
+					"destination" : [ "obj-174", 0 ],
+					"midpoints" : [ 633.5, 105.0, 576.0, 105.0, 576.0, 327.0, 321.0, 327.0, 321.0, 486.0, 240.0, 486.0, 240.0, 557.0, 190.0, 557.0 ],
 					"source" : [ "obj-172", 0 ]
 				}
 
@@ -3753,6 +3765,20 @@
 					"destination" : [ "obj-169", 0 ],
 					"midpoints" : [ 686.5, 105.0, 576.0, 105.0, 576.0, 327.0, 228.0, 327.0, 228.0, 381.0, 108.0, 381.0, 108.0, 492.0, 59.0, 492.0 ],
 					"source" : [ "obj-173", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-157", 0 ],
+					"source" : [ "obj-174", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-176", 0 ],
+					"source" : [ "obj-174", 1 ]
 				}
 
 			}
