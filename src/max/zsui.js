@@ -22,6 +22,7 @@ var zs = (function (g, m) {
 		STRING: "string",
 		STOP_SUFFIX: "Stop",
 		FILE_SUFFIX: "File",
+		LINE_CONFIG_SUFFIX: "LineConf",
 		ZSCORE_LABEL: "ZScore",
 		SERVER_LABEL: "Server:",
 		SCORE_LABEL: "Score:",
@@ -70,6 +71,7 @@ var zs = (function (g, m) {
 		CMD_STOP: "stop",
 		CMD_PLAY: "play",
 		CMD_SET_FILE: "setFile",
+		CMD_SET_LINE: "setLine",
 		CMD_SET: "set",
 		CMD_BANG: "bang",
 		CMD_PRESET: "preset",
@@ -199,13 +201,13 @@ var zs = (function (g, m) {
 		// STOP ALL
 		state.semaphoreState[0] = 4;
 
-		var obj = _getObj(cfg.OBJ_NAME_STOP_BTN);
-		if (_isNull(obj)) {
-			_logError("_stop: Could not find object for name: " + cfg.OBJ_NAME_STOP_BTN);
-			return;
-		}
-		_log("_stop: bang for object: " + cfg.OBJ_NAME_STOP_BTN);
-		_sendTo(obj, [cfg.CMD_BANG]);		
+		// var obj = _getObj(cfg.OBJ_NAME_STOP_BTN);
+		// if (_isNull(obj)) {
+		// 	_logError("_stop: Could not find object for name: " + cfg.OBJ_NAME_STOP_BTN);
+		// 	return;
+		// }
+		// _log("_stop: bang for object: " + cfg.OBJ_NAME_STOP_BTN);
+		// _sendTo(obj, [cfg.CMD_BANG]);		
 	}
 	function _stopTarget(args) {
 		var objName = args[0];
@@ -234,16 +236,28 @@ var zs = (function (g, m) {
 		if(!_endsWith(objName, cfg.FILE_SUFFIX)) {
 			objName += cfg.FILE_SUFFIX;
 		}
-
-		var obj = _getObj(objName);
-		if (_isNull(obj)) {
-			_logError("play: Could not find object for name: " + objName);
+		_setStringValueAndBang(objName, fileName);
+	}
+	function _setLine(objName, lineConfig) {
+		if(!_endsWith(objName, cfg.LINE_CONFIG_SUFFIX)) {
+			objName += cfg.LINE_CONFIG_SUFFIX;
+		}
+		_setStringValueAndBang(objName, lineConfig);
+	}
+	function _setStringValueAndBang(objName, value) {
+		if(_isNull(objName) || _isNull(value)) {
+			_logError("_setStringValueAndBang: invalid objectName or value");
 			return;
 		}
-		var file = _toString(fileName);
-		_log("_setFile: file: " + file + " for object: " + fileName);
-		_sendTo(obj, [cfg.CMD_SET, file]);
-		_log("_setFile: bang for object: " + fileName);
+		var obj = _getObj(objName);
+		if (_isNull(obj)) {
+			_logError("_setStringValueAndBang: Could not find object for name: " + objName);
+			return;
+		}
+		var strValue = _toString(value);
+		_log("_setStringValueAndBang: string: " + strValue + " for object: " + objName);
+		_sendTo(obj, [cfg.CMD_SET, strValue]);
+		_log("_setStringValueAndBang: send bang for object: " + objName);
 		_sendTo(obj, [cfg.CMD_BANG]);
 	}
 	function _beatInfo(args) {
@@ -348,7 +362,10 @@ var zs = (function (g, m) {
 				break;
 			case cfg.CMD_SET_FILE:
 				_setFile(args[0], args[1]);
-				break;				
+				break;
+			case cfg.CMD_SET_LINE:
+				_setLine(args[0], args[1]);
+				break;								
 			case cfg.CMD_PRESET:
 				_preset(args);
 				break;

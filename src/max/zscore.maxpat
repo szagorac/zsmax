@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1224.0, 79.0, 1726.0, 1097.0 ],
+		"rect" : [ 1012.0, 79.0, 1731.0, 1133.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -886,7 +886,7 @@
 									"patching_rect" : [ 910.5, 361.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"bufGrooveGain" : [ 0.0 ],
-										"bufferMute" : [ 0.0 ],
+										"bufferMute" : [ 1.0 ],
 										"bufgrWfMode" : [ 0.0 ],
 										"mcgRange" : [ 1.0 ],
 										"pan" : [ 0.0 ],
@@ -2617,7 +2617,7 @@
 									"patching_rect" : [ 910.5, 361.0, 56.0, 22.0 ],
 									"restore" : 									{
 										"bufGrooveGain" : [ 0.0 ],
-										"bufferMute" : [ 0.0 ],
+										"bufferMute" : [ 1.0 ],
 										"bufgrWfMode" : [ 0.0 ],
 										"mcgRange" : [ 1.0 ],
 										"pan" : [ 0.0 ],
@@ -4036,7 +4036,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 22.0 ],
-					"varname" : "grFile"
+					"varname" : "granulatorFile"
 				}
 
 			}
@@ -4100,7 +4100,7 @@
 					"numoutlets" : 3,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal", "" ],
-					"patching_rect" : [ 883.0, 498.5, 723.0, 119.5 ],
+					"patching_rect" : [ 883.0, 505.75, 723.0, 119.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 22.0, 360.5, 723.0, 119.5 ],
 					"varname" : "zsGranulator-bp",
@@ -4499,7 +4499,7 @@
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1323.0, 160.5, 55.0, 22.0 ],
 					"text" : "jongly.aif",
-					"varname" : "mcGrooveFile"
+					"varname" : "grooveFile"
 				}
 
 			}
@@ -4784,23 +4784,23 @@
 						"PresetIncrement" : [ 0.0 ],
 						"b1" : [ 0.0 ],
 						"b1Speed" : [ 0.0 ],
-						"b1Stop" : [ 0.0 ],
+						"b1Stop" : [ 1.0 ],
 						"b2" : [ 0.0 ],
 						"b2Speed" : [ 0.0 ],
-						"b2Stop" : [ 0.0 ],
+						"b2Stop" : [ 1.0 ],
 						"b3" : [ 0.0 ],
 						"b3Speed" : [ 0.0 ],
-						"b3Stop" : [ 0.0 ],
+						"b3Stop" : [ 1.0 ],
 						"b4" : [ 0.0 ],
 						"b4Speed" : [ 0.0 ],
-						"b4Stop" : [ 0.0 ],
+						"b4Stop" : [ 1.0 ],
 						"gain" : [ 0.015748031496059 ],
 						"granulatorCont" : [ 0.0 ],
 						"granulatorContStop" : [ 0.0 ],
 						"granulatorLine" : [ 0.0 ],
 						"grooveCont" : [ 0.0 ],
 						"grooveContStop" : [ 0.0 ],
-						"mcGain" : [ 0.015748031496059 ],
+						"mcGain" : [ -1.181102362204726 ],
 						"preset" : [ 0.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
