@@ -71,7 +71,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
-					"patching_rect" : [ 677.0, 12.0, 30.0, 30.0 ]
+					"patching_rect" : [ 663.0, 12.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -709,13 +709,12 @@
 					"fontname" : "Arial",
 					"fontsize" : 13.0,
 					"id" : "obj-158",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 49.5, 554.0, 113.0, 38.0 ],
-					"text" : "0., 1. 200 1. 4000 0. 200",
+					"patching_rect" : [ 49.5, 554.0, 113.0, 23.0 ],
+					"text" : "0.",
 					"varname" : "b1l2"
 				}
 
@@ -740,7 +739,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 140.5, 467.0, 90.0, 22.0 ],
-					"restore" : [ "0., 1. 200 1. 4000 0. 200" ],
+					"restore" : [ "\"0." ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -759,7 +758,7 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 1259.0, 105.0, 98.0, 22.0 ],
-					"restore" : [ "UnionRose_m1.wav" ],
+					"restore" : [ "UnionRose_c3.wav" ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
@@ -782,21 +781,21 @@
 						"grGain" : [ 0.0 ],
 						"grGrainGain" : [ 1.0 ],
 						"grGrainNo" : [ 5 ],
-						"grGrainSize" : [ 100 ],
+						"grGrainSize" : [ 101 ],
 						"grModeDecrement" : [ 0.0 ],
 						"grModeIncrement" : [ 0.0 ],
-						"grMute" : [ 1.0 ],
-						"grPanSpread" : [ 0.0 ],
+						"grMute" : [ 0.0 ],
+						"grPanSpread" : [ 1.0 ],
 						"grPitchRate" : [ 1.0 ],
-						"grPitchRnd" : [ 0.0 ],
-						"grPlayCont" : [ 1.0 ],
+						"grPitchRnd" : [ 0.012 ],
+						"grPlayCont" : [ 0.0 ],
 						"grPlayLine" : [ 0.0 ],
-						"grPlaySpeedPerc" : [ 0 ],
-						"grPositionMode" : [ 1 ],
-						"grPositionRnd" : [ 0.0 ],
-						"grPositionSource" : [ 0.0 ],
-						"grSelectionEnd" : [ 7500 ],
-						"grSelectionStart" : [ 0 ]
+						"grPlaySpeedPerc" : [ 100 ],
+						"grPositionMode" : [ 0 ],
+						"grPositionRnd" : [ 20.0 ],
+						"grPositionSource" : [ 2.0 ],
+						"grSelectionEnd" : [ 5943 ],
+						"grSelectionStart" : [ 2999 ]
 					}
 ,
 					"text" : "autopattr",
@@ -1267,7 +1266,7 @@
 					"patching_rect" : [ 966.0, 370.0, 280.0, 84.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 433.5, 32.25, 285.0, 85.25 ],
-					"size" : 7501.0
+					"size" : 15738.0
 				}
 
 			}
@@ -1459,7 +1458,7 @@
 					"patching_rect" : [ 966.0, 370.0, 280.0, 84.5 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 433.5, 32.25, 285.0, 85.0 ],
-					"size" : 7501.0
+					"size" : 15738.0
 				}
 
 			}
@@ -1662,7 +1661,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 740.0, 12.0, 30.0, 30.0 ]
+					"patching_rect" : [ 697.5, 12.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -2311,7 +2310,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1287.0, 150.0, 83.0, 29.0 ],
-					"text" : "UnionRose_m1.wav",
+					"text" : "UnionRose_c3.wav",
 					"textcolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ]
 				}
 
@@ -3763,7 +3762,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-169", 0 ],
-					"midpoints" : [ 686.5, 105.0, 576.0, 105.0, 576.0, 327.0, 228.0, 327.0, 228.0, 381.0, 108.0, 381.0, 108.0, 492.0, 59.0, 492.0 ],
+					"midpoints" : [ 672.5, 105.0, 576.0, 105.0, 576.0, 327.0, 228.0, 327.0, 228.0, 381.0, 108.0, 381.0, 108.0, 492.0, 59.0, 492.0 ],
 					"source" : [ "obj-173", 0 ]
 				}
 
