@@ -26,3 +26,8 @@ hs_err_pid*
 .idea/
 *.iml
 target/
+dist/
+build/
+/src/max/.history/
+*-workspace
+.DS_Store/
