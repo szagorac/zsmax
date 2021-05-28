@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 10,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -39,6 +39,78 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"comment" : "signal out 2",
+					"id" : "obj-74",
+					"index" : 2,
+					"maxclass" : "outlet",
+					"numinlets" : 1,
+					"numoutlets" : 0,
+					"patching_rect" : [ 124.0, 927.5, 30.0, 30.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"coldcolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"id" : "obj-73",
+					"lastchannelcount" : 0,
+					"maxclass" : "live.gain~",
+					"numinlets" : 2,
+					"numoutlets" : 5,
+					"outlettype" : [ "signal", "signal", "", "float", "list" ],
+					"parameter_enable" : 1,
+					"patching_rect" : [ 70.0, 768.0, 47.0, 132.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ -0.93223549999999, 21.75, 46.0, 90.0 ],
+					"saved_attribute_attributes" : 					{
+						"valueof" : 						{
+							"parameter_initial" : [ 0.0 ],
+							"parameter_linknames" : 1,
+							"parameter_longname" : "mcgGain",
+							"parameter_mmax" : 6.0,
+							"parameter_mmin" : -70.0,
+							"parameter_shortname" : "gain",
+							"parameter_type" : 0,
+							"parameter_unitstyle" : 4
+						}
+
+					}
+,
+					"slidercolor" : [ 0.129411764705882, 0.168627450980392, 0.509803921568627, 1.0 ],
+					"textcolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"tribordercolor" : [ 0.129411764705882, 0.168627450980392, 0.509803921568627, 1.0 ],
+					"tricolor" : [ 0.898039215686275, 0.898039215686275, 0.898039215686275, 1.0 ],
+					"trioncolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
+					"varname" : "mcgGain"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-72",
+					"maxclass" : "newobj",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "multichannelsignal" ],
+					"patching_rect" : [ 70.0, 676.5, 99.0, 22.0 ],
+					"text" : "mc.mixdown~ 2"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-63",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 70.0, 721.0, 84.0, 22.0 ],
+					"text" : "mc.unpack~ 2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-70",
 					"maxclass" : "message",
@@ -188,9 +260,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 595.0, 255.5, 16.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 94.056640625, 168.5390625, 19.0, 22.5 ]
+					"patching_rect" : [ 595.0, 255.5, 16.0, 22.0 ]
 				}
 
 			}
@@ -282,9 +352,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "float" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 350.0, 139.5, 16.0, 22.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 79.056640625, 153.5390625, 19.0, 22.5 ]
+					"patching_rect" : [ 350.0, 139.5, 16.0, 22.0 ]
 				}
 
 			}
@@ -355,7 +423,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 10,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -806,7 +874,7 @@
 						"appversion" : 						{
 							"major" : 8,
 							"minor" : 1,
-							"revision" : 10,
+							"revision" : 11,
 							"architecture" : "x64",
 							"modernui" : 1
 						}
@@ -1239,57 +1307,19 @@
 						"mcHarmonicDecrement" : [ 0.0 ],
 						"mcModeDecrement" : [ 0.0 ],
 						"mcModeIncrement" : [ 0.0 ],
-						"mcgDeviation" : [ 0.05 ],
+						"mcgDeviation" : [ 1.4 ],
 						"mcgGain" : [ 0.0 ],
-						"mcgHarmonics" : [ 3.0 ],
-						"mcgMute" : [ 1.0 ],
+						"mcgHarmonics" : [ 1.0 ],
+						"mcgMute" : [ 0.0 ],
 						"mcgPlayCont" : [ 0.0 ],
 						"mcgPlayLine" : [ 0.0 ],
-						"mcgRange" : [ 1.0 ],
-						"mcgSpeed" : [ 0.0 ],
+						"mcgRange" : [ 1.7 ],
+						"mcgSpeed" : [ 1.0 ],
 						"mcgWfMode" : [ 0.0 ]
 					}
 ,
 					"text" : "autopattr",
 					"varname" : "u082001446"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"coldcolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"fontsize" : 9.0,
-					"id" : "obj-35",
-					"lastchannelcount" : 2,
-					"maxclass" : "mc.live.gain~",
-					"numinlets" : 1,
-					"numoutlets" : 4,
-					"outlettype" : [ "multichannelsignal", "", "float", "list" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 70.0, 674.0, 47.0, 136.0 ],
-					"presentation" : 1,
-					"presentation_rect" : [ 0.0, 21.75, 41.0, 100.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_initial" : [ 0.0 ],
-							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
-							"parameter_longname" : "mcgGain",
-							"parameter_mmax" : 6.0,
-							"parameter_mmin" : -70.0,
-							"parameter_shortname" : "gain",
-							"parameter_type" : 0,
-							"parameter_unitstyle" : 4
-						}
-
-					}
-,
-					"slidercolor" : [ 0.129411764705882, 0.168627450980392, 0.509803921568627, 1.0 ],
-					"textcolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"tribordercolor" : [ 0.129411764705882, 0.168627450980392, 0.509803921568627, 1.0 ],
-					"tricolor" : [ 0.811764705882353, 0.843137254901961, 0.866666666666667, 1.0 ],
-					"trioncolor" : [ 0.756862745098039, 0.996078431372549, 0.996078431372549, 1.0 ],
-					"varname" : "mcgGain"
 				}
 
 			}
@@ -1321,7 +1351,7 @@
 				"box" : 				{
 					"comment" : "Buffer length",
 					"id" : "obj-25",
-					"index" : 2,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -1701,13 +1731,13 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "MC Stereo Out",
+					"comment" : "signal out 1",
 					"id" : "obj-6",
 					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 70.0, 829.0, 30.0, 30.0 ]
+					"patching_rect" : [ 70.0, 927.5, 30.0, 30.0 ]
 				}
 
 			}
@@ -2043,15 +2073,15 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 444.988677528318249, "ms" ],
-						"loopstart" : [ 310.997743186959099, "ms" ],
+						"loopend" : [ 8410.998023450441906, "ms" ],
+						"loopstart" : [ 7534.988922845365778, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 2219.080231388797984, "ticks" ],
 						"originaltempo" : 11.557709750566893,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
-						"pitchshift" : [ 0.996635055541992 ],
-						"pitchshiftcent" : [ -6 ],
+						"pitchshift" : [ 1.47808837890625 ],
+						"pitchshiftcent" : [ 676 ],
 						"quality" : "basic",
 						"timestretch" : [ 1 ]
 					}
@@ -2527,13 +2557,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-6", 0 ],
-					"source" : [ "obj-35", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-9", 0 ],
 					"source" : [ "obj-36", 0 ]
 				}
@@ -2603,7 +2626,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-35", 0 ],
+					"destination" : [ "obj-72", 0 ],
 					"source" : [ "obj-42", 0 ]
 				}
 
@@ -2762,6 +2785,20 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-73", 1 ],
+					"source" : [ "obj-63", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-73", 0 ],
+					"source" : [ "obj-63", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-69", 0 ],
 					"midpoints" : [ 44.5, 132.0, 45.0, 132.0, 45.0, 603.0, 318.0, 603.0, 318.0, 603.0, 344.25, 603.0 ],
 					"source" : [ "obj-64", 0 ]
@@ -2808,6 +2845,27 @@
 				"patchline" : 				{
 					"destination" : [ "obj-171", 0 ],
 					"source" : [ "obj-70", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-63", 0 ],
+					"source" : [ "obj-72", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-6", 0 ],
+					"source" : [ "obj-73", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-74", 0 ],
+					"source" : [ "obj-73", 1 ]
 				}
 
 			}
@@ -2872,6 +2930,24 @@
 			}
  ],
 		"styles" : [ 			{
+				"name" : "AudioStatus_Menu",
+				"default" : 				{
+					"bgfillcolor" : 					{
+						"type" : "color",
+						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
+						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
+						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
+						"angle" : 270.0,
+						"proportion" : 0.39,
+						"autogradient" : 0
+					}
+
+				}
+,
+				"parentstyle" : "",
+				"multi" : 0
+			}
+, 			{
 				"name" : "maxscore.default.buttons",
 				"default" : 				{
 					"accentcolor" : [ 1.0, 1.0, 1.0, 1.0 ]
