@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 665.0, 348.0, 1266.0, 805.0 ],
+		"rect" : [ 1059.0, 487.0, 1266.0, 805.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,25 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-36",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 3,
+					"outlettype" : [ "", "", "" ],
+					"patching_rect" : [ 582.499999999999886, 113.0, 83.0, 22.0 ],
+					"restore" : [ "UnionRose_b2.wav" ],
+					"saved_object_attributes" : 					{
+						"parameter_enable" : 0,
+						"parameter_mappable" : 0
+					}
+,
+					"text" : "pattr fileName",
+					"varname" : "fileName"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-40",
 					"maxclass" : "newobj",
@@ -114,7 +133,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_linknames" : 1,
-							"parameter_longname" : "loopPlayBtn",
+							"parameter_longname" : "loopPlayBtn[1]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "loopPlay",
 							"parameter_type" : 2
@@ -126,25 +145,6 @@
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
 					"texton" : "loop",
 					"varname" : "loopPlayBtn"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-36",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 582.499999999999886, 88.0, 83.0, 22.0 ],
-					"restore" : [ "UnionRose_b2.wav" ],
-					"saved_object_attributes" : 					{
-						"parameter_enable" : 0,
-						"parameter_mappable" : 0
-					}
-,
-					"text" : "pattr fileName",
-					"varname" : "fileName"
 				}
 
 			}
@@ -175,7 +175,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "linePlayBtn[3]",
+							"parameter_longname" : "stopPlayBtn[4]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "stopPlay",
 							"parameter_type" : 2
@@ -207,6 +207,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 24.999999999999993, 101.0, 49.999999999999986, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 74.0, 3.676516532897949, 44.0, 14.764644622802734 ],
@@ -216,7 +217,8 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "linePlayBtn[2]",
+							"parameter_linknames" : 1,
+							"parameter_longname" : "startPlayBtn",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "startPlay",
 							"parameter_type" : 2
@@ -427,7 +429,7 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "bufgrPan[1]",
+							"parameter_longname" : "bufgrPan",
 							"parameter_mmax" : 1.0,
 							"parameter_mmin" : -1.0,
 							"parameter_shortname" : "Pan",
@@ -459,7 +461,7 @@
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "bufGrooveGain",
+							"parameter_longname" : "bufGrooveGain[3]",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -556,7 +558,7 @@
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "bufferMute[8]",
+							"parameter_longname" : "bufferMute",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "mute",
 							"parameter_type" : 2
@@ -582,9 +584,9 @@
 					"restore" : 					{
 						"bufGrooveGain" : [ 0.0 ],
 						"bufferMute" : [ 0.0 ],
-						"bufgrWfMode" : [ 1.0 ],
+						"bufgrWfMode" : [ 0.0 ],
 						"loopPlayBtn" : [ 0.0 ],
-						"mcgRange" : [ 1.0 ],
+						"mcgSpeed" : [ 1.0 ],
 						"pan" : [ 0.0 ],
 						"startPlayBtn" : [ 0.0 ],
 						"stopPlayBtn" : [ 0.0 ]
@@ -689,7 +691,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 582.499999999999886, 118.0, 95.0, 22.0 ],
+					"patching_rect" : [ 582.499999999999886, 146.0, 95.0, 22.0 ],
 					"text" : "prepend replace"
 				}
 
@@ -711,7 +713,7 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 79.0, 68.0, 37.0, 19.0 ],
 					"textcolor" : [ 0.0, 0.0, 0.0, 1.0 ],
-					"varname" : "mcgRange"
+					"varname" : "mcgSpeed"
 				}
 
 			}
@@ -984,7 +986,7 @@
 							"parameter_initial" : [ 0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "bufgrWfMode[1]",
+							"parameter_longname" : "bufgrWfMode",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "mode",
 							"parameter_type" : 2
@@ -1048,20 +1050,8 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 123.0, 22.0, 210.0, 71.375 ],
 					"selectioncolor" : [ 1.0, 1.0, 0.172549019607843, 0.31 ],
-					"setmode" : 1,
+					"setmode" : 2,
 					"waveformcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ]
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-21",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 757.5, 146.0, 162.0, 22.0 ],
-					"text" : "replace UnionRose_b12.wav"
 				}
 
 			}
@@ -1103,18 +1093,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-6",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 742.499999999999886, 118.0, 155.0, 22.0 ],
-					"text" : "replace UnionRose_b1.wav"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-4",
 					"maxclass" : "newobj",
 					"numinlets" : 3,
@@ -1125,8 +1103,8 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 6057.14306672260409, "ms" ],
-						"loopstart" : [ 6057.14306672260409, "ms" ],
+						"loopend" : [ 15999.977877869132499, "ms" ],
+						"loopstart" : [ 0.0, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 0.0, "ticks" ],
 						"originaltempo" : 120.0,
@@ -1294,13 +1272,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-4", 0 ],
 					"source" : [ "obj-20", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-21", 0 ]
 				}
 
 			}
@@ -1556,13 +1527,6 @@
 					"destination" : [ "obj-63", 1 ],
 					"midpoints" : [ 235.0, 618.0, 159.0, 618.0, 159.0, 435.0, 137.75, 435.0 ],
 					"source" : [ "obj-50", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
-					"source" : [ "obj-6", 0 ]
 				}
 
 			}

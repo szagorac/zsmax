@@ -374,7 +374,7 @@
 			}
 , 			{
 				"box" : 				{
-					"comment" : "selection end (ms)",
+					"comment" : "line config string",
 					"id" : "obj-53",
 					"ignoreclick" : 1,
 					"index" : 7,
@@ -382,8 +382,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 984.0, 28.0, 30.0, 30.0 ],
-					"varname" : "play"
+					"patching_rect" : [ 984.0, 28.0, 30.0, 30.0 ]
 				}
 
 			}
@@ -1307,14 +1306,14 @@
 						"mcHarmonicDecrement" : [ 0.0 ],
 						"mcModeDecrement" : [ 0.0 ],
 						"mcModeIncrement" : [ 0.0 ],
-						"mcgDeviation" : [ 1.4 ],
+						"mcgDeviation" : [ 0.05 ],
 						"mcgGain" : [ 0.0 ],
-						"mcgHarmonics" : [ 1.0 ],
+						"mcgHarmonics" : [ 3.0 ],
 						"mcgMute" : [ 0.0 ],
 						"mcgPlayCont" : [ 0.0 ],
 						"mcgPlayLine" : [ 0.0 ],
-						"mcgRange" : [ 1.7 ],
-						"mcgSpeed" : [ 1.0 ],
+						"mcgRange" : [ 1.0 ],
+						"mcgSpeed" : [ 0.0 ],
 						"mcgWfMode" : [ 0.0 ]
 					}
 ,
@@ -2073,15 +2072,15 @@
 						"basictuning" : 440,
 						"followglobaltempo" : 0,
 						"formantcorrection" : 0,
-						"loopend" : [ 8410.998023450441906, "ms" ],
-						"loopstart" : [ 7534.988922845365778, "ms" ],
+						"loopend" : [ 23999.978154672571691, "ms" ],
+						"loopstart" : [ 10986.984507138500703, "ms" ],
 						"mode" : "basic",
 						"originallength" : [ 2219.080231388797984, "ticks" ],
 						"originaltempo" : 11.557709750566893,
 						"phase" : [ 0.0, "ticks" ],
 						"pitchcorrection" : 0,
-						"pitchshift" : [ 1.47808837890625 ],
-						"pitchshiftcent" : [ 676 ],
+						"pitchshift" : [ 0.982551383972168 ],
+						"pitchshiftcent" : [ -30 ],
 						"quality" : "basic",
 						"timestretch" : [ 1 ]
 					}
