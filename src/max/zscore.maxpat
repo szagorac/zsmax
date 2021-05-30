@@ -71,7 +71,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 553.489420572916515, 429.5, 41.0, 32.0 ]
+					"patching_rect" : [ 540.5, 437.5, 41.0, 32.0 ]
 				}
 
 			}
@@ -273,7 +273,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 553.489420572916515, 471.5, 50.0, 22.0 ]
+					"patching_rect" : [ 540.5, 479.5, 50.0, 22.0 ]
 				}
 
 			}
@@ -743,80 +743,6 @@
 			}
 , 			{
 				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-91",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 753.93699829408115, 40.0, 35.0, 23.0 ],
-					"text" : "dec"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"fontname" : "Arial",
-					"fontsize" : 13.0,
-					"id" : "obj-92",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 708.630444216247952, 40.0, 36.0, 23.0 ],
-					"text" : "inc"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-80",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 753.93699829408115, 10.0, 24.0, 24.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "PresetDecrement",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "presetdec",
-							"parameter_type" : 2
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-66",
-					"maxclass" : "button",
-					"numinlets" : 1,
-					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
-					"parameter_enable" : 1,
-					"patching_rect" : [ 708.630444216247952, 10.0, 24.0, 24.0 ],
-					"saved_attribute_attributes" : 					{
-						"valueof" : 						{
-							"parameter_enum" : [ "off", "on" ],
-							"parameter_longname" : "PresetIncrement",
-							"parameter_mmax" : 1,
-							"parameter_shortname" : "presetinc",
-							"parameter_type" : 2
-						}
-
-					}
-
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"fontsize" : 36.0,
 					"id" : "obj-85",
 					"maxclass" : "comment",
@@ -845,25 +771,13 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 643.054009395439607, 40.0, 38.0, 22.0 ],
-					"text" : "int 2"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-81",
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 553.5, 149.0, 22.0 ],
-					"text" : "UnionRose_c4.wav",
+					"text" : "UnionRose_b18.wav",
 					"varname" : "b2File"
 				}
 
@@ -940,7 +854,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 370.5, 135.0, 22.0 ],
-					"text" : "UnionRose_c3.wav",
+					"text" : "UnionRose_b17.wav",
 					"varname" : "b1File"
 				}
 
@@ -1036,13 +950,11 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-40",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 35.0 ],
-					"text" : "UnionRose_c3gr.wav",
+					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 22.0 ],
 					"varname" : "granulatorFile"
 				}
 
@@ -1111,7 +1023,8 @@
 						}
 
 					}
-
+,
+					"varname" : "preset0"
 				}
 
 			}
@@ -1216,7 +1129,7 @@
 					"maxclass" : "comment",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 562.0, 89.000000000000014, 72.0, 22.0 ],
+					"patching_rect" : [ 637.489420572916515, 43.000000000000014, 72.0, 22.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 29.0, 142.203125, 61.0, 22.0 ],
 					"text" : "Presets",
@@ -1630,7 +1543,7 @@
 						"client_rect" : [ 854, 172, 1208, 300 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 288, 79, 1361, 1202 ]
+						"storage_rect" : [ 37, 79, 1110, 1202 ]
 					}
 ,
 					"text" : "pattrstorage zsPattrStore",
@@ -1659,12 +1572,13 @@
 						"b4" : [ 0.0 ],
 						"b4Speed" : [ 0.0 ],
 						"b4Stop" : [ 0.0 ],
-						"granulatorCont" : [ 1.0 ],
-						"granulatorContStop" : [ 1.0 ],
-						"granulatorLine" : [ 1.0 ],
-						"grooveCont" : [ 1.0 ],
-						"grooveContStop" : [ 1.0 ],
-						"preset" : [ 14.0 ],
+						"granulatorCont" : [ 0.0 ],
+						"granulatorContStop" : [ 0.0 ],
+						"granulatorLine" : [ 0.0 ],
+						"grooveCont" : [ 0.0 ],
+						"grooveContStop" : [ 0.0 ],
+						"preset" : [ 5.0 ],
+						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
 ,
@@ -1734,13 +1648,6 @@
 			}
  ],
 		"lines" : [ 			{
-				"patchline" : 				{
-					"destination" : [ "obj-3", 0 ],
-					"source" : [ "obj-10", 0 ]
-				}
-
-			}
-, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-100", 0 ]
@@ -2367,13 +2274,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-92", 0 ],
-					"source" : [ "obj-66", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-22", 0 ],
 					"source" : [ "obj-68", 0 ]
 				}
@@ -2437,13 +2337,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-91", 0 ],
-					"source" : [ "obj-80", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-96", 3 ],
 					"source" : [ "obj-81", 0 ]
 				}
@@ -2489,20 +2382,6 @@
 				"patchline" : 				{
 					"destination" : [ "obj-96", 1 ],
 					"source" : [ "obj-90", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-91", 0 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
-					"destination" : [ "obj-37", 0 ],
-					"source" : [ "obj-92", 0 ]
 				}
 
 			}
@@ -2695,8 +2574,6 @@
 			"obj-5::obj-5::obj-12" : [ "Mute[10]", "Mute", 0 ],
 			"obj-5::obj-5::obj-20" : [ "Frequency[10]", "Freq", 0 ],
 			"obj-5::obj-76" : [ "fliterCtrlMute", "mute", 0 ],
-			"obj-66" : [ "PresetIncrement", "presetinc", 0 ],
-			"obj-80" : [ "PresetDecrement", "presetdec", 0 ],
 			"obj-96::obj-10" : [ "linePlayBtn[3]", "stopPlay", 0 ],
 			"obj-96::obj-11" : [ "loopPlayBtn", "loopPlay", 0 ],
 			"obj-96::obj-13" : [ "bufgrPan[1]", "Pan", 0 ],
