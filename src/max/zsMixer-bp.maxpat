@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 925.0, 346.0, 1597.0, 1164.0 ],
+		"rect" : [ 870.0, 101.0, 2232.0, 1208.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -121,7 +121,7 @@
 						}
 ,
 						"classnamespace" : "box",
-						"rect" : [ 360.0, 255.0, 640.0, 480.0 ],
+						"rect" : [ 1583.0, 418.0, 640.0, 480.0 ],
 						"bglocked" : 0,
 						"openinpresentation" : 0,
 						"default_fontsize" : 12.0,
@@ -257,7 +257,7 @@
 									"numoutlets" : 1,
 									"outlettype" : [ "" ],
 									"patching_rect" : [ 154.0, 208.0, 88.0, 23.0 ],
-									"text" : "0 0 $1, 1 3 $1"
+									"text" : "0 0 $1, 1 1 $1"
 								}
 
 							}
@@ -7605,14 +7605,14 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 37.5, 69.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"mixInCh1" : [ 0.0 ],
-						"mixInCh2" : [ 0.0 ],
-						"mixInCh3" : [ 0.0 ],
-						"mixInCh4" : [ 0.0 ],
+						"mixInCh1" : [ -13.523563285932532 ],
+						"mixInCh2" : [ -12.196732871077678 ],
+						"mixInCh3" : [ -70.0 ],
+						"mixInCh4" : [ -23.137618991655891 ],
 						"mixInCh5" : [ 0.0 ],
 						"mixInCh6" : [ 0.0 ],
 						"mixInCh7" : [ 0.0 ],
-						"mixMasterOut" : [ 0.0 ],
+						"mixMasterOut" : [ -16.71641791044776 ],
 						"mixOutCh1" : [ 0.0 ],
 						"mixOutCh2" : [ 0.0 ],
 						"mixOutCh3" : [ 0.0 ],
@@ -7628,12 +7628,12 @@
 						"sendCh2Flt" : [ -72.0 ],
 						"sendCh2Rev" : [ -72.0 ],
 						"sendCh3Del" : [ -72.0 ],
-						"sendCh3Flt" : [ -72.0 ],
+						"sendCh3Flt" : [ -13.039370078740234 ],
 						"sendCh3Rev" : [ -72.0 ],
-						"sendCh4Del" : [ -72.0 ],
-						"sendCh4Flt" : [ -72.0 ],
-						"sendCh4Rev" : [ -72.0 ],
-						"sendCh6Flt" : [ -72.0 ],
+						"sendCh4Del" : [ -31.748031496063035 ],
+						"sendCh4Flt" : [ -18.141732283464563 ],
+						"sendCh4Rev" : [ -49.322834645669332 ],
+						"sendCh6Flt" : [ -35.149606299212586 ],
 						"sendCh6Rev" : [ -72.0 ],
 						"sendCh7Del" : [ -72.0 ],
 						"sendCh7Rev" : [ -72.0 ]

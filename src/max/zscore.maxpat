@@ -549,7 +549,7 @@
 					"numoutlets" : 2,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "signal", "signal" ],
-					"patching_rect" : [ 862.0, 886.0, 260.0, 126.0 ],
+					"patching_rect" : [ 855.0, 891.0, 260.0, 126.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 462.202265425282917, 152.5, 260.654297828674316, 126.0 ],
 					"varname" : "zsDelay-bp",
@@ -777,7 +777,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 553.5, 149.0, 22.0 ],
-					"text" : "UnionRose_b18.wav",
+					"text" : "UnionRose_b24.wav",
 					"varname" : "b2File"
 				}
 
@@ -1572,12 +1572,12 @@
 						"b4" : [ 0.0 ],
 						"b4Speed" : [ 0.0 ],
 						"b4Stop" : [ 0.0 ],
-						"granulatorCont" : [ 0.0 ],
-						"granulatorContStop" : [ 0.0 ],
+						"granulatorCont" : [ 1.0 ],
+						"granulatorContStop" : [ 1.0 ],
 						"granulatorLine" : [ 0.0 ],
 						"grooveCont" : [ 0.0 ],
 						"grooveContStop" : [ 0.0 ],
-						"preset" : [ 5.0 ],
+						"preset" : [ 7.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
@@ -1714,7 +1714,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 16 ],
-					"midpoints" : [ 1112.5, 1023.0, 1135.0, 1023.0, 1135.0, 852.0, 1498.0, 852.0, 1498.0, 681.0, 1306.940577823417243, 681.0 ],
+					"midpoints" : [ 1105.5, 1023.0, 1135.0, 1023.0, 1135.0, 852.0, 1498.0, 852.0, 1498.0, 681.0, 1306.940577823417243, 681.0 ],
 					"source" : [ "obj-12", 1 ]
 				}
 
@@ -1722,7 +1722,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-19", 15 ],
-					"midpoints" : [ 871.5, 1023.0, 574.0, 1023.0, 574.0, 826.0, 666.0, 826.0, 666.0, 681.0, 1268.425722279271213, 681.0 ],
+					"midpoints" : [ 864.5, 1023.0, 574.0, 1023.0, 574.0, 826.0, 666.0, 826.0, 666.0, 681.0, 1268.425722279271213, 681.0 ],
 					"source" : [ "obj-12", 0 ]
 				}
 
@@ -1841,7 +1841,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 1 ],
-					"midpoints" : [ 1240.91511117631012, 879.0, 1112.5, 879.0 ],
+					"midpoints" : [ 1240.91511117631012, 879.0, 1105.5, 879.0 ],
 					"source" : [ "obj-19", 5 ]
 				}
 
@@ -1849,7 +1849,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-12", 0 ],
-					"midpoints" : [ 1130.872666764465293, 879.0, 871.5, 879.0 ],
+					"midpoints" : [ 1130.872666764465293, 879.0, 864.5, 879.0 ],
 					"source" : [ "obj-19", 4 ]
 				}
 
