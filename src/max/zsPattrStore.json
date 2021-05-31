@@ -838,12 +838,8 @@
 					"zsBufGroove1::pan": [
 						0.0
 					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::stopPlayBtn": [
-						0.0
-					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
 					"zsBufGroove1::fileName": [],
 					"zsBufGroove2::bufGrooveGain": [
 						0.0
@@ -862,7 +858,9 @@
 					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
-					"zsFilter-bp::filterFreq": [],
+					"zsFilter-bp::filterFreq": [
+						167.0
+					],
 					"zsFilter-bp::filterGain": [
 						1.0
 					],
@@ -1205,13 +1203,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						4219
+						13111
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						18192
+						18855
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -1287,7 +1285,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						6199
+						10102
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -1385,12 +1383,8 @@
 					"zsBufGroove1::pan": [
 						0.0
 					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::stopPlayBtn": [
-						0.0
-					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
 					"zsBufGroove1::fileName": [],
 					"zsBufGroove2::bufGrooveGain": [
 						0.0
@@ -1406,13 +1400,11 @@
 					"zsBufGroove2::pan": [
 						0.0
 					],
-					"zsBufGroove2::startPlayBtn": [
-						0.0
-					],
+					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						5005.798503776358302
+						11635.861626858873933
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -1421,10 +1413,10 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						89.763779999999997
+						84.251968976377938
 					],
 					"zsFilter-bp::filterModIntensity": [
-						2.677165
+						4.842519330708658
 					],
 					"zsFilter-bp::filterMode": [
 						7.0
@@ -1436,7 +1428,7 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						2.4863610374559
+						2.624413120275041
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
@@ -1445,7 +1437,7 @@
 						0.720429076691767
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						90.0
+						61.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
@@ -1463,10 +1455,10 @@
 						0.078995
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						8012.0
+						11678.661618368580093
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						1244.0
+						2584.647997459388534
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
@@ -1511,7 +1503,7 @@
 						1102.362204724413232
 					],
 					"zsMixer-bp::mixInCh1": [
-						-24.029850746268657
+						-11.891644141497231
 					],
 					"zsMixer-bp::mixInCh2": [
 						0.0
@@ -1756,13 +1748,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						23699
+						13484
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						14437
+						18070
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -1807,7 +1799,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						108
+						100
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -1838,7 +1830,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						3520
+						9465
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -1936,12 +1928,8 @@
 					"zsBufGroove1::pan": [
 						0.0
 					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::stopPlayBtn": [
-						0.0
-					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
 					"zsBufGroove1::fileName": [],
 					"zsBufGroove2::bufGrooveGain": [
 						0.0
@@ -1957,13 +1945,11 @@
 					"zsBufGroove2::pan": [
 						0.0
 					],
-					"zsBufGroove2::startPlayBtn": [
-						0.0
-					],
+					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						2684.235992717788122
+						11613.962504625233123
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -1972,10 +1958,10 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						89.763779999999997
+						85.039370078740134
 					],
 					"zsFilter-bp::filterModIntensity": [
-						2.677165
+						4.960629566929133
 					],
 					"zsFilter-bp::filterMode": [
 						7.0
@@ -1987,7 +1973,7 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						2.624413120275032
+						2.486361037455916
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
@@ -1996,7 +1982,7 @@
 						0.720429076691767
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						90.0
+						62.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
@@ -2062,10 +2048,10 @@
 						1102.362204724413232
 					],
 					"zsMixer-bp::mixInCh1": [
-						-23.912798213656117
+						-12.255259137383952
 					],
 					"zsMixer-bp::mixInCh2": [
-						-24.311905041720514
+						-12.255259137383959
 					],
 					"zsMixer-bp::mixInCh3": [
 						0.0
@@ -2307,13 +2293,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						10832
+						21139
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						22591
+						23936
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -2358,7 +2344,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						100
+						102
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -2389,7 +2375,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						6432
+						13158
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -2487,12 +2473,8 @@
 					"zsBufGroove1::pan": [
 						0.0
 					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::stopPlayBtn": [
-						0.0
-					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
 					"zsBufGroove1::fileName": [],
 					"zsBufGroove2::bufGrooveGain": [
 						0.0
@@ -2508,13 +2490,11 @@
 					"zsBufGroove2::pan": [
 						0.0
 					],
-					"zsBufGroove2::startPlayBtn": [
-						0.0
-					],
+					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						11558.805707430919938
+						5870.103024347093196
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -2523,10 +2503,10 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						89.763779999999997
+						50.393701259842551
 					],
 					"zsFilter-bp::filterModIntensity": [
-						2.677165
+						4.803149251968501
 					],
 					"zsFilter-bp::filterMode": [
 						7.0
@@ -2538,7 +2518,7 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						2.624413120275032
+						1.041452445037774
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
@@ -2858,13 +2838,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						1471
+						9640
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						7539
+						920
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -2909,7 +2889,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						100
+						103
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -2940,7 +2920,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						2708
+						1106
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -3032,16 +3012,14 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::stopPlayBtn": [
-						0.0
-					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
 					"zsBufGroove1::fileName": [],
 					"zsBufGroove2::bufGrooveGain": [
 						0.0
@@ -3051,7 +3029,9 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
@@ -3059,7 +3039,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						681.330013683092147
+						2559.596690498668522
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -3083,7 +3063,7 @@
 						2.351076
 					],
 					"zsFilter-bp::filterRes": [
-						3.503064049691305
+						2.350818272265188
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
@@ -3466,9 +3446,7 @@
 					"zsGranulator-bp::grPitchRnd": [
 						0.15
 					],
-					"zsGranulator-bp::grPlayCont": [
-						0.0
-					],
+					"zsGranulator-bp::grPlayCont": [],
 					"zsGranulator-bp::grPlayLine": [],
 					"zsGranulator-bp::grPlaySpeedPerc": [
 						100
@@ -3575,7 +3553,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -3590,7 +3570,9 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
@@ -4005,9 +3987,7 @@
 					"zsGranulator-bp::grPitchRnd": [
 						0.15
 					],
-					"zsGranulator-bp::grPlayCont": [
-						0.0
-					],
+					"zsGranulator-bp::grPlayCont": [],
 					"zsGranulator-bp::grPlayLine": [],
 					"zsGranulator-bp::grPlaySpeedPerc": [
 						100
@@ -4114,7 +4094,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -4129,7 +4111,9 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
@@ -4142,40 +4126,66 @@
 					"zsFilter-bp::filterGain": [
 						1.0
 					],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [],
-					"zsFilter-bp::filterMute": [],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
 					"zsFilter-bp::filterOutput": [
 						4.347141336013302
 					],
 					"zsFilter-bp::filterRes": [
 						1.834730837100667
 					],
-					"zsFilter-bp::filterSpectral": [],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
 					"zsFilter-bp::filterMLFO::Frequency": [
 						0.355002892410148
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
 						68.0
 					],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
 					"zsFilter-bp::gcLFO::Mute": [
 						0.0
 					],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
 					"zsFilterCtrl-bp::fcFreqMax": [
 						5522.868073399949935
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
 						687.624217944200609
 					],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
 					"zsDelay-bp::delayFeedbackL": [
 						-72.0
 					],
@@ -4188,15 +4198,21 @@
 					"zsDelay-bp::delayHPFR": [
 						99.035704916080888
 					],
-					"zsDelay-bp::delayInput": [],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
 					"zsDelay-bp::delayLPFL": [
 						6067.513953811158899
 					],
 					"zsDelay-bp::delayLPFR": [
 						6696.944063487035237
 					],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
 					"zsDelay-bp::delayTimeL": [
 						755.905511811026486
 					],
@@ -4591,7 +4607,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -4606,7 +4624,9 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
@@ -4619,40 +4639,66 @@
 					"zsFilter-bp::filterGain": [
 						1.0
 					],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [],
-					"zsFilter-bp::filterMute": [],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
 					"zsFilter-bp::filterOutput": [
 						4.347141336013302
 					],
 					"zsFilter-bp::filterRes": [
 						2.087452862938209
 					],
-					"zsFilter-bp::filterSpectral": [],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
 					"zsFilter-bp::filterMLFO::Frequency": [
 						0.355002892410148
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
 						68.0
 					],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
 					"zsFilter-bp::gcLFO::Mute": [
 						0.0
 					],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
 					"zsFilterCtrl-bp::fcFreqMax": [
 						5766.008257844500804
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
 						687.624217944201291
 					],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
 					"zsDelay-bp::delayFeedbackL": [
 						-72.0
 					],
@@ -4665,15 +4711,21 @@
 					"zsDelay-bp::delayHPFR": [
 						108.903561037048078
 					],
-					"zsDelay-bp::delayInput": [],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
 					"zsDelay-bp::delayLPFL": [
 						5213.20600303316678
 					],
 					"zsDelay-bp::delayLPFR": [
 						6696.944063487035237
 					],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
 					"zsDelay-bp::delayTimeL": [
 						598.425196850400198
 					],
@@ -4894,13 +4946,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						4963
+						1556
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						28
+						7048
 					],
 					"grooveControl::gcRangeEnd": [
 						13000
@@ -4945,7 +4997,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						148
+						185
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -4976,10 +5028,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						6894
+						4983
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						1676
+						750
 					],
 					"zsGranulator-bp::grFileName": [],
 					"zsGranulator-bp::grEnvLine": [
@@ -5067,16 +5119,14 @@
 						0.0
 					],
 					"zsBufGroove1::bufgrWfMode": [],
-					"zsBufGroove1::loopPlayBtn": [
-						0.0
+					"zsBufGroove1::loopPlayBtn": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
 					],
-					"zsBufGroove1::mcgSpeed": [],
 					"zsBufGroove1::pan": [
 						0.0
 					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
+					"zsBufGroove1::startPlayBtn": [],
 					"zsBufGroove1::stopPlayBtn": [],
 					"zsBufGroove1::fileName": [],
 					"zsBufGroove2::bufGrooveGain": [
@@ -5087,7 +5137,9 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
@@ -5095,60 +5147,98 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						852.205424918935364
+						969.80115135750907
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
 					],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
 					"zsFilter-bp::filterMode": [
 						7.0
 					],
-					"zsFilter-bp::filterMute": [],
-					"zsFilter-bp::filterOutput": [],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
 					"zsFilter-bp::filterRes": [
 						2.087452862938209
 					],
-					"zsFilter-bp::filterSpectral": [],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
 					"zsFilter-bp::filterMLFO::Frequency": [
 						7.293917694041567
 					],
-					"zsFilter-bp::filterMLFO::Mod": [],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
-					"zsFilter-bp::gcLFO::Mute": [],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
 					"zsFilterCtrl-bp::fcFreqMax": [
 						1864.95799258458419
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
 						71.602805763736939
 					],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
 					"zsDelay-bp::delayFeedbackL": [
 						-24.189349850513999
 					],
 					"zsDelay-bp::delayFeedbackR": [
 						-25.487619123472719
 					],
-					"zsDelay-bp::delayHPFL": [],
+					"zsDelay-bp::delayHPFL": [
+						56.567003999999997
+					],
 					"zsDelay-bp::delayHPFR": [
 						490.254685048330884
 					],
-					"zsDelay-bp::delayInput": [],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
 					"zsDelay-bp::delayLPFL": [
 						6067.513953811163447
 					],
 					"zsDelay-bp::delayLPFR": [
 						20000.0
 					],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
 					"zsDelay-bp::delayTimeL": [
 						598.425196850393718
 					],
@@ -5161,20 +5251,48 @@
 					"zsMixer-bp::mixInCh2": [
 						0.0
 					],
-					"zsMixer-bp::mixInCh3": [],
-					"zsMixer-bp::mixInCh4": [],
-					"zsMixer-bp::mixInCh5": [],
-					"zsMixer-bp::mixInCh6": [],
-					"zsMixer-bp::mixInCh7": [],
-					"zsMixer-bp::mixMasterOut": [],
-					"zsMixer-bp::mixOutCh1": [],
-					"zsMixer-bp::mixOutCh2": [],
-					"zsMixer-bp::mixOutCh3": [],
-					"zsMixer-bp::mixOutCh4": [],
-					"zsMixer-bp::mixOutCh5": [],
-					"zsMixer-bp::mixOutCh6": [],
-					"zsMixer-bp::mixOutCh7": [],
-					"zsMixer-bp::mixerMute": [],
+					"zsMixer-bp::mixInCh3": [
+						-6.174639
+					],
+					"zsMixer-bp::mixInCh4": [
+						-23.137619000000001
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -5193,31 +5311,69 @@
 					"zsMixer-bp::sendCh2Rev": [
 						-72.0
 					],
-					"zsMixer-bp::sendCh3Del": [],
-					"zsMixer-bp::sendCh3Flt": [],
-					"zsMixer-bp::sendCh3Rev": [],
-					"zsMixer-bp::sendCh4Del": [],
-					"zsMixer-bp::sendCh4Flt": [],
-					"zsMixer-bp::sendCh4Rev": [],
-					"zsMixer-bp::sendCh6Flt": [],
-					"zsMixer-bp::sendCh6Rev": [],
+					"zsMixer-bp::sendCh3Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-24.944882
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-30.047243999999999
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
 					"zsMixer-bp::sendCh7Del": [
 						-35.716535433070881
 					],
 					"zsMixer-bp::sendCh7Rev": [
 						-34.015748031496045
 					],
-					"zsGigaverb-bp::delayMute": [],
-					"zsGigaverb-bp::revDamp": [],
-					"zsGigaverb-bp::revDry": [],
-					"zsGigaverb-bp::revEarly": [],
-					"zsGigaverb-bp::revInput": [],
-					"zsGigaverb-bp::revOutput": [],
-					"zsGigaverb-bp::revRegen": [],
-					"zsGigaverb-bp::revSize": [],
-					"zsGigaverb-bp::revSpread": [],
-					"zsGigaverb-bp::revTail": [],
-					"zsGigaverb-bp::revTime": [],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
 					"zsBufGroove3::bufGrooveGain": [],
 					"zsBufGroove3::bufferMute": [],
 					"zsBufGroove3::bufgrWfMode": [],
@@ -5303,13 +5459,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						590
+						1087
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						7535
+						712
 					],
 					"grooveControl::gcRangeEnd": [
 						13000
@@ -5354,7 +5510,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						255
+						172
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -5385,10 +5541,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						4171
+						6654
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						2838
+						865
 					],
 					"zsGranulator-bp::grFileName": [],
 					"zsGranulator-bp::grEnvLine": [
@@ -5477,7 +5633,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -5492,89 +5650,243 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
 					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
-					"zsFilter-bp::filterFreq": [],
-					"zsFilter-bp::filterGain": [],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [],
-					"zsFilter-bp::filterMute": [],
-					"zsFilter-bp::filterOutput": [],
-					"zsFilter-bp::filterRes": [],
-					"zsFilter-bp::filterSpectral": [],
-					"zsFilter-bp::filterMLFO::Frequency": [],
-					"zsFilter-bp::filterMLFO::Mod": [],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
-					"zsFilter-bp::gcLFO::Mute": [],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
-					"zsFilterCtrl-bp::fcFreqMax": [],
-					"zsFilterCtrl-bp::fcFreqMin": [],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
-					"zsDelay-bp::delayFeedbackL": [],
-					"zsDelay-bp::delayFeedbackR": [],
-					"zsDelay-bp::delayHPFL": [],
-					"zsDelay-bp::delayHPFR": [],
-					"zsDelay-bp::delayInput": [],
-					"zsDelay-bp::delayLPFL": [],
-					"zsDelay-bp::delayLPFR": [],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
-					"zsDelay-bp::delayTimeL": [],
-					"zsDelay-bp::delayTimeR": [],
-					"zsMixer-bp::mixInCh1": [],
-					"zsMixer-bp::mixInCh2": [],
-					"zsMixer-bp::mixInCh3": [],
-					"zsMixer-bp::mixInCh4": [],
-					"zsMixer-bp::mixInCh5": [],
-					"zsMixer-bp::mixInCh6": [],
-					"zsMixer-bp::mixInCh7": [],
-					"zsMixer-bp::mixMasterOut": [],
-					"zsMixer-bp::mixOutCh1": [],
-					"zsMixer-bp::mixOutCh2": [],
-					"zsMixer-bp::mixOutCh3": [],
-					"zsMixer-bp::mixOutCh4": [],
-					"zsMixer-bp::mixOutCh5": [],
-					"zsMixer-bp::mixOutCh6": [],
-					"zsMixer-bp::mixOutCh7": [],
-					"zsMixer-bp::mixerMute": [],
-					"zsMixer-bp::sendCh1Del": [],
-					"zsMixer-bp::sendCh1Flt": [],
-					"zsMixer-bp::sendCh1Rev": [],
-					"zsMixer-bp::sendCh2Del": [],
-					"zsMixer-bp::sendCh2Flt": [],
-					"zsMixer-bp::sendCh2Rev": [],
-					"zsMixer-bp::sendCh3Del": [],
-					"zsMixer-bp::sendCh3Flt": [],
-					"zsMixer-bp::sendCh3Rev": [],
-					"zsMixer-bp::sendCh4Del": [],
-					"zsMixer-bp::sendCh4Flt": [],
-					"zsMixer-bp::sendCh4Rev": [],
-					"zsMixer-bp::sendCh6Flt": [],
-					"zsMixer-bp::sendCh6Rev": [],
-					"zsMixer-bp::sendCh7Del": [],
-					"zsMixer-bp::sendCh7Rev": [],
-					"zsGigaverb-bp::delayMute": [],
-					"zsGigaverb-bp::revDamp": [],
-					"zsGigaverb-bp::revDry": [],
-					"zsGigaverb-bp::revEarly": [],
-					"zsGigaverb-bp::revInput": [],
-					"zsGigaverb-bp::revOutput": [],
-					"zsGigaverb-bp::revRegen": [],
-					"zsGigaverb-bp::revSize": [],
-					"zsGigaverb-bp::revSpread": [],
-					"zsGigaverb-bp::revTail": [],
-					"zsGigaverb-bp::revTime": [],
+					"zsFilter-bp::filterFreq": [
+						1795.429531616933673
+					],
+					"zsFilter-bp::filterGain": [
+						1.0
+					],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
+					"zsFilter-bp::filterRes": [
+						2.087453
+					],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
+					"zsFilter-bp::filterMLFO::Frequency": [
+						7.293918
+					],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::fcFreqMax": [
+						1864.957992999999988
+					],
+					"zsFilterCtrl-bp::fcFreqMin": [
+						71.602806000000001
+					],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
+					"zsDelay-bp::delayFeedbackL": [
+						-24.189350000000001
+					],
+					"zsDelay-bp::delayFeedbackR": [
+						-25.487618999999999
+					],
+					"zsDelay-bp::delayHPFL": [
+						56.567003999999997
+					],
+					"zsDelay-bp::delayHPFR": [
+						490.254684999999995
+					],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
+					"zsDelay-bp::delayLPFL": [
+						6067.513954000000012
+					],
+					"zsDelay-bp::delayLPFR": [
+						20000.0
+					],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
+					"zsDelay-bp::delayTimeL": [
+						598.425197000000026
+					],
+					"zsDelay-bp::delayTimeR": [
+						913.385826999999949
+					],
+					"zsMixer-bp::mixInCh1": [
+						-5.811023622047216
+					],
+					"zsMixer-bp::mixInCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh3": [
+						-6.174639
+					],
+					"zsMixer-bp::mixInCh4": [
+						-13.371018921142323
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
+					"zsMixer-bp::sendCh1Del": [
+						-44.220472440944931
+					],
+					"zsMixer-bp::sendCh1Flt": [
+						-22.677165354330782
+					],
+					"zsMixer-bp::sendCh1Rev": [
+						-52.724409448818932
+					],
+					"zsMixer-bp::sendCh2Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Rev": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh3Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-24.944882
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-20.409448724409458
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
+					"zsMixer-bp::sendCh7Del": [
+						-35.716535
+					],
+					"zsMixer-bp::sendCh7Rev": [
+						-34.015748000000002
+					],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
 					"zsBufGroove3::bufGrooveGain": [],
 					"zsBufGroove3::bufferMute": [],
 					"zsBufGroove3::bufgrWfMode": [],
@@ -5597,6 +5909,521 @@
 			},
 			"12": {
 				"id": 12,
+				"data": {
+					"b1": [],
+					"b1Speed": [],
+					"b1Stop": [],
+					"b2": [],
+					"b2Speed": [],
+					"b2Stop": [],
+					"b3": [],
+					"b3Speed": [],
+					"b3Stop": [],
+					"b4": [],
+					"b4Speed": [],
+					"b4Stop": [],
+					"granulatorCont": [],
+					"granulatorContStop": [],
+					"granulatorLine": [],
+					"grooveCont": [],
+					"grooveContStop": [],
+					"preset": [],
+					"preset0": [],
+					"stopBtn": [],
+					"mcGroove::mcHarmIncrement": [],
+					"mcGroove::mcHarmonicDecrement": [],
+					"mcGroove::mcModeDecrement": [],
+					"mcGroove::mcModeIncrement": [],
+					"mcGroove::mcgDeviation": [
+						1.4
+					],
+					"mcGroove::mcgGain": [
+						0.0
+					],
+					"mcGroove::mcgHarmonics": [
+						8.0
+					],
+					"mcGroove::mcgMute": [
+						0
+					],
+					"mcGroove::mcgPlayCont": [
+						0.0
+					],
+					"mcGroove::mcgPlayLine": [],
+					"mcGroove::mcgRange": [
+						1.7
+					],
+					"mcGroove::mcgSpeed": [
+						1.0
+					],
+					"mcGroove::mcgWfMode": [],
+					"mcGroove::mcgFile": [],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
+					],
+					"grooveControl::gcLFOFreq": [
+						0.204286737546133
+					],
+					"grooveControl::gcMLFOFreq": [
+						0.1
+					],
+					"grooveControl::gcMLFOMod": [
+						0
+					],
+					"grooveControl::gcMaxLen": [
+						24000
+					],
+					"grooveControl::gcPosLen": [
+						1701
+					],
+					"grooveControl::gcPosMute": [
+						0
+					],
+					"grooveControl::gcPosStart": [
+						3143
+					],
+					"grooveControl::gcRangeEnd": [
+						11000
+					],
+					"grooveControl::gcRangeStart": [
+						0
+					],
+					"grooveControl::gcSizeMax": [
+						5000
+					],
+					"grooveControl::gcSizeMin": [
+						500
+					],
+					"grooveControl::gcSizeMute": [
+						0
+					],
+					"grooveControl::gcLFO::Frequency": [
+						0.204286737546133
+					],
+					"grooveControl::gcLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Frequency": [
+						0.110996268237904
+					],
+					"grooveControl::gcMLFO::Mod": [
+						17.0
+					],
+					"grooveControl::gcMLFO::Mute": [
+						0
+					],
+					"grooveControl::gcMLFO::Shape": [
+						0.0
+					],
+					"zsGranulator-bp::grGain": [
+						0.0
+					],
+					"zsGranulator-bp::grGrainGain": [
+						1.0
+					],
+					"zsGranulator-bp::grGrainNo": [
+						5
+					],
+					"zsGranulator-bp::grGrainSize": [
+						127
+					],
+					"zsGranulator-bp::grModeDecrement": [],
+					"zsGranulator-bp::grModeIncrement": [],
+					"zsGranulator-bp::grMute": [
+						0
+					],
+					"zsGranulator-bp::grPanSpread": [
+						1.0
+					],
+					"zsGranulator-bp::grPitchRate": [
+						1.0
+					],
+					"zsGranulator-bp::grPitchRnd": [
+						0.012
+					],
+					"zsGranulator-bp::grPlayCont": [],
+					"zsGranulator-bp::grPlayLine": [],
+					"zsGranulator-bp::grPlaySpeedPerc": [
+						100
+					],
+					"zsGranulator-bp::grPositionMode": [
+						0
+					],
+					"zsGranulator-bp::grPositionRnd": [
+						20.0
+					],
+					"zsGranulator-bp::grPositionSource": [
+						2.0
+					],
+					"zsGranulator-bp::grSelectionEnd": [
+						4134
+					],
+					"zsGranulator-bp::grSelectionStart": [
+						2437
+					],
+					"zsGranulator-bp::grFileName": [],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 200 1. 4000 0. 200"
+					],
+					"zsPlayCtrl-bp::pcLFOFreq": [
+						0.037729250820892
+					],
+					"zsPlayCtrl-bp::pcLFOSelEnd": [
+						0.061504246016737
+					],
+					"zsPlayCtrl-bp::pcMLFOFreq": [
+						0.1
+					],
+					"zsPlayCtrl-bp::pcMLFOMod": [
+						0
+					],
+					"zsPlayCtrl-bp::pcRangeMute": [
+						0
+					],
+					"zsPlayCtrl-bp::pcSelEndMax": [
+						7500
+					],
+					"zsPlayCtrl-bp::pcSelEndMin": [
+						4000
+					],
+					"zsPlayCtrl-bp::pcSelEndMute": [
+						0
+					],
+					"zsPlayCtrl-bp::pcSelStartFreq": [
+						0.032984176985034
+					],
+					"zsPlayCtrl-bp::pcSelStartMax": [
+						3000
+					],
+					"zsPlayCtrl-bp::pcSelStartMin": [
+						0
+					],
+					"zsPlayCtrl-bp::pcSelStartMute": [
+						0
+					],
+					"zsPlayCtrl-bp::pcSizeMax": [
+						300
+					],
+					"zsPlayCtrl-bp::pcSizeMin": [
+						100
+					],
+					"zsPlayCtrl-bp::pcSizeMute": [
+						0
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
+						0.2
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Mod": [
+						15.0
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Mute": [
+						0
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Shape": [
+						4.0
+					],
+					"zsPlayCtrl-bp::pcSizeLFO::Frequency": [
+						0.037729250820892
+					],
+					"zsPlayCtrl-bp::pcSizeLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
+						0.032984176985034
+					],
+					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
+						0.061504246016737
+					],
+					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+						0.0
+					],
+					"zsBufGroove1::bufGrooveGain": [
+						0.0
+					],
+					"zsBufGroove1::bufferMute": [
+						0.0
+					],
+					"zsBufGroove1::bufgrWfMode": [],
+					"zsBufGroove1::loopPlayBtn": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
+					"zsBufGroove1::pan": [
+						0.0
+					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
+					"zsBufGroove1::fileName": [],
+					"zsBufGroove2::bufGrooveGain": [
+						0.0
+					],
+					"zsBufGroove2::bufferMute": [
+						0.0
+					],
+					"zsBufGroove2::bufgrWfMode": [],
+					"zsBufGroove2::loopPlayBtn": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
+					"zsBufGroove2::pan": [
+						0.0
+					],
+					"zsBufGroove2::startPlayBtn": [],
+					"zsBufGroove2::stopPlayBtn": [],
+					"zsBufGroove2::fileName": [],
+					"zsFilter-bp::filterFreq": [
+						137.861504837345592
+					],
+					"zsFilter-bp::filterGain": [
+						1.0
+					],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
+					"zsFilter-bp::filterRes": [
+						2.087452862938209
+					],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
+					"zsFilter-bp::filterMLFO::Frequency": [
+						7.293917694041567
+					],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::fcFreqMax": [
+						1864.95799258458419
+					],
+					"zsFilterCtrl-bp::fcFreqMin": [
+						71.602805763736939
+					],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
+					"zsDelay-bp::delayFeedbackL": [
+						-24.189349850513999
+					],
+					"zsDelay-bp::delayFeedbackR": [
+						-25.487619123472719
+					],
+					"zsDelay-bp::delayHPFL": [
+						20.224539959845192
+					],
+					"zsDelay-bp::delayHPFR": [
+						490.254685048330884
+					],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
+					"zsDelay-bp::delayLPFL": [
+						6067.513953811163447
+					],
+					"zsDelay-bp::delayLPFR": [
+						20000.0
+					],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
+					"zsDelay-bp::delayTimeL": [
+						598.425196850393718
+					],
+					"zsDelay-bp::delayTimeR": [
+						913.385826771658344
+					],
+					"zsMixer-bp::mixInCh1": [
+						-5.717005523563273
+					],
+					"zsMixer-bp::mixInCh2": [
+						-5.769028871391058
+					],
+					"zsMixer-bp::mixInCh3": [
+						-6.174639
+					],
+					"zsMixer-bp::mixInCh4": [
+						-6.268656716417915
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
+					"zsMixer-bp::sendCh1Del": [
+						-43.653543307086636
+					],
+					"zsMixer-bp::sendCh1Flt": [
+						-23.244094488189063
+					],
+					"zsMixer-bp::sendCh1Rev": [
+						-52.724409448818932
+					],
+					"zsMixer-bp::sendCh2Del": [
+						-43.653543307086665
+					],
+					"zsMixer-bp::sendCh2Flt": [
+						-23.244094488189063
+					],
+					"zsMixer-bp::sendCh2Rev": [
+						-52.724409448818932
+					],
+					"zsMixer-bp::sendCh3Del": [
+						-45.35433070866145
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-24.944882
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-46.488188976377998
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-20.409448724409444
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
+					"zsMixer-bp::sendCh7Del": [
+						-35.716535433070881
+					],
+					"zsMixer-bp::sendCh7Rev": [
+						-34.015748031496045
+					],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
+					"zsBufGroove3::bufGrooveGain": [],
+					"zsBufGroove3::bufferMute": [],
+					"zsBufGroove3::bufgrWfMode": [],
+					"zsBufGroove3::loopPlayBtn": [],
+					"zsBufGroove3::mcgSpeed": [],
+					"zsBufGroove3::pan": [],
+					"zsBufGroove3::startPlayBtn": [],
+					"zsBufGroove3::stopPlayBtn": [],
+					"zsBufGroove3::fileName": [],
+					"zsBufGroove4::bufGrooveGain": [],
+					"zsBufGroove4::bufferMute": [],
+					"zsBufGroove4::bufgrWfMode": [],
+					"zsBufGroove4::loopPlayBtn": [],
+					"zsBufGroove4::mcgSpeed": [],
+					"zsBufGroove4::pan": [],
+					"zsBufGroove4::startPlayBtn": [],
+					"zsBufGroove4::stopPlayBtn": [],
+					"zsBufGroove4::fileName": []
+				}
+			},
+			"13": {
+				"id": 13,
 				"data": {
 					"b1": [],
 					"b1Speed": [],
@@ -5660,16 +6487,16 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						800
+						4709
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						975
+						8200
 					],
 					"grooveControl::gcRangeEnd": [
-						13000
+						11000
 					],
 					"grooveControl::gcRangeStart": [
 						0
@@ -5690,10 +6517,10 @@
 						0.0
 					],
 					"grooveControl::gcMLFO::Frequency": [
-						0.042
+						0.110996268237904
 					],
 					"grooveControl::gcMLFO::Mod": [
-						1.0
+						17.0
 					],
 					"grooveControl::gcMLFO::Mute": [
 						0
@@ -5711,7 +6538,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						169
+						226
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -5742,10 +6569,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						6555
+						7480
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						818
+						1550
 					],
 					"zsGranulator-bp::grFileName": [],
 					"zsGranulator-bp::grEnvLine": [
@@ -5804,415 +6631,6 @@
 					],
 					"zsPlayCtrl-bp::pcRangeMLFO::Mute": [
 						0
-					],
-					"zsPlayCtrl-bp::pcRangeMLFO::Shape": [
-						4.0
-					],
-					"zsPlayCtrl-bp::pcSizeLFO::Frequency": [
-						0.037729250820892
-					],
-					"zsPlayCtrl-bp::pcSizeLFO::Mute": [
-						0.0
-					],
-					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
-						0.032984176985034
-					],
-					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [
-						0.0
-					],
-					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
-						0.061504246016737
-					],
-					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
-						0.0
-					],
-					"zsBufGroove1::bufGrooveGain": [
-						0.0
-					],
-					"zsBufGroove1::bufferMute": [
-						0.0
-					],
-					"zsBufGroove1::bufgrWfMode": [],
-					"zsBufGroove1::loopPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::mcgSpeed": [],
-					"zsBufGroove1::pan": [
-						0.0
-					],
-					"zsBufGroove1::startPlayBtn": [
-						0.0
-					],
-					"zsBufGroove1::stopPlayBtn": [],
-					"zsBufGroove1::fileName": [],
-					"zsBufGroove2::bufGrooveGain": [
-						0.0
-					],
-					"zsBufGroove2::bufferMute": [
-						0.0
-					],
-					"zsBufGroove2::bufgrWfMode": [],
-					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
-					"zsBufGroove2::pan": [
-						0.0
-					],
-					"zsBufGroove2::startPlayBtn": [],
-					"zsBufGroove2::stopPlayBtn": [],
-					"zsBufGroove2::fileName": [],
-					"zsFilter-bp::filterFreq": [
-						488.941573018637541
-					],
-					"zsFilter-bp::filterGain": [
-						1.0
-					],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [
-						7.0
-					],
-					"zsFilter-bp::filterMute": [],
-					"zsFilter-bp::filterOutput": [],
-					"zsFilter-bp::filterRes": [
-						2.087452862938209
-					],
-					"zsFilter-bp::filterSpectral": [],
-					"zsFilter-bp::filterMLFO::Frequency": [
-						7.293917694041567
-					],
-					"zsFilter-bp::filterMLFO::Mod": [],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
-					"zsFilter-bp::gcLFO::Mute": [],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
-					"zsFilterCtrl-bp::fcFreqMax": [
-						1864.95799258458419
-					],
-					"zsFilterCtrl-bp::fcFreqMin": [
-						71.602805763736939
-					],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
-					"zsDelay-bp::delayFeedbackL": [
-						-24.189349850513999
-					],
-					"zsDelay-bp::delayFeedbackR": [
-						-25.487619123472719
-					],
-					"zsDelay-bp::delayHPFL": [],
-					"zsDelay-bp::delayHPFR": [
-						490.254685048330884
-					],
-					"zsDelay-bp::delayInput": [],
-					"zsDelay-bp::delayLPFL": [
-						6067.513953811163447
-					],
-					"zsDelay-bp::delayLPFR": [
-						20000.0
-					],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
-					"zsDelay-bp::delayTimeL": [
-						598.425196850393718
-					],
-					"zsDelay-bp::delayTimeR": [
-						913.385826771658344
-					],
-					"zsMixer-bp::mixInCh1": [
-						-5.717005523563273
-					],
-					"zsMixer-bp::mixInCh2": [
-						-5.769028871391058
-					],
-					"zsMixer-bp::mixInCh3": [],
-					"zsMixer-bp::mixInCh4": [],
-					"zsMixer-bp::mixInCh5": [],
-					"zsMixer-bp::mixInCh6": [],
-					"zsMixer-bp::mixInCh7": [],
-					"zsMixer-bp::mixMasterOut": [],
-					"zsMixer-bp::mixOutCh1": [],
-					"zsMixer-bp::mixOutCh2": [],
-					"zsMixer-bp::mixOutCh3": [],
-					"zsMixer-bp::mixOutCh4": [],
-					"zsMixer-bp::mixOutCh5": [],
-					"zsMixer-bp::mixOutCh6": [],
-					"zsMixer-bp::mixOutCh7": [],
-					"zsMixer-bp::mixerMute": [],
-					"zsMixer-bp::sendCh1Del": [
-						-43.653543307086636
-					],
-					"zsMixer-bp::sendCh1Flt": [
-						-23.244094488189063
-					],
-					"zsMixer-bp::sendCh1Rev": [
-						-52.724409448818932
-					],
-					"zsMixer-bp::sendCh2Del": [
-						-43.653543307086665
-					],
-					"zsMixer-bp::sendCh2Flt": [
-						-23.244094488189063
-					],
-					"zsMixer-bp::sendCh2Rev": [
-						-52.724409448818932
-					],
-					"zsMixer-bp::sendCh3Del": [],
-					"zsMixer-bp::sendCh3Flt": [],
-					"zsMixer-bp::sendCh3Rev": [],
-					"zsMixer-bp::sendCh4Del": [],
-					"zsMixer-bp::sendCh4Flt": [],
-					"zsMixer-bp::sendCh4Rev": [],
-					"zsMixer-bp::sendCh6Flt": [],
-					"zsMixer-bp::sendCh6Rev": [],
-					"zsMixer-bp::sendCh7Del": [
-						-35.716535433070881
-					],
-					"zsMixer-bp::sendCh7Rev": [
-						-34.015748031496045
-					],
-					"zsGigaverb-bp::delayMute": [],
-					"zsGigaverb-bp::revDamp": [],
-					"zsGigaverb-bp::revDry": [],
-					"zsGigaverb-bp::revEarly": [],
-					"zsGigaverb-bp::revInput": [],
-					"zsGigaverb-bp::revOutput": [],
-					"zsGigaverb-bp::revRegen": [],
-					"zsGigaverb-bp::revSize": [],
-					"zsGigaverb-bp::revSpread": [],
-					"zsGigaverb-bp::revTail": [],
-					"zsGigaverb-bp::revTime": [],
-					"zsBufGroove3::bufGrooveGain": [],
-					"zsBufGroove3::bufferMute": [],
-					"zsBufGroove3::bufgrWfMode": [],
-					"zsBufGroove3::loopPlayBtn": [],
-					"zsBufGroove3::mcgSpeed": [],
-					"zsBufGroove3::pan": [],
-					"zsBufGroove3::startPlayBtn": [],
-					"zsBufGroove3::stopPlayBtn": [],
-					"zsBufGroove3::fileName": [],
-					"zsBufGroove4::bufGrooveGain": [],
-					"zsBufGroove4::bufferMute": [],
-					"zsBufGroove4::bufgrWfMode": [],
-					"zsBufGroove4::loopPlayBtn": [],
-					"zsBufGroove4::mcgSpeed": [],
-					"zsBufGroove4::pan": [],
-					"zsBufGroove4::startPlayBtn": [],
-					"zsBufGroove4::stopPlayBtn": [],
-					"zsBufGroove4::fileName": []
-				}
-			},
-			"13": {
-				"id": 13,
-				"data": {
-					"b1": [],
-					"b1Speed": [],
-					"b1Stop": [],
-					"b2": [],
-					"b2Speed": [],
-					"b2Stop": [],
-					"b3": [],
-					"b3Speed": [],
-					"b3Stop": [],
-					"b4": [],
-					"b4Speed": [],
-					"b4Stop": [],
-					"granulatorCont": [],
-					"granulatorContStop": [],
-					"granulatorLine": [],
-					"grooveCont": [],
-					"grooveContStop": [],
-					"preset": [],
-					"preset0": [],
-					"stopBtn": [],
-					"mcGroove::mcHarmIncrement": [],
-					"mcGroove::mcHarmonicDecrement": [],
-					"mcGroove::mcModeDecrement": [],
-					"mcGroove::mcModeIncrement": [],
-					"mcGroove::mcgDeviation": [
-						2.0
-					],
-					"mcGroove::mcgGain": [
-						0.0
-					],
-					"mcGroove::mcgHarmonics": [
-						8.0
-					],
-					"mcGroove::mcgMute": [
-						0.0
-					],
-					"mcGroove::mcgPlayCont": [],
-					"mcGroove::mcgPlayLine": [],
-					"mcGroove::mcgRange": [
-						1.5
-					],
-					"mcGroove::mcgSpeed": [
-						2.0
-					],
-					"mcGroove::mcgWfMode": [],
-					"mcGroove::mcgFile": [],
-					"mcGroove::mcgEnvLine": [
-						"0., 1. 200 1. 600 0. 200"
-					],
-					"grooveControl::gcLFOFreq": [
-						0.061504246016738
-					],
-					"grooveControl::gcMLFOFreq": [
-						0.1
-					],
-					"grooveControl::gcMLFOMod": [
-						0
-					],
-					"grooveControl::gcMaxLen": [
-						24000
-					],
-					"grooveControl::gcPosLen": [
-						929
-					],
-					"grooveControl::gcPosMute": [
-						0.0
-					],
-					"grooveControl::gcPosStart": [
-						6154
-					],
-					"grooveControl::gcRangeEnd": [
-						14000
-					],
-					"grooveControl::gcRangeStart": [
-						0
-					],
-					"grooveControl::gcSizeMax": [
-						5000
-					],
-					"grooveControl::gcSizeMin": [
-						100
-					],
-					"grooveControl::gcSizeMute": [
-						0.0
-					],
-					"grooveControl::gcLFO::Frequency": [
-						0.061504246016738
-					],
-					"grooveControl::gcLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Frequency": [
-						0.052031166654065
-					],
-					"grooveControl::gcMLFO::Mod": [
-						11.0
-					],
-					"grooveControl::gcMLFO::Mute": [
-						0.0
-					],
-					"grooveControl::gcMLFO::Shape": [
-						0.0
-					],
-					"zsGranulator-bp::grGain": [
-						0.0
-					],
-					"zsGranulator-bp::grGrainGain": [
-						1.0
-					],
-					"zsGranulator-bp::grGrainNo": [
-						5
-					],
-					"zsGranulator-bp::grGrainSize": [
-						179
-					],
-					"zsGranulator-bp::grModeDecrement": [],
-					"zsGranulator-bp::grModeIncrement": [],
-					"zsGranulator-bp::grMute": [
-						0.0
-					],
-					"zsGranulator-bp::grPanSpread": [
-						1.0
-					],
-					"zsGranulator-bp::grPitchRate": [
-						1.0
-					],
-					"zsGranulator-bp::grPitchRnd": [
-						0.012
-					],
-					"zsGranulator-bp::grPlayCont": [],
-					"zsGranulator-bp::grPlayLine": [],
-					"zsGranulator-bp::grPlaySpeedPerc": [
-						100
-					],
-					"zsGranulator-bp::grPositionMode": [
-						0
-					],
-					"zsGranulator-bp::grPositionRnd": [
-						20.0
-					],
-					"zsGranulator-bp::grPositionSource": [
-						2.0
-					],
-					"zsGranulator-bp::grSelectionEnd": [
-						4592
-					],
-					"zsGranulator-bp::grSelectionStart": [
-						2877
-					],
-					"zsGranulator-bp::grFileName": [],
-					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 200 1. 4000 0. 200"
-					],
-					"zsPlayCtrl-bp::pcLFOFreq": [
-						0.037729250820892
-					],
-					"zsPlayCtrl-bp::pcLFOSelEnd": [
-						0.061504246016737
-					],
-					"zsPlayCtrl-bp::pcMLFOFreq": [
-						0.1
-					],
-					"zsPlayCtrl-bp::pcMLFOMod": [
-						0
-					],
-					"zsPlayCtrl-bp::pcRangeMute": [
-						0.0
-					],
-					"zsPlayCtrl-bp::pcSelEndMax": [
-						7500
-					],
-					"zsPlayCtrl-bp::pcSelEndMin": [
-						4000
-					],
-					"zsPlayCtrl-bp::pcSelEndMute": [
-						0.0
-					],
-					"zsPlayCtrl-bp::pcSelStartFreq": [
-						0.032984176985034
-					],
-					"zsPlayCtrl-bp::pcSelStartMax": [
-						3000
-					],
-					"zsPlayCtrl-bp::pcSelStartMin": [
-						0
-					],
-					"zsPlayCtrl-bp::pcSelStartMute": [
-						0.0
-					],
-					"zsPlayCtrl-bp::pcSizeMax": [
-						300
-					],
-					"zsPlayCtrl-bp::pcSizeMin": [
-						100
-					],
-					"zsPlayCtrl-bp::pcSizeMute": [
-						0.0
-					],
-					"zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
-						0.2
-					],
-					"zsPlayCtrl-bp::pcRangeMLFO::Mod": [
-						15.0
-					],
-					"zsPlayCtrl-bp::pcRangeMLFO::Mute": [
-						0.0
 					],
 					"zsPlayCtrl-bp::pcRangeMLFO::Shape": [
 						4.0
@@ -6243,7 +6661,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -6258,89 +6678,243 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
 					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
-					"zsFilter-bp::filterFreq": [],
-					"zsFilter-bp::filterGain": [],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [],
-					"zsFilter-bp::filterMute": [],
-					"zsFilter-bp::filterOutput": [],
-					"zsFilter-bp::filterRes": [],
-					"zsFilter-bp::filterSpectral": [],
-					"zsFilter-bp::filterMLFO::Frequency": [],
-					"zsFilter-bp::filterMLFO::Mod": [],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
-					"zsFilter-bp::gcLFO::Mute": [],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
-					"zsFilterCtrl-bp::fcFreqMax": [],
-					"zsFilterCtrl-bp::fcFreqMin": [],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
-					"zsDelay-bp::delayFeedbackL": [],
-					"zsDelay-bp::delayFeedbackR": [],
-					"zsDelay-bp::delayHPFL": [],
-					"zsDelay-bp::delayHPFR": [],
-					"zsDelay-bp::delayInput": [],
-					"zsDelay-bp::delayLPFL": [],
-					"zsDelay-bp::delayLPFR": [],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
-					"zsDelay-bp::delayTimeL": [],
-					"zsDelay-bp::delayTimeR": [],
-					"zsMixer-bp::mixInCh1": [],
-					"zsMixer-bp::mixInCh2": [],
-					"zsMixer-bp::mixInCh3": [],
-					"zsMixer-bp::mixInCh4": [],
-					"zsMixer-bp::mixInCh5": [],
-					"zsMixer-bp::mixInCh6": [],
-					"zsMixer-bp::mixInCh7": [],
-					"zsMixer-bp::mixMasterOut": [],
-					"zsMixer-bp::mixOutCh1": [],
-					"zsMixer-bp::mixOutCh2": [],
-					"zsMixer-bp::mixOutCh3": [],
-					"zsMixer-bp::mixOutCh4": [],
-					"zsMixer-bp::mixOutCh5": [],
-					"zsMixer-bp::mixOutCh6": [],
-					"zsMixer-bp::mixOutCh7": [],
-					"zsMixer-bp::mixerMute": [],
-					"zsMixer-bp::sendCh1Del": [],
-					"zsMixer-bp::sendCh1Flt": [],
-					"zsMixer-bp::sendCh1Rev": [],
-					"zsMixer-bp::sendCh2Del": [],
-					"zsMixer-bp::sendCh2Flt": [],
-					"zsMixer-bp::sendCh2Rev": [],
-					"zsMixer-bp::sendCh3Del": [],
-					"zsMixer-bp::sendCh3Flt": [],
-					"zsMixer-bp::sendCh3Rev": [],
-					"zsMixer-bp::sendCh4Del": [],
-					"zsMixer-bp::sendCh4Flt": [],
-					"zsMixer-bp::sendCh4Rev": [],
-					"zsMixer-bp::sendCh6Flt": [],
-					"zsMixer-bp::sendCh6Rev": [],
-					"zsMixer-bp::sendCh7Del": [],
-					"zsMixer-bp::sendCh7Rev": [],
-					"zsGigaverb-bp::delayMute": [],
-					"zsGigaverb-bp::revDamp": [],
-					"zsGigaverb-bp::revDry": [],
-					"zsGigaverb-bp::revEarly": [],
-					"zsGigaverb-bp::revInput": [],
-					"zsGigaverb-bp::revOutput": [],
-					"zsGigaverb-bp::revRegen": [],
-					"zsGigaverb-bp::revSize": [],
-					"zsGigaverb-bp::revSpread": [],
-					"zsGigaverb-bp::revTail": [],
-					"zsGigaverb-bp::revTime": [],
+					"zsFilter-bp::filterFreq": [
+						1653.165562256088606
+					],
+					"zsFilter-bp::filterGain": [
+						1.0
+					],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
+					"zsFilter-bp::filterRes": [
+						2.087452862938209
+					],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
+					"zsFilter-bp::filterMLFO::Frequency": [
+						7.293917694041567
+					],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::fcFreqMax": [
+						1864.95799258458419
+					],
+					"zsFilterCtrl-bp::fcFreqMin": [
+						71.602805763736939
+					],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
+					"zsDelay-bp::delayFeedbackL": [
+						-24.189349850513999
+					],
+					"zsDelay-bp::delayFeedbackR": [
+						-25.487619123472719
+					],
+					"zsDelay-bp::delayHPFL": [
+						20.224539959845192
+					],
+					"zsDelay-bp::delayHPFR": [
+						490.254685048330884
+					],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
+					"zsDelay-bp::delayLPFL": [
+						6067.513953811163447
+					],
+					"zsDelay-bp::delayLPFR": [
+						20000.0
+					],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
+					"zsDelay-bp::delayTimeL": [
+						598.425196850393718
+					],
+					"zsDelay-bp::delayTimeR": [
+						913.385826771658344
+					],
+					"zsMixer-bp::mixInCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh2": [
+						-5.769028871391058
+					],
+					"zsMixer-bp::mixInCh3": [
+						-6.174639
+					],
+					"zsMixer-bp::mixInCh4": [
+						-13.277000822658351
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
+					"zsMixer-bp::sendCh1Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Rev": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Del": [
+						-43.653543307086665
+					],
+					"zsMixer-bp::sendCh2Flt": [
+						-23.244094488189063
+					],
+					"zsMixer-bp::sendCh2Rev": [
+						-52.724409448818932
+					],
+					"zsMixer-bp::sendCh3Del": [
+						-45.35433070866145
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-24.944882
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-46.488188976377998
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-20.409448724409444
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
+					"zsMixer-bp::sendCh7Del": [
+						-35.716535433070881
+					],
+					"zsMixer-bp::sendCh7Rev": [
+						-34.015748031496045
+					],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
 					"zsBufGroove3::bufGrooveGain": [],
 					"zsBufGroove3::bufferMute": [],
 					"zsBufGroove3::bufgrWfMode": [],
@@ -6426,13 +7000,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						929
+						322
 					],
 					"grooveControl::gcPosMute": [
 						0.0
 					],
 					"grooveControl::gcPosStart": [
-						6154
+						66
 					],
 					"grooveControl::gcRangeEnd": [
 						14000
@@ -6477,7 +7051,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						179
+						290
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -6508,10 +7082,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						4592
+						4159
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						2877
+						2999
 					],
 					"zsGranulator-bp::grFileName": [],
 					"zsGranulator-bp::grEnvLine": [
@@ -6600,7 +7174,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -6615,89 +7191,243 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
 					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
-					"zsFilter-bp::filterFreq": [],
-					"zsFilter-bp::filterGain": [],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [],
-					"zsFilter-bp::filterMute": [],
-					"zsFilter-bp::filterOutput": [],
-					"zsFilter-bp::filterRes": [],
-					"zsFilter-bp::filterSpectral": [],
-					"zsFilter-bp::filterMLFO::Frequency": [],
-					"zsFilter-bp::filterMLFO::Mod": [],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
-					"zsFilter-bp::gcLFO::Mute": [],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
-					"zsFilterCtrl-bp::fcFreqMax": [],
-					"zsFilterCtrl-bp::fcFreqMin": [],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
-					"zsDelay-bp::delayFeedbackL": [],
-					"zsDelay-bp::delayFeedbackR": [],
-					"zsDelay-bp::delayHPFL": [],
-					"zsDelay-bp::delayHPFR": [],
-					"zsDelay-bp::delayInput": [],
-					"zsDelay-bp::delayLPFL": [],
-					"zsDelay-bp::delayLPFR": [],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
-					"zsDelay-bp::delayTimeL": [],
-					"zsDelay-bp::delayTimeR": [],
-					"zsMixer-bp::mixInCh1": [],
-					"zsMixer-bp::mixInCh2": [],
-					"zsMixer-bp::mixInCh3": [],
-					"zsMixer-bp::mixInCh4": [],
-					"zsMixer-bp::mixInCh5": [],
-					"zsMixer-bp::mixInCh6": [],
-					"zsMixer-bp::mixInCh7": [],
-					"zsMixer-bp::mixMasterOut": [],
-					"zsMixer-bp::mixOutCh1": [],
-					"zsMixer-bp::mixOutCh2": [],
-					"zsMixer-bp::mixOutCh3": [],
-					"zsMixer-bp::mixOutCh4": [],
-					"zsMixer-bp::mixOutCh5": [],
-					"zsMixer-bp::mixOutCh6": [],
-					"zsMixer-bp::mixOutCh7": [],
-					"zsMixer-bp::mixerMute": [],
-					"zsMixer-bp::sendCh1Del": [],
-					"zsMixer-bp::sendCh1Flt": [],
-					"zsMixer-bp::sendCh1Rev": [],
-					"zsMixer-bp::sendCh2Del": [],
-					"zsMixer-bp::sendCh2Flt": [],
-					"zsMixer-bp::sendCh2Rev": [],
-					"zsMixer-bp::sendCh3Del": [],
-					"zsMixer-bp::sendCh3Flt": [],
-					"zsMixer-bp::sendCh3Rev": [],
-					"zsMixer-bp::sendCh4Del": [],
-					"zsMixer-bp::sendCh4Flt": [],
-					"zsMixer-bp::sendCh4Rev": [],
-					"zsMixer-bp::sendCh6Flt": [],
-					"zsMixer-bp::sendCh6Rev": [],
-					"zsMixer-bp::sendCh7Del": [],
-					"zsMixer-bp::sendCh7Rev": [],
-					"zsGigaverb-bp::delayMute": [],
-					"zsGigaverb-bp::revDamp": [],
-					"zsGigaverb-bp::revDry": [],
-					"zsGigaverb-bp::revEarly": [],
-					"zsGigaverb-bp::revInput": [],
-					"zsGigaverb-bp::revOutput": [],
-					"zsGigaverb-bp::revRegen": [],
-					"zsGigaverb-bp::revSize": [],
-					"zsGigaverb-bp::revSpread": [],
-					"zsGigaverb-bp::revTail": [],
-					"zsGigaverb-bp::revTime": [],
+					"zsFilter-bp::filterFreq": [
+						1829.012948684190405
+					],
+					"zsFilter-bp::filterGain": [
+						1.0
+					],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
+					"zsFilter-bp::filterRes": [
+						2.087452862938209
+					],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
+					"zsFilter-bp::filterMLFO::Frequency": [
+						7.293918
+					],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::fcFreqMax": [
+						1864.957992999999988
+					],
+					"zsFilterCtrl-bp::fcFreqMin": [
+						71.602806000000001
+					],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
+					"zsDelay-bp::delayFeedbackL": [
+						-24.189350000000001
+					],
+					"zsDelay-bp::delayFeedbackR": [
+						-25.487618999999999
+					],
+					"zsDelay-bp::delayHPFL": [
+						20.224540000000001
+					],
+					"zsDelay-bp::delayHPFR": [
+						490.254684999999995
+					],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
+					"zsDelay-bp::delayLPFL": [
+						6067.513954000000012
+					],
+					"zsDelay-bp::delayLPFR": [
+						20000.0
+					],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
+					"zsDelay-bp::delayTimeL": [
+						598.425197000000026
+					],
+					"zsDelay-bp::delayTimeR": [
+						913.385826999999949
+					],
+					"zsMixer-bp::mixInCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh3": [
+						-6.174639
+					],
+					"zsMixer-bp::mixInCh4": [
+						-13.277001
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
+					"zsMixer-bp::sendCh1Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Rev": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Rev": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh3Del": [
+						-45.354331000000002
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-24.944882
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-46.488188999999998
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-20.409448999999999
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
+					"zsMixer-bp::sendCh7Del": [
+						-35.716535
+					],
+					"zsMixer-bp::sendCh7Rev": [
+						-34.015748000000002
+					],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
 					"zsBufGroove3::bufGrooveGain": [],
 					"zsBufGroove3::bufferMute": [],
 					"zsBufGroove3::bufgrWfMode": [],
@@ -6755,7 +7485,7 @@
 						8.0
 					],
 					"mcGroove::mcgMute": [
-						0.0
+						1.0
 					],
 					"mcGroove::mcgPlayCont": [],
 					"mcGroove::mcgPlayLine": [],
@@ -6783,13 +7513,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						4478
+						3587
 					],
 					"grooveControl::gcPosMute": [
-						0.0
+						1.0
 					],
 					"grooveControl::gcPosStart": [
-						10009
+						5721
 					],
 					"grooveControl::gcRangeEnd": [
 						14000
@@ -6804,7 +7534,7 @@
 						100
 					],
 					"grooveControl::gcSizeMute": [
-						0.0
+						1.0
 					],
 					"grooveControl::gcLFO::Frequency": [
 						0.061504246016738
@@ -6819,7 +7549,7 @@
 						9.0
 					],
 					"grooveControl::gcMLFO::Mute": [
-						0.0
+						1.0
 					],
 					"grooveControl::gcMLFO::Shape": [
 						0.0
@@ -6834,7 +7564,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						113
+						169
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -6848,7 +7578,7 @@
 						1.0
 					],
 					"zsGranulator-bp::grPitchRnd": [
-						0.012
+						0.0
 					],
 					"zsGranulator-bp::grPlayCont": [],
 					"zsGranulator-bp::grPlayLine": [],
@@ -6859,28 +7589,26 @@
 						0
 					],
 					"zsGranulator-bp::grPositionRnd": [
-						20.0
+						12.0
 					],
 					"zsGranulator-bp::grPositionSource": [
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						5300
+						7300
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						3700
+						3833
 					],
-					"zsGranulator-bp::grFileName": [
-						"UnionRose_c3gr.wav"
-					],
+					"zsGranulator-bp::grFileName": [],
 					"zsGranulator-bp::grEnvLine": [
-						"0., 1. 5000 1. 1000 0. 6000"
+						"0., 1. 9000 1. 1000 0. 7500"
 					],
 					"zsPlayCtrl-bp::pcLFOFreq": [
 						0.029898610173561
 					],
 					"zsPlayCtrl-bp::pcLFOSelEnd": [
-						0.0
+						0.02
 					],
 					"zsPlayCtrl-bp::pcMLFOFreq": [
 						0.1
@@ -6892,22 +7620,22 @@
 						0.0
 					],
 					"zsPlayCtrl-bp::pcSelEndMax": [
-						5300
+						7500
 					],
 					"zsPlayCtrl-bp::pcSelEndMin": [
-						5300
+						7200
 					],
 					"zsPlayCtrl-bp::pcSelEndMute": [
 						0.0
 					],
 					"zsPlayCtrl-bp::pcSelStartFreq": [
-						0.0
+						0.02
 					],
 					"zsPlayCtrl-bp::pcSelStartMax": [
-						3700
+						3900
 					],
 					"zsPlayCtrl-bp::pcSelStartMin": [
-						3700
+						3800
 					],
 					"zsPlayCtrl-bp::pcSelStartMute": [
 						0.0
@@ -6922,7 +7650,7 @@
 						0.0
 					],
 					"zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
-						0.005341476019178
+						0.005
 					],
 					"zsPlayCtrl-bp::pcRangeMLFO::Mod": [
 						1.0
@@ -6940,13 +7668,13 @@
 						0.0
 					],
 					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
-						0.0
+						0.02
 					],
 					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [
 						0.0
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
-						0.0
+						0.02
 					],
 					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
 						0.0
@@ -6959,7 +7687,9 @@
 					],
 					"zsBufGroove1::bufgrWfMode": [],
 					"zsBufGroove1::loopPlayBtn": [],
-					"zsBufGroove1::mcgSpeed": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove1::pan": [
 						0.0
 					],
@@ -6974,89 +7704,756 @@
 					],
 					"zsBufGroove2::bufgrWfMode": [],
 					"zsBufGroove2::loopPlayBtn": [],
-					"zsBufGroove2::mcgSpeed": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
 					"zsBufGroove2::pan": [
 						0.0
 					],
 					"zsBufGroove2::startPlayBtn": [],
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
-					"zsFilter-bp::filterFreq": [],
-					"zsFilter-bp::filterGain": [],
-					"zsFilter-bp::filterInput": [],
-					"zsFilter-bp::filterMod": [],
-					"zsFilter-bp::filterModIntensity": [],
-					"zsFilter-bp::filterMode": [],
-					"zsFilter-bp::filterMute": [],
-					"zsFilter-bp::filterOutput": [],
-					"zsFilter-bp::filterRes": [],
-					"zsFilter-bp::filterSpectral": [],
-					"zsFilter-bp::filterMLFO::Frequency": [],
-					"zsFilter-bp::filterMLFO::Mod": [],
-					"zsFilter-bp::filterMLFO::Mute": [],
-					"zsFilter-bp::filterMLFO::Shape": [],
-					"zsFilter-bp::gcLFO::Frequency": [],
-					"zsFilter-bp::gcLFO::Mute": [],
-					"zsFilterCtrl-bp::fcFreqFrequency": [],
-					"zsFilterCtrl-bp::fcFreqMax": [],
-					"zsFilterCtrl-bp::fcFreqMin": [],
-					"zsFilterCtrl-bp::fliterCtrlMute": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [],
-					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [],
-					"zsDelay-bp::delayFeedbackL": [],
-					"zsDelay-bp::delayFeedbackR": [],
-					"zsDelay-bp::delayHPFL": [],
-					"zsDelay-bp::delayHPFR": [],
-					"zsDelay-bp::delayInput": [],
-					"zsDelay-bp::delayLPFL": [],
-					"zsDelay-bp::delayLPFR": [],
-					"zsDelay-bp::delayMute": [],
-					"zsDelay-bp::delayOutput": [],
-					"zsDelay-bp::delayTimeL": [],
-					"zsDelay-bp::delayTimeR": [],
-					"zsMixer-bp::mixInCh1": [],
-					"zsMixer-bp::mixInCh2": [],
-					"zsMixer-bp::mixInCh3": [],
-					"zsMixer-bp::mixInCh4": [],
-					"zsMixer-bp::mixInCh5": [],
-					"zsMixer-bp::mixInCh6": [],
-					"zsMixer-bp::mixInCh7": [],
-					"zsMixer-bp::mixMasterOut": [],
-					"zsMixer-bp::mixOutCh1": [],
-					"zsMixer-bp::mixOutCh2": [],
-					"zsMixer-bp::mixOutCh3": [],
-					"zsMixer-bp::mixOutCh4": [],
-					"zsMixer-bp::mixOutCh5": [],
-					"zsMixer-bp::mixOutCh6": [],
-					"zsMixer-bp::mixOutCh7": [],
-					"zsMixer-bp::mixerMute": [],
-					"zsMixer-bp::sendCh1Del": [],
-					"zsMixer-bp::sendCh1Flt": [],
-					"zsMixer-bp::sendCh1Rev": [],
-					"zsMixer-bp::sendCh2Del": [],
-					"zsMixer-bp::sendCh2Flt": [],
-					"zsMixer-bp::sendCh2Rev": [],
-					"zsMixer-bp::sendCh3Del": [],
-					"zsMixer-bp::sendCh3Flt": [],
-					"zsMixer-bp::sendCh3Rev": [],
-					"zsMixer-bp::sendCh4Del": [],
-					"zsMixer-bp::sendCh4Flt": [],
-					"zsMixer-bp::sendCh4Rev": [],
-					"zsMixer-bp::sendCh6Flt": [],
-					"zsMixer-bp::sendCh6Rev": [],
-					"zsMixer-bp::sendCh7Del": [],
-					"zsMixer-bp::sendCh7Rev": [],
-					"zsGigaverb-bp::delayMute": [],
-					"zsGigaverb-bp::revDamp": [],
-					"zsGigaverb-bp::revDry": [],
-					"zsGigaverb-bp::revEarly": [],
-					"zsGigaverb-bp::revInput": [],
-					"zsGigaverb-bp::revOutput": [],
-					"zsGigaverb-bp::revRegen": [],
-					"zsGigaverb-bp::revSize": [],
-					"zsGigaverb-bp::revSpread": [],
-					"zsGigaverb-bp::revTail": [],
-					"zsGigaverb-bp::revTime": [],
+					"zsFilter-bp::filterFreq": [
+						574.528719404151389
+					],
+					"zsFilter-bp::filterGain": [
+						1.0
+					],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
+					"zsFilter-bp::filterRes": [
+						2.087453
+					],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
+					"zsFilter-bp::filterMLFO::Frequency": [
+						7.293918
+					],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::fcFreqMax": [
+						1864.957992999999988
+					],
+					"zsFilterCtrl-bp::fcFreqMin": [
+						71.602806000000001
+					],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
+					"zsDelay-bp::delayFeedbackL": [
+						-12.751158808324725
+					],
+					"zsDelay-bp::delayFeedbackR": [
+						-11.053140388323705
+					],
+					"zsDelay-bp::delayHPFL": [
+						20.224540000000001
+					],
+					"zsDelay-bp::delayHPFR": [
+						20.0
+					],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
+					"zsDelay-bp::delayLPFL": [
+						20000.0
+					],
+					"zsDelay-bp::delayLPFR": [
+						20000.0
+					],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
+					"zsDelay-bp::delayTimeL": [
+						1984.251968653542008
+					],
+					"zsDelay-bp::delayTimeR": [
+						1952.755905740156095
+					],
+					"zsMixer-bp::mixInCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh3": [
+						-5.811023622047216
+					],
+					"zsMixer-bp::mixInCh4": [
+						-13.277001
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
+					"zsMixer-bp::sendCh1Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Rev": [
+						-47.622047244094531
+					],
+					"zsMixer-bp::sendCh2Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Rev": [
+						-48.188976377952748
+					],
+					"zsMixer-bp::sendCh3Del": [
+						-45.354331000000002
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-26.078740181102383
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-20.409448999999999
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
+					"zsMixer-bp::sendCh7Del": [
+						-35.716535
+					],
+					"zsMixer-bp::sendCh7Rev": [
+						-34.015748000000002
+					],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
+					"zsBufGroove3::bufGrooveGain": [],
+					"zsBufGroove3::bufferMute": [],
+					"zsBufGroove3::bufgrWfMode": [],
+					"zsBufGroove3::loopPlayBtn": [],
+					"zsBufGroove3::mcgSpeed": [],
+					"zsBufGroove3::pan": [],
+					"zsBufGroove3::startPlayBtn": [],
+					"zsBufGroove3::stopPlayBtn": [],
+					"zsBufGroove3::fileName": [],
+					"zsBufGroove4::bufGrooveGain": [],
+					"zsBufGroove4::bufferMute": [],
+					"zsBufGroove4::bufgrWfMode": [],
+					"zsBufGroove4::loopPlayBtn": [],
+					"zsBufGroove4::mcgSpeed": [],
+					"zsBufGroove4::pan": [],
+					"zsBufGroove4::startPlayBtn": [],
+					"zsBufGroove4::stopPlayBtn": [],
+					"zsBufGroove4::fileName": []
+				}
+			},
+			"16": {
+				"id": 16,
+				"data": {
+					"b1": [],
+					"b1Speed": [],
+					"b1Stop": [],
+					"b2": [],
+					"b2Speed": [],
+					"b2Stop": [],
+					"b3": [],
+					"b3Speed": [],
+					"b3Stop": [],
+					"b4": [],
+					"b4Speed": [],
+					"b4Stop": [],
+					"granulatorCont": [],
+					"granulatorContStop": [],
+					"granulatorLine": [],
+					"grooveCont": [],
+					"grooveContStop": [],
+					"preset": [],
+					"preset0": [],
+					"stopBtn": [],
+					"mcGroove::mcHarmIncrement": [],
+					"mcGroove::mcHarmonicDecrement": [],
+					"mcGroove::mcModeDecrement": [],
+					"mcGroove::mcModeIncrement": [],
+					"mcGroove::mcgDeviation": [
+						1.3
+					],
+					"mcGroove::mcgGain": [
+						0.0
+					],
+					"mcGroove::mcgHarmonics": [
+						8.0
+					],
+					"mcGroove::mcgMute": [
+						1.0
+					],
+					"mcGroove::mcgPlayCont": [],
+					"mcGroove::mcgPlayLine": [],
+					"mcGroove::mcgRange": [
+						1.5
+					],
+					"mcGroove::mcgSpeed": [
+						1.5
+					],
+					"mcGroove::mcgWfMode": [],
+					"mcGroove::mcgFile": [],
+					"mcGroove::mcgEnvLine": [
+						"0., 1. 200 1. 600 0. 200"
+					],
+					"grooveControl::gcLFOFreq": [
+						0.061504246016738
+					],
+					"grooveControl::gcMLFOFreq": [
+						0.1
+					],
+					"grooveControl::gcMLFOMod": [
+						0
+					],
+					"grooveControl::gcMaxLen": [
+						24000
+					],
+					"grooveControl::gcPosLen": [
+						3587
+					],
+					"grooveControl::gcPosMute": [
+						1.0
+					],
+					"grooveControl::gcPosStart": [
+						5721
+					],
+					"grooveControl::gcRangeEnd": [
+						14000
+					],
+					"grooveControl::gcRangeStart": [
+						0
+					],
+					"grooveControl::gcSizeMax": [
+						5000
+					],
+					"grooveControl::gcSizeMin": [
+						100
+					],
+					"grooveControl::gcSizeMute": [
+						1.0
+					],
+					"grooveControl::gcLFO::Frequency": [
+						0.061504246016738
+					],
+					"grooveControl::gcLFO::Mute": [
+						0.0
+					],
+					"grooveControl::gcMLFO::Frequency": [
+						0.077368653808455
+					],
+					"grooveControl::gcMLFO::Mod": [
+						9.0
+					],
+					"grooveControl::gcMLFO::Mute": [
+						1.0
+					],
+					"grooveControl::gcMLFO::Shape": [
+						0.0
+					],
+					"zsGranulator-bp::grGain": [
+						0.0
+					],
+					"zsGranulator-bp::grGrainGain": [
+						1.0
+					],
+					"zsGranulator-bp::grGrainNo": [
+						5
+					],
+					"zsGranulator-bp::grGrainSize": [
+						152
+					],
+					"zsGranulator-bp::grModeDecrement": [],
+					"zsGranulator-bp::grModeIncrement": [],
+					"zsGranulator-bp::grMute": [
+						0.0
+					],
+					"zsGranulator-bp::grPanSpread": [
+						1.0
+					],
+					"zsGranulator-bp::grPitchRate": [
+						1.0
+					],
+					"zsGranulator-bp::grPitchRnd": [
+						0.0
+					],
+					"zsGranulator-bp::grPlayCont": [],
+					"zsGranulator-bp::grPlayLine": [],
+					"zsGranulator-bp::grPlaySpeedPerc": [
+						100
+					],
+					"zsGranulator-bp::grPositionMode": [
+						0
+					],
+					"zsGranulator-bp::grPositionRnd": [
+						10.0
+					],
+					"zsGranulator-bp::grPositionSource": [
+						2.0
+					],
+					"zsGranulator-bp::grSelectionEnd": [
+						4797
+					],
+					"zsGranulator-bp::grSelectionStart": [
+						3800
+					],
+					"zsGranulator-bp::grFileName": [],
+					"zsGranulator-bp::grEnvLine": [
+						"0., 1. 15000 1. 1000 0. 16300"
+					],
+					"zsPlayCtrl-bp::pcLFOFreq": [
+						0.029898610173561
+					],
+					"zsPlayCtrl-bp::pcLFOSelEnd": [
+						0.014767169468619
+					],
+					"zsPlayCtrl-bp::pcMLFOFreq": [
+						0.1
+					],
+					"zsPlayCtrl-bp::pcMLFOMod": [
+						0
+					],
+					"zsPlayCtrl-bp::pcRangeMute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelEndMax": [
+						4800
+					],
+					"zsPlayCtrl-bp::pcSelEndMin": [
+						4755
+					],
+					"zsPlayCtrl-bp::pcSelEndMute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelStartFreq": [
+						0.025192139168456
+					],
+					"zsPlayCtrl-bp::pcSelStartMax": [
+						3900
+					],
+					"zsPlayCtrl-bp::pcSelStartMin": [
+						3800
+					],
+					"zsPlayCtrl-bp::pcSelStartMute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSizeMax": [
+						300
+					],
+					"zsPlayCtrl-bp::pcSizeMin": [
+						100
+					],
+					"zsPlayCtrl-bp::pcSizeMute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Frequency": [
+						0.022
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Mod": [
+						2.0
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcRangeMLFO::Shape": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSizeLFO::Frequency": [
+						0.029898610173561
+					],
+					"zsPlayCtrl-bp::pcSizeLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelStartLFO::Frequency": [
+						0.025192139168456
+					],
+					"zsPlayCtrl-bp::pcSelStartLFO::Mute": [
+						0.0
+					],
+					"zsPlayCtrl-bp::pcSelEndLFO::Frequency": [
+						0.014767169468619
+					],
+					"zsPlayCtrl-bp::pcSelEndLFO::Mute": [
+						0.0
+					],
+					"zsBufGroove1::bufGrooveGain": [
+						0.0
+					],
+					"zsBufGroove1::bufferMute": [
+						0.0
+					],
+					"zsBufGroove1::bufgrWfMode": [],
+					"zsBufGroove1::loopPlayBtn": [],
+					"zsBufGroove1::mcgSpeed": [
+						1.0
+					],
+					"zsBufGroove1::pan": [
+						0.0
+					],
+					"zsBufGroove1::startPlayBtn": [],
+					"zsBufGroove1::stopPlayBtn": [],
+					"zsBufGroove1::fileName": [],
+					"zsBufGroove2::bufGrooveGain": [
+						0.0
+					],
+					"zsBufGroove2::bufferMute": [
+						0.0
+					],
+					"zsBufGroove2::bufgrWfMode": [],
+					"zsBufGroove2::loopPlayBtn": [],
+					"zsBufGroove2::mcgSpeed": [
+						1.0
+					],
+					"zsBufGroove2::pan": [
+						0.0
+					],
+					"zsBufGroove2::startPlayBtn": [],
+					"zsBufGroove2::stopPlayBtn": [],
+					"zsBufGroove2::fileName": [],
+					"zsFilter-bp::filterFreq": [
+						244.042032822094143
+					],
+					"zsFilter-bp::filterGain": [
+						1.0
+					],
+					"zsFilter-bp::filterInput": [
+						0.0
+					],
+					"zsFilter-bp::filterMod": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterModIntensity": [
+						89.763779999999997
+					],
+					"zsFilter-bp::filterMode": [
+						7.0
+					],
+					"zsFilter-bp::filterMute": [
+						0.0
+					],
+					"zsFilter-bp::filterOutput": [
+						4.347141
+					],
+					"zsFilter-bp::filterRes": [
+						2.087453
+					],
+					"zsFilter-bp::filterSpectral": [
+						1.0
+					],
+					"zsFilter-bp::filterMLFO::Frequency": [
+						7.293918
+					],
+					"zsFilter-bp::filterMLFO::Mod": [
+						68.0
+					],
+					"zsFilter-bp::filterMLFO::Mute": [
+						0.0
+					],
+					"zsFilter-bp::filterMLFO::Shape": [
+						6.0
+					],
+					"zsFilter-bp::gcLFO::Frequency": [
+						0.25
+					],
+					"zsFilter-bp::gcLFO::Mute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::fcFreqFrequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::fcFreqMax": [
+						1864.957992999999988
+					],
+					"zsFilterCtrl-bp::fcFreqMin": [
+						71.602806000000001
+					],
+					"zsFilterCtrl-bp::fliterCtrlMute": [
+						0.0
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
+						0.078995
+					],
+					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
+						0.0
+					],
+					"zsDelay-bp::delayFeedbackL": [
+						-8.430582416953861
+					],
+					"zsDelay-bp::delayFeedbackR": [
+						-8.110331232150408
+					],
+					"zsDelay-bp::delayHPFL": [
+						20.0
+					],
+					"zsDelay-bp::delayHPFR": [
+						20.0
+					],
+					"zsDelay-bp::delayInput": [
+						0.0
+					],
+					"zsDelay-bp::delayLPFL": [
+						20000.0
+					],
+					"zsDelay-bp::delayLPFR": [
+						20000.0
+					],
+					"zsDelay-bp::delayMute": [
+						0.0
+					],
+					"zsDelay-bp::delayOutput": [
+						4.780209
+					],
+					"zsDelay-bp::delayTimeL": [
+						976.377952905511165
+					],
+					"zsDelay-bp::delayTimeR": [
+						535.433071094487445
+					],
+					"zsMixer-bp::mixInCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh4": [
+						-13.277001
+					],
+					"zsMixer-bp::mixInCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixInCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixMasterOut": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh1": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh2": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh3": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh4": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh5": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh6": [
+						0.0
+					],
+					"zsMixer-bp::mixOutCh7": [
+						0.0
+					],
+					"zsMixer-bp::mixerMute": [
+						0.0
+					],
+					"zsMixer-bp::sendCh1Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh1Rev": [
+						-47.622047244094531
+					],
+					"zsMixer-bp::sendCh2Del": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh2Rev": [
+						-48.188976377952748
+					],
+					"zsMixer-bp::sendCh3Del": [
+						-40.818897929133868
+					],
+					"zsMixer-bp::sendCh3Flt": [
+						-72.0
+					],
+					"zsMixer-bp::sendCh3Rev": [
+						-26.078740181102383
+					],
+					"zsMixer-bp::sendCh4Del": [
+						-31.748031000000001
+					],
+					"zsMixer-bp::sendCh4Flt": [
+						-20.409448999999999
+					],
+					"zsMixer-bp::sendCh4Rev": [
+						-49.322834999999998
+					],
+					"zsMixer-bp::sendCh6Flt": [
+						-35.149605999999999
+					],
+					"zsMixer-bp::sendCh6Rev": [
+						-40.251969000000003
+					],
+					"zsMixer-bp::sendCh7Del": [
+						-35.716535
+					],
+					"zsMixer-bp::sendCh7Rev": [
+						-34.015748000000002
+					],
+					"zsGigaverb-bp::delayMute": [
+						0.0
+					],
+					"zsGigaverb-bp::revDamp": [
+						0.712598
+					],
+					"zsGigaverb-bp::revDry": [
+						1.0
+					],
+					"zsGigaverb-bp::revEarly": [
+						0.267717
+					],
+					"zsGigaverb-bp::revInput": [
+						0.0
+					],
+					"zsGigaverb-bp::revOutput": [
+						4.716365
+					],
+					"zsGigaverb-bp::revRegen": [
+						0.503937
+					],
+					"zsGigaverb-bp::revSize": [
+						73.898939999999996
+					],
+					"zsGigaverb-bp::revSpread": [
+						24.659448999999999
+					],
+					"zsGigaverb-bp::revTail": [
+						0.25
+					],
+					"zsGigaverb-bp::revTime": [
+						12.980513
+					],
 					"zsBufGroove3::bufGrooveGain": [],
 					"zsBufGroove3::bufferMute": [],
 					"zsBufGroove3::bufgrWfMode": [],

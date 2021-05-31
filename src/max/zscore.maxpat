@@ -95,7 +95,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 691.489420572916515, 274.5, 29.5, 22.0 ],
-					"text" : "500"
+					"text" : "50"
 				}
 
 			}
@@ -623,7 +623,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 781.630444216247952, 364.5, 241.0, 22.0 ],
-					"text" : "\"0., 1. 15000 1. 1000 0. 16300\"",
+					"text" : "\"0., 1. 1000 1. 15000 0. 16300\"",
 					"varname" : "granulatorLineConf"
 				}
 
@@ -777,7 +777,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 553.5, 149.0, 22.0 ],
-					"text" : "UnionRose_b24.wav",
+					"text" : "UnionRose_c4.wav",
 					"varname" : "b2File"
 				}
 
@@ -854,7 +854,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 370.5, 135.0, 22.0 ],
-					"text" : "UnionRose_b17.wav",
+					"text" : "UnionRose_c3.wav",
 					"varname" : "b1File"
 				}
 
@@ -950,11 +950,13 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-40",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 22.0 ],
+					"patching_rect" : [ 1037.630444216247952, 364.5, 116.0, 35.0 ],
+					"text" : "UnionRose_c3gr.wav",
 					"varname" : "granulatorFile"
 				}
 
@@ -1072,10 +1074,10 @@
 					"patching_rect" : [ 643.054009395439607, 87.418651190714414, 50.0, 15.0 ],
 					"saved_attribute_attributes" : 					{
 						"valueof" : 						{
-							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15" ],
+							"parameter_enum" : [ "1", "2", "3", "4", "5", "6", "7", "8", "9", "10", "11", "12", "13", "14", "15", "16" ],
 							"parameter_linknames" : 1,
 							"parameter_longname" : "preset",
-							"parameter_mmax" : 14,
+							"parameter_mmax" : 15,
 							"parameter_shortname" : "preset",
 							"parameter_type" : 2
 						}
@@ -1394,7 +1396,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1577.5, 136.327367635859275, 135.0, 22.0 ],
-					"text" : "UnionRose_c3.wav",
+					"text" : "UnionRose_b1.wav",
 					"varname" : "grooveFile"
 				}
 
@@ -1577,7 +1579,7 @@
 						"granulatorLine" : [ 0.0 ],
 						"grooveCont" : [ 0.0 ],
 						"grooveContStop" : [ 0.0 ],
-						"preset" : [ 7.0 ],
+						"preset" : [ 15.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
