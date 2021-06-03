@@ -136,17 +136,6 @@
 			}
 , 			{
 				"box" : 				{
-					"id" : "obj-10",
-					"maxclass" : "newobj",
-					"numinlets" : 1,
-					"numoutlets" : 0,
-					"patching_rect" : [ 85.0, 88.0, 77.0, 22.0 ],
-					"text" : "print highOut"
-				}
-
-			}
-, 			{
-				"box" : 				{
 					"id" : "obj-138",
 					"maxclass" : "message",
 					"numinlets" : 2,
@@ -1062,7 +1051,6 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1037.630444216247952, 359.5, 206.0, 22.0 ],
-					"text" : "UnionRose_c3gr.wav",
 					"varname" : "granulatorFile"
 				}
 
@@ -2417,14 +2405,6 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-10", 0 ],
-					"order" : 1,
-					"source" : [ "obj-6", 1 ]
-				}
-
-			}
-, 			{
-				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -2433,7 +2413,6 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-26", 0 ],
-					"order" : 0,
 					"source" : [ "obj-6", 1 ]
 				}
 

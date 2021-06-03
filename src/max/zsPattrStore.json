@@ -22,6 +22,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -613,6 +614,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -1158,6 +1160,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -1203,13 +1206,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						13111
+						23089
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						18855
+						329
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -1254,7 +1257,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						100
+						101
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -1285,7 +1288,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						10102
+						1243
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -1404,7 +1407,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						11635.861626858873933
+						9777.780367949653737
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -1413,13 +1416,13 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						84.251968976377938
+						89.763779999999954
 					],
 					"zsFilter-bp::filterModIntensity": [
-						4.842519330708658
+						4.527558700787397
 					],
 					"zsFilter-bp::filterMode": [
-						7.0
+						1.0
 					],
 					"zsFilter-bp::filterMute": [
 						0.0
@@ -1428,16 +1431,16 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						2.624413120275041
+						1.145470615386972
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
 					],
 					"zsFilter-bp::filterMLFO::Frequency": [
-						0.720429076691767
+						1.875754228294256
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						61.0
+						65.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
@@ -1455,10 +1458,10 @@
 						0.078995
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						11678.661618368580093
+						20000.0
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						2584.647997459388534
+						7611.966295461351365
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
@@ -1703,6 +1706,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -1748,13 +1752,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						13484
+						105
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						18070
+						4994
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -1799,7 +1803,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						100
+						104
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -1830,7 +1834,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						9465
+						3579
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -1949,7 +1953,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						11613.962504625233123
+						2091.731093619340299
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -1958,13 +1962,13 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						85.039370078740134
+						91.33858267716532
 					],
 					"zsFilter-bp::filterModIntensity": [
-						4.960629566929133
+						3.779527204724409
 					],
 					"zsFilter-bp::filterMode": [
-						7.0
+						1.0
 					],
 					"zsFilter-bp::filterMute": [
 						0.0
@@ -1973,16 +1977,16 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						2.486361037455916
+						1.363159814935105
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
 					],
 					"zsFilter-bp::filterMLFO::Frequency": [
-						0.720429076691767
+						1.196138835117266
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						62.0
+						56.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
@@ -2000,10 +2004,10 @@
 						0.078995
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						11678.66161836858555
+						14910.732388160162373
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						2584.647997459388534
+						1980.621261244779816
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
@@ -2248,6 +2252,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -2793,6 +2798,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -3334,6 +3340,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -3875,6 +3882,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -4388,6 +4396,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -4901,6 +4910,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -5414,6 +5424,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -5927,6 +5938,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -6442,6 +6454,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -6955,6 +6968,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -7468,6 +7482,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
@@ -7981,6 +7996,7 @@
 					"granulatorLine": [],
 					"grooveCont": [],
 					"grooveContStop": [],
+					"grooveLine": [],
 					"preset": [],
 					"preset0": [],
 					"stopBtn": [],
