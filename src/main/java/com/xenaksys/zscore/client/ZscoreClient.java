@@ -26,6 +26,7 @@ import com.xenaksys.zscore.util.MaxUtil;
 import com.xenaksys.zscore.util.SimpleClock;
 
 import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -42,6 +43,15 @@ import static com.xenaksys.zscore.Consts.ZSCORE_ADDR;
 
 public class ZscoreClient extends Client implements EventService {
     private static final String PROP_APP_NAME = "appName";
+
+    private static final String CMD_STOP = "stop";
+    private static final String CMD_PLAY = "play";
+    private static List<String> priorityCmds = new ArrayList<>();
+
+    static {
+        priorityCmds.add(CMD_PLAY);
+        priorityCmds.add(CMD_STOP);
+    }
 
     private final List<ZscoreMessageListener> msgListeners = new CopyOnWriteArrayList<>();
 
@@ -156,6 +166,12 @@ public class ZscoreClient extends Client implements EventService {
         }
     }
 
+    public void onPriorityMessage(String msg, Atom[] args) {
+        for (ZscoreMessageListener listener : msgListeners) {
+            listener.onMessage(1, msg, args, true);
+        }
+    }
+
     public EventFactory getEventFactory() {
         return eventFactory;
     }
@@ -260,7 +276,12 @@ public class ZscoreClient extends Client implements EventService {
 
     private void sendAnyCommand(String cmd, Object[] cmdArgs) {
         Atom[] args = MaxUtil.createAtomArgs(cmdArgs);
-        onMessage(cmd, args);
+
+        if (priorityCmds.contains(cmd)) {
+            onPriorityMessage(cmd, args);
+        } else {
+            onMessage(cmd, args);
+        }
     }
 
     private void sendConnected(InetAddress serverAddr) {

@@ -27,7 +27,7 @@ public class zscore extends MaxObject implements ZscoreMessageListener {
         zscoreClient.subscribe(this);
         zscoreClient.start();
         declareInlets(new int[]{DataTypes.LIST});
-        declareOutlets(new int[]{DataTypes.MESSAGE});
+        declareOutlets(new int[]{DataTypes.MESSAGE, DataTypes.LIST});
     }
 
     public void list(Atom[] args) {
@@ -61,11 +61,53 @@ public class zscore extends MaxObject implements ZscoreMessageListener {
 
     @Override
     public void onMessage(String msg) {
-        outletHigh(0, msg);
+        outlet(0, msg);
     }
 
     @Override
     public void onMessage(String msg, Atom[] args) {
-        outletHigh(0, msg, args);
+        outlet(0, msg, args);
+    }
+
+    @Override
+    public void onMessage(int outIdx, String msg, boolean isHighPriority) {
+        int outNo = getNumOutlets();
+        if (outIdx >= outNo) {
+            post("Error: unexpected outlet no: " + outIdx);
+            return;
+        }
+        if (isHighPriority) {
+            outletHigh(outIdx, msg);
+        } else {
+            outlet(0, msg);
+        }
+    }
+
+    @Override
+    public void onMessage(int outIdx, Atom[] args, boolean isHighPriority) {
+        int outNo = getNumOutlets();
+        if (outIdx >= outNo) {
+            post("Error: unexpected outlet no: " + outIdx);
+            return;
+        }
+        if (isHighPriority) {
+            outletHigh(outIdx, args);
+        } else {
+            outlet(outIdx, args);
+        }
+    }
+
+    @Override
+    public void onMessage(int outIdx, String msg, Atom[] args, boolean isHighPriority) {
+        int outNo = getNumOutlets();
+        if (outIdx >= outNo) {
+            post("Error: unexpected outlet no: " + outIdx);
+            return;
+        }
+        if (isHighPriority) {
+            outletHigh(outIdx, msg, args);
+        } else {
+            outlet(outIdx, msg, args);
+        }
     }
 }
