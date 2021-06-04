@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 1302.0, 79.0, 1731.0, 1133.0 ],
+		"rect" : [ 988.0, 79.0, 1731.0, 1133.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -873,7 +873,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 553.5, 149.0, 22.0 ],
-					"text" : "UnionRose_c4.wav",
+					"text" : "UnionRose_b18.wav",
 					"varname" : "b2File"
 				}
 
@@ -950,7 +950,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 370.630444216247952, 370.5, 135.0, 22.0 ],
-					"text" : "UnionRose_c3.wav",
+					"text" : "UnionRose_b17.wav",
 					"varname" : "b1File"
 				}
 
@@ -1674,7 +1674,7 @@
 						"grooveCont" : [ 0.0 ],
 						"grooveContStop" : [ 0.0 ],
 						"grooveLine" : [ 0.0 ],
-						"preset" : [ 15.0 ],
+						"preset" : [ 5.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}

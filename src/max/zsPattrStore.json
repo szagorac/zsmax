@@ -1206,13 +1206,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						23089
+						23350
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						329
+						2614
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -1288,7 +1288,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1243
+						5081
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -1407,7 +1407,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						9777.780367949653737
+						621.853803208503223
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -1416,10 +1416,10 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						89.763779999999954
+						81.102362677165331
 					],
 					"zsFilter-bp::filterModIntensity": [
-						4.527558700787397
+						2.519684685039368
 					],
 					"zsFilter-bp::filterMode": [
 						1.0
@@ -1431,22 +1431,22 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						1.145470615386972
+						1.959733552164492
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
 					],
 					"zsFilter-bp::filterMLFO::Frequency": [
-						1.875754228294256
+						0.271879281144338
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						65.0
+						12.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
 					],
 					"zsFilter-bp::filterMLFO::Shape": [
-						6.0
+						1.0
 					],
 					"zsFilter-bp::gcLFO::Frequency": [
 						0.25
@@ -1458,10 +1458,10 @@
 						0.078995
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						20000.0
+						776.285193762648305
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						7611.966295461351365
+						595.653156408165614
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
@@ -1752,13 +1752,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						105
+						6026
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						4994
+						2855
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -1803,7 +1803,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						104
+						106
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -1834,7 +1834,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						3579
+						831
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -1953,7 +1953,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						2091.731093619340299
+						6404.540829267523804
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -1962,10 +1962,10 @@
 						0.0
 					],
 					"zsFilter-bp::filterMod": [
-						91.33858267716532
+						74.015748031496045
 					],
 					"zsFilter-bp::filterModIntensity": [
-						3.779527204724409
+						2.677165000000001
 					],
 					"zsFilter-bp::filterMode": [
 						1.0
@@ -1977,22 +1977,22 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						1.363159814935105
+						1.476647595263903
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
 					],
 					"zsFilter-bp::filterMLFO::Frequency": [
-						1.196138835117266
+						0.513688609526894
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						56.0
+						11.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
 					],
 					"zsFilter-bp::filterMLFO::Shape": [
-						6.0
+						1.0
 					],
 					"zsFilter-bp::gcLFO::Frequency": [
 						0.25
@@ -2001,19 +2001,19 @@
 						0.0
 					],
 					"zsFilterCtrl-bp::fcFreqFrequency": [
-						0.078995
+						0.091998291403706
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						14910.732388160162373
+						8334.033872813850394
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						1980.621261244779816
+						513.55684405429588
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
 					],
 					"zsFilterCtrl-bp::zsLFO-bp[1]::Frequency": [
-						0.078995
+						0.091998291403706
 					],
 					"zsFilterCtrl-bp::zsLFO-bp[1]::Mute": [
 						0.0
@@ -2298,13 +2298,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						21139
+						15638
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						23936
+						12871
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -2349,7 +2349,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						102
+						100
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -2380,7 +2380,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						13158
+						2684
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -2499,7 +2499,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						5870.103024347093196
+						7714.653775122870684
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -2514,7 +2514,7 @@
 						4.803149251968501
 					],
 					"zsFilter-bp::filterMode": [
-						7.0
+						1.0
 					],
 					"zsFilter-bp::filterMute": [
 						0.0
@@ -2523,16 +2523,16 @@
 						4.371525537284475
 					],
 					"zsFilter-bp::filterRes": [
-						1.041452445037774
+						1.252738276150934
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
 					],
 					"zsFilter-bp::filterMLFO::Frequency": [
-						0.720429076691767
+						0.513688609526896
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						90.0
+						14.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
@@ -2550,10 +2550,10 @@
 						0.078995
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						11678.66161836858555
+						8333.214587135298643
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						2584.647997459388534
+						513.556844054296107
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
@@ -2844,13 +2844,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						9640
+						11563
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						920
+						21615
 					],
 					"grooveControl::gcRangeEnd": [
 						24000
@@ -2895,7 +2895,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						103
+						100
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -2926,7 +2926,7 @@
 						0.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						1106
+						5970
 					],
 					"zsGranulator-bp::grSelectionStart": [
 						0
@@ -3045,7 +3045,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						2559.596690498668522
+						888.824466527402024
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -3060,7 +3060,7 @@
 						2.677165
 					],
 					"zsFilter-bp::filterMode": [
-						7.0
+						1.0
 					],
 					"zsFilter-bp::filterMute": [
 						0.0
@@ -3069,16 +3069,16 @@
 						2.351076
 					],
 					"zsFilter-bp::filterRes": [
-						2.350818272265188
+						1.363159814935084
 					],
 					"zsFilter-bp::filterSpectral": [
 						1.0
 					],
 					"zsFilter-bp::filterMLFO::Frequency": [
-						0.107571
+						0.000922939333292
 					],
 					"zsFilter-bp::filterMLFO::Mod": [
-						59.0
+						0.0
 					],
 					"zsFilter-bp::filterMLFO::Mute": [
 						0.0
@@ -3096,10 +3096,10 @@
 						0.078995
 					],
 					"zsFilterCtrl-bp::fcFreqMax": [
-						2583.201211000000058
+						890.102175893593767
 					],
 					"zsFilterCtrl-bp::fcFreqMin": [
-						156.737684000000002
+						513.585085270685568
 					],
 					"zsFilterCtrl-bp::fliterCtrlMute": [
 						0.0
@@ -3928,13 +3928,13 @@
 						24000
 					],
 					"grooveControl::gcPosLen": [
-						4440
+						4978
 					],
 					"grooveControl::gcPosMute": [
 						0
 					],
 					"grooveControl::gcPosStart": [
-						8844
+						7
 					],
 					"grooveControl::gcRangeEnd": [
 						13000
@@ -3979,7 +3979,7 @@
 						5
 					],
 					"zsGranulator-bp::grGrainSize": [
-						80
+						199
 					],
 					"zsGranulator-bp::grModeDecrement": [],
 					"zsGranulator-bp::grModeIncrement": [],
@@ -4010,10 +4010,10 @@
 						2.0
 					],
 					"zsGranulator-bp::grSelectionEnd": [
-						5055
+						7439
 					],
 					"zsGranulator-bp::grSelectionStart": [
-						282
+						1459
 					],
 					"zsGranulator-bp::grFileName": [],
 					"zsGranulator-bp::grEnvLine": [
@@ -4129,7 +4129,7 @@
 					"zsBufGroove2::stopPlayBtn": [],
 					"zsBufGroove2::fileName": [],
 					"zsFilter-bp::filterFreq": [
-						4804.947580848214784
+						5106.59576319378175
 					],
 					"zsFilter-bp::filterGain": [
 						1.0
@@ -4234,7 +4234,7 @@
 						-12.196732871077678
 					],
 					"zsMixer-bp::mixInCh3": [
-						-6.268656716417915
+						-6.515219179692089
 					],
 					"zsMixer-bp::mixInCh4": [
 						-23.137618991655891
@@ -5958,9 +5958,7 @@
 					"mcGroove::mcgMute": [
 						0
 					],
-					"mcGroove::mcgPlayCont": [
-						0.0
-					],
+					"mcGroove::mcgPlayCont": [],
 					"mcGroove::mcgPlayLine": [],
 					"mcGroove::mcgRange": [
 						1.7
