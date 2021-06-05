@@ -69,6 +69,7 @@
 					"numoutlets" : 2,
 					"outlettype" : [ "", "" ],
 					"parameter_enable" : 1,
+					"parameter_mappable" : 0,
 					"patching_rect" : [ 60.25, 398.0, 49.999999999999986, 23.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 2.06776450000001, 4.117677688598633, 49.0, 14.764644622802734 ],
@@ -78,7 +79,6 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
 							"parameter_longname" : "clickMute",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "mute",
@@ -244,7 +244,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "bang" ],
 					"parameter_enable" : 0,
-					"patching_rect" : [ 63.5, 173.0, 24.0, 24.0 ]
+					"patching_rect" : [ 208.0, 131.0, 24.0, 24.0 ]
 				}
 
 			}
@@ -331,10 +331,10 @@
 , 			{
 				"box" : 				{
 					"activedialcolor" : [ 0.87843137254902, 1.0, 1.0, 1.0 ],
-					"activefgdialcolor" : [ 0.356862745098039, 0.356862745098039, 0.356862745098039, 1.0 ],
+					"activefgdialcolor" : [ 0.745098039215686, 0.745098039215686, 0.745098039215686, 1.0 ],
 					"activeneedlecolor" : [ 0.27843137254902, 0.83921568627451, 1.0, 1.0 ],
 					"bordercolor" : [ 0.458823529411765, 0.368627450980392, 0.368627450980392, 1.0 ],
-					"fgdialcolor" : [ 0.356862745098039, 0.356862745098039, 0.356862745098039, 1.0 ],
+					"fgdialcolor" : [ 0.811764705882353, 0.843137254901961, 0.866666666666667, 1.0 ],
 					"focusbordercolor" : [ 0.643137254901961, 0.643137254901961, 0.643137254901961, 1.0 ],
 					"fontface" : 1,
 					"id" : "obj-107",
@@ -351,7 +351,6 @@
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_linknames" : 1,
 							"parameter_longname" : "clickVolume",
 							"parameter_mmax" : 12.0,
 							"parameter_mmin" : -72.0,
@@ -386,7 +385,7 @@
 				"box" : 				{
 					"comment" : "Signal out 2",
 					"id" : "obj-6",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -426,7 +425,7 @@
 				"box" : 				{
 					"comment" : "Signal out 1",
 					"id" : "obj-13",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -443,8 +442,8 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 37.5, 69.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"clickMute" : [ 0.0 ],
-						"clickVolume" : [ 0.0 ]
+						"clickMute" : [ 1.0 ],
+						"clickVolume" : [ 4.724409448818932 ]
 					}
 ,
 					"text" : "autopattr",
@@ -482,11 +481,11 @@
 				"box" : 				{
 					"comment" : "Click Bang In",
 					"id" : "obj-5",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "" ],
+					"outlettype" : [ "list" ],
 					"patching_rect" : [ 208.0, 35.0, 30.0, 30.0 ]
 				}
 
@@ -672,7 +671,7 @@
 			}
 , 			{
 				"patchline" : 				{
-					"destination" : [ "obj-2", 0 ],
+					"destination" : [ "obj-111", 0 ],
 					"source" : [ "obj-5", 0 ]
 				}
 
@@ -692,18 +691,6 @@
 
 			}
  ],
-		"parameters" : 		{
-			"obj-107" : [ "clickVolume", "vol", 0 ],
-			"obj-17" : [ "clickMute", "mute", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

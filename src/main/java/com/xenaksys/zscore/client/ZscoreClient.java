@@ -46,6 +46,7 @@ public class ZscoreClient extends Client implements EventService {
 
     private static final String CMD_STOP = "stop";
     private static final String CMD_PLAY = "play";
+    private static final String CMD_BEAT_INFO = "beatInfo";
     private static List<String> priorityCmds = new ArrayList<>();
 
     static {
@@ -166,9 +167,23 @@ public class ZscoreClient extends Client implements EventService {
         }
     }
 
-    public void onPriorityMessage(String msg, Atom[] args) {
+    public void onPriorityMessage(String cmd, Atom[] args) {
         for (ZscoreMessageListener listener : msgListeners) {
-            listener.onMessage(1, msg, args, true);
+            listener.onMessage(1, cmd, args, true);
+        }
+    }
+
+    private void sendBeatInfo(Atom[] args) {
+        if (args.length != 4) {
+            logError("Received invalid beatInfo array length");
+            return;
+        }
+        Atom[] out = new Atom[3];
+        for (int i = 0; i < 3; i++) {
+            out[i] = args[i + 1];
+        }
+        for (ZscoreMessageListener listener : msgListeners) {
+            listener.onMessage(2, out, true);
         }
     }
 
@@ -279,9 +294,12 @@ public class ZscoreClient extends Client implements EventService {
 
         if (priorityCmds.contains(cmd)) {
             onPriorityMessage(cmd, args);
-        } else {
-            onMessage(cmd, args);
+            return;
         }
+        if (CMD_BEAT_INFO.equals(cmd)) {
+            sendBeatInfo(args);
+        }
+        onMessage(cmd, args);
     }
 
     private void sendConnected(InetAddress serverAddr) {

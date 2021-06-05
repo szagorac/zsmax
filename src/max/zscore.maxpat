@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 988.0, 79.0, 1731.0, 1133.0 ],
+		"rect" : [ 861.0, 79.0, 1908.0, 1221.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,29 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"bgmode" : 0,
+					"border" : 0,
+					"clickthrough" : 0,
+					"enablehscroll" : 0,
+					"enablevscroll" : 0,
+					"id" : "obj-10",
+					"lockeddragscroll" : 0,
+					"maxclass" : "bpatcher",
+					"name" : "zsClick-bp.maxpat",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"offset" : [ 0.0, 0.0 ],
+					"outlettype" : [ "signal", "signal" ],
+					"patching_rect" : [ 650.5, 441.5, 101.0, 80.0 ],
+					"presentation" : 1,
+					"presentation_rect" : [ 435.0, 422.5, 101.0, 80.0 ],
+					"varname" : "zsClick-bp",
+					"viewvisibility" : 1
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-110",
 					"maxclass" : "button",
@@ -591,7 +614,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 886.602476386073363, 839.5, 68.0, 22.0 ],
+					"patching_rect" : [ 661.952889117085419, 843.5, 68.0, 22.0 ],
 					"text" : "send~ out2"
 				}
 
@@ -602,7 +625,7 @@
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 0,
-					"patching_rect" : [ 779.202889117085533, 839.5, 68.0, 22.0 ],
+					"patching_rect" : [ 578.489420572916515, 843.5, 68.0, 22.0 ],
 					"text" : "send~ out1"
 				}
 
@@ -1674,7 +1697,7 @@
 						"grooveCont" : [ 0.0 ],
 						"grooveContStop" : [ 0.0 ],
 						"grooveLine" : [ 0.0 ],
-						"preset" : [ 5.0 ],
+						"preset" : [ 4.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
@@ -1701,8 +1724,8 @@
 					"id" : "obj-6",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
-					"numoutlets" : 3,
-					"outlettype" : [ "", "list", "" ],
+					"numoutlets" : 4,
+					"outlettype" : [ "", "list", "list", "" ],
 					"patching_rect" : [ 14.0, 53.0, 66.0, 22.0 ],
 					"text" : "mxj zscore"
 				}
@@ -1745,6 +1768,22 @@
 			}
  ],
 		"lines" : [ 			{
+				"patchline" : 				{
+					"destination" : [ "obj-28", 0 ],
+					"midpoints" : [ 742.0, 690.0, 666.0, 690.0, 666.0, 837.0, 671.452889117085419, 837.0 ],
+					"source" : [ "obj-10", 1 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-29", 0 ],
+					"midpoints" : [ 660.0, 828.0, 587.989420572916515, 828.0 ],
+					"source" : [ "obj-10", 0 ]
+				}
+
+			}
+, 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 0 ],
 					"source" : [ "obj-100", 0 ]
@@ -2405,6 +2444,14 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-10", 0 ],
+					"midpoints" : [ 54.833333333333329, 87.0, 162.0, 87.0, 162.0, 75.0, 270.0, 75.0, 270.0, 99.0, 294.0, 99.0, 294.0, 206.0, 561.0, 206.0, 561.0, 264.0, 624.0, 264.0, 624.0, 336.0, 660.0, 336.0 ],
+					"source" : [ "obj-6", 2 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-15", 0 ],
 					"source" : [ "obj-6", 0 ]
 				}
@@ -2695,6 +2742,8 @@
 			}
  ],
 		"parameters" : 		{
+			"obj-10::obj-107" : [ "clickVolume", "vol", 0 ],
+			"obj-10::obj-17" : [ "clickMute", "mute", 0 ],
 			"obj-12::obj-1" : [ "delayInput", "in", 0 ],
 			"obj-12::obj-13" : [ "delayTimeL", "time", 0 ],
 			"obj-12::obj-15" : [ "delayHPFL", "HPF", 0 ],
@@ -3456,6 +3505,13 @@
 			}
 , 			{
 				"name" : "zsGigaverb-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsClick-bp.maxpat",
 				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",

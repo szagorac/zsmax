@@ -27,7 +27,8 @@ public class zscore extends MaxObject implements ZscoreMessageListener {
         zscoreClient.subscribe(this);
         zscoreClient.start();
         declareInlets(new int[]{DataTypes.LIST});
-        declareOutlets(new int[]{DataTypes.MESSAGE, DataTypes.LIST});
+        //0 = jsui; 1 = play/stop cmds; 2 = beatInfo
+        declareOutlets(new int[]{DataTypes.MESSAGE, DataTypes.LIST, DataTypes.LIST});
     }
 
     public void list(Atom[] args) {
