@@ -592,11 +592,11 @@
 					"zsBufGroove4::fileName": [
 						"UnionRose_b2.wav"
 					],
-					"zsClick-bp::clickVolume": [
-						0.0
-					],
 					"zsClick-bp::clickMute": [
 						1.0
+					],
+					"zsClick-bp::clickVolume": [
+						0.0
 					]
 				}
 			},
@@ -1144,8 +1144,12 @@
 						0.0
 					],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [
+						1.0
+					],
+					"zsClick-bp::clickVolume": [
+						0.0
+					]
 				}
 			},
 			"3": {
@@ -1558,9 +1562,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-20.976377952755989
 					],
@@ -1692,8 +1694,8 @@
 						0.0
 					],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"4": {
@@ -2106,9 +2108,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-20.976377952755989
 					],
@@ -2240,8 +2240,8 @@
 						0.0
 					],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"5": {
@@ -2654,9 +2654,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -2788,8 +2786,8 @@
 						0.0
 					],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"6": {
@@ -3202,9 +3200,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -3332,8 +3328,8 @@
 						0.0
 					],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"7": {
@@ -3746,9 +3742,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -3876,8 +3870,8 @@
 						0.0
 					],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"8": {
@@ -4290,9 +4284,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -4392,8 +4384,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"9": {
@@ -4806,9 +4798,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -4908,8 +4898,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"10": {
@@ -5322,9 +5312,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -5424,8 +5412,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"11": {
@@ -5838,9 +5826,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-44.220472440944931
 					],
@@ -5940,8 +5926,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"12": {
@@ -6354,9 +6340,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-43.653543307086636
 					],
@@ -6456,8 +6440,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"13": {
@@ -6870,9 +6854,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -6972,8 +6954,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"14": {
@@ -7386,9 +7368,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -7488,8 +7468,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"15": {
@@ -7902,9 +7882,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -8004,8 +7982,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			},
 			"16": {
@@ -8418,9 +8396,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -8520,8 +8496,8 @@
 					"zsBufGroove4::startPlayBtn": [],
 					"zsBufGroove4::stopPlayBtn": [],
 					"zsBufGroove4::fileName": [],
-					"zsClick-bp::clickVolume": [],
-					"zsClick-bp::clickMute": []
+					"zsClick-bp::clickMute": [],
+					"zsClick-bp::clickVolume": []
 				}
 			}
 		}
