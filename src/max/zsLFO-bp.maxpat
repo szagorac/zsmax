@@ -4,7 +4,7 @@
 		"appversion" : 		{
 			"major" : 8,
 			"minor" : 1,
-			"revision" : 5,
+			"revision" : 11,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -54,7 +54,7 @@
 				"box" : 				{
 					"comment" : "Frequency Hz [0, 100]",
 					"id" : "obj-9",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -119,7 +119,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 0,
 					"patching_rect" : [ 40.0, 85.0, 231.0, 33.0 ],
-					"text" : "## LFO individual outputs for each shape output range 0,1 ## "
+					"text" : "## LFO individual outputs for each shape output range -1,1 ## "
 				}
 
 			}
@@ -127,7 +127,7 @@
 				"box" : 				{
 					"comment" : "Square",
 					"id" : "obj-86",
-					"index" : 0,
+					"index" : 5,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -139,7 +139,7 @@
 				"box" : 				{
 					"comment" : "Triangle",
 					"id" : "obj-87",
-					"index" : 0,
+					"index" : 4,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -423,7 +423,7 @@
 				"box" : 				{
 					"comment" : "Down Rump",
 					"id" : "obj-2",
-					"index" : 0,
+					"index" : 3,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -449,7 +449,7 @@
 				"box" : 				{
 					"comment" : "Up Rump",
 					"id" : "obj-10",
-					"index" : 0,
+					"index" : 2,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -507,7 +507,7 @@
 							"parameter_exponent" : 4.0,
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Frequency",
+							"parameter_longname" : "Frequency[7]",
 							"parameter_mmax" : 100.0,
 							"parameter_shortname" : "Freq",
 							"parameter_type" : 0,
@@ -582,7 +582,7 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 48.0, 126.154099000000002, 59.5, 22.0 ],
 					"restore" : 					{
-						"Frequency" : [ 1.268900914625068 ],
+						"Frequency" : [ 0.037090732093931 ],
 						"Mute" : [ 0.0 ]
 					}
 ,
@@ -595,7 +595,7 @@
 				"box" : 				{
 					"comment" : "Sine",
 					"id" : "obj-49",
-					"index" : 0,
+					"index" : 1,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -628,7 +628,7 @@
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
-							"parameter_longname" : "Mute",
+							"parameter_longname" : "Mute[7]",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "Mute",
 							"parameter_type" : 2
@@ -926,19 +926,7 @@
 				}
 
 			}
- ],
-		"parameters" : 		{
-			"obj-12" : [ "Mute", "Mute", 0 ],
-			"obj-20" : [ "Frequency", "Freq", 0 ],
-			"parameterbanks" : 			{
-
-			}
-,
-			"inherited_shortname" : 1
-		}
-,
-		"dependency_cache" : [  ],
-		"autosave" : 0
+ ]
 	}
 
 }

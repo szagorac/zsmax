@@ -26,6 +26,7 @@ import com.xenaksys.zscore.util.MaxUtil;
 import com.xenaksys.zscore.util.SimpleClock;
 
 import java.net.InetAddress;
+import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.List;
 import java.util.concurrent.CopyOnWriteArrayList;
@@ -42,6 +43,16 @@ import static com.xenaksys.zscore.Consts.ZSCORE_ADDR;
 
 public class ZscoreClient extends Client implements EventService {
     private static final String PROP_APP_NAME = "appName";
+
+    private static final String CMD_STOP = "stop";
+    private static final String CMD_PLAY = "play";
+    private static final String CMD_BEAT_INFO = "beatInfo";
+    private static List<String> priorityCmds = new ArrayList<>();
+
+    static {
+        priorityCmds.add(CMD_PLAY);
+        priorityCmds.add(CMD_STOP);
+    }
 
     private final List<ZscoreMessageListener> msgListeners = new CopyOnWriteArrayList<>();
 
@@ -156,6 +167,26 @@ public class ZscoreClient extends Client implements EventService {
         }
     }
 
+    public void onPriorityMessage(String cmd, Atom[] args) {
+        for (ZscoreMessageListener listener : msgListeners) {
+            listener.onMessage(1, cmd, args, true);
+        }
+    }
+
+    private void sendBeatInfo(Atom[] args) {
+        if (args.length != 4) {
+            logError("Received invalid beatInfo array length");
+            return;
+        }
+        Atom[] out = new Atom[3];
+        for (int i = 0; i < 3; i++) {
+            out[i] = args[i + 1];
+        }
+        for (ZscoreMessageListener listener : msgListeners) {
+            listener.onMessage(2, out, true);
+        }
+    }
+
     public EventFactory getEventFactory() {
         return eventFactory;
     }
@@ -260,6 +291,14 @@ public class ZscoreClient extends Client implements EventService {
 
     private void sendAnyCommand(String cmd, Object[] cmdArgs) {
         Atom[] args = MaxUtil.createAtomArgs(cmdArgs);
+
+        if (priorityCmds.contains(cmd)) {
+            onPriorityMessage(cmd, args);
+            return;
+        }
+        if (CMD_BEAT_INFO.equals(cmd)) {
+            sendBeatInfo(args);
+        }
         onMessage(cmd, args);
     }
 
