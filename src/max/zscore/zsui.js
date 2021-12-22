@@ -67,7 +67,9 @@ var zs = (function (g, m) {
 		CMD_BEATERS_ON: "beatersOn",
 		CMD_BEATERS_OFF: "beatersOff",
 		CMD_SET_TEMPO: "setTempo",
+		CMD_SEND_TO_SUBPATCHER: "sendSub",
 		CMD_INT: "int",
+		CMD_FLOAT: "float",
 		CMD_STOP: "stop",
 		CMD_PLAY: "play",
 		CMD_SET_FILE: "setFile",
@@ -231,6 +233,47 @@ var zs = (function (g, m) {
 			return;
 		}
 		_sendTo(obj, [cfg.CMD_BANG]);
+	}	
+	function _sendSubPatcherCmd(args) {
+		if(args.length < 4) {
+			_logError("_sendSubPatcherCmd: invalid args no: " + args.length);
+			return;
+		}
+		var subPatcherName = args[0];
+		var objName = args[1];
+		var cmd = args[2];
+		var value = args[3];
+		var subPatcherObj = _getObj(subPatcherName);
+		_log("_sendSubPatcherCmd: received sub: " + subPatcherName + " obj: " + objName + " cmd: " + cmd + " value: " + value);
+		if (_isNull(subPatcherObj)) {
+			_logError("_sendSubPatcherCmd: Could not find subpatcher for name: " + subPatcherName);
+			return;
+		}
+		var sub = subPatcherObj.subpatcher();
+		if (_isNull(sub)) {
+			_logError("_sendSubPatcherCmd: invalid subpatcher");
+			return;
+		}
+		var obj = sub.getnamed(objName);
+		if (_isNull(obj)) {
+			_logError("_sendSubPatcherCmd: Could not find object for name: " + objName);
+			return;
+		}
+		if (!_isString(cmd)) {
+			_logError("_sendSubPatcherCmd: invalid command: " + cmd);
+			return;
+		}
+		if (_isNull(value)) {
+			_logError("_sendSubPatcherCmd: invalid value: " + value);
+			return;
+		}		
+		var outArgs = [cmd, value];
+		if(args.length > 4) {
+			for (var i = 4; i < args.length; i++) {
+				outArgs.push(args[i]);
+			}
+		}
+		_sendTo(obj, outArgs);
 	}
 	function _setFile(objName, fileName) {
 		if(!_endsWith(objName, cfg.FILE_SUFFIX)) {
@@ -372,6 +415,9 @@ var zs = (function (g, m) {
 			case cfg.CMD_BEAT_INFO:
 				_beatInfo(args);
 				break;
+			case cfg.CMD_SEND_TO_SUBPATCHER:
+				_sendSubPatcherCmd(args);
+				break;				
 			default:
 				var len = args.length;
 				log("jsui received unknown anything msg: " + messagename + " arg len: " + len);

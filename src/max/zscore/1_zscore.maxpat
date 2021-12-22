@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 374.0, 143.0, 1917.0, 1214.0 ],
+		"rect" : [ 872.0, 167.0, 1917.0, 1214.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,18 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-66",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 71.0, 18.0, 234.0, 22.0 ],
+					"text" : "sendSub mcGroove, mcgHarmonics, int, 2"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-155",
 					"maxclass" : "newobj",
@@ -180,17 +192,6 @@
 					"outlettype" : [ "", "", "" ],
 					"patching_rect" : [ 226.0, 317.0, 69.0, 22.0 ],
 					"text" : "route b1 b2"
-				}
-
-			}
-, 			{
-				"box" : 				{
-					"id" : "obj-87",
-					"maxclass" : "message",
-					"numinlets" : 2,
-					"numoutlets" : 1,
-					"outlettype" : [ "" ],
-					"patching_rect" : [ 113.5, 40.0, 50.0, 22.0 ]
 				}
 
 			}
@@ -975,8 +976,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.630444216247952, 553.5, 149.0, 22.0 ],
-					"text" : "UnionRose_b40.wav",
+					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 22.0 ],
+					"text" : "UnionRose_b8.wav",
 					"varname" : "b2File"
 				}
 
@@ -1049,12 +1050,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.5, 363.5, 135.0, 22.0 ],
-					"text" : "UnionRose_b39.wav",
+					"patching_rect" : [ 370.5, 363.5, 113.0, 35.0 ],
+					"text" : "UnionRose_b17.wav",
 					"varname" : "b1File"
 				}
 
@@ -1155,7 +1157,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1038.630444216247952, 359.5, 206.0, 22.0 ],
+					"patching_rect" : [ 1038.630444216247952, 359.5, 113.0, 22.0 ],
 					"varname" : "granulatorFile"
 				}
 
@@ -1249,15 +1251,15 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 301.202265425282917, 13.0, 47.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
+						"lcdbgcolor" : 						{
+							"expression" : ""
+						}
+,
 						"lcdcolor" : 						{
 							"expression" : ""
 						}
 ,
 						"inactivelcdcolor" : 						{
-							"expression" : ""
-						}
-,
-						"lcdbgcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1609,7 +1611,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1577.5, 136.327367635859275, 135.0, 22.0 ],
-					"text" : "UnionRose_b1.wav",
+					"text" : "UnionRose_b3.wav",
 					"varname" : "grooveFile"
 				}
 
@@ -1760,7 +1762,7 @@
 						"client_rect" : [ 854, 172, 1208, 300 ],
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0,
-						"storage_rect" : [ 37, 79, 1110, 1202 ]
+						"storage_rect" : [ 113, 87, 1186, 1210 ]
 					}
 ,
 					"text" : "pattrstorage zsPattrStore",
@@ -1795,7 +1797,7 @@
 						"grooveCont" : [ 1.0 ],
 						"grooveContStop" : [ 1.0 ],
 						"grooveLine" : [ 0.0 ],
-						"preset" : [ 9.0 ],
+						"preset" : [ 5.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
@@ -2643,6 +2645,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-100", 0 ],
 					"source" : [ "obj-65", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-15", 0 ],
+					"source" : [ "obj-66", 0 ]
 				}
 
 			}
