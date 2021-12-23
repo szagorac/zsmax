@@ -18,6 +18,7 @@ var zs = (function (g, m) {
 		PATTR_STORE: "zsPattrStore",
 		EMPTY: "",
 		UNDERSCORES: "__",
+		DOT: ".",
 		NEW_LINE: "\n",
 		STRING: "string",
 		STOP_SUFFIX: "Stop",
@@ -67,7 +68,7 @@ var zs = (function (g, m) {
 		CMD_BEATERS_ON: "beatersOn",
 		CMD_BEATERS_OFF: "beatersOff",
 		CMD_SET_TEMPO: "setTempo",
-		CMD_SEND_TO_SUBPATCHER: "sendSub",
+		CMD_SEND: "send",
 		CMD_INT: "int",
 		CMD_FLOAT: "float",
 		CMD_STOP: "stop",
@@ -234,37 +235,27 @@ var zs = (function (g, m) {
 		}
 		_sendTo(obj, [cfg.CMD_BANG]);
 	}	
-	function _sendSubPatcherCmd(args) {
-		if(args.length < 4) {
-			_logError("_sendSubPatcherCmd: invalid args no: " + args.length);
+	function _send(args) {
+		if(args.length < 3) {
+			_logError("_send: invalid args no: " + args.length);
 			return;
 		}
-		var subPatcherName = args[0];
-		var objName = args[1];
-		var cmd = args[2];
-		var value = args[3];
-		var subPatcherObj = _getObj(subPatcherName);
-		_log("_sendSubPatcherCmd: received sub: " + subPatcherName + " obj: " + objName + " cmd: " + cmd + " value: " + value);
-		if (_isNull(subPatcherObj)) {
-			_logError("_sendSubPatcherCmd: Could not find subpatcher for name: " + subPatcherName);
-			return;
-		}
-		var sub = subPatcherObj.subpatcher();
-		if (_isNull(sub)) {
-			_logError("_sendSubPatcherCmd: invalid subpatcher");
-			return;
-		}
-		var obj = sub.getnamed(objName);
+		var objectPath = args[0];
+		var cmd = args[1];
+		var value = args[2];
+
+		var objectPathArr = objectPath.split(cfg.DOT);
+		var obj = _getNestedObj(objectPathArr);
 		if (_isNull(obj)) {
-			_logError("_sendSubPatcherCmd: Could not find object for name: " + objName);
+			_logError("_send: Could not find object for name: " + objectPath);
 			return;
 		}
 		if (!_isString(cmd)) {
-			_logError("_sendSubPatcherCmd: invalid command: " + cmd);
+			_logError("_send: invalid command: " + cmd);
 			return;
 		}
 		if (_isNull(value)) {
-			_logError("_sendSubPatcherCmd: invalid value: " + value);
+			_logError("_send: invalid value: " + value);
 			return;
 		}		
 		var outArgs = [cmd, value];
@@ -345,6 +336,39 @@ var zs = (function (g, m) {
 		var presetNo = preset - 1;	
 		_sendTo(obj, [cfg.CMD_INT, presetNo]);
 	}
+	function _getNestedObj(objPathArr) {
+		if (!_isArray(objPathArr) || objPathArr.length < 1) {
+			_logError("_getNestedObj: invalid object path array");
+			return null;
+		}
+		var last = objPathArr[objPathArr.length - 1];
+		var len = objPathArr.length;
+		if(objPathArr.length == 1) {
+			return _getObj(last);
+		}
+
+		var prevObj = null;
+		var obj = null;
+		for (var i = 0; i < len; i++) {			
+			var name = objPathArr[i];
+			if(_isNull(prevObj)) {
+				obj = _getObj(name)
+			} else {
+				var sub = prevObj.subpatcher();
+				if (_isNull(sub)) {
+					_logError("_getNestedObj: invalid subpatcher for: " + name);
+					return null;
+				}
+				obj = sub.getnamed(name);
+			}
+			if (_isNull(obj)) {
+				_logError("_getNestedObj: Could not find object for name: " + name);
+				return null;
+			}
+			prevObj = obj;
+		}
+		return obj;
+	}
 	function _getObj(objName) {
 		if (_isNull(objName)) {
 			_logError("getObj: invalid object name argument");
@@ -415,8 +439,8 @@ var zs = (function (g, m) {
 			case cfg.CMD_BEAT_INFO:
 				_beatInfo(args);
 				break;
-			case cfg.CMD_SEND_TO_SUBPATCHER:
-				_sendSubPatcherCmd(args);
+			case cfg.CMD_SEND:
+				_send(args);
 				break;				
 			default:
 				var len = args.length;

@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 872.0, 167.0, 1917.0, 1214.0 ],
+		"rect" : [ 418.0, 117.0, 1917.0, 1214.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 0,
 		"default_fontsize" : 12.0,
@@ -972,12 +972,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-81",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 22.0 ],
-					"text" : "UnionRose_b8.wav",
+					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 35.0 ],
+					"text" : "UnionRose_b18.wav",
 					"varname" : "b2File"
 				}
 
@@ -1251,15 +1252,15 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 301.202265425282917, 13.0, 47.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
-						"lcdbgcolor" : 						{
-							"expression" : ""
-						}
-,
 						"lcdcolor" : 						{
 							"expression" : ""
 						}
 ,
 						"inactivelcdcolor" : 						{
+							"expression" : ""
+						}
+,
+						"lcdbgcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1610,8 +1611,8 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1577.5, 136.327367635859275, 135.0, 22.0 ],
-					"text" : "UnionRose_b3.wav",
+					"patching_rect" : [ 1577.5, 136.327367635859275, 113.0, 22.0 ],
+					"text" : "UnionRose_b4.wav",
 					"varname" : "grooveFile"
 				}
 
@@ -1794,10 +1795,10 @@
 						"granulatorCont" : [ 1.0 ],
 						"granulatorContStop" : [ 1.0 ],
 						"granulatorLine" : [ 1.0 ],
-						"grooveCont" : [ 1.0 ],
-						"grooveContStop" : [ 1.0 ],
+						"grooveCont" : [ 0.0 ],
+						"grooveContStop" : [ 0.0 ],
 						"grooveLine" : [ 0.0 ],
-						"preset" : [ 5.0 ],
+						"preset" : [ 2.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
