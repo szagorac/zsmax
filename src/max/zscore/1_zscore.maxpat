@@ -10,9 +10,9 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 418.0, 117.0, 1917.0, 1214.0 ],
+		"rect" : [ 856.0, 112.0, 1175.0, 645.0 ],
 		"bglocked" : 0,
-		"openinpresentation" : 0,
+		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
 		"default_fontface" : 0,
 		"default_fontname" : "Arial",
@@ -39,6 +39,55 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-106",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 2,
+					"outlettype" : [ "", "" ],
+					"patching_rect" : [ 1740.0, 479.5, 69.0, 22.0 ],
+					"save" : [ "#N", "thispatcher", ";", "#Q", "end", ";" ],
+					"text" : "thispatcher"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-107",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1740.0, 443.5, 93.0, 22.0 ],
+					"text" : "presentation $1"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-109",
+					"maxclass" : "toggle",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "int" ],
+					"parameter_enable" : 0,
+					"patching_rect" : [ 1740.0, 409.5, 24.0, 24.0 ]
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-111",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 1740.0, 374.5, 72.0, 22.0 ],
+					"text" : "loadmess 1"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-66",
 					"maxclass" : "message",
@@ -972,13 +1021,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-81",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 35.0 ],
-					"text" : "UnionRose_b18.wav",
+					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 22.0 ],
+					"text" : "UnionRose_b2.wav",
 					"varname" : "b2File"
 				}
 
@@ -1051,13 +1099,12 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
-					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.5, 363.5, 113.0, 35.0 ],
-					"text" : "UnionRose_b17.wav",
+					"patching_rect" : [ 370.5, 363.5, 113.0, 22.0 ],
+					"text" : "UnionRose_b1.wav",
 					"varname" : "b1File"
 				}
 
@@ -1612,7 +1659,7 @@
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
 					"patching_rect" : [ 1577.5, 136.327367635859275, 113.0, 22.0 ],
-					"text" : "UnionRose_b4.wav",
+					"text" : "UnionRose_b1.wav",
 					"varname" : "grooveFile"
 				}
 
@@ -1798,7 +1845,7 @@
 						"grooveCont" : [ 0.0 ],
 						"grooveContStop" : [ 0.0 ],
 						"grooveLine" : [ 0.0 ],
-						"preset" : [ 2.0 ],
+						"preset" : [ 0.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
@@ -1938,8 +1985,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-106", 0 ],
+					"source" : [ "obj-107", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-14", 0 ],
 					"source" : [ "obj-108", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-107", 0 ],
+					"source" : [ "obj-109", 0 ]
 				}
 
 			}
@@ -1955,6 +2016,13 @@
 					"destination" : [ "obj-53", 1 ],
 					"midpoints" : [ 1054.5, 234.0, 1098.0, 234.0, 1098.0, 198.0, 1107.0, 198.0, 1107.0, 198.0, 1195.0, 198.0 ],
 					"source" : [ "obj-110", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-109", 0 ],
+					"source" : [ "obj-111", 0 ]
 				}
 
 			}
