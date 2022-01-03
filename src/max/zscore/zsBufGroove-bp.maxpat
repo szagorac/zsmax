@@ -3,8 +3,8 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 1,
-			"revision" : 11,
+			"minor" : 2,
+			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
@@ -40,19 +40,31 @@
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
 				"box" : 				{
+					"id" : "obj-16",
+					"maxclass" : "message",
+					"numinlets" : 2,
+					"numoutlets" : 1,
+					"outlettype" : [ "" ],
+					"patching_rect" : [ 745.0, 158.0, 35.0, 22.0 ],
+					"text" : "clear"
+				}
+
+			}
+, 			{
+				"box" : 				{
 					"id" : "obj-36",
 					"maxclass" : "newobj",
 					"numinlets" : 1,
 					"numoutlets" : 3,
 					"outlettype" : [ "", "", "" ],
-					"patching_rect" : [ 582.499999999999886, 113.0, 83.0, 22.0 ],
-					"restore" : [ "UnionRose_b2.wav" ],
+					"patching_rect" : [ 582.499999999999886, 113.0, 169.0, 22.0 ],
+					"restore" : [ 0 ],
 					"saved_object_attributes" : 					{
 						"parameter_enable" : 0,
 						"parameter_mappable" : 0
 					}
 ,
-					"text" : "pattr fileName",
+					"text" : "pattr fileName @autorestore 0",
 					"varname" : "fileName"
 				}
 
@@ -128,12 +140,44 @@
 					"presentation_rect" : [ 74.0, 22.0, 44.0, 14.764644622802734 ],
 					"rounded" : 10.0,
 					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_defer" : 1,
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_linknames" : 1,
-							"parameter_longname" : "loopPlayBtn[1]",
+							"parameter_longname" : "loopPlayBtn",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "loopPlay",
 							"parameter_type" : 2
@@ -169,13 +213,45 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 120.0, 3.676516532897949, 44.0, 14.764644622802734 ],
 					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_defer" : 1,
 							"parameter_enum" : [ "val1", "val2" ],
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
 							"parameter_linknames" : 1,
-							"parameter_longname" : "stopPlayBtn[4]",
+							"parameter_longname" : "stopPlayBtn",
 							"parameter_mmax" : 1,
 							"parameter_shortname" : "stopPlay",
 							"parameter_type" : 2
@@ -212,6 +288,38 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 74.0, 3.676516532897949, 44.0, 14.764644622802734 ],
 					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_defer" : 1,
 							"parameter_enum" : [ "val1", "val2" ],
@@ -426,6 +534,30 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 44.13552900000002, 9.882322311401367, 27.0, 54.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"activedialcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activeneedlecolor" : 						{
+							"expression" : ""
+						}
+,
+						"activefgdialcolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_initial" : [ 0.0 ],
 							"parameter_initial_enable" : 1,
@@ -459,9 +591,29 @@
 					"presentation" : 1,
 					"presentation_rect" : [ -2.93223549999999, 16.375, 46.0, 77.0 ],
 					"saved_attribute_attributes" : 					{
+						"trioncolor" : 						{
+							"expression" : ""
+						}
+,
+						"tribordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"slidercolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
+						"tricolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_linknames" : 1,
-							"parameter_longname" : "bufGrooveGain[3]",
+							"parameter_longname" : "bufGrooveGain",
 							"parameter_mmax" : 6.0,
 							"parameter_mmin" : -70.0,
 							"parameter_shortname" : "gain",
@@ -552,6 +704,38 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 2.13552900000002, 0.617677688598633, 39.86447099999998, 14.764644622802734 ],
 					"saved_attribute_attributes" : 					{
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"activetextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgoncolor" : 						{
+							"expression" : ""
+						}
+,
+						"bgoncolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_defer" : 1,
 							"parameter_enum" : [ "val1", "val2" ],
@@ -583,7 +767,7 @@
 					"patching_rect" : [ 910.5, 361.0, 56.0, 22.0 ],
 					"restore" : 					{
 						"bufGrooveGain" : [ 0.0 ],
-						"bufferMute" : [ 0.0 ],
+						"bufferMute" : [ 1.0 ],
 						"bufgrWfMode" : [ 0.0 ],
 						"loopPlayBtn" : [ 0.0 ],
 						"mcgSpeed" : [ 1.0 ],
@@ -627,7 +811,7 @@
 				"box" : 				{
 					"comment" : "audio out right",
 					"id" : "obj-43",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -639,7 +823,7 @@
 				"box" : 				{
 					"comment" : "audio out left",
 					"id" : "obj-42",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "outlet",
 					"numinlets" : 1,
 					"numoutlets" : 0,
@@ -675,7 +859,7 @@
 				"box" : 				{
 					"comment" : "file name",
 					"id" : "obj-38",
-					"index" : 4,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -721,7 +905,7 @@
 				"box" : 				{
 					"comment" : "play speed float",
 					"id" : "obj-15",
-					"index" : 3,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
@@ -734,11 +918,11 @@
 				"box" : 				{
 					"comment" : "stop bang",
 					"id" : "obj-12",
-					"index" : 2,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 70.0, 29.0, 30.0, 30.0 ]
 				}
 
@@ -747,11 +931,11 @@
 				"box" : 				{
 					"comment" : "start bang",
 					"id" : "obj-5",
-					"index" : 1,
+					"index" : 0,
 					"maxclass" : "inlet",
 					"numinlets" : 0,
 					"numoutlets" : 1,
-					"outlettype" : [ "bang" ],
+					"outlettype" : [ "" ],
 					"patching_rect" : [ 15.0, 29.0, 30.0, 30.0 ]
 				}
 
@@ -981,6 +1165,34 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 205.637237548828125, 3.558838844299316, 56.362762451171875, 15.0 ],
 					"saved_attribute_attributes" : 					{
+						"focusbordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"bordercolor" : 						{
+							"expression" : ""
+						}
+,
+						"hlttextcolor" : 						{
+							"expression" : ""
+						}
+,
+						"activebgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"hltcolor" : 						{
+							"expression" : ""
+						}
+,
+						"textcolor" : 						{
+							"expression" : ""
+						}
+,
+						"tricolor" : 						{
+							"expression" : ""
+						}
+,
 						"valueof" : 						{
 							"parameter_enum" : [ "loop", "select" ],
 							"parameter_initial" : [ 0 ],
@@ -1099,21 +1311,6 @@
 					"numoutlets" : 3,
 					"outlettype" : [ "signal", "signal", "signal" ],
 					"patching_rect" : [ 88.25, 243.5, 204.0, 22.0 ],
-					"saved_object_attributes" : 					{
-						"basictuning" : 440,
-						"followglobaltempo" : 0,
-						"formantcorrection" : 0,
-						"loopend" : [ 15999.977877869132499, "ms" ],
-						"loopstart" : [ 0.0, "ms" ],
-						"mode" : "basic",
-						"originallength" : [ 0.0, "ticks" ],
-						"originaltempo" : 120.0,
-						"phase" : [ 0.0, "ticks" ],
-						"pitchcorrection" : 0,
-						"quality" : "basic",
-						"timestretch" : [ 1 ]
-					}
-,
 					"text" : "groove~ #1bufGr 2 @timestretch 1"
 				}
 
@@ -1218,6 +1415,13 @@
 				"patchline" : 				{
 					"destination" : [ "obj-25", 0 ],
 					"source" : [ "obj-153", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-2", 0 ],
+					"source" : [ "obj-16", 0 ]
 				}
 
 			}
@@ -1691,6 +1895,23 @@
 
 			}
  ],
+		"parameters" : 		{
+			"obj-10" : [ "stopPlayBtn", "stopPlay", 0 ],
+			"obj-11" : [ "loopPlayBtn", "loopPlay", 0 ],
+			"obj-13" : [ "bufgrPan", "Pan", 0 ],
+			"obj-72" : [ "bufGrooveGain", "gain", 0 ],
+			"obj-75" : [ "bufgrWfMode", "mode", 0 ],
+			"obj-76" : [ "bufferMute", "mute", 0 ],
+			"obj-8" : [ "startPlayBtn", "startPlay", 0 ],
+			"parameterbanks" : 			{
+
+			}
+,
+			"inherited_shortname" : 1
+		}
+,
+		"dependency_cache" : [  ],
+		"autosave" : 0,
 		"styles" : [ 			{
 				"name" : "AudioStatus_Menu",
 				"default" : 				{

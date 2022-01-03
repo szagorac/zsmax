@@ -10,7 +10,7 @@
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 856.0, 112.0, 1175.0, 645.0 ],
+		"rect" : [ 856.0, 112.0, 2040.0, 1219.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -39,6 +39,30 @@
 		"subpatcher_template" : "",
 		"assistshowspatchername" : 0,
 		"boxes" : [ 			{
+				"box" : 				{
+					"id" : "obj-59",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 1577.5, 100.0, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
+				"box" : 				{
+					"id" : "obj-57",
+					"maxclass" : "newobj",
+					"numinlets" : 1,
+					"numoutlets" : 1,
+					"outlettype" : [ "bang" ],
+					"patching_rect" : [ 375.630444216247952, 326.419666244190921, 58.0, 22.0 ],
+					"text" : "loadbang"
+				}
+
+			}
+, 			{
 				"box" : 				{
 					"id" : "obj-106",
 					"maxclass" : "newobj",
@@ -106,7 +130,7 @@
 					"numinlets" : 1,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1038.630444216247952, 383.5, 115.0, 22.0 ],
+					"patching_rect" : [ 1038.630444216247952, 392.5, 115.0, 22.0 ],
 					"text" : "zsPathFinder audio/"
 				}
 
@@ -1181,7 +1205,7 @@
 					"numinlets" : 0,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1661.0, 359.5, 47.0, 22.0 ],
+					"patching_rect" : [ 1643.5, 392.5, 47.0, 22.0 ],
 					"text" : "r grLen"
 				}
 
@@ -1226,7 +1250,7 @@
 					"numoutlets" : 4,
 					"offset" : [ 0.0, 0.0 ],
 					"outlettype" : [ "", "", "", "" ],
-					"patching_rect" : [ 1056.5, 422.0, 606.0, 105.0 ],
+					"patching_rect" : [ 1058.5, 415.5, 606.0, 105.0 ],
 					"presentation" : 1,
 					"presentation_rect" : [ 549.8544921875, 397.0, 608.1455078125, 108.0 ],
 					"varname" : "zsPlayCtrl-bp",
@@ -1658,7 +1682,7 @@
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1577.5, 136.327367635859275, 113.0, 22.0 ],
+					"patching_rect" : [ 1577.5, 130.622311164476457, 113.0, 22.0 ],
 					"text" : "UnionRose_b1.wav",
 					"varname" : "grooveFile"
 				}
@@ -1955,7 +1979,7 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-31", 7 ],
-					"midpoints" : [ 783.17724609375, 500.0, 1638.0, 500.0, 1638.0, 504.0, 1614.0, 504.0, 1614.0, 501.0, 1602.5, 501.0 ],
+					"midpoints" : [ 783.17724609375, 528.0, 1602.5, 528.0 ],
 					"source" : [ "obj-103", 0 ]
 				}
 
@@ -2199,6 +2223,16 @@
 , 			{
 				"patchline" : 				{
 					"destination" : [ "obj-154", 0 ],
+					"order" : 0,
+					"source" : [ "obj-16", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-155", 0 ],
+					"midpoints" : [ 1587.0, 153.0, 1702.0, 153.0, 1702.0, 315.0, 1702.0, 315.0, 1702.0, 387.0, 1048.130444216247952, 387.0 ],
+					"order" : 1,
 					"source" : [ "obj-16", 0 ]
 				}
 
@@ -2647,9 +2681,48 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-30", 0 ],
+					"order" : 1,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-45", 0 ],
+					"order" : 2,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-64", 0 ],
+					"order" : 3,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-81", 0 ],
+					"order" : 0,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-2", 0 ],
 					"midpoints" : [ 550.0, 504.0, 516.0, 504.0, 516.0, 342.0, 450.0, 342.0, 450.0, 261.0, 462.0, 261.0, 462.0, 213.0, 317.5, 213.0 ],
 					"source" : [ "obj-58", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-16", 0 ],
+					"source" : [ "obj-59", 0 ]
 				}
 
 			}
