@@ -1851,12 +1851,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 273.5, 65.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"b1" : [ 1.0 ],
+						"b1" : [ 0.0 ],
 						"b1Speed" : [ 0.0 ],
-						"b1Stop" : [ 1.0 ],
-						"b2" : [ 1.0 ],
+						"b1Stop" : [ 0.0 ],
+						"b2" : [ 0.0 ],
 						"b2Speed" : [ 0.0 ],
-						"b2Stop" : [ 1.0 ],
+						"b2Stop" : [ 0.0 ],
 						"b3" : [ 0.0 ],
 						"b3Speed" : [ 0.0 ],
 						"b3Stop" : [ 0.0 ],
@@ -2697,6 +2697,22 @@
 			}
 , 			{
 				"patchline" : 				{
+					"destination" : [ "obj-60", 0 ],
+					"order" : 7,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-61", 0 ],
+					"order" : 5,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
 					"destination" : [ "obj-64", 0 ],
 					"order" : 3,
 					"source" : [ "obj-57", 0 ]
@@ -2707,6 +2723,24 @@
 				"patchline" : 				{
 					"destination" : [ "obj-81", 0 ],
 					"order" : 0,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-90", 0 ],
+					"midpoints" : [ 385.130444216247952, 351.0, 357.0, 351.0, 357.0, 357.0, 36.0, 357.0, 36.0, 540.0, 166.130444216247952, 540.0 ],
+					"order" : 4,
+					"source" : [ "obj-57", 0 ]
+				}
+
+			}
+, 			{
+				"patchline" : 				{
+					"destination" : [ "obj-93", 0 ],
+					"midpoints" : [ 385.130444216247952, 351.0, 357.0, 351.0, 357.0, 357.0, 36.0, 357.0, 36.0, 540.0, 59.130444216247952, 540.0 ],
+					"order" : 6,
 					"source" : [ "obj-57", 0 ]
 				}
 
@@ -3698,119 +3732,119 @@
 ,
 		"dependency_cache" : [ 			{
 				"name" : "zsPattrStore.json",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMcGroove-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGrvCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsui.js",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "TEXT",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGranulator-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsgran~.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsPlayCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsBufGroove-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsFilter-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsFilterCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsDelay-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsMixer-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsGigaverb-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsClick-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsPathFinder.maxpat",
-				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
