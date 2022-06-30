@@ -79,6 +79,7 @@ var zs = (function (g, m) {
 		CMD_BANG: "bang",
 		CMD_PRESET: "preset",
 		CMD_BEAT_INFO: "beatInfo",
+		CMD_VOTE: "vote",
 		OBJ_NAME_STOP_BTN: "stopBtn",
 	}
 
@@ -266,6 +267,8 @@ var zs = (function (g, m) {
 		}
 		_sendTo(obj, outArgs);
 	}
+	function _vote(args) {
+	}
 	function _setFile(objName, fileName) {
 		if(!_endsWith(objName, cfg.FILE_SUFFIX)) {
 			objName += cfg.FILE_SUFFIX;
@@ -432,7 +435,7 @@ var zs = (function (g, m) {
 				break;
 			case cfg.CMD_SET_LINE:
 				_setLine(args[0], args[1]);
-				break;								
+				break;
 			case cfg.CMD_PRESET:
 				_preset(args);
 				break;
@@ -441,7 +444,10 @@ var zs = (function (g, m) {
 				break;
 			case cfg.CMD_SEND:
 				_send(args);
-				break;				
+				break;
+			case cfg.CMD_VOTE:
+				_vote(args);
+				break;
 			default:
 				var len = args.length;
 				log("jsui received unknown anything msg: " + messagename + " arg len: " + len);
