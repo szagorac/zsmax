@@ -976,9 +976,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -1526,9 +1524,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -2090,9 +2086,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -2114,9 +2108,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -2660,9 +2652,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -2684,9 +2674,7 @@
 					"zsMixer-bp::mixOutCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixerMute": [
-						0.0
-					],
+					"zsMixer-bp::mixerMute": [],
 					"zsMixer-bp::sendCh1Del": [
 						-72.0
 					],
@@ -3212,9 +3200,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -3754,9 +3740,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -4296,9 +4280,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -4810,9 +4792,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -5324,9 +5304,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -5838,9 +5816,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -6352,9 +6328,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -6866,9 +6840,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -7380,9 +7352,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -7894,9 +7864,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],
@@ -8408,9 +8376,7 @@
 					"zsMixer-bp::mixInCh7": [
 						0.0
 					],
-					"zsMixer-bp::mixMasterOut": [
-						0.0
-					],
+					"zsMixer-bp::mixMasterOut": [],
 					"zsMixer-bp::mixOutCh1": [
 						0.0
 					],

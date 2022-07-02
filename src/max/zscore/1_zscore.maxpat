@@ -3,14 +3,14 @@
 		"fileversion" : 1,
 		"appversion" : 		{
 			"major" : 8,
-			"minor" : 2,
+			"minor" : 3,
 			"revision" : 1,
 			"architecture" : "x64",
 			"modernui" : 1
 		}
 ,
 		"classnamespace" : "box",
-		"rect" : [ 937.0, 213.0, 1173.0, 644.0 ],
+		"rect" : [ 937.0, 213.0, 1176.0, 867.0 ],
 		"bglocked" : 0,
 		"openinpresentation" : 1,
 		"default_fontsize" : 12.0,
@@ -1045,12 +1045,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-81",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 22.0 ],
-					"text" : "UnionRose_b2.wav",
+					"patching_rect" : [ 375.630444216247952, 553.5, 113.0, 35.0 ],
+					"text" : "DialogsPitch_b12.wav",
 					"varname" : "b2File"
 				}
 
@@ -1123,12 +1124,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-64",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 370.5, 363.5, 113.0, 22.0 ],
-					"text" : "UnionRose_b1.wav",
+					"patching_rect" : [ 370.5, 363.5, 113.0, 35.0 ],
+					"text" : "DialogsPitch_b11.wav",
 					"varname" : "b1File"
 				}
 
@@ -1225,11 +1227,13 @@
 				"box" : 				{
 					"dontreplace" : 1,
 					"id" : "obj-40",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1038.630444216247952, 359.5, 113.0, 22.0 ],
+					"patching_rect" : [ 1038.630444216247952, 359.5, 113.0, 35.0 ],
+					"text" : "DialogsRhythm_b2.wav",
 					"varname" : "granulatorFile"
 				}
 
@@ -1323,15 +1327,15 @@
 					"presentation" : 1,
 					"presentation_rect" : [ 301.202265425282917, 13.0, 47.0, 32.0 ],
 					"saved_attribute_attributes" : 					{
-						"lcdcolor" : 						{
-							"expression" : ""
-						}
-,
 						"inactivelcdcolor" : 						{
 							"expression" : ""
 						}
 ,
 						"lcdbgcolor" : 						{
+							"expression" : ""
+						}
+,
+						"lcdcolor" : 						{
 							"expression" : ""
 						}
 ,
@@ -1678,12 +1682,13 @@
 , 			{
 				"box" : 				{
 					"id" : "obj-16",
+					"linecount" : 2,
 					"maxclass" : "message",
 					"numinlets" : 2,
 					"numoutlets" : 1,
 					"outlettype" : [ "" ],
-					"patching_rect" : [ 1577.5, 130.622311164476457, 113.0, 22.0 ],
-					"text" : "UnionRose_b1.wav",
+					"patching_rect" : [ 1577.5, 130.622311164476457, 113.0, 35.0 ],
+					"text" : "DialogsRhythm_b8.wav",
 					"varname" : "grooveFile"
 				}
 
@@ -1851,12 +1856,12 @@
 					"outlettype" : [ "", "", "", "" ],
 					"patching_rect" : [ 273.5, 65.0, 56.0, 22.0 ],
 					"restore" : 					{
-						"b1" : [ 0.0 ],
+						"b1" : [ 1.0 ],
 						"b1Speed" : [ 0.0 ],
-						"b1Stop" : [ 0.0 ],
-						"b2" : [ 0.0 ],
+						"b1Stop" : [ 1.0 ],
+						"b2" : [ 1.0 ],
 						"b2Speed" : [ 0.0 ],
-						"b2Stop" : [ 0.0 ],
+						"b2Stop" : [ 1.0 ],
 						"b3" : [ 0.0 ],
 						"b3Speed" : [ 0.0 ],
 						"b3Stop" : [ 0.0 ],
@@ -1866,10 +1871,10 @@
 						"granulatorCont" : [ 1.0 ],
 						"granulatorContStop" : [ 1.0 ],
 						"granulatorLine" : [ 1.0 ],
-						"grooveCont" : [ 0.0 ],
+						"grooveCont" : [ 1.0 ],
 						"grooveContStop" : [ 0.0 ],
 						"grooveLine" : [ 0.0 ],
-						"preset" : [ 0.0 ],
+						"preset" : [ 2.0 ],
 						"preset0" : [ 0.0 ],
 						"stopBtn" : [ 0.0 ]
 					}
@@ -3069,6 +3074,7 @@
 		"parameters" : 		{
 			"obj-10::obj-107" : [ "clickVolume", "vol", 0 ],
 			"obj-10::obj-17" : [ "clickMute", "mute", 0 ],
+			"obj-10::obj-35" : [ "number", "number", 0 ],
 			"obj-12::obj-1" : [ "delayInput", "in", 0 ],
 			"obj-12::obj-13" : [ "delayTimeL", "time", 0 ],
 			"obj-12::obj-15" : [ "delayHPFL", "HPF", 0 ],
@@ -3725,133 +3731,357 @@
 					"max" : 1.0,
 					"flags" : 2
 				}
+,
+				"mixInCh1" : 				{
+					"srcname" : "2.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"mixInCh2" : 				{
+					"srcname" : "3.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"mixInCh3" : 				{
+					"srcname" : "4.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"mixInCh4" : 				{
+					"srcname" : "5.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"mixInCh4[1]" : 				{
+					"srcname" : "6.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"mixInCh4[2]" : 				{
+					"srcname" : "8.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"mixInCh4[3]" : 				{
+					"srcname" : "9.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"sendCh3[1]" : 				{
+					"srcname" : "14.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"sendCh2Flt" : 				{
+					"srcname" : "15.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"sendCh3Flt" : 				{
+					"srcname" : "16.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"sendCh4Flt" : 				{
+					"srcname" : "17.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"sendCh7Del" : 				{
+					"srcname" : "20.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"mcgPlayCont" : 				{
+					"srcname" : "26.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"mcgPlayLine" : 				{
+					"srcname" : "36.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"grPlayCont" : 				{
+					"srcname" : "25.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"grPlayLine" : 				{
+					"srcname" : "35.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"mixerMute" : 				{
+					"srcname" : "31.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"startPlayBtn" : 				{
+					"srcname" : "23.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"linePlayBtn[2]" : 				{
+					"srcname" : "24.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"stopPlayBtn[4]" : 				{
+					"srcname" : "33.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"linePlayBtn[3]" : 				{
+					"srcname" : "34.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"clickVolume" : 				{
+					"srcname" : "12.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"clickMute" : 				{
+					"srcname" : "30.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"number" : 				{
+					"srcname" : "21.ctrl.0.chan.midi",
+					"min" : 1.0,
+					"max" : 10.0,
+					"flags" : 2
+				}
+,
+				"mixMasterOut" : 				{
+					"srcname" : "13.ctrl.0.chan.midi",
+					"min" : -70.0,
+					"max" : 12.0,
+					"flags" : 2
+				}
+,
+				"delayMute[1]" : 				{
+					"srcname" : "27.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"delayMute" : 				{
+					"srcname" : "28.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"filterMute" : 				{
+					"srcname" : "29.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 1.0,
+					"flags" : 2
+				}
+,
+				"revSize" : 				{
+					"srcname" : "18.ctrl.0.chan.midi",
+					"min" : 0.1,
+					"max" : 300.0,
+					"flags" : 2
+				}
+,
+				"delayFeedbackR" : 				{
+					"srcname" : "19.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"delayFeedbackL" : 				{
+					"srcname" : "19.ctrl.0.chan.midi",
+					"min" : -72.0,
+					"max" : 0.0,
+					"flags" : 2
+				}
+,
+				"filterRes" : 				{
+					"srcname" : "20.ctrl.0.chan.midi",
+					"min" : 0.0,
+					"max" : 25.0,
+					"flags" : 2
+				}
 
 			}
 
 		}
 ,
 		"dependency_cache" : [ 			{
-				"name" : "zsPattrStore.json",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsMcGroove-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsGrvCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsMLFO-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsui.js",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "TEXT",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsGranulator-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsgran~.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsPlayCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
+				"name" : "mxj.mxo",
+				"type" : "iLaX"
 			}
 , 			{
 				"name" : "zsBufGroove-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsFilter-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsFilterCtrl-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsDelay-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsMixer-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
-				"patcherrelativepath" : ".",
-				"type" : "JSON",
-				"implicit" : 1
-			}
-, 			{
-				"name" : "zsGigaverb-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsClick-bp.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsDelay-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsFilter-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsFilterCtrl-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsGigaverb-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsGranulator-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsGrvCtrl-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsLFO-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsMLFO-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsMcGroove-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsMixer-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
 				"name" : "zsPathFinder.maxpat",
-				"bootpath" : "~/MyHome/Music/phd/zscore/package/max",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
 				"patcherrelativepath" : ".",
 				"type" : "JSON",
 				"implicit" : 1
 			}
 , 			{
-				"name" : "mxj.mxo",
-				"type" : "iLaX"
+				"name" : "zsPattrStore.json",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsPlayCtrl-bp.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsgran~.maxpat",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "JSON",
+				"implicit" : 1
+			}
+, 			{
+				"name" : "zsui.js",
+				"bootpath" : "~/MyHome/Music/max/1_my/zscore",
+				"patcherrelativepath" : ".",
+				"type" : "TEXT",
+				"implicit" : 1
 			}
  ],
 		"autosave" : 0,
@@ -3859,13 +4089,13 @@
 				"name" : "AudioStatus_Menu",
 				"default" : 				{
 					"bgfillcolor" : 					{
-						"type" : "color",
+						"angle" : 270.0,
+						"autogradient" : 0,
 						"color" : [ 0.294118, 0.313726, 0.337255, 1 ],
 						"color1" : [ 0.454902, 0.462745, 0.482353, 0.0 ],
 						"color2" : [ 0.290196, 0.309804, 0.301961, 1.0 ],
-						"angle" : 270.0,
 						"proportion" : 0.39,
-						"autogradient" : 0
+						"type" : "color"
 					}
 
 				}
