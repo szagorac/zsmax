@@ -7,7 +7,7 @@
     <property name="version" value="0.0.1"/>
 
     <property name="srcDir" location="src/main/java"/>
-    <property name="maxDir" location="src/max"/>
+    <property name="maxDir" location="src/max/zscore"/>
     <property name="buildDir" location="build"/>
     <property name="distDir" location="dist"/>
     <property name="libDir" location="lib"/>
@@ -21,6 +21,7 @@
         <include name="*.maxpat"/>
         <include name="*.json"/>
         <include name="*.wav"/>
+        <include name="audio/*"/>
     </fileset>
 
     <fileset id="deployJsSet" dir="${maxDir}" casesensitive="yes">
@@ -39,6 +40,7 @@
     </fileset>
     <fileset id="maxSet" dir="${maxDir}" casesensitive="yes">
         <include name="*.*"/>
+        <include name="**"/>
     </fileset>
 
     <path id="classpath">
